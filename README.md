@@ -10,15 +10,15 @@
 
 ---
 
-## The Century-Old Debate, Resolved.
+## A Computational Answer to a Century-Old Debate
 
 For a century, modern physics has been conceptually divided. Albert Einstein famously declared that *"God does not play dice with the universe,"* defending strict determinism. Niels Bohr and the quantum pioneers accepted pure, irreducible randomness.
 
-This repository presents the computational proof for the third answer: **God is the universal principle governing the stochastic motion of the dice, and its continuous interaction with the deterministic causes that shape reality.**
+This repository explores a third synthesis: that randomness and order are not opposing principles, but constitutive partners. We present a computational framework and its empirical validation, suggesting that stochastic fluctuation is the mechanism by which deterministic rules generate and sustain complex structure.
 
 Welcome to the **Stochastic Universe**. Here, we demonstrate through hard data science, quantum simulation, and complex systems modeling that randomness is not the enemy of order. It is its primary architect.
 
-By engineering a self-stabilizing quantum circuit — the **MetaQubit** — and observing its effects on a recursive complex plane, we have discovered the **Naturalist Fractal**: a topological invariant that morphologically simulates cosmological expansion and mathematically proves that extreme noise inevitably generates indestructible structure.
+By engineering a self-stabilizing quantum circuit — the **MetaQubit** — and observing its effects on a recursive complex plane, we have discovered the **Naturalist Fractal**: a topological invariant that morphologically simulates cosmological expansion and whose structural persistence across three orders of magnitude of stochastic noise constitutes a direct empirical case for Stochastic Determinism.
 
 ---
 
@@ -44,12 +44,14 @@ A novel quantum-inspired processing unit built on [PennyLane](https://pennylane.
 
 The MetaQubit achieves **Dynamic Homeostasis**: a self-regulating balance between entropy, structured entanglement, and quantum tunneling — without any explicit stabilization code.
 
+> **Note on baselines:** All benchmarks compare the MetaQubit against PennyLane's standard `default.qubit` state-vector simulator. The baseline circuit is constructed to be structurally equivalent (same qubit count, same gate types applied randomly), but without the MetaQubit's specific multi-stage architecture and self-stabilizing mechanisms. This ensures a fair, apples-to-apples comparison of architectural performance under identical conditions.
+
 ### 3. The Information Identity Law
 Extracted via a 13-phase machine learning pipeline (ARIMA, Random Forest, Gradient Boosting, Neural Networks), the system's Energy Coherence collapses into a strict empirical identity:
 
 $$\mathcal{V}(\text{EC}) = 99.9979\% \cdot \mathcal{V}(\overline{I}) + 0.0021\% \cdot \mathcal{V}(n_{\text{frame}})$$
 
-The structure *is* the spatial density. Information and geometry are not analogous — they are the same thing, expressed at different scales.
+The structure *becomes* the spatial density. This is not a sign of circular reasoning, but the primary discovery: a system defined by multiple independent variables (quantum state, recursion depth, noise level) dynamically self-organizes to a state where its macroscopic coherence is fully described by a single observable. We term this phenomenon **dimensional collapse** — a hallmark of a powerful stochastic attractor in which complexity simplifies itself.
 
 ---
 
@@ -113,7 +115,7 @@ The source code and full benchmark documentation of the MetaQubit architecture.
 
 ---
 
-### Pillar 3 — The Proof (Data Science Validation)
+### Pillar 3 — The Evidence (Data Science Validation)
 
 The empirical core: 1,000 fractal realizations analyzed by 12 independent algorithms across three methodological pipelines.
 
@@ -164,9 +166,9 @@ python stochastic_universe/build_unified.py
 
 ---
 
-## Academic Publications & DOIs
+## Pre-Prints & Citation (DOIs)
 
-This research has been modularly published to ensure academic rigor and targeted citation. The theoretical framework and computational discoveries are officially registered on Zenodo.
+To ensure scientific priority and provide stable citation targets, this research has been permanently archived as a series of pre-prints on Zenodo. Each component has been assigned a unique Digital Object Identifier (DOI).
 
 *If you use the MetaQubit architecture, the Naturalist Fractal equations, or the Stochastic Paradoxical Logic (SPL) in your research, please cite the respective DOIs:*
 
