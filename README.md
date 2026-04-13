@@ -177,6 +177,11 @@ This research has been modularly published to ensure academic rigor and targeted
 - 🔗 **[Stochastic Paradoxical Logic: A New Framework for Understanding Reality Through Paradox and Probability](https://doi.org/10.20944/preprints202505.2126.v1)**
 - 🔗 **[Foundations for a Unified Stochastic Framework: Bridging Physics, Biology, and Socio-Economic Systems](https://doi.org/10.20944/preprints202506.0023.v1)**
 
+*The following papers are currently under submission to Zenodo. DOIs will be assigned upon publication:*
+
+- ⏳ **The MetaQubit: A Self-Stabilizing, Quantum-Inspired Architecture for Noise-Resilient Computation** *(DOI pending)*
+- ⏳ **The Naturalist Fractal: A Computational Proof of Stochastic Determinism and Structural Invariance in Complex Systems** *(DOI pending)*
+
 ---
 
 > *"The journey that began with a question — why does order exist? — ends not with a philosophical argument but with a computational fact: order exists because stochastic systems cannot help but generate it."*
