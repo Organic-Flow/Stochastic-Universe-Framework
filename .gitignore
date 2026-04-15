@@ -1,0 +1,6 @@
+# Claude Code canvas files
+.canvas/
+
+# Local git helper scripts
+mygit.bat
+mygit.sh

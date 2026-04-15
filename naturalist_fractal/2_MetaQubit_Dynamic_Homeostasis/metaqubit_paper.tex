@@ -6,7 +6,7 @@
 %  Date:   April 2026
 % ============================================================
 
-\documentclass[twocolumn,showpacs,preprintnumbers,amsmath,amssymb,prl]{revtex4-2}
+\documentclass[twocolumn,amsmath,amssymb,prl]{revtex4-2}
 
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -73,7 +73,6 @@ displacement rather than abrupt collapse.  These results position the MetaQubit
 as a viable building block for NISQ-era hybrid quantum-classical systems.
 \end{abstract}
 
-\pacs{03.67.Lx, 03.65.Yz, 02.50.Ey, 07.05.Mh}
 \keywords{quantum computing; noise resilience; NISQ; variational circuits;
           quantum-classical hybrid; PennyLane; quantum error correction}
 
@@ -722,74 +721,7 @@ dynamics analyses are openly available in the \href{https://github.com/Organic-F
 A permanent archived version of the code corresponding to this publication
 is available on Zenodo (DOI: \emph{[to be assigned upon publication]}).
 
-% ============================================================
-\begin{thebibliography}{99}
-
-\bibitem{Preskill2018}
-J.\ Preskill,
-``Quantum Computing in the NISQ Era and Beyond,''
-\textit{Quantum} \textbf{2}, 79 (2018).
-
-\bibitem{Shor1995}
-P.\ W.\ Shor,
-``Scheme for reducing decoherence in quantum computer memory,''
-\textit{Phys.\ Rev.\ A} \textbf{52}, R2493 (1995).
-
-\bibitem{Steane1996}
-A.\ M.\ Steane,
-``Error correcting codes in quantum theory,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{77}, 793 (1996).
-
-\bibitem{Cerezo2021}
-M.\ Cerezo \textit{et al.},
-``Variational quantum algorithms,''
-\textit{Nat.\ Rev.\ Phys.} \textbf{3}, 625 (2021).
-
-\bibitem{Farhi2014}
-E.\ Farhi, J.\ Goldstone, S.\ Gutmann,
-``A Quantum Approximate Optimization Algorithm,''
-arXiv:1411.4028 (2014).
-
-\bibitem{Peruzzo2014}
-A.\ Peruzzo \textit{et al.},
-``A variational eigenvalue solver on a photonic quantum processor,''
-\textit{Nat.\ Commun.} \textbf{5}, 4213 (2014).
-
-\bibitem{McClean2018}
-J.\ R.\ McClean, S.\ Boixo, V.\ N.\ Smelyanskiy, R.\ Babbush, H.\ Neven,
-``Barren plateaus in quantum neural network training landscapes,''
-\textit{Nat.\ Commun.} \textbf{9}, 4812 (2018).
-
-\bibitem{Temme2017}
-K.\ Temme, S.\ Bravyi, J.\ M.\ Gambetta,
-``Error mitigation for short-depth quantum circuits,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{119}, 180509 (2017).
-
-\bibitem{Endo2018}
-S.\ Endo, S.\ C.\ Benjamin, Y.\ Li,
-``Practical quantum error mitigation for near-future applications,''
-\textit{Phys.\ Rev.\ X} \textbf{8}, 031027 (2018).
-
-\bibitem{McArdle2019}
-S.\ McArdle \textit{et al.},
-``Variational ansatz-based quantum simulation of imaginary time evolution,''
-\textit{npj Quantum Inf.} \textbf{5}, 75 (2019).
-
-\bibitem{Viola1998}
-L.\ Viola, S.\ Lloyd,
-``Dynamical suppression of decoherence in two-state quantum systems,''
-\textit{Phys.\ Rev.\ A} \textbf{58}, 2733 (1998).
-
-\bibitem{Poyatos1996}
-J.\ F.\ Poyatos, J.\ I.\ Cirac, P.\ Zoller,
-``Quantum reservoir engineering with laser cooled trapped ions,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{77}, 4728 (1996).
-
-\bibitem{Olshausen1997}
-B.\ A.\ Olshausen, D.\ J.\ Field,
-``Sparse coding with an overcomplete basis set: a strategy employed by V1?,''
-\textit{Vision Res.} \textbf{37}, 3311 (1997).
-
-\end{thebibliography}
+\bibliographystyle{apsrev4-2}
+\bibliography{metaqubit_paper}
 
 \end{document}

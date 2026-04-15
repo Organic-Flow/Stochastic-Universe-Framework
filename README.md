@@ -1,4 +1,4 @@
-# The Stochastic Universe: Order from Chaos
+# The Stochastic Universe: Order from Chaos 
 
 **A unified framework, quantum-inspired architecture, and computational proof of Stochastic Determinism.**
 
