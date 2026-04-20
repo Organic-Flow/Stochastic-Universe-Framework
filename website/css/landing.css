@@ -34,8 +34,8 @@
 
 .explorer-card-outer {
   width: 100%;
-  max-width: 600px;
-  padding: 0 2rem;
+  max-width: 1300px; /* Fully expanded for the protagonist visual */
+  padding: 0 1rem;
 }
 
 /* ── Content Pillars & Lists ── */

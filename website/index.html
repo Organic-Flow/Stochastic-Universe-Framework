@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <link rel="stylesheet" href="css/shared.css">
   <link rel="stylesheet" href="css/landing.css">
 </head>
@@ -22,26 +26,18 @@
       Stochastic Universe
     </div>
     <div style="margin-left: auto; display: flex; gap: 2rem;">
-      <a href="data_room/" style="font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--secondary); text-decoration: none;">Data Room</a>
-      <a href="#theory" style="font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--secondary); text-decoration: none;">Manuscript</a>
+      <a href="dashboard.html" style="font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--secondary); text-decoration: none;">Data Room</a>
     </div>
   </nav>
 
   <!-- ── Hero Section ── -->
-  <header class="hero">
+  <header class="hero" style="padding-top: 6rem; padding-bottom: 0;">
     <div class="wp-section-label">A Unified Framework</div>
     <h1 class="hero-title">The Stochastic Universe:<br><em>Order from Chaos</em></h1>
     <p class="hero-subtitle">A unified framework, quantum-inspired architecture, and computational proof of Stochastic Determinism.</p>
   </header>
 
-  <!-- ── Centralized Fractal Visual ── -->
-  <section class="explorer-center-section">
-    <div class="explorer-card-outer">
-      <iframe src="fractal_frames.html" style="width: 100%; aspect-ratio: 1/1.15; border: none; overflow: hidden;" scrolling="no"></iframe>
-    </div>
-  </section>
-
-  <div class="wp-article-container">
+  <div class="wp-article-container" style="padding-top: 1rem;">
     
     <!-- ── The Debate ── -->
     <section class="wp-section">
@@ -51,6 +47,7 @@
         <p>For a century, modern physics has been conceptually divided. Albert Einstein famously declared that <em>"God does not play dice with the universe,"</em> defending strict determinism. Niels Bohr and the quantum pioneers accepted pure, irreducible randomness.</p>
         <p>This repository explores a third synthesis: that randomness and order are not opposing principles, but <strong>constitutive partners</strong>. We present a computational framework and its empirical validation, suggesting that stochastic fluctuation is the mechanism by which deterministic rules generate and sustain complex structure.</p>
         <p>Welcome to the <strong>Stochastic Universe</strong>. Here, we demonstrate through hard data science, quantum simulation, and complex systems modeling that randomness is not the enemy of order. It is its primary architect.</p>
+        <p>By engineering a self-stabilizing quantum circuit — the <strong>MetaQubit</strong> — and observing its effects on a recursive complex plane, we have discovered the <strong>Naturalist Fractal</strong>: a topological invariant that morphologically simulates cosmological expansion and whose structural persistence across three orders of magnitude of stochastic noise constitutes a direct empirical case for Stochastic Determinism.</p>
       </div>
     </section>
 
@@ -58,35 +55,128 @@
 
     <!-- ── Core Discoveries ── -->
     <section class="wp-section">
-      <div class="wp-section-label">Core Discoveries</div>
-      <div class="pillar-grid">
-        <div class="pillar-item">
-            <span class="pillar-num">Discovery 01</span>
-            <span class="pillar-title">The Naturalist Fractal</span>
-            <p class="pillar-body">A newly discovered fractal geometry where the central X-shaped topological invariant persists across three orders of magnitude of stochastic noise. The attractor is indestructible.</p>
+      <div class="wp-section-label" style="margin-bottom: 2rem;">Core Discoveries</div>
+      
+      <!-- Discovery 1 -->
+      <div style="margin-bottom: 4rem;">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1rem; font-family: var(--font-headline);">1. The Naturalist Fractal</h3>
+        <div class="wp-prose">
+          <p>A newly discovered fractal geometry defined by the recursive map:</p>
+          <div style="padding: 1.5rem; background: var(--surface-low); border-left: 3px solid var(--primary); margin: 1.5rem 0; font-family: var(--font-headline); font-size: 1.2rem; text-align: center; overflow-x: auto;">
+            $$Z_{n+1} = Z_n^2 + c + s_n \cdot q \cdot (e^{i \cdot \arg(Z_n)} + \sin(|Z_n|^2 \cdot Z_n))$$
+          </div>
+          <p>where \( q \) is the quantum factor provided by the MetaQubit circuit at each recursion level. Across 1,000 realizations and three orders of magnitude of stochastic perturbation (\( \sigma: 0.003 \to 1.002 \)), the central X-shaped topological core is never destroyed. It dims, it thins, but it reconstitutes. The attractor is indestructible.</p>
         </div>
-        <div class="pillar-item">
-            <span class="pillar-num">Discovery 02</span>
-            <span class="pillar-title">The MetaQubit Architecture</span>
-            <p class="pillar-body">A novel quantum-inspired processing unit achieving <strong>Dynamic Homeostasis</strong>. MetaQubit achieves a 992× stability factor in circuit depth compared to standard simulators.</p>
+      </div>
+
+      <!-- ── Fractal Visual Integration ── -->
+      <div class="explorer-center-section" style="margin: 3rem 0; width: 100%;">
+        <div class="explorer-card-outer" style="max-width: 100%;">
+          <iframe src="fractal_frames.html" style="width: 100%; height: 950px; max-height: 92vh; border: none; overflow: hidden;" scrolling="no"></iframe>
         </div>
-        <div class="pillar-item">
-            <span class="pillar-num">Discovery 03</span>
-            <span class="pillar-title">The Information Identity Law</span>
-            <p class="pillar-body">A phenomenon of <strong>dimensional collapse</strong> where macroscopic coherence becomes fully described by a single observable (99.9979% Energy Coherence alignment).</p>
+      </div>
+
+      <!-- Discovery 2 -->
+      <div style="margin-bottom: 4rem;">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1rem; font-family: var(--font-headline);">2. The MetaQubit Architecture</h3>
+        <div class="wp-prose">
+          <p>A novel quantum-inspired processing unit built on <a href="https://pennylane.ai/" target="_blank" style="color: var(--secondary); text-decoration: underline; text-underline-offset: 4px;">PennyLane</a>, validated across <strong>13 independent benchmarks</strong>:</p>
+          
+          <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+            <thead>
+              <tr style="background: var(--surface-high);">
+                <th style="padding: 0.85rem 1.5rem; text-align: left; font-family: var(--font-label); font-weight: 600; font-size: 0.58rem; text-transform: uppercase;">Property</th>
+                <th style="padding: 0.85rem 1.5rem; text-align: left; font-family: var(--font-label); font-weight: 600; font-size: 0.58rem; text-transform: uppercase;">MetaQubit</th>
+                <th style="padding: 0.85rem 1.5rem; text-align: left; font-family: var(--font-label); font-weight: 600; font-size: 0.58rem; text-transform: uppercase;">Standard Simulator</th>
+                <th style="padding: 0.85rem 1.5rem; text-align: left; font-family: var(--font-label); font-weight: 600; font-size: 0.58rem; text-transform: uppercase;">Factor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;">Circuit depth stability</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">0.992 ± 0.042</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">0.001 ± 0.229</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem; font-weight: 600; color: var(--primary);">992×</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;">Measurement std deviation</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">0.000222</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">0.999998</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem; font-weight: 600; color: var(--primary);">4,500×</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;">QAOA MaxCut score</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">1.437</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">0.703</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem; font-weight: 600; color: var(--primary);">2×</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;">Implicit error recovery</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">39–74%</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">~0%</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">—</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;">Network coordination</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">4,950 edges / 12 qubits</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">—</td>
+                <td style="padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem; font-weight: 600; color: var(--primary);">412:1</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>The MetaQubit achieves <strong>Dynamic Homeostasis</strong>: a self-regulating balance between entropy, structured entanglement, and quantum tunneling — without any explicit stabilization code.</p>
+          <blockquote style="font-family: var(--font-headline); font-size: 1.2rem; font-style: italic; border-left: 3px solid var(--primary); padding-left: 1.5rem; margin: 2rem 0; color: var(--on-surface-variant);">
+            <strong>Note on baselines:</strong> All benchmarks compare the MetaQubit against PennyLane's standard <code>default.qubit</code> state-vector simulator. The baseline circuit is constructed to be structurally equivalent (same qubit count, same gate types applied randomly), but without the MetaQubit's specific multi-stage architecture and self-stabilizing mechanisms. This ensures a fair, apples-to-apples comparison of architectural performance under identical conditions.
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Discovery 3 -->
+      <div style="margin-bottom: 4rem;">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1rem; font-family: var(--font-headline);">3. The Information Identity Law</h3>
+        <div class="wp-prose">
+          <p>Extracted via a 13-phase machine learning pipeline (ARIMA, Random Forest, Gradient Boosting, Neural Networks), the system's Energy Coherence collapses into a strict empirical identity:</p>
+          <div style="padding: 1.5rem; background: var(--surface-low); border-left: 3px solid var(--primary); margin: 1.5rem 0; font-family: var(--font-headline); font-size: 1.2rem; text-align: center; overflow-x: auto;">
+            $$ \mathcal{V}(\text{EC}) = 99.9979\% \cdot \mathcal{V}(\overline{I}) + 0.0021\% \cdot \mathcal{V}(n_{\text{frame}}) $$
+          </div>
+          <p>The structure <em>becomes</em> the spatial density. This is not a sign of circular reasoning, but the primary discovery: a system defined by multiple independent variables (quantum state, recursion depth, noise level) dynamically self-organizes to a state where its macroscopic coherence is fully described by a single observable. We term this phenomenon <strong>dimensional collapse</strong> — a hallmark of a powerful stochastic attractor in which complexity simplifies itself.</p>
         </div>
       </div>
     </section>
 
-    <div class="wp-divider"></div>
-
     <!-- ── Data Room Architecture ── -->
-    <section class="wp-section">
-        <div class="wp-section-label">Data Room Architecture</div>
-        <h2 style="font-size: 1.8rem; font-style: italic; margin-bottom: 1.5rem;">The Living Repository</h2>
-        <div style="padding: 3rem; background: var(--surface-low); border: 1px dashed var(--outline-variant); text-align: center;">
-            <span style="font-family: var(--font-label); font-size: 0.8rem; letter-spacing: 0.3em; color: var(--outline);">ARCHITECTURE VISUALIZATION COMING SOON</span>
-            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--outline);">We are currently mapping the 45,000-word theoretical framework into a navigable dashboard.</p>
+    <section class="wp-section" style="margin-top: 4rem;">
+        <div class="wp-section-label">Dashboard Architecture</div>
+        <h2 style="font-size: 1.8rem; font-style: italic; margin-bottom: 1.5rem;">Research Life-Cycle</h2>
+        
+        <div class="wp-prose" style="margin-bottom: 2rem;">
+            <p>The interactive dashboard maps the three research pillars into a navigable data environment:</p>
+            <div style="background: var(--code-bg); color: var(--code-text); padding: 1.5rem 2rem; font-family: var(--font-label); font-size: 0.78rem; line-height: 1.75; overflow-x: auto; margin-top: 1.5rem; border-radius: 2px;">
+<pre style="margin: 0;">STOCHASTIC UNIVERSE (DATA ROOM)
+├── 1. THE STOCHASTIC UNIVERSE (THEORY)
+│   └── Book Library (7 Chapters / 45,000 words)
+│
+├── 2. FRACTAL STRUCTURAL INVARIANCE (PILLAR 3)
+│   ├── Code Analysis
+│   ├── Energy Coherence Analysis
+│   ├── Dynamic Patterns Analysis
+│   └── Geometric Shape Analysis
+│
+└── 3. METAQUBIT DYNAMIC HOMEOSTASIS (PILLAR 2)
+    ├── Code Analysis
+    ├── Quantum Benchmarking
+    ├── Network Self Organization
+    └── Internal Dynamics</pre>
+            </div>
+        </div>
+        
+        <div style="padding: 4rem 3rem; background: var(--surface-low); border: 1px solid var(--border-standard); text-align: center; cursor: pointer;" onclick="window.location.href='dashboard.html'">
+            <span style="font-family: var(--font-label); font-size: 0.8rem; letter-spacing: 0.3em; color: var(--primary); font-weight: 600; text-transform: uppercase;">Discover Everything in the Data Room</span>
+            <p style="margin-top: 1rem; font-size: 0.92rem; color: var(--on-surface-variant); max-width: 500px; margin-left: auto; margin-right: auto;">Access the interactive mapping of the theoretical framework, quantum benchmarks, and empirical proofs in our unified dashboard.</p>
+            <div style="margin-top: 2rem;">
+              <span style="font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--secondary); border-bottom: 1px solid var(--secondary); padding-bottom: 4px;">Enter Research Dashboard →</span>
+            </div>
         </div>
     </section>
 
@@ -96,40 +186,128 @@
     <section id="theory" class="wp-section">
         <div class="wp-section-label">Research Pillars</div>
         
+        <!-- Pillar 1 -->
         <div style="margin-bottom: 4rem;">
-            <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Pillar 1 — The Theory</h3>
-            <p style="font-size: 0.95rem; color: var(--on-surface-variant); max-width: 600px; margin-bottom: 2rem;">The foundational framework spanning physics, biology, social sciences, and philosophy across 7 chapters.</p>
-            <a href="data_room/" class="btn-icon btn-colab" style="display:inline-flex;">Read the Manuscript</a>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1rem; font-family: var(--font-headline);">Pillar 1 — The Theory</h3>
+            <div class="wp-prose">
+              <p style="font-size: 0.95rem; color: var(--on-surface-variant); max-width: 600px; margin-bottom: 1.5rem;">The foundational framework spanning physics, biology, social sciences, and philosophy across 7 chapters:</p>
+              
+              <table style="width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; max-width: 680px;">
+                <thead>
+                  <tr style="background: var(--surface-high);">
+                    <th style="padding: 0.85rem 1.5rem; text-align: left; font-family: var(--font-label); font-weight: 600; font-size: 0.58rem; text-transform: uppercase;">Chapter</th>
+                    <th style="padding: 0.85rem 1.5rem; text-align: left; font-family: var(--font-label); font-weight: 600; font-size: 0.58rem; text-transform: uppercase;">Title</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">1</td>
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem;">From Chaos to Order</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">2</td>
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem;">Stochastic Determinism in Physical Systems</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">3</td>
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem;">Emergence of Order in Biological Systems</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">4</td>
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem;">Randomness and Structure in Socio-Economic Systems</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">5</td>
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem;">Stochastic Paradoxical Logic</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">6</td>
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem;">The Unified Stochastic Framework</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(195,200,190,0.3);">
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-label); font-size: 0.88rem;">7</td>
+                    <td style="padding: 0.85rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem;">The Naturalist Fractal — The Computational Proof</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                <a href="dashboard.html?topic=stochastic_universe" style="color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Access Theory Library →</a>
+              </div>
+            </div>
         </div>
 
+        <!-- Pillar 2 -->
         <div style="margin-bottom: 4rem;">
-            <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Pillar 2 — The Quantum Engine</h3>
-            <p style="font-size: 0.95rem; color: var(--on-surface-variant); max-width: 600px; margin-bottom: 2rem;">Source code and documentation of the MetaQubit architecture. 13-experiment benchmark analysis and network self-organization.</p>
-            <a href="data_room/?pillar=2" class="btn-icon btn-colab" style="display:inline-flex;">Access Engine Data</a>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1rem; font-family: var(--font-headline);">Pillar 2 — The Quantum Engine (MetaQubit)</h3>
+            <div class="wp-prose">
+              <p style="font-size: 0.95rem; color: var(--on-surface-variant); max-width: 600px; margin-bottom: 1.5rem;">The source code and full benchmark documentation of the MetaQubit architecture.</p>
+              <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                <li><a href="dashboard.html?topic=metaqubit_homeostasis&tab=benchmarking" style="color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Full 13-experiment benchmark analysis →</a></li>
+                <li><a href="dashboard.html?topic=metaqubit_homeostasis&tab=network" style="color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Network self-organization analysis →</a></li>
+                <li><a href="dashboard.html?topic=metaqubit_homeostasis&tab=dynamics" style="color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Internal dynamics & noise analysis →</a></li>
+              </ul>
+            </div>
         </div>
 
+        <!-- Pillar 3 -->
         <div style="margin-bottom: 4rem;">
-            <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Pillar 3 — The Evidence</h3>
-            <p style="font-size: 0.95rem; color: var(--on-surface-variant); max-width: 600px; margin-bottom: 2rem;">The empirical core: 1,000 fractal realizations analyzed by 12 independent algorithms across three methodological pipelines.</p>
-            <a href="data_room/?pillar=3" class="btn-icon btn-colab" style="display:inline-flex;">View Empirical Proof</a>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1rem; font-family: var(--font-headline);">Pillar 3 — The Evidence (Data Science Validation)</h3>
+            <div class="wp-prose">
+              <p style="font-size: 0.95rem; color: var(--on-surface-variant); max-width: 600px; margin-bottom: 1.5rem;">The empirical core: 1,000 fractal realizations analyzed by 12 independent algorithms across three methodological pipelines.</p>
+              <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                <li><a href="dashboard.html?topic=fractal_invariance&tab=geometric" style="color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Geometric structural invariance →</a></li>
+                <li><a href="dashboard.html?topic=fractal_invariance&tab=dynamic" style="color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Attractor states & dynamic patterns →</a></li>
+                <li><a href="dashboard.html?topic=fractal_invariance&tab=coherence" style="color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Information Identity verification →</a></li>
+              </ul>
+            </div>
         </div>
     </section>
 
     <div class="wp-divider"></div>
 
     <!-- ── Execution ── -->
-    <section class="wp-section" style="text-align: center;">
-        <div class="wp-section-label">Execution</div>
-        <h2 style="font-size: 2.2rem; margin-bottom: 3rem;">Ready for Exploration</h2>
-        
-        <div class="button-group">
-            <a href="https://colab.research.google.com" target="_blank" class="btn-icon btn-colab">
-                Open in Google Colab
-            </a>
-            <a href="https://kaggle.com" target="_blank" class="btn-icon btn-colab" style="background: transparent; color: var(--primary);">
-                Explore on Kaggle
-            </a>
+    <section class="wp-section" style="text-align: left;">
+      <div class="wp-section-label">Execution</div>
+      <h2 style="font-size: 2.2rem; margin-bottom: 2rem;">Getting Started</h2>
+      
+      <div class="wp-prose">
+        <p style="font-weight: 600; color: var(--on-surface); margin-bottom: 0.5rem; margin-top: 1.5rem;">Dependencies:</p>
+        <div style="background: var(--code-bg); color: var(--code-text); padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.78rem; border-radius: 2px;">
+<pre style="margin: 0;">pip install numpy matplotlib pennylane scikit-learn scipy opencv-python networkx</pre>
         </div>
+
+        <p style="font-weight: 600; color: var(--on-surface); margin-bottom: 0.5rem; margin-top: 1.5rem;">Generate the 2D Naturalist Fractal <span style="font-weight: 400; color: var(--outline);">(2000×2000, localized view)</span>:</p>
+        <div style="background: var(--code-bg); color: var(--code-text); padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.78rem; border-radius: 2px;">
+<pre style="margin: 0;">python naturalist_fractal/naturalist_fractal_2D.py</pre>
+        </div>
+
+        <p style="font-weight: 600; color: var(--on-surface); margin-bottom: 0.5rem; margin-top: 1.5rem;">Run the 3D Cosmological Isomorphism <span style="font-weight: 400; color: var(--outline);">(surface rendering)</span>:</p>
+        <div style="background: var(--code-bg); color: var(--code-text); padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.78rem; border-radius: 2px;">
+<pre style="margin: 0;">python naturalist_fractal/naturalist_fractal_3D.py</pre>
+        </div>
+
+        <p style="font-weight: 600; color: var(--on-surface); margin-bottom: 0.5rem; margin-top: 1.5rem;">Animate the 4D Fractal Evolution <span style="font-weight: 400; color: var(--outline);">(depth sweep, interactive)</span>:</p>
+        <div style="background: var(--code-bg); color: var(--code-text); padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.78rem; border-radius: 2px;">
+<pre style="margin: 0;">python naturalist_fractal/naturalist_fractal_4D.py</pre>
+        </div>
+
+        <p style="font-weight: 600; color: var(--on-surface); margin-bottom: 0.5rem; margin-top: 1.5rem;">Run the MetaQubit internal dynamics analyses <span style="font-weight: 400; color: var(--outline);">(from repo root)</span>:</p>
+        <div style="background: var(--code-bg); color: var(--code-text); padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.78rem; border-radius: 2px;">
+<pre style="margin: 0;">PYTHONPATH=naturalist_fractal python naturalist_fractal/2_MetaQubit_Dynamic_Homeostasis/3_Internal_Dynamics/HeatmapAnalysis.py
+PYTHONPATH=naturalist_fractal python naturalist_fractal/2_MetaQubit_Dynamic_Homeostasis/3_Internal_Dynamics/NoiseAnalysis.py</pre>
+        </div>
+
+        <p style="font-weight: 600; color: var(--on-surface); margin-bottom: 0.5rem; margin-top: 1.5rem;">Assemble the full theoretical manuscript:</p>
+        <div style="background: var(--code-bg); color: var(--code-text); padding: 1rem 1.5rem; font-family: var(--font-label); font-size: 0.78rem; border-radius: 2px;">
+<pre style="margin: 0;">python stochastic_universe/build_unified.py</pre>
+        </div>
+      </div>
+      
+      <div class="button-group" style="margin-top: 3rem; text-align: left;">
+        <a href="https://github.com/nikas97/Stochastic-Universe-Framework" target="_blank" class="btn-icon btn-colab" style="display: inline-flex; width: auto; padding: 0.8rem 2rem;">
+            Open in GitHub
+        </a>
+      </div>
     </section>
 
     <div class="wp-divider"></div>
@@ -139,14 +317,41 @@
         <div class="wp-section-label">Scientific Priority</div>
         <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Pre-Prints & Citation (DOIs)</h2>
         <div class="wp-prose" style="max-width: 100%;">
+            <p style="margin-bottom: 1rem;">To ensure scientific priority and provide stable citation targets, this research has been permanently archived as a series of pre-prints on Zenodo. Each component has been assigned a unique Digital Object Identifier (DOI).</p>
+            <p style="font-style: italic; color: var(--secondary); margin-bottom: 2rem;">If you use the MetaQubit architecture, the Naturalist Fractal equations, or the Stochastic Paradoxical Logic (SPL) in your research, please cite the respective DOIs:</p>
+            
             <ul style="list-style: none; padding: 0;">
                 <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
-                    <a href="#" style="color: var(--secondary); text-decoration: none; font-weight: 600;">The MetaQubit: A Self-Stabilizing Architecture</a>
-                    <span style="display: block; font-size: 0.8rem; color: var(--outline);">DOI: 10.5281/zenodo.19591114</span>
+                    <a href="https://doi.org/10.20944/preprints202502.1719.v1" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 From Chaos to Order: A Stochastic Approach to Self Organizing Systems</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.20944/PREPRINTS202502.1719.V1</span>
                 </li>
                 <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
-                    <a href="#" style="color: var(--secondary); text-decoration: none; font-weight: 600;">The Naturalist Fractal: A Computational Proof</a>
-                    <span style="display: block; font-size: 0.8rem; color: var(--outline);">DOI: 10.5281/zenodo.19591246</span>
+                    <a href="https://doi.org/10.20944/preprints202503.1177.v1" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 Stochastic Determinism in Physical Systems: A Unified Perspective on Quantum and Classical Stability</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.20944/PREPRINTS202503.1177.V1</span>
+                </li>
+                <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
+                    <a href="https://doi.org/10.20944/preprints202505.2246.v1" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 Emergence of Order in Biological Systems: A Stochastic Perspective</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.20944/PREPRINTS202505.2246.V1</span>
+                </li>
+                <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
+                    <a href="https://doi.org/10.20944/preprints202505.2286.v1" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 Randomness and Structure in Socio-Economic Systems</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.20944/PREPRINTS202505.2286.V1</span>
+                </li>
+                <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
+                    <a href="https://doi.org/10.20944/preprints202505.2126.v1" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 Stochastic Paradoxical Logic: A New Framework for Understanding Reality Through Paradox and Probability</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.20944/PREPRINTS202505.2126.V1</span>
+                </li>
+                <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
+                    <a href="https://doi.org/10.20944/preprints202506.0023.v1" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 Foundations for a Unified Stochastic Framework: Bridging Physics, Biology, and Socio-Economic Systems</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.20944/PREPRINTS202506.0023.V1</span>
+                </li>
+                <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
+                    <a href="https://doi.org/10.5281/zenodo.19591114" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 The MetaQubit: A Self-Stabilizing, Quantum-Inspired Architecture for Noise-Resilient Computation</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.5281/ZENODO.19591114</span>
+                </li>
+                <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-standard);">
+                    <a href="https://doi.org/10.5281/zenodo.19591246" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">🔗 The Naturalist Fractal: A Computational Proof of Stochastic Determinism and Structural Invariance in Complex Systems</a>
+                    <span style="display: block; font-size: 0.8rem; color: var(--outline); margin-top: 0.25rem; font-family: var(--font-label);">DOI: 10.5281/ZENODO.19591246</span>
                 </li>
             </ul>
         </div>
@@ -155,13 +360,16 @@
   </div>
 
   <!-- ── Quote Section ── -->
-  <section class="quote-section">
-    <p class="quote-text">
+  <section class="quote-section" style="background: var(--primary); padding: 6rem 4rem; text-align: center; margin-top: 4rem;">
+    <p class="quote-text" style="font-family: var(--font-headline); font-size: 1.8rem; color: #c9ecc4; font-style: italic; max-width: 800px; margin: 0 auto; line-height: 1.4;">
         "The journey that began with a question — why does order exist? — ends not with a philosophical argument but with a computational fact: order exists because stochastic systems cannot help but generate it."
     </p>
-    <div class="quote-author">Nikos Demopoulos</div>
+    <div class="quote-author" style="font-family: var(--font-label); font-size: 0.8rem; letter-spacing: 0.2em; color: rgba(174,207,169,0.75); text-transform: uppercase; margin-top: 2rem;">
+        — Nikos Demopoulos
+    </div>
   </section>
 
+  <!-- ── Footer ── -->
   <footer style="padding: 4rem 6rem; background: var(--surface-high); border-top: 1px solid var(--border-standard);">
     <div style="max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
       <div style="font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase;">

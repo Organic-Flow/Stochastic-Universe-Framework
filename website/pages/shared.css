@@ -1,0 +1,103 @@
+/* ── Shared wp-article styles (used by whitepaper + all bench pages) ── */
+
+.wp-article {
+  font-family: 'Inter', sans-serif;
+  color: #434841;
+}
+
+/* ── Header ── */
+.wp-header { margin-bottom: 3.5rem; }
+
+.wp-eyebrow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.wp-tag {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #456647;
+  border: 1px solid rgba(69,102,71,0.35);
+  padding: 0.25em 0.75em;
+}
+
+.wp-tag--pass {
+  color: #173318;
+  border-color: rgba(23,51,24,0.35);
+  background: rgba(23,51,24,0.06);
+}
+
+.wp-tag--fail {
+  color: #ba1a1a;
+  border-color: rgba(186,26,26,0.3);
+}
+
+.wp-title {
+  font-family: 'Newsreader', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #173318;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+}
+
+.wp-title em {
+  font-style: italic;
+  color: #456647;
+}
+
+.wp-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: #737970;
+  line-height: 1.75;
+  max-width: 580px;
+  margin: 0;
+}
+
+.wp-subtitle em { color: #173318; font-style: italic; }
+
+/* ── Divider ── */
+.wp-divider {
+  height: 1px;
+  background: rgba(195,200,190,0.35);
+  margin: 3rem 0;
+}
+
+/* ── Section ── */
+.wp-section { margin-bottom: 0.5rem; }
+
+.wp-section-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 0.75rem;
+}
+
+.wp-section-title {
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #173318;
+  margin-bottom: 1.75rem;
+  line-height: 1.15;
+}
+
+.wp-prose p {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: #434841;
+  margin-bottom: 1rem;
+  max-width: 680px;
+}
+
+.wp-prose p strong { color: #173318; }
+.wp-prose p em { color: #1b321f; }
