@@ -1,0 +1,148 @@
+/* ── OrganicFlow Design System — Shared Tokens ── */
+
+:root {
+  /* Surfaces */
+  --surface-lowest: #ffffff;
+  --surface: #fcf9f0;
+  --surface-low: #f6f3ea;
+  --surface-container: #f1eee5;
+  --surface-high: #ebe8df;
+  --surface-highest: #e5e2da;
+  --surface-dim: #dddad1;
+
+  /* Brand greens */
+  --primary: #173318;
+  --secondary: #456647;
+  --tertiary: #1b321f;
+  --primary-container: #2d4a2d;
+  --secondary-container: #c4e9c2;
+  --primary-fixed: #c9ecc4;
+  --muted-green: rgba(174,207,169,0.75);
+
+  /* Text */
+  --on-surface: #1c1c17;
+  --on-surface-variant: #434841;
+  --outline: #737970;
+  --outline-variant: #c3c8be;
+
+  /* Semantic */
+  --error: #ba1a1a;
+  --code-bg: #1c1c17;
+  --code-text: #c7ecc5;
+
+  /* Borders */
+  --border-standard: rgba(195,200,190,0.3);
+  --border-strong: rgba(195,200,190,0.35);
+
+  /* Fonts */
+  --font-headline: 'Newsreader', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Space Grotesk', monospace;
+}
+
+/* ── Base Reset ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--on-surface-variant);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.8;
+}
+
+/* ── Global Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+  font-family: var(--font-headline);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+em {
+  font-family: var(--font-headline);
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.wp-prose {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.wp-prose p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+  margin-bottom: 1.5rem;
+}
+
+.wp-prose strong {
+  color: var(--primary);
+}
+
+.wp-section-label {
+  font-family: var(--font-label);
+  font-size: 0.58rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.wp-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.wp-subtitle {
+  font-size: 1.2rem;
+  color: var(--outline);
+  max-width: 650px;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* ── Layout Components ── */
+.wp-divider {
+  height: 1px;
+  background: var(--border-strong);
+  margin: 4rem 0;
+}
+
+.wp-article-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 6rem 8rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(69, 102, 71, 0.45);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(23, 51, 24, 0.65);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(195, 200, 190, 0.15);
+}

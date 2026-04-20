@@ -1,0 +1,1069 @@
+<article class="wp-article">
+
+  <!-- ── Header ── -->
+  <header class="wp-header">
+    <div class="wp-eyebrow">
+      <span class="wp-tag">Whitepaper</span>
+      <span class="wp-tag">Version 1.2</span>
+      <span class="wp-tag">TRL 6</span>
+      <span class="wp-tag">Autonomous Cloud Runtime</span>
+    </div>
+    <h1 class="wp-title">MorphoCloud: An Autonomous Execution Layer<br><em>for Adaptive, Resilient, Self-Organising Infrastructure</em></h1>
+    <p class="wp-subtitle">Modern cloud infrastructure is complex, brittle, and expensive to operate. MorphoCloud replaces manual orchestration with a biology-inspired runtime that scales, heals, and optimises itself — without configuration.</p>
+  </header>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Abstract ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Abstract</div>
+
+    <div class="wp-three-col">
+
+      <div class="wp-abstract-card">
+        <span class="wp-abstract-num">01</span>
+        <h3 class="wp-abstract-title">The Problem</h3>
+        <p class="wp-abstract-body">Running a modern distributed system requires a complex stack: Kubernetes, Prometheus, Redis, service meshes, monitoring pipelines. Developers spend <strong>40% of their time</strong> writing YAML and configuring infrastructure instead of building product. <strong>Centralised orchestrators</strong> create single points of failure. Servers sit idle to handle traffic spikes that may never come.</p>
+      </div>
+
+      <div class="wp-abstract-card">
+        <span class="wp-abstract-num">02</span>
+        <h3 class="wp-abstract-title">The Solution</h3>
+        <p class="wp-abstract-body">MorphoCloud is an <strong>autonomous runtime layer</strong> that sits between your application code and your cloud infrastructure. It converts static code into a self-organising network of <strong>MorphoCells</strong> — execution units that scale under pressure, self-heal after failure, and optimise resource usage in real time. No configuration required.</p>
+      </div>
+
+      <div class="wp-abstract-card wp-abstract-card--highlight">
+        <span class="wp-abstract-num">03</span>
+        <h3 class="wp-abstract-title">The Results</h3>
+        <ul class="wp-abstract-results">
+          <li><strong>Milliseconds</strong> mean time to detect & isolate failures (vs. 20–60 min)</li>
+          <li><strong>Zero manual intervention</strong> during Black Friday-scale traffic spikes</li>
+          <li><strong>€425k–€1.2M/year</strong> in estimated savings for a 20–100 engineer team</li>
+          <li><strong>TRL 6</strong> — system prototype demonstrated in relevant environment</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 1 ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 01</div>
+    <h2 class="wp-section-title">The Problem with Modern Cloud Infrastructure</h2>
+
+    <div class="wp-prose">
+      <p>Over the last two decades, cloud computing evolved from physical servers to virtual machines, then to containers and Kubernetes, and finally to serverless architectures. Despite this evolution, the fundamental model remains <strong>mechanical and rigid</strong>: code requires central orchestration, complex management, and manual configuration to survive under pressure.</p>
+    </div>
+
+    <div class="wp-problems-grid">
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">01</div>
+        <div>
+          <h4 class="wp-problem-title">The DevOps Hell</h4>
+          <p class="wp-problem-body">Engineers spend 40% of their time writing YAML, configuring load balancers, and managing network policies — instead of delivering business value. The operational complexity of keeping a production system healthy has become a full-time job in itself.</p>
+        </div>
+      </div>
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">02</div>
+        <div>
+          <h4 class="wp-problem-title">Fragile Centralised Architecture</h4>
+          <p class="wp-problem-body">If the central orchestrator fails, the entire system collapses. This is not a hypothetical risk — it is the root cause of global outages at Meta, AWS, and CrowdStrike. Single points of failure are architectural choices, not accidents.</p>
+        </div>
+      </div>
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">03</div>
+        <div>
+          <h4 class="wp-problem-title">Chronic Resource Waste</h4>
+          <p class="wp-problem-body">Companies maintain servers in idle state to be ready for traffic spikes that are rare and unpredictable. Static provisioning is a structural inefficiency — a cost that scales with ambition, not with actual usage.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <blockquote class="wp-blockquote">
+      The problem is not that engineers are unskilled. The problem is that the architecture demands continuous human intervention to function correctly. <em>MorphoCloud removes that dependency entirely.</em>
+    </blockquote>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 2 ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 02</div>
+    <h2 class="wp-section-title">The Solution — Where MorphoCloud Fits in the Stack</h2>
+
+    <div class="wp-prose">
+      <p>MorphoCloud is <strong>not</strong> a database, a message broker, or an orchestration system. It is a <strong>decision layer</strong> — a runtime that coordinates and optimises how existing infrastructure components are used. It runs <em>on top of</em> your current cloud stack without replacing it.</p>
+    </div>
+
+    <div class="wp-highlight-box" style="margin-bottom: 2rem;">
+      <div class="wp-highlight-label">Stack Position</div>
+      <h3 class="wp-highlight-title" style="font-size:1.1rem; margin-bottom:1.25rem;">MorphoCloud augments your infrastructure — it does not replace it</h3>
+      <div style="font-family:'Space Grotesk',monospace; font-size:0.78rem; line-height:1.9; color:#434841; background:rgba(23,51,24,0.04); padding:1.25rem 1.5rem; border:1px solid rgba(195,200,190,0.3);">
+        <div style="color:#173318;">┌─────────────────────────────────────────┐</div>
+        <div style="color:#434841;">│         Your Application Code           │</div>
+        <div style="color:#173318;">├─────────────────────────────────────────┤</div>
+        <div style="color:#456647; font-weight:600;">│       MorphoCloud Runtime Layer         │  ← here</div>
+        <div style="color:#456647; opacity:0.7;">│  routing · scaling · healing · cost     │</div>
+        <div style="color:#173318;">├─────────────────────────────────────────┤</div>
+        <div style="color:#434841;">│  Kubernetes / Container Runtime / OS    │</div>
+        <div style="color:#173318;">├─────────────────────────────────────────┤</div>
+        <div style="color:#434841;">│       AWS · GCP · Azure · On-premise    │</div>
+        <div style="color:#173318;">└─────────────────────────────────────────┘</div>
+      </div>
+    </div>
+
+    <div class="wp-concepts-grid">
+
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">MorphoCell</h3>
+        <p class="wp-concept-role">The execution unit</p>
+        <p class="wp-concept-body">Each MorphoCell is defined by what it <strong>Needs</strong> and what it <strong>Produces</strong>. No IP addresses. No hardcoded dependencies. Cells are autonomous agents, not static service definitions.</p>
+      </div>
+
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">MorphoField</h3>
+        <p class="wp-concept-role">The communication network</p>
+        <p class="wp-concept-body">An incoming Stimulus activates the cells that need it — automatically, without a central orchestrator. The field is the self-organising network where cells live, compete, and cooperate.</p>
+      </div>
+
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">MorphoCompiler</h3>
+        <p class="wp-concept-role">The migration bridge</p>
+        <p class="wp-concept-body">Converts legacy Python code into MorphoCells via <strong>AST parsing</strong>. No rewrite. No new language. Stateless Python functions become part of the organic network in minutes, not months.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 3 ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 03</div>
+    <h2 class="wp-section-title">The Autonomous Decision Engine — Eight Biological Protocols</h2>
+
+    <div class="wp-prose">
+      <p>The real moat of MorphoCloud is not any single feature — it is the <strong>Autonomous Decision Engine</strong>: eight biology-inspired protocols that run simultaneously and autonomously, without a central scheduler and without human intervention. Each protocol has a proven implementation in code.</p>
+    </div>
+
+    <div class="wp-benchmark-categories">
+
+      <div class="wp-bench-category">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Scaling</span>
+          <h3 class="wp-bench-cat-title">Mitosis — Adaptive Auto-Scaling</h3>
+        </div>
+        <p class="wp-bench-cat-summary">When <code class="inline-code">load_score > 0.8</code>, a cell automatically spawns a clone. When load recedes, Apoptosis reclaims idle clones. No HPA configuration. No Prometheus metrics pipeline. No Kubernetes KEDA setup. <strong>Scale-to-zero is native.</strong></p>
+      </div>
+
+      <div class="wp-bench-category">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Resilience</span>
+          <h3 class="wp-bench-cat-title">Phoenix Protocol — Automated Fault Recovery</h3>
+        </div>
+        <p class="wp-bench-cat-summary">When <code class="inline-code">reliability < 0.2</code>, the failing cell is isolated and a fresh clone is spawned in milliseconds. No <code class="inline-code">CrashLoopBackOff</code>. No manual restart. No PagerDuty alert at 3 AM. The system repairs itself before users notice.</p>
+      </div>
+
+      <div class="wp-bench-category">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Fault Attribution</span>
+          <h3 class="wp-bench-cat-title">Reputation System — Distributed Blame Propagation</h3>
+        </div>
+        <p class="wp-bench-cat-summary">When a downstream cell receives bad data, it traces the fault back to the source. The problematic cell is quarantined — <strong>MTTD: milliseconds</strong> versus 20–60 minutes with Jaeger, manual RCA, and feature flags. The difference between a minor incident and a major outage.</p>
+      </div>
+
+      <div class="wp-bench-category">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Cost Control</span>
+          <h3 class="wp-bench-cat-title">ATP Budget — Per-Request Compute Quota</h3>
+        </div>
+        <p class="wp-bench-cat-summary">Every cell execution has a hard compute limit. Infinite loops are terminated at the OS level — no Lambda timeouts to configure, no Kubernetes resource quotas to maintain. Budget Decay applies idle pressure: dormant cells lose competitive advantage and are reclaimed naturally.</p>
+      </div>
+
+      <div class="wp-bench-category wp-bench-category--accent">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Traffic Optimisation</span>
+          <h3 class="wp-bench-cat-title">Economic Organism — Implicit A/B Testing</h3>
+        </div>
+        <p class="wp-bench-cat-summary">Multiple versions of a cell compete for traffic. The version that performs better wins more requests — automatically. No feature flag framework. No weighted load balancer rules. No manual metrics analysis. Convergence happens in a handful of transactions, not days.</p>
+      </div>
+
+      <div class="wp-bench-category">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Overload Protection</span>
+          <h3 class="wp-bench-cat-title">Backpressure — Cluster-Level Overload Rejection</h3>
+        </div>
+        <p class="wp-bench-cat-summary">When the cluster's remaining budget drops below 10%, new incoming requests are rejected before compute is wasted on them. Smart Rerouting simultaneously searches for an alternative path — relay nodes — so the request can still be served without manual configuration of circuit breakers or API gateway rules.</p>
+      </div>
+
+    </div>
+
+    <div class="wp-highlight-box" style="margin-top:2rem;">
+      <div class="wp-highlight-label">Concurrency Model</div>
+      <h3 class="wp-highlight-title">All eight protocols run simultaneously</h3>
+      <p class="wp-highlight-body">These are not sequential rules. Mitosis, Phoenix, Apoptosis, Reputation, ATP Budget, Economic Organism, Budget Decay, and Backpressure all execute in parallel, in real time, reacting to the live state of the cluster. The result is a system that behaves like a living organism — not like a set of cron jobs.</p>
+      <div class="wp-highlight-stats">
+        <div class="wp-stat">
+          <span class="wp-stat-value">8</span>
+          <span class="wp-stat-label">Concurrent Protocols</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">0</span>
+          <span class="wp-stat-label">Manual Interventions</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">&lt;1ms</span>
+          <span class="wp-stat-label">Fault Detection</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">TRL 6</span>
+          <span class="wp-stat-label">Readiness Level</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 4 — Use Case ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 04</div>
+    <h2 class="wp-section-title">Worked Example — E-Commerce Checkout Under Pressure</h2>
+
+    <div class="wp-prose">
+      <p>The best way to understand MorphoCloud is to watch it handle a scenario that would require coordinated human intervention in a classical system: Black Friday traffic combined with a payment provider outage and a bad deployment — all at the same time.</p>
+    </div>
+
+    <div class="wp-problems-grid">
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">01</div>
+        <div>
+          <h4 class="wp-problem-title">Traffic spike detected — 10× normal load</h4>
+          <p class="wp-problem-body"><strong>Mitosis</strong> activates: payment cells clone themselves automatically. No HPA config, no ops engineer on call, no 60–90 second lag from metrics pipeline to scaling decision. The system grows to meet the load in seconds.</p>
+        </div>
+      </div>
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">02</div>
+        <div>
+          <h4 class="wp-problem-title">Stripe API fails mid-checkout</h4>
+          <p class="wp-problem-body"><strong>Smart Rerouting</strong> attempts a fallback provider. Simultaneously, <strong>PersistentCell</strong> serves the last-known valid pricing with an SOS flag — checkout continues without crashing. Users see no error. No circuit breaker was pre-configured; the system adapted in real time.</p>
+        </div>
+      </div>
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">03</div>
+        <div>
+          <h4 class="wp-problem-title">New deployment with buggy discount logic</h4>
+          <p class="wp-problem-body"><strong>Reputation System</strong>: downstream cells identify the bad source and propagate blame upward. The faulty cell is quarantined before it affects users. <strong>MTTD: milliseconds</strong> — versus 20–60 minutes with distributed tracing and manual root cause analysis.</p>
+        </div>
+      </div>
+
+      <div class="wp-problem-item" style="border-bottom:none;">
+        <div class="wp-problem-number">04</div>
+        <div>
+          <h4 class="wp-problem-title">Traffic recedes — resources reclaimed</h4>
+          <p class="wp-problem-body"><strong>Apoptosis</strong> terminates the excess clones as load drops. You pay only for what you used. No manual scale-down, no forgotten idle nodes accumulating cost at the end of the month.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wp-vision-box">
+      <div class="wp-vision-label">Outcome</div>
+      <p class="wp-vision-text">Zero manual intervention. No on-call alert. <strong>Checkout remained available throughout the entire event.</strong> A classical system running the same scenario would have required a coordinated response from at least three engineers across infrastructure, backend, and reliability teams.</p>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 5 — Native Capabilities ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 05</div>
+    <h2 class="wp-section-title">Native Capabilities — Built In, Not Bolted On</h2>
+
+    <div class="wp-prose">
+      <p>Three enterprise-grade capabilities ship as part of the MorphoCloud engine — not as integrations, not as optional add-ons.</p>
+    </div>
+
+    <div class="wp-two-col" style="margin-top:1.5rem;">
+      <div>
+        <h3 class="wp-subsection-title">Native Distributed Tracing</h3>
+        <div class="wp-advantages-list">
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Zero-config trace IDs</strong>
+              <p>Every cascade automatically generates a <code class="inline-code">trace_id</code> (format: <code class="inline-code">T-{uuid}</code>). The ID propagates through the entire network — embedded in signal payloads and as the HTTP header <code class="inline-code">X-Trace-ID</code> on cross-node calls. Full execution path reconstructed across all nodes. No Datadog. No Jaeger. No OpenTelemetry setup.</p>
+            </div>
+          </div>
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Real-Time WebSocket Event Stream</strong>
+              <p>The engine emits live events: <code class="inline-code">cell_activated</code>, <code class="inline-code">cell_spawned</code>, <code class="inline-code">cell_death</code>, <code class="inline-code">cell_crashed</code>, <code class="inline-code">cluster_deployed</code>. A visualisation dashboard can be wired in without any changes to the engine itself.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="wp-subsection-title">OS-Level Hard-Kill Sandboxing</h3>
+        <div class="wp-limitations-list">
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Process Isolation</h4>
+            <p class="wp-limitation-body">Each cell's business logic runs in its own <code class="inline-code">multiprocessing.Process</code>. If it hangs or loops infinitely, the engine terminates it at the OS level and automatically penalises its reliability score. The host is protected regardless of what the code inside the cell does.</p>
+          </div>
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Strict I/O Boundary</h4>
+            <p class="wp-limitation-body">Business logic is fully isolated from the network layer. No egress policies to configure, no custom network rules, no Lambda-style timeouts to tune per function. The boundary is structural, not configurable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 6 — Cost Analysis ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 06</div>
+    <h2 class="wp-section-title">Estimated Cost Displacement</h2>
+
+    <div class="wp-prose">
+      <p>The following estimates are based on internal benchmarks for typical 20–100 engineer teams running production cloud workloads on AWS, GCP, or Azure. Numbers are indicative and workload-dependent. Incident savings are not included.</p>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="md-table" style="margin-top:1.5rem;">
+        <thead>
+          <tr>
+            <th>What MorphoCloud does autonomously</th>
+            <th>Classical equivalent</th>
+            <th style="text-align:right;">Estimated saving</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Phoenix Protocol</strong> — reliability &lt; 20% → clone, zero downtime</td>
+            <td>Kubernetes probes → CrashLoopBackOff → manual restart. MTTR: 2–5 min</td>
+            <td style="text-align:right;font-family:'Space Grotesk',monospace;">~€15k/mo on-call</td>
+          </tr>
+          <tr>
+            <td><strong>Mitosis</strong> — load_score &gt; 0.8 → clone. Scale-in automatic</td>
+            <td>HPA + Metrics Server + Prometheus + KEDA. Lag: 60–90s</td>
+            <td style="text-align:right;font-family:'Space Grotesk',monospace;">€2–8k/mo over-prov.</td>
+          </tr>
+          <tr>
+            <td><strong>Smart Rerouting</strong> — blocked direct route → relay node with trace_id</td>
+            <td>Istio / Linkerd: Virtual Services, DestinationRules, dedicated SRE team</td>
+            <td style="text-align:right;font-family:'Space Grotesk',monospace;">€30–80k/yr</td>
+          </tr>
+          <tr>
+            <td><strong>Reputation + Blame Propagation</strong> — bad data → quarantine. MTTD: ms</td>
+            <td>Jaeger + manual RCA + LaunchDarkly + rollback. MTTD: 20–60 min</td>
+            <td style="text-align:right;font-family:'Space Grotesk',monospace;">€50–200k per incident</td>
+          </tr>
+          <tr>
+            <td><strong>Economic Organism</strong> — best version wins traffic. Convergence: fast</td>
+            <td>A/B framework + weighted balancing + manual shift. Convergence: days</td>
+            <td style="text-align:right;font-family:'Space Grotesk',monospace;">€8–20k/yr tooling</td>
+          </tr>
+          <tr>
+            <td><strong>MorphoCompiler</strong> — legacy Python → MorphoCells automatically</td>
+            <td>Rewrite to microservices. 6–18 months of engineering time</td>
+            <td style="text-align:right;font-family:'Space Grotesk',monospace;">€100–300k migration</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="wp-highlight-box" style="margin-top:2rem;">
+      <div class="wp-highlight-label">Summary Estimate — 20–100 Engineer Team</div>
+      <h3 class="wp-highlight-title">€425k – €1.2M / year in displaced cost</h3>
+      <p class="wp-highlight-body">Classical infrastructure resilience, fault isolation, traffic optimisation, and resource management combined. MorphoCloud delivers these capabilities as a single, integrated runtime layer. The estimated total does not include incident costs avoided.</p>
+      <div class="wp-highlight-stats">
+        <div class="wp-stat">
+          <span class="wp-stat-value">€425k</span>
+          <span class="wp-stat-label">Conservative estimate</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">€1.2M</span>
+          <span class="wp-stat-label">High estimate</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">↓ ~0</span>
+          <span class="wp-stat-label">Migration cost (MorphoCompiler)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 7 — Honest Assessment ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 07</div>
+    <h2 class="wp-section-title">Architectural Trade-offs — An Honest Assessment</h2>
+
+    <div class="wp-prose">
+      <p>MorphoCloud is a fully functional system at TRL 6. To compete with cloud-native runtimes at Tier-1 scale, we acknowledge the following architectural trade-offs — each with a defined resolution path in the R&D roadmap.</p>
+    </div>
+
+    <div class="wp-two-col" style="margin-top:1.25rem;">
+      <div>
+        <h3 class="wp-subsection-title">Current Limitations</h3>
+        <div class="wp-limitations-list">
+
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Multiprocessing Overhead</h4>
+            <p class="wp-limitation-body">Current sandboxing uses OS-level process isolation. Creating a new isolated process costs 10–30ms and several MB of RAM. This delivers excellent protection but limits Mitosis and Phoenix speed at hyper-scale.</p>
+          </div>
+
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Routing Latency</h4>
+            <p class="wp-limitation-body">Dynamic routing decisions (based on reputation, budget, and load) add ~5–10ms per hop, versus ~0.5ms for a hardcoded gRPC call. We accept this as the "insurance premium" for autonomy — 10ms saved in routing avoids hours of downtime from cascading failures.</p>
+          </div>
+
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Centralised State Registry</h4>
+            <p class="wp-limitation-body">Cluster topology is currently maintained in a central registry. In extreme multi-datacenter scenarios, this can become a single point of failure. Gossip protocols and etcd/TiKV integration are on the roadmap.</p>
+          </div>
+
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Warm-up Curve</h4>
+            <p class="wp-limitation-body">The Economic Organism and Reputation System require a number of real transactions to converge. For workloads below ~10 requests/day, static routing may be more efficient. MorphoCloud excels in continuous, high-throughput environments.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <h3 class="wp-subsection-title">Post-Funding Roadmap</h3>
+        <div class="wp-advantages-list">
+
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>WebAssembly Sandboxing</strong>
+              <p>Replace OS process isolation with Wasmtime. Cold starts under 1ms, kilobyte-level memory footprint, Zero-Trust isolation between cells. Mitosis and Phoenix become truly instantaneous.</p>
+            </div>
+          </div>
+
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Gossip & eBPF Networking</strong>
+              <p>Communication via NATS and Gossip Protocols at kernel level (eBPF). Enables recovery after total data centre loss — the cluster's organic memory survives.</p>
+            </div>
+          </div>
+
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Native Kubernetes Operator</strong>
+              <p>A Kubernetes CRD Operator allowing MorphoCloud to manage Kubernetes Pods as MorphoCells. Bridges legacy stacks with the organic runtime — no big-bang migration required.</p>
+            </div>
+          </div>
+
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Security & Multi-Tenancy</strong>
+              <p>RBAC and API key management for multi-tenant SaaS deployment. Required before general availability to enterprise customers.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 8 — TRL ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 08</div>
+    <h2 class="wp-section-title">Technology Readiness Level — What Is and Isn't Ready</h2>
+
+    <div class="wp-prose">
+      <p>Unlike OrganicFlow's neural learning component (TRL 5, research stage), MorphoCloud is at <strong>TRL 6: System Prototype Demonstrated in Relevant Environment</strong>. It is ready for pilot deployments in controlled enterprise environments.</p>
+    </div>
+
+    <div class="wp-two-col" style="margin-top:1.5rem;">
+      <div>
+        <h3 class="wp-subsection-title">What Is Ready — The Current Product</h3>
+        <div class="wp-advantages-list">
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Autonomous Engine</strong>
+              <p>All 8 biological protocols run concurrently and autonomously. Validated by an extensive suite of Basic and Advanced experiments.</p>
+            </div>
+          </div>
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Distributed Architecture</strong>
+              <p>Cross-node HTTP communication, dynamic proxying, and Split-Brain avoidance under network partitions — demonstrated in production-like conditions.</p>
+            </div>
+          </div>
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Developer Tooling</strong>
+              <p>Full REST/WebSocket API, App Platform abstraction, MorphoCompiler for legacy code migration. Deployment artifacts generated automatically.</p>
+            </div>
+          </div>
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Native Observability</strong>
+              <p>Built-in distributed tracing, real-time WebSocket event stream, and health metrics — zero external tooling required.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="wp-subsection-title">What Is Not Ready — Next Steps</h3>
+        <div class="wp-limitations-list">
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Security & Auth</h4>
+            <p class="wp-limitation-body">No RBAC or API key management yet. Required for multi-tenant SaaS deployment. This is the primary blocker for general availability.</p>
+          </div>
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">WebAssembly Runtime</h4>
+            <p class="wp-limitation-body">Transition from OS process isolation to WebAssembly is essential for hyper-scale throughput. Planned as the first major post-funding engineering investment.</p>
+          </div>
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Native K8s Operator</h4>
+            <p class="wp-limitation-body">Required for enterprises locked into Kubernetes. A CRD Operator that allows MorphoCloud to manage Pods as MorphoCells — the migration path for the existing installed base.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 9 — Conclusion ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 09</div>
+    <h2 class="wp-section-title">Conclusion</h2>
+    <div class="wp-conclusion">
+      <p>The infrastructure problem in modern software is not a talent problem. Engineers are skilled. The problem is architectural: the tools they use require continuous human intervention to function correctly under pressure.</p>
+      <p>MorphoCloud removes that dependency. Eight biology-inspired protocols replace the manual coordination work that currently consumes a significant fraction of every engineering organisation's capacity. The system scales, heals, optimises, and makes decisions — on its own, in real time, without configuration.</p>
+      <p>This is not a research paper. It is a working runtime at TRL 6, validated by executable experiments, ready for pilot deployment. Funding will be directed to platform engineering, security audits, and the WebAssembly transition — bringing the product to general availability in the B2B enterprise market.</p>
+      <p><em>MorphoCloud is the infrastructure layer that operates the way living systems do: not by following rules, but by adapting to reality.</em></p>
+    </div>
+  </section>
+
+</article>
+
+<style>
+/* Inherit all wp-* styles from organicflow_whitepaper.html */
+/* Only add overrides if needed */
+
+.wp-article {
+  font-family: 'Inter', sans-serif;
+  color: #434841;
+}
+
+.wp-header { margin-bottom: 3.5rem; }
+
+.wp-eyebrow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.wp-tag {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #456647;
+  border: 1px solid rgba(69,102,71,0.35);
+  padding: 0.25em 0.75em;
+}
+
+.wp-title {
+  font-family: 'Newsreader', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #173318;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+}
+
+.wp-title em { color: #456647; font-style: italic; }
+
+.wp-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: #737970;
+  line-height: 1.75;
+  max-width: 580px;
+}
+
+.wp-divider {
+  height: 1px;
+  background: rgba(195,200,190,0.35);
+  margin: 3rem 0;
+}
+
+.wp-section { margin-bottom: 0.5rem; }
+
+.wp-section-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 0.75rem;
+}
+
+.wp-section-title {
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #173318;
+  margin-bottom: 1.75rem;
+  line-height: 1.15;
+}
+
+.wp-prose p {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: #434841;
+  margin-bottom: 1rem;
+  max-width: 680px;
+}
+
+.wp-three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: rgba(195,200,190,0.3);
+  margin-top: 1.5rem;
+}
+
+.wp-abstract-card {
+  background: #f6f3ea;
+  padding: 2rem;
+}
+
+.wp-abstract-card--highlight {
+  background: #173318;
+  padding: 2rem;
+}
+
+.wp-abstract-num {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.28em;
+  color: #456647;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.wp-abstract-card--highlight .wp-abstract-num { color: rgba(174,207,169,0.5); }
+
+.wp-abstract-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #173318;
+  margin-bottom: 0.85rem;
+  line-height: 1.2;
+}
+
+.wp-abstract-card--highlight .wp-abstract-title { color: #c9ecc4; }
+
+.wp-abstract-body {
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: #434841;
+}
+
+.wp-abstract-card--highlight .wp-abstract-body { color: rgba(174,207,169,0.75); }
+.wp-abstract-card--highlight .wp-abstract-body strong { color: #c9ecc4; }
+
+.wp-abstract-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: rgba(174,207,169,0.75);
+}
+
+.wp-abstract-results li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(174,207,169,0.12);
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.wp-abstract-results li::before { content: '→'; opacity: 0.45; flex-shrink: 0; }
+.wp-abstract-results li strong { color: #c9ecc4; font-size: 1.05em; }
+
+.wp-problems-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(195,200,190,0.3);
+}
+
+.wp-problem-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(195,200,190,0.2);
+  align-items: flex-start;
+}
+
+.wp-problem-item:last-child { border-bottom: none; }
+
+.wp-problem-number {
+  font-family: 'Newsreader', serif;
+  font-size: 2.4rem;
+  color: rgba(23,51,24,0.1);
+  font-weight: 400;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 3rem;
+  text-align: right;
+  padding-top: 0.1rem;
+}
+
+.wp-problem-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #173318;
+  margin-bottom: 0.5rem;
+}
+
+.wp-problem-body {
+  font-size: 0.86rem;
+  line-height: 1.75;
+  color: #434841;
+  margin: 0;
+}
+
+.wp-blockquote {
+  border-left: 2px solid #173318;
+  padding: 1.25rem 1.75rem;
+  margin: 2.5rem 0 0;
+  font-family: 'Newsreader', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #173318;
+  line-height: 1.7;
+  background: rgba(23,51,24,0.03);
+}
+
+.wp-blockquote em { color: #456647; }
+
+.wp-concepts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.wp-concept-card {
+  background: #f6f3ea;
+  padding: 1.75rem;
+  border-top: 2px solid rgba(23,51,24,0.2);
+}
+
+.wp-concept-name {
+  font-family: 'Newsreader', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #173318;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.wp-concept-role {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 0.75rem;
+}
+
+.wp-concept-body {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #434841;
+  margin: 0;
+}
+
+.wp-concept-body strong { color: #173318; }
+
+.wp-highlight-box {
+  background: #ebe8df;
+  padding: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.wp-highlight-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 0.75rem;
+}
+
+.wp-highlight-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #173318;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.wp-highlight-body {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #434841;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.wp-highlight-body strong { color: #173318; }
+
+.wp-highlight-stats {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.wp-stat { display: flex; flex-direction: column; gap: 0.25rem; }
+
+.wp-stat-value {
+  font-family: 'Newsreader', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #173318;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.wp-stat-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #737970;
+}
+
+.wp-benchmark-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: rgba(195,200,190,0.3);
+  margin-top: 1.5rem;
+}
+
+.wp-bench-category {
+  background: #fcf9f0;
+  padding: 1.75rem 2rem;
+}
+
+.wp-bench-category--accent {
+  background: #f6f3ea;
+}
+
+.wp-bench-cat-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.wp-bench-cat-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #456647;
+  flex-shrink: 0;
+}
+
+.wp-bench-cat-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #173318;
+  line-height: 1.2;
+}
+
+.wp-bench-cat-summary {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: #434841;
+  margin: 0;
+  max-width: 700px;
+}
+
+.wp-bench-cat-summary strong { color: #173318; }
+
+.wp-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.wp-subsection-title {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 1.25rem;
+}
+
+.wp-advantages-list { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.wp-advantage-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #434841;
+}
+
+.wp-advantage-icon {
+  color: #456647;
+  font-size: 0.5rem;
+  margin-top: 0.45rem;
+  flex-shrink: 0;
+}
+
+.wp-advantage-item strong { color: #173318; display: block; margin-bottom: 0.1rem; }
+.wp-advantage-item p { margin: 0; }
+
+.wp-limitations-list { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.wp-limitation-item {
+  padding: 1.25rem;
+  background: #f6f3ea;
+  border-left: 2px solid rgba(23,51,24,0.15);
+}
+
+.wp-limitation-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #173318;
+  margin-bottom: 0.4rem;
+}
+
+.wp-limitation-body {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #434841;
+  margin: 0;
+}
+
+.wp-vision-box {
+  background: #173318;
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.wp-vision-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(174,207,169,0.45);
+  margin-bottom: 1rem;
+}
+
+.wp-vision-text {
+  font-family: 'Newsreader', serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.85;
+  color: rgba(174,207,169,0.85);
+  margin: 0;
+}
+
+.wp-vision-text strong { color: #c9ecc4; font-style: normal; }
+
+.wp-conclusion { max-width: 680px; }
+
+.wp-conclusion p {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: #434841;
+  margin-bottom: 1rem;
+}
+
+.wp-conclusion em { color: #173318; font-style: italic; }
+
+.table-wrapper { overflow-x: auto; margin: 1.5rem 0; }
+
+.md-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+}
+
+.md-table th {
+  background: #ebe8df;
+  padding: 0.7rem 1rem;
+  text-align: left;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #434841;
+  font-weight: 600;
+}
+
+.md-table td {
+  padding: 0.65rem 1rem;
+  color: #434841;
+  border-bottom: 1px solid rgba(195,200,190,0.2);
+  vertical-align: top;
+}
+
+.md-table tr:hover td { background: rgba(241,238,229,0.6); }
+.md-table td strong { color: #173318; }
+
+.inline-code {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.78em;
+  background: rgba(23,51,24,0.06);
+  color: #1b321f;
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+</style>

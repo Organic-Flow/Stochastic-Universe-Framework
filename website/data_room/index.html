@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Room | Stochastic Universe Framework</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- ── Top Navigation ── -->
+  <nav class="top-nav">
+    <a href="../index.html" class="brand-link">
+      <span style="font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; font-style: normal; opacity: 0.6; margin-right: 0.5rem;">HOME /</span>
+      Stochastic Universe
+    </a>
+    
+    <div style="font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.1em; color: var(--outline); text-transform: uppercase;">
+      Research Data Room v1.0
+    </div>
+  </nav>
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar">
+    <p class="sidebar-label">Research Pillars</p>
+    <nav id="sidebar-nav"></nav>
+    
+    <!-- Sidebar Decoration -->
+    <div style="margin-top: auto; padding: 2rem; opacity: 0.3;">
+       <svg width="100%" height="80" viewBox="0 0 100 40">
+         <circle cx="20" cy="20" r="2" fill="var(--primary)" />
+         <circle cx="50" cy="10" r="3" fill="var(--primary)" />
+         <circle cx="80" cy="25" r="1.5" fill="var(--primary)" />
+         <line x1="20" y1="20" x2="50" y2="10" stroke="var(--primary)" stroke-width="0.5" />
+         <line x1="50" y1="10" x2="80" y2="25" stroke="var(--primary)" stroke-width="0.5" />
+       </svg>
+    </div>
+  </aside>
+
+  <!-- ── Main Area ── -->
+  <main class="main-area">
+    <!-- Tab Bar -->
+    <div class="tab-bar-wrapper">
+      <div id="tab-bar"></div>
+    </div>
+
+    <!-- Content Body -->
+    <div id="content-body">
+      <div class="loading-pulse">Initializing Data Room...</div>
+    </div>
+  </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

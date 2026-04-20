@@ -1,0 +1,48 @@
+<header style="margin-bottom: 3rem;">
+  <div style="font-family: var(--font-label); font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--secondary); margin-bottom: 1rem;">Validation</div>
+  <h1 style="font-size: 2.8rem; margin-bottom: 1.5rem;">MetaQubit Benchmarks</h1>
+  <p style="font-size: 1.1rem; color: var(--outline); max-width: 600px;">Performance comparison of the MetaQubit architecture vs. standard state-vector simulators across 13 independent benchmarks.</p>
+</header>
+
+<div style="margin-top: 2rem; border: 1px solid var(--border-standard); overflow: hidden;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+    <thead>
+      <tr style="background: var(--surface-high); border-bottom: 1px solid var(--border-standard);">
+        <th style="padding: 1rem; text-align: left; font-family: var(--font-label); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;">Property</th>
+        <th style="padding: 1rem; text-align: left; font-family: var(--font-label); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;">MetaQubit</th>
+        <th style="padding: 1rem; text-align: left; font-family: var(--font-label); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;">Standard Simulator</th>
+        <th style="padding: 1rem; text-align: left; font-family: var(--font-label); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;">Factor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--border-standard);">
+        <td style="padding: 1.25rem 1rem; font-weight: 600;">Circuit depth stability</td>
+        <td style="padding: 1.25rem 1rem;">0.992 ± 0.042</td>
+        <td style="padding: 1.25rem 1rem;">0.001 ± 0.229</td>
+        <td style="padding: 1.25rem 1rem; color: var(--secondary); font-weight: 700;">992×</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--border-standard);">
+        <td style="padding: 1.25rem 1rem; font-weight: 600;">Measurement std deviation</td>
+        <td style="padding: 1.25rem 1rem;">0.000222</td>
+        <td style="padding: 1.25rem 1rem;">0.999998</td>
+        <td style="padding: 1.25rem 1rem; color: var(--secondary); font-weight: 700;">4,500×</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--border-standard);">
+        <td style="padding: 1.25rem 1rem; font-weight: 600;">QAOA MaxCut score</td>
+        <td style="padding: 1.25rem 1rem;">1.437</td>
+        <td style="padding: 1.25rem 1rem;">0.703</td>
+        <td style="padding: 1.25rem 1rem; color: var(--secondary); font-weight: 700;">2×</td>
+      </tr>
+      <tr>
+        <td style="padding: 1.25rem 1rem; font-weight: 600;">Network coordination</td>
+        <td style="padding: 1.25rem 1rem;">4,950 edges / 12 qubits</td>
+        <td style="padding: 1.25rem 1rem;">—</td>
+        <td style="padding: 1.25rem 1rem; color: var(--secondary); font-weight: 700;">412:1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="margin-top: 2rem; padding: 2rem; background: var(--surface-low); border-left: 3px solid var(--primary);">
+  <p style="font-size: 0.85rem; color: var(--outline); margin-bottom: 0;"><strong>Note on baselines:</strong> All benchmarks compare the MetaQubit against PennyLane's standard <code>default.qubit</code> simulator. The baseline circuit is constructed to be structurally equivalent but without the MetaQubit's self-stabilizing mechanisms.</p>
+</div>

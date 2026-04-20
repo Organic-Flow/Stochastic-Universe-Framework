@@ -1,0 +1,791 @@
+<article class="wp-article">
+
+  <!-- ── Header ── -->
+  <header class="wp-header">
+    <div class="wp-eyebrow">
+      <span class="wp-tag">Whitepaper</span>
+      <span class="wp-tag">Version 1.0</span>
+      <span class="wp-tag">Post-Backpropagation Architecture</span>
+    </div>
+    <h1 class="wp-title">OrganicFlow: A Bio-Mimetic Framework for Emergent, Continual, and Fault-Tolerant Intelligence</h1>
+    <p class="wp-subtitle">Intelligence is not optimized — it <em>emerges</em>. A new computational paradigm inspired by the metabolic logic of living systems.</p>
+  </header>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Abstract ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Abstract</div>
+
+    <div class="wp-three-col">
+
+      <div class="wp-abstract-card">
+        <span class="wp-abstract-num">01</span>
+        <h3 class="wp-abstract-title">The Problem</h3>
+        <p class="wp-abstract-body">Modern AI models, despite their power, are built on a brittle architecture of <strong>Static Weight Tensors</strong> trained via Backpropagation. This produces three structural failures: <strong>Catastrophic Forgetting</strong> (new knowledge destroys the old), <strong>inability to scale</strong> in dynamic environments, and a permanent dependency on <strong>massive, centralised datasets</strong>.</p>
+      </div>
+
+      <div class="wp-abstract-card">
+        <span class="wp-abstract-num">02</span>
+        <h3 class="wp-abstract-title">The Solution</h3>
+        <p class="wp-abstract-body">OrganicFlow replaces static tensors with a dynamic <strong>MorphoField</strong> — a living topology of autonomous computational agents called <strong>MorphoCells</strong>. Learning is no longer the minimisation of a global loss function. It is an <strong>emergent property</strong> arising from simple, local interaction rules.</p>
+      </div>
+
+      <div class="wp-abstract-card wp-abstract-card--highlight">
+        <span class="wp-abstract-num">03</span>
+        <h3 class="wp-abstract-title">The Results</h3>
+        <ul class="wp-abstract-results">
+          <li><strong>94.6%</strong> knowledge retention on Split-MNIST</li>
+          <li><strong>74%</strong> self-recovery after massive node destruction</li>
+          <li><strong>0 trainable parameters</strong> for Text↔Image alignment, outperforming 200K-parameter baselines</li>
+          <li>Solves <strong>XOR</strong> without hidden layers or activation functions</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 1 ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 01</div>
+    <h2 class="wp-section-title">The Architectural Limitations of Modern AI</h2>
+
+    <div class="wp-prose">
+      <p>The last decade produced extraordinary results. Large Language Models and Transformer architectures have demonstrated capabilities that seemed impossible just years before. Yet beneath this performance lies a hidden structural fragility — these systems are static, frozen snapshots of knowledge. They cannot adapt to the world as it changes.</p>
+    </div>
+
+    <div class="wp-problems-grid">
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">01</div>
+        <div>
+          <h4 class="wp-problem-title">The Static World Assumption</h4>
+          <p class="wp-problem-body">Models are trained offline on fixed datasets, then frozen. They have no mechanism to adapt to real-time changes in the environment. Every update requires a full retraining cycle — expensive, slow, and architecturally wasteful.</p>
+        </div>
+      </div>
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">02</div>
+        <div>
+          <h4 class="wp-problem-title">The Global Error Bottleneck</h4>
+          <p class="wp-problem-body">Backpropagation demands that error information propagate backwards through the entire network simultaneously. This is both biologically implausible and computationally expensive — a centralised, brittle design that does not exist in any living system.</p>
+        </div>
+      </div>
+
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">03</div>
+        <div>
+          <h4 class="wp-problem-title">The Curse of Dimensionality &amp; Modality</h4>
+          <p class="wp-problem-body">Current architectures are locked to their original input dimensions. Combining different data sources — text, images, signals — requires complex, expensive bridging techniques. The architecture resists the kind of fluid, multi-modal reasoning that biological systems perform effortlessly.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <blockquote class="wp-blockquote">
+      We propose that intelligence is not optimised, but <em>emerges</em>. The shift required is not incremental — it is a move from matrix calculus to complex adaptive systems.
+    </blockquote>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 2 ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 02</div>
+    <h2 class="wp-section-title">The OrganicFlow Paradigm: Principles of a Living System</h2>
+
+    <div class="wp-prose">
+      <p>OrganicFlow is built on three interlocking principles. Each represents a direct biological analogue to a problem that classical AI has failed to solve architecturally.</p>
+    </div>
+
+    <div class="wp-concepts-grid">
+
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">MorphoCell</h3>
+        <p class="wp-concept-role">The autonomous agent</p>
+        <p class="wp-concept-body">Each MorphoCell is an independent computational agent with its own internal state — a vector of <strong>Traits</strong> encoding reliability, efficiency, and adaptation capacity. Cells do not share a global weight matrix. They are individuals, not parameters.</p>
+      </div>
+
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">MorphoField</h3>
+        <p class="wp-concept-role">The living topology</p>
+        <p class="wp-concept-body">The Field is the dynamic space in which cells live, move, and interact. There is no central scheduler. Topology emerges from the relationships between cells — a fluid, self-organising structure that grows, prunes, and heals without external instruction.</p>
+      </div>
+
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">Interaction Rules</h3>
+        <p class="wp-concept-role">Local logic, global order</p>
+        <p class="wp-concept-body">Learning arises from simple, local rules: <code>FeaturePull</code>, <code>Hebbian</code> reinforcement, repulsion. No neuron needs to know the global state. Structure and intelligence emerge from these local conversations — exactly as they do in biological neural tissue.</p>
+      </div>
+
+    </div>
+
+    <div class="wp-highlight-box">
+      <div class="wp-highlight-label">Core Technical Innovation</div>
+      <h3 class="wp-highlight-title">The <code>stochastic_wave</code> Engine</h3>
+      <p class="wp-highlight-body">Classical topological networks suffer from an <strong>O(N²)</strong> scaling problem — every cell must evaluate every other cell, making large systems computationally prohibitive. Our solution, inspired by quorum sensing in bacterial colonies, replaces exact search with <strong>probabilistic wave propagation</strong>. Information spreads outward in stochastic waves, achieving <strong>O(N log N) to O(N)</strong> scalability. At 100,000 cells, the system runs in 5.8 seconds on commodity hardware, consuming just 184 MB of RAM.</p>
+      <div class="wp-highlight-stats">
+        <div class="wp-stat">
+          <span class="wp-stat-value">O(N)</span>
+          <span class="wp-stat-label">Scalability</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">100K</span>
+          <span class="wp-stat-label">Cells tested</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">184 MB</span>
+          <span class="wp-stat-label">RAM at 100K cells</span>
+        </div>
+        <div class="wp-stat">
+          <span class="wp-stat-value">5.8s</span>
+          <span class="wp-stat-label">Python / CPU only</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 3 ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 03</div>
+    <h2 class="wp-section-title">Experimental Validation: A Suite of 14 Benchmarks</h2>
+
+    <div class="wp-prose">
+      <p>Fourteen rigorous benchmarks, organised by capability class. Each result is reproducible, code-backed, and accompanied by a classical baseline for direct comparison.</p>
+    </div>
+
+    <div class="wp-benchmark-categories">
+
+      <!-- Category A -->
+      <div class="wp-bench-category">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Category A</span>
+          <h3 class="wp-bench-cat-title">Core Principles &amp; Self-Organisation</h3>
+          <span class="wp-bench-cat-tags">Benchmarks 1, 2, 4, 5, 6, 9, 10</span>
+        </div>
+        <p class="wp-bench-cat-summary">This category demonstrates the fundamental properties of the system: its ability to create structure from pure noise <strong>(Bench 1)</strong>, recover from catastrophic damage <strong>(Bench 2, 6)</strong>, adapt its internal representation to environmental context <strong>(Bench 4)</strong>, and scale linearly with population size <strong>(Bench 10)</strong>. We prove that convergence is directed and mathematically sound <strong>(Bench 5, 9)</strong> — not random.</p>
+        <a class="wp-bench-link" href="#" onclick="selectTab('bench1'); return false;">View Benchmarks 1–10 →</a>
+      </div>
+
+      <!-- Category B -->
+      <div class="wp-bench-category">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Category B</span>
+          <h3 class="wp-bench-cat-title">Continual &amp; Unsupervised Learning</h3>
+          <span class="wp-bench-cat-tags">Benchmarks 3, 7, 11</span>
+        </div>
+        <p class="wp-bench-cat-summary">We tackle the critical challenge of learning from infinite data streams without catastrophic forgetting. A theoretical proof of knowledge co-existence <strong>(Bench 3)</strong>, a practical application on infinite streams with O(1) memory via biological apoptosis <strong>(Bench 7)</strong>, and a head-to-head victory against classical neural networks on the industry-standard <strong>Split-MNIST</strong> dataset, achieving <strong>94.6% retention</strong> <strong>(Bench 11)</strong>.</p>
+        <a class="wp-bench-link" href="#" onclick="selectTab('bench3'); return false;">View Benchmarks 3, 7, 11 →</a>
+      </div>
+
+      <!-- Category C -->
+      <div class="wp-bench-category wp-bench-category--accent">
+        <div class="wp-bench-cat-header">
+          <span class="wp-bench-cat-label">Category C</span>
+          <h3 class="wp-bench-cat-title">Advanced Capabilities — Multi-Modal &amp; Non-Linear Reasoning</h3>
+          <span class="wp-bench-cat-tags">Benchmarks 8, 12, 13, 14</span>
+        </div>
+        <p class="wp-bench-cat-summary">The paradigm-shifting results. OrganicFlow handles multi-dimensional agents simultaneously <strong>(Bench 8)</strong>, solves the historic XOR problem <strong>without hidden layers or activation functions</strong> <strong>(Bench 14)</strong>, and most critically: <strong>aligns pre-trained Text and Image models with zero learnable parameters</strong>, outperforming a 200,000-parameter CLIP-style baseline <strong>(Bench 12 &amp; 13)</strong>.</p>
+        <a class="wp-bench-link" href="#" onclick="selectTab('bench8'); return false;">View Benchmarks 8, 12, 13, 14 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 4 ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 04</div>
+    <h2 class="wp-section-title">Discussion &amp; Future Work</h2>
+
+    <div class="wp-two-col">
+      <div>
+        <h3 class="wp-subsection-title">Key Advantages</h3>
+        <div class="wp-advantages-list">
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Zero Catastrophic Forgetting</strong>
+              <p>True incremental learning is now architecturally possible. New knowledge adds cells; it does not overwrite existing ones.</p>
+            </div>
+          </div>
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Fault-Tolerant by Design</strong>
+              <p>There is no single point of failure. Node destruction triggers local self-repair, not global collapse.</p>
+            </div>
+          </div>
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Zero-Parameter Multi-Modal Alignment</strong>
+              <p>A fundamentally cheaper path to multi-modal AI — no bridging networks, no fine-tuning, no GPU cost.</p>
+            </div>
+          </div>
+          <div class="wp-advantage-item">
+            <span class="wp-advantage-icon">◆</span>
+            <div>
+              <strong>Linear Scalability</strong>
+              <p>The stochastic_wave engine provides a clear, proven path to enterprise-scale deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="wp-subsection-title">Acknowledged Limitations</h3>
+        <div class="wp-limitations-list">
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Performance Bottleneck</h4>
+            <p class="wp-limitation-body">The current implementation is a proof-of-concept written in Python. The immediate next step post-funding is rewriting the <code>stochastic_wave</code> core in C++/CUDA, which we estimate will bring the 100K-cell benchmark from 5.8s to under 20ms.</p>
+          </div>
+          <div class="wp-limitation-item">
+            <h4 class="wp-limitation-title">Classifier Readout</h4>
+            <p class="wp-limitation-body">The system excels at representation learning and self-organisation. For downstream classification tasks, we currently use an external sklearn readout. Research is ongoing into a native, "organic" classification mechanism that requires no external library.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wp-vision-box">
+      <div class="wp-vision-label">Vision</div>
+      <p class="wp-vision-text">The domains where OrganicFlow's properties matter most are precisely those where classical AI has struggled: <strong>Edge AI</strong> (devices with no cloud connection), <strong>Robotics</strong> (environments that change without warning), <strong>Decentralised Finance</strong> (streams of real-time data with no global ground truth), and <strong>Personalised Medicine</strong> (continuous adaptation to individual biological variation). These are not future applications — they are the immediate deployment targets.</p>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 5 — Conclusion ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Section 05</div>
+    <h2 class="wp-section-title">Conclusion</h2>
+    <div class="wp-conclusion">
+      <p>The era of static, monolithic AI models is reaching its structural limits. Scaling them further requires exponentially more data, compute, and energy — for diminishing returns in adaptability and resilience.</p>
+      <p>OrganicFlow presents a viable, biologically-inspired alternative that treats intelligence not as the output of optimisation, but as an <em>emergent property</em> of a complex adaptive system. The fourteen experimental results presented in this whitepaper strongly indicate that this is not a theoretical curiosity.</p>
+      <p>It is a framework for the next generation of AI — one that learns continuously, heals autonomously, and scales without architectural ceilings.</p>
+    </div>
+  </section>
+
+</article>
+
+<style>
+/* ── Article shell ── */
+.wp-article {
+  font-family: 'Inter', sans-serif;
+  color: #434841;
+}
+
+/* ── Header ── */
+.wp-header { margin-bottom: 3.5rem; }
+
+.wp-eyebrow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.wp-tag {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #456647;
+  border: 1px solid rgba(69,102,71,0.35);
+  padding: 0.25em 0.75em;
+}
+
+.wp-title {
+  font-family: 'Newsreader', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #173318;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+}
+
+.wp-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: #737970;
+  line-height: 1.75;
+  max-width: 580px;
+}
+
+.wp-subtitle em { color: #173318; font-style: italic; }
+
+/* ── Divider ── */
+.wp-divider {
+  height: 1px;
+  background: rgba(195,200,190,0.35);
+  margin: 3rem 0;
+}
+
+/* ── Section ── */
+.wp-section { margin-bottom: 0.5rem; }
+
+.wp-section-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 0.75rem;
+}
+
+.wp-section-title {
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #173318;
+  margin-bottom: 1.75rem;
+  line-height: 1.15;
+}
+
+.wp-prose p {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: #434841;
+  margin-bottom: 1rem;
+  max-width: 680px;
+}
+
+/* ── Abstract 3-col ── */
+.wp-three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: rgba(195,200,190,0.3);
+  margin-top: 1.5rem;
+}
+
+.wp-abstract-card {
+  background: #f6f3ea;
+  padding: 2rem;
+}
+
+.wp-abstract-card--highlight {
+  background: #173318;
+  padding: 2rem;
+}
+
+.wp-abstract-num {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.28em;
+  color: #456647;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.wp-abstract-card--highlight .wp-abstract-num { color: rgba(174,207,169,0.5); }
+
+.wp-abstract-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #173318;
+  margin-bottom: 0.85rem;
+  line-height: 1.2;
+}
+
+.wp-abstract-card--highlight .wp-abstract-title { color: #c9ecc4; }
+
+.wp-abstract-body {
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: #434841;
+}
+
+.wp-abstract-card--highlight .wp-abstract-body { color: rgba(174,207,169,0.75); }
+.wp-abstract-card--highlight .wp-abstract-body strong { color: #c9ecc4; }
+
+.wp-abstract-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: rgba(174,207,169,0.75);
+}
+
+.wp-abstract-results li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(174,207,169,0.12);
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.wp-abstract-results li::before { content: '→'; opacity: 0.45; flex-shrink: 0; }
+.wp-abstract-results li strong { color: #c9ecc4; font-size: 1.05em; }
+
+/* ── Problems grid ── */
+.wp-problems-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(195,200,190,0.3);
+}
+
+.wp-problem-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(195,200,190,0.2);
+  align-items: flex-start;
+}
+
+.wp-problem-item:last-child { border-bottom: none; }
+
+.wp-problem-number {
+  font-family: 'Newsreader', serif;
+  font-size: 2.4rem;
+  color: rgba(23,51,24,0.1);
+  font-weight: 400;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 3rem;
+  text-align: right;
+  padding-top: 0.1rem;
+}
+
+.wp-problem-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #173318;
+  margin-bottom: 0.5rem;
+}
+
+.wp-problem-body {
+  font-size: 0.86rem;
+  line-height: 1.75;
+  color: #434841;
+  margin: 0;
+}
+
+/* ── Blockquote ── */
+.wp-blockquote {
+  border-left: 2px solid #173318;
+  padding: 1.25rem 1.75rem;
+  margin: 2.5rem 0 0;
+  font-family: 'Newsreader', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #173318;
+  line-height: 1.7;
+  background: rgba(23,51,24,0.03);
+}
+
+.wp-blockquote em { color: #456647; }
+
+/* ── Concepts grid ── */
+.wp-concepts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.wp-concept-card {
+  background: #f6f3ea;
+  padding: 1.75rem;
+  border-top: 2px solid rgba(23,51,24,0.2);
+}
+
+.wp-concept-name {
+  font-family: 'Newsreader', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #173318;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.wp-concept-role {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 0.75rem;
+}
+
+.wp-concept-body {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #434841;
+  margin: 0;
+}
+
+.wp-concept-body strong { color: #173318; }
+.wp-concept-body code {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.78em;
+  background: rgba(23,51,24,0.06);
+  color: #1b321f;
+  padding: 0.1em 0.3em;
+}
+
+/* ── Highlight box ── */
+.wp-highlight-box {
+  background: #ebe8df;
+  padding: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.wp-highlight-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 0.75rem;
+}
+
+.wp-highlight-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #173318;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.wp-highlight-title code {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.82em;
+  background: rgba(23,51,24,0.1);
+  padding: 0.1em 0.35em;
+}
+
+.wp-highlight-body {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #434841;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.wp-highlight-body strong { color: #173318; }
+
+.wp-highlight-stats {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.wp-stat { display: flex; flex-direction: column; gap: 0.25rem; }
+
+.wp-stat-value {
+  font-family: 'Newsreader', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #173318;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.wp-stat-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #737970;
+}
+
+/* ── Benchmark categories ── */
+.wp-benchmark-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: rgba(195,200,190,0.3);
+  margin-top: 1.5rem;
+}
+
+.wp-bench-category {
+  background: #fcf9f0;
+  padding: 2rem 2.25rem;
+}
+
+.wp-bench-category--accent {
+  background: #f6f3ea;
+}
+
+.wp-bench-cat-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.wp-bench-cat-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #456647;
+  flex-shrink: 0;
+}
+
+.wp-bench-cat-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #173318;
+  line-height: 1.2;
+}
+
+.wp-bench-cat-tags {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: #737970;
+  margin-left: auto;
+}
+
+.wp-bench-cat-summary {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: #434841;
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+.wp-bench-cat-summary strong { color: #173318; }
+
+.wp-bench-link {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #456647;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(69,102,71,0.3);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.wp-bench-link:hover { color: #173318; border-color: #173318; }
+
+/* ── Two col ── */
+.wp-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.wp-subsection-title {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #456647;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Advantages ── */
+.wp-advantages-list { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.wp-advantage-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #434841;
+}
+
+.wp-advantage-icon {
+  color: #456647;
+  font-size: 0.5rem;
+  margin-top: 0.45rem;
+  flex-shrink: 0;
+}
+
+.wp-advantage-item strong { color: #173318; display: block; margin-bottom: 0.1rem; }
+
+/* ── Limitations ── */
+.wp-limitations-list { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.wp-limitation-item {
+  padding: 1.25rem;
+  background: #f6f3ea;
+  border-left: 2px solid rgba(23,51,24,0.15);
+}
+
+.wp-limitation-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #173318;
+  margin-bottom: 0.4rem;
+}
+
+.wp-limitation-body {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #434841;
+  margin: 0;
+}
+
+.wp-limitation-body code {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.78em;
+  background: rgba(23,51,24,0.06);
+  padding: 0.1em 0.3em;
+}
+
+/* ── Vision box ── */
+.wp-vision-box {
+  background: #173318;
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.wp-vision-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(174,207,169,0.45);
+  margin-bottom: 1rem;
+}
+
+.wp-vision-text {
+  font-family: 'Newsreader', serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.85;
+  color: rgba(174,207,169,0.85);
+  margin: 0;
+}
+
+.wp-vision-text strong { color: #c9ecc4; font-style: normal; }
+
+/* ── Conclusion ── */
+.wp-conclusion {
+  max-width: 680px;
+}
+
+.wp-conclusion p {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: #434841;
+  margin-bottom: 1rem;
+}
+
+.wp-conclusion em { color: #173318; font-style: italic; }
+</style>
