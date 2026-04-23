@@ -6,6 +6,12 @@ import seaborn as sns
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.metrics import mean_squared_error, r2_score
+from mpl_toolkits.mplot3d import Axes3D
+import json
+
+os.makedirs("csv", exist_ok=True)
+os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 # Load data from the CSV file
 df = pd.read_csv("csv/enhanced_analysis_with_predictions.csv")
@@ -16,6 +22,16 @@ print(df.describe())
 
 # Create new balance index
 df["Balance Index"] = df["Avg Intensity"] * (1 / (1 + df["Avg Intensity"].var()))
+
+# JSON Report Data
+json_report_data = {
+    "phase": "2.3",
+    "name": "Balance Index Draft",
+    "balance_index_distribution": {
+        "avg": df["Avg Intensity"].tolist(),
+        "balance": df["Balance Index"].tolist()
+    }
+}
 
 # Visualize distribution of Average Intensity and Balance Index
 plt.figure(figsize=(10, 6))
@@ -32,6 +48,7 @@ plt.show()
 correlation_matrix = df[["Frame", "Avg Intensity", "Balance Index"]].corr()
 print("Variable correlations:")
 print(correlation_matrix)
+json_report_data["correlation_matrix"] = correlation_matrix.to_dict()
 
 # Visualize correlations
 plt.figure(figsize=(8, 6))
@@ -59,6 +76,14 @@ r2 = r2_score(y, y_pred)
 print(f"Mean Squared Error (MSE): {mse:.5f}")
 print(f"R-squared (R2): {r2:.5f}")
 
+json_report_data["polynomial_avg_intensity"] = {
+    "frame": df["Frame"].tolist(),
+    "actual": y.tolist(),
+    "predicted": y_pred.tolist(),
+    "mse": mse,
+    "r2": r2
+}
+
 # Model coefficients
 print("Model coefficients:", model.coef_)
 
@@ -74,12 +99,6 @@ plt.savefig("plot_reports/p2.3_polynomial_avg_intensity.png", dpi=150, bbox_inch
 plt.show()
 
 # 3D Visualization: Frame vs Avg Intensity vs Balance Index
-from mpl_toolkits.mplot3d import Axes3D
-
-os.makedirs("csv", exist_ok=True)
-os.makedirs("plot_reports", exist_ok=True)
-
-
 fig = plt.figure(figsize=(12, 8))
 ax = fig.add_subplot(111, projection="3d")
 scatter = ax.scatter(df["Frame"], df["Avg Intensity"], df["Balance Index"], c=df["Balance Index"], cmap="viridis")
@@ -91,13 +110,21 @@ fig.colorbar(scatter, ax=ax, label="Balance Index")
 plt.savefig("plot_reports/p2.3_3d_balance_index.png", dpi=150, bbox_inches="tight")
 plt.show()
 
+json_report_data["3d_visualization"] = df[["Frame", "Avg Intensity", "Balance Index"]].to_dict(orient="records")
+
 # Balance Equation
 coefficients = model.coef_
 intercept = model.intercept_
 print("Balance Equation:")
 print(f"Balance Index = {coefficients[0]:.5f} + {coefficients[1]:.5f}*Frame + {coefficients[2]:.5f}*Frame^2 + {coefficients[3]:.5f}*Frame^3 + {intercept:.5f}")
 
+# Save JSON Report
+json_report_file = "json_reports/p2.3_balance_index_draft.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
 # Save results
 df["Predicted Balance Index"] = y_pred
 df.to_csv("csv/final_balance_analysis.csv", index=False)
 print("Analysis completed. Data saved to final_balance_analysis.csv.")
+print(f"JSON report saved to {json_report_file}")

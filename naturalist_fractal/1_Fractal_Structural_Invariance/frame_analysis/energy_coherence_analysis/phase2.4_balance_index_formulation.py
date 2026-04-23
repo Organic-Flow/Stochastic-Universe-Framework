@@ -7,9 +7,11 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from mpl_toolkits.mplot3d import Axes3D
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 
 # 1. Load data
@@ -25,6 +27,17 @@ print(df.describe())
 print("\nVariable Correlations:")
 correlation_matrix = df[['Frame', 'Avg Intensity', 'Balance Index']].corr()
 print(correlation_matrix)
+
+# JSON Report Data
+json_report_data = {
+    "phase": "2.4",
+    "name": "Balance Index Formulation",
+    "correlation_matrix": correlation_matrix.to_dict(),
+    "intensity_balance_distribution": {
+        "avg": df["Avg Intensity"].tolist(),
+        "balance": df["Balance Index"].tolist()
+    }
+}
 
 # 4. Visualize distributions
 plt.figure(figsize=(10, 6))
@@ -63,13 +76,21 @@ r2 = r2_score(y, y_pred)
 print(f"Mean Squared Error (MSE): {mse:.5f}")
 print(f"R-squared (R2): {r2:.5f}")
 
+json_report_data["polynomial_balance_fit"] = {
+    "frame": df["Frame"].tolist(),
+    "actual": y.tolist(),
+    "predicted": y_pred.tolist(),
+    "mse": mse,
+    "r2": r2
+}
+
 # 6. Visualize actual and predicted values
 plt.figure(figsize=(10, 6))
 plt.scatter(df['Frame'], df['Balance Index'], label="Actual", color="blue")
 plt.plot(df['Frame'], y_pred, label="Predicted", color="red")
-plt.title("Actual vs Predicted Average Intensity")
+plt.title("Actual vs Predicted Balance Index")
 plt.xlabel("Frame")
-plt.ylabel("Avg Intensity")
+plt.ylabel("Balance Index")
 plt.legend()
 plt.savefig("plot_reports/p2.4_polynomial_balance_fit.png", dpi=150, bbox_inches="tight")
 plt.show()
@@ -87,6 +108,8 @@ fig.colorbar(scatter, ax=ax, label="Balance Index")
 plt.savefig("plot_reports/p2.4_3d_balance_index.png", dpi=150, bbox_inches="tight")
 plt.show()
 
+json_report_data["3d_visualization"] = df[["Frame", "Avg Intensity", "Balance Index"]].to_dict(orient="records")
+
 # 8. Heatmap of correlations
 plt.figure(figsize=(8, 6))
 sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm", cbar=True)
@@ -94,7 +117,13 @@ plt.title("Variable Correlations")
 plt.savefig("plot_reports/p2.4_correlation_heatmap.png", dpi=150, bbox_inches="tight")
 plt.show()
 
+# Save JSON Report
+json_report_file = "json_reports/p2.4_balance_index_formulation.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
 # 9. Save new data
 df['Predicted Balance Index'] = y_pred
 df.to_csv('csv/enhanced_balance_analysis.csv', index=False)
 print("\nAnalysis completed. Data saved to enhanced_balance_analysis.csv.")
+print(f"JSON report saved to {json_report_file}")

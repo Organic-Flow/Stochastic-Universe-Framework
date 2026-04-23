@@ -1,82 +1,89 @@
 import os
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.metrics import mean_squared_error, r2_score
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 
-# 1. Load and prepare data
-data = pd.read_csv('csv/enhanced_balance_analysis.csv')  # Replace with your file
-features = ['Frame', 'Avg Intensity', 'Max Intensity', 'Predicted Max Intensity']  # Adapt based on your data
-target = 'Balance Index'
+# Load data
+df = pd.read_csv('csv/enhanced_balance_analysis.csv')
 
-# Clean data
-data = data.dropna()
-X = data[features]
-y = data[target]
+# Preprocessing: Select simple features
+# Max Intensity is constant, but we include it as requested for the "minimal description"
+X = df[['Max Intensity', 'Frame', 'Avg Intensity']]
+y = df['Balance Index']
 
-# Split data into training and testing
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# JSON Report Data
+json_report_data = {
+    "phase": "4.2",
+    "name": "Simplified Model Extraction",
+}
 
-# 2. Develop Gradient Boosting Regressor
-model = GradientBoostingRegressor(n_estimators=500, learning_rate=0.01, max_depth=4, random_state=42)
-model.fit(X_train, y_train)
+# Gradient Boosting Regressor (Simplified)
+gb_model = GradientBoostingRegressor(n_estimators=50, learning_rate=0.1, max_depth=2, random_state=42)
+gb_model.fit(X, y)
+gb_preds = gb_model.predict(X)
 
-# 3. Predictions and evaluation
-y_pred_train = model.predict(X_train)
-y_pred_test = model.predict(X_test)
+mse = mean_squared_error(y, gb_preds)
+r2 = r2_score(y, gb_preds)
+print(f"Simplified GBR Mean Squared Error: {mse:.7f}")
+print(f"Simplified GBR R-squared: {r2:.7f}")
 
-train_mse = mean_squared_error(y_train, y_pred_train)
-test_mse = mean_squared_error(y_test, y_pred_test)
-train_r2 = r2_score(y_train, y_pred_train)
-test_r2 = r2_score(y_test, y_pred_test)
+json_report_data["simplified_results"] = {
+    "mse": mse,
+    "r2": r2,
+    "predictions": gb_preds.tolist()
+}
 
-print(f"Train MSE: {train_mse}")
-print(f"Test MSE: {test_mse}")
-print(f"Train R²: {train_r2}")
-print(f"Test R²: {test_r2}")
+# Feature Importance
+feature_importances = gb_model.feature_importances_
+importance_df = pd.DataFrame({'Feature': X.columns, 'Importance': feature_importances})
+importance_df = importance_df.sort_values(by='Importance', ascending=False)
+json_report_data["feature_importances"] = importance_df.to_dict(orient="records")
 
-# 4. Feature importance
-feature_importance = model.feature_importances_
-sorted_idx = np.argsort(feature_importance)
-plt.barh(np.array(features)[sorted_idx], feature_importance[sorted_idx], color='blue')
-plt.xlabel("Importance")
-plt.title("Feature Importance (Gradient Boosting)")
+# Information Identity Extraction
+print("\nInformation Identity (Variance Contribution):")
+for idx, row in importance_df.iterrows():
+    print(f"{row['Feature']}: {row['Importance']*100:.4f}%")
+
+# Visualization: Feature Importance
+plt.figure(figsize=(10, 6))
+sns.barplot(x='Importance', y='Feature', data=importance_df)
+plt.title('Feature Importance (Simplified GBR) - Information Identity')
 plt.savefig("plot_reports/p4.2_feature_importances.png", dpi=150, bbox_inches="tight")
 plt.show()
 
-# 5. Simplified equation based on importance
-important_features = np.array(features)[sorted_idx][-3:]  # The 3 most important features
-print(f"Important Features: {important_features}")
-
-# 6. Final equation based on important features
-simplified_model = GradientBoostingRegressor(n_estimators=500, learning_rate=0.01, max_depth=3, random_state=42)
-simplified_model.fit(X_train[important_features], y_train)
-
-y_pred_simplified = simplified_model.predict(X_test[important_features])
-simplified_mse = mean_squared_error(y_test, y_pred_simplified)
-simplified_r2 = r2_score(y_test, y_pred_simplified)
-
-print(f"Simplified Equation - MSE: {simplified_mse}")
-print(f"Simplified Equation - R²: {simplified_r2}")
-
-# 7. Graph of actual and predicted values
-plt.plot(y_test.values, label="Actual Balance Index", color='blue')
-plt.plot(y_pred_simplified, label="Predicted Balance Index", color='orange', linestyle='--')
+# Visualization: Actual vs Predicted
+plt.figure(figsize=(12, 6))
+plt.scatter(df['Frame'], y, label='Actual Balance Index', color='blue', alpha=0.6)
+plt.plot(df['Frame'], gb_preds, label='Simplified GBR Fit', color='orange', linewidth=2)
+plt.title('Simplified GBR Fit: Balance Index vs Frame')
+plt.xlabel('Frame')
+plt.ylabel('Balance Index')
 plt.legend()
-plt.xlabel("Samples")
-plt.ylabel("Balance Index")
-plt.title("Actual vs Predicted Balance Index")
 plt.savefig("plot_reports/p4.2_simplified_predictions.png", dpi=150, bbox_inches="tight")
 plt.show()
 
-# Save equation
-coefficients = simplified_model.feature_importances_
-print("Final Equation:")
-for feature, coef in zip(important_features, coefficients):
-    print(f"{coef:.6f} * {feature}")
+json_report_data["actual_vs_predicted"] = {
+    "frame": df["Frame"].tolist(),
+    "actual": y.tolist(),
+    "predicted": gb_preds.tolist()
+}
+
+# Save JSON Report
+json_report_file = "json_reports/p4.2_simplified_model_extraction.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
+# Save results
+df['Simplified_GBR_Predictions'] = gb_preds
+df.to_csv('csv/simplified_model_results.csv', index=False)
+print("Analysis completed. Data saved to simplified_model_results.csv.")
+print(f"JSON report saved to {json_report_file}")

@@ -1,16 +1,214 @@
 <article class="wp-article">
-  <div class="wp-header">
+  <header class="wp-header">
     <div class="wp-eyebrow">
-      <span class="wp-tag">Research Page</span>
+      <span class="wp-tag">MetaQubit</span>
+      <span class="wp-tag">Dynamic Homeostasis</span>
     </div>
-    <h1 class="wp-title">Placeholder Page</h1>
-    <p class="wp-subtitle">This content will be populated with technical documentation soon.</p>
-  </div>
+    <h1 class="wp-title">MetaQubit Dynamic Homeostasis<br><em>Architectural Overview</em></h1>
+    <p class="wp-subtitle">A quantum-inspired computational unit designed for noise resilience and self-stabilizing coherence.</p>
+  </header>
+
   <div class="wp-divider"></div>
+
   <section class="wp-section">
-    <div class="wp-section-label">Preview</div>
     <div class="wp-prose">
-      <p>Content for this section is currently being processed from the research manuscript.</p>
+      <p>This directory documents the experimental research program around the <strong>MetaQubit</strong> — a quantum-inspired computational unit designed for noise resilience, self-stabilizing coherence, and emergent self-organization. The research is organized into three progressive investigations: quantum benchmarking, large-scale network coordination, and internal dynamics analysis.</p>
+<hr />
+<h2>What is the MetaQubit?</h2>
+<p>The MetaQubit is a quantum circuit unit implemented in PennyLane that goes beyond standard qubit simulation. Rather than performing exact quantum computation, it acts as a <strong>self-stabilizing quantum processor</strong> — maintaining coherence, resisting noise, and producing stable, information-rich outputs across a wide range of conditions.</p>
+<h3>Architecture</h3>
+<p>The MetaQubit circuit runs four sequential stages:</p>
+<pre><code>Input parameters
+      ↓
+1. Superposition     — Hadamard gates applied to all qubits
+      ↓
+2. Entanglement      — CNOT chains connecting adjacent qubits
+      ↓
+3. Coherence         — RX / RY / RZ rotation gates on each qubit
+      ↓
+4. Quantum Tunneling — Stochastic CY gates between non-adjacent qubits
+      ↓
+Output: PauliZ expectation values per qubit
+</code></pre>
+<p><strong>Key properties:</strong></p>
+<ul class="wp-list">
+<li>Configurable qubit count (4 to 22+ qubits tested)</li>
+<li>Trainable parameters via Gradient Descent optimization</li>
+<li>Stochastic tunneling layer introduces controlled non-linearity</li>
+<li>Output is a vector of expectation values, not a probability distribution</li>
+</ul>
+<p><strong>Source code:</strong> <a href="../meta_qubit.py"><code>../meta_qubit.py</code></a></p>
+<h3>Why &quot;Meta&quot;?</h3>
+<p>The prefix &quot;meta&quot; refers to the qubit's capacity to act at a higher level than a standard qubit. Where a default qubit collapses under noise, deep circuits, or repeated operations, the MetaQubit maintains coherence through its multi-layer architecture. It doesn't compute <em>exactly</em> — it computes <em>robustly</em>, trading precision for resilience.</p>
+<p>This makes it well-suited for:</p>
+<ul class="wp-list">
+<li>NISQ (Noisy Intermediate-Scale Quantum) environments</li>
+<li>Quantum-classical hybrid algorithms</li>
+<li>Large-scale network coordination with minimal quantum resources</li>
+<li>Situations where output stability matters more than exact fidelity</li>
+</ul>
+<hr />
+<h2>Dynamic Homeostasis</h2>
+<p>The subtitle of this research program — <strong>Dynamic Homeostasis</strong> — captures the defining behavioral property observed across all experiments:</p>
+<blockquote class="wp-blockquote">
+<p>The MetaQubit maintains stable, structured output in the presence of noise, depth, and perturbation — not by suppressing change, but by actively balancing competing forces within its quantum dynamics.</p>
+</blockquote>
+<p>Homeostasis here is not static equilibrium but dynamic balance: cost functions oscillating around zero without diverging, variance increasing monotonically without exploding, and output quality persisting where standard systems collapse. The MetaQubit is a system that stabilizes through motion, not rigidity.</p>
+<hr />
+<h2>Directory Structure</h2>
+<pre><code>2_MetaQubit_Dynamic_Homeostasis/
+├── README.md                          ← This file
+│
+├── 1_Quantum_Benchmarking/
+│   ├── BENCHMARK_ANALYSIS.md          ← Comprehensive benchmark results &amp; discoveries
+│   └── tests/                         ← 13 individual experiment documents
+│       ├── circuit_depth_test.md
+│       ├── decoherence_resilience_capacity_stability.md
+│       ├── error_tolerance_test.md
+│       ├── fourier_transform.md
+│       ├── gate_robustness_test.md
+│       ├── phase_estimation.md
+│       ├── quantum_error_correction.md
+│       ├── repeated_operations_test.md
+│       ├── search_space_test.md
+│       ├── speed_test.md
+│       ├── stability_test.md
+│       ├── volume_test.md
+│       └── VQE_QAOA_HHL_Benchmark.md
+│
+├── 2_Network_Self_Organization/
+│   ├── NETWORK_ANALYSIS.md            ← Merged analysis &amp; results document
+│   ├── chaos_environment.py           ← Simulation code (100-node network, 12 MetaQubits)
+│   └── images/                        ← Simulation plots organized by steps
+│       ├── STEPS=300/
+│       ├── STEPS=600/
+│       └── STEPS=1000/
+│
+└── 3_Internal_Dynamics/
+    ├── INTERNAL_DYNAMICS_ANALYSIS.md  ← Internal property analysis &amp; results
+    ├── HeatmapAnalysis.py             ← Coherence/entanglement/noise heatmaps
+    ├── NoiseAnalysis.py               ← 3D noise impact analysis
+    ├── Tunneling3DAnalysis.py         ← Tunneling/coherence/entanglement geometry
+    ├── performance.py                 ← Information capacity vs. standard circuits
+    ├── visualize_metaqubit.py         ← Network dynamics animation generator
+    ├── analysis_plots/                ← Generated analysis plots (PNG)
+    └── visualize/                     ← Animated simulations (MP4)
+        ├── meta_qubit(8)_simulation.mp4
+        ├── meta_qubit(14)_simulation.mp4
+        ├── meta_qubit(18)_simulation.mp4
+        └── meta_qubit(22)_simulation.mp4
+</code></pre>
+<hr />
+<h2>Research Threads</h2>
+<h3>1 — Quantum Benchmarking</h3>
+<p><strong>Question:</strong> How does MetaQubit compare to a standard quantum simulator across fundamental quantum capabilities?</p>
+<p><strong>Result:</strong> MetaQubit outperforms <code>default.qubit</code> in 12 of 13 benchmarks. Key margins:</p>
+<ul class="wp-list">
+<li>Circuit depth stability: 0.992 vs. 0.001 (992× better signal)</li>
+<li>Measurement stability: std 0.0002 vs. 1.000 (5,000× lower variance)</li>
+<li>QAOA MaxCut: 1.437 vs. 0.703 (2× higher)</li>
+<li>Implicit error correction: 39–74% recovery vs. 0%</li>
+</ul>
+<p>The only metric where the standard qubit wins is raw execution speed.</p>
+<p><strong>Full analysis:</strong> <a href="1_Quantum_Benchmarking/BENCHMARK_ANALYSIS.md">1_Quantum_Benchmarking/BENCHMARK_ANALYSIS.md</a></p>
+<hr />
+<h3>2 — Network Self-Organization</h3>
+<p><strong>Question:</strong> Can a small MetaQubit system drive meaningful self-organization in a large classical network?</p>
+<p><strong>Result:</strong> 12 MetaQubits successfully coordinate 4,950 edge weights in a 100-node network across 1,000 steps. The network develops:</p>
+<ul class="wp-list">
+<li>A bimodal weight distribution (sparse coding structure)</li>
+<li>Slowly increasing variance without explosive divergence</li>
+<li>Persistent cost oscillation around zero (balanced exploration)</li>
+</ul>
+<p>The compression ratio — 12 qubits coordinating 4,950 edges — is approximately <strong>412:1</strong>.</p>
+<p><strong>Full analysis:</strong> <a href="2_Network_Self_Organization/NETWORK_ANALYSIS.md">2_Network_Self_Organization/NETWORK_ANALYSIS.md</a></p>
+<hr />
+<h3>3 — Internal Dynamics</h3>
+<p><strong>Question:</strong> What are the internal quantum properties that explain MetaQubit's external behavior?</p>
+<p><strong>Result:</strong> Four analyses probe the MetaQubit's internals:</p>
+<ul class="wp-list">
+<li>Coherence, entanglement, and noise scale gracefully with MetaQubit count (heatmaps)</li>
+<li>Quantum properties degrade smoothly under noise, not sharply (noise analysis)</li>
+<li>The parameter space is geometrically structured, with correlated tunneling/coherence regions (3D analysis)</li>
+<li>Information capacity is 18–36 bits per evaluation vs. 0 for the standard baseline (performance analysis)</li>
+</ul>
+<p><strong>Full analysis:</strong> <a href="3_Internal_Dynamics/INTERNAL_DYNAMICS_ANALYSIS.md">3_Internal_Dynamics/INTERNAL_DYNAMICS_ANALYSIS.md</a></p>
+<hr />
+<h2>Key Numbers at a Glance</h2>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Property</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Benchmarks won</td>
+  <td>12/13</td>
+</tr>
+<tr>
+  <td>Circuit depth stability</td>
+  <td>0.992 ± 0.042 (vs. 0.001 ± 0.229)</td>
+</tr>
+<tr>
+  <td>Measurement std</td>
+  <td>0.000222 (vs. 0.999998)</td>
+</tr>
+<tr>
+  <td>Implicit error recovery</td>
+  <td>39–74% (vs. 0%)</td>
+</tr>
+<tr>
+  <td>Network coordination ratio</td>
+  <td>412:1 (edges per qubit)</td>
+</tr>
+<tr>
+  <td>Information capacity range</td>
+  <td>18–36 bits</td>
+</tr>
+<tr>
+  <td>Noise degradation</td>
+  <td>Smooth (no sharp threshold)</td>
+</tr>
+<tr>
+  <td>QAOA advantage</td>
+  <td>2× MaxCut score</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Running the Experiments</h2>
+<p>All scripts require PennyLane and should be run from the <code>naturalist_fractal/</code> root directory:</p>
+<pre><code class="language-bash">
+PYTHONPATH=. python 2_MetaQubit_Dynamic_Homeostasis/3_Internal_Dynamics/HeatmapAnalysis.py
+PYTHONPATH=. python 2_MetaQubit_Dynamic_Homeostasis/3_Internal_Dynamics/NoiseAnalysis.py
+PYTHONPATH=. python 2_MetaQubit_Dynamic_Homeostasis/3_Internal_Dynamics/Tunneling3DAnalysis.py
+PYTHONPATH=. python 2_MetaQubit_Dynamic_Homeostasis/3_Internal_Dynamics/performance.py
+
+
+PYTHONPATH=. python 2_MetaQubit_Dynamic_Homeostasis/2_Network_Self_Organization/chaos_environment.py
+</code></pre>
+<p>Generated plots are saved to <code>3_Internal_Dynamics/analysis_plots/</code>.</p>
+
+    </div>
+  </section>
+  
+  <div class="wp-divider"></div>
+  
+  <section class="wp-section">
+    <div class="wp-section-label">Implementation</div>
+    <h2 class="wp-section-title">Source Code</h2>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>meta_qubit.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for meta_qubit.py</code></pre>
+      </div>
     </div>
   </section>
 </article>

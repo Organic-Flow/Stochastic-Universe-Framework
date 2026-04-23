@@ -1,94 +1,108 @@
 import os
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.preprocessing import PolynomialFeatures, StandardScaler
 from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-import matplotlib.pyplot as plt
+from sklearn.preprocessing import PolynomialFeatures
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 
-# Load Data
-file_path = "csv/enhanced_balance_analysis.csv"  # Update with your file
-data = pd.read_csv(file_path)
+# Load data
+df = pd.read_csv('csv/enhanced_balance_analysis.csv')
 
-# Data Preprocessing
-data = data.dropna()  # Remove empty rows
-numeric_columns = data.select_dtypes(include=[np.number]).columns
-data = data[numeric_columns]  # Use only numeric columns
-
-# Data Normalization
-scaler = StandardScaler()
-scaled_data = scaler.fit_transform(data)
-scaled_data = pd.DataFrame(scaled_data, columns=numeric_columns)
-
-# Features and Target
-X = scaled_data.drop("Balance Index", axis=1)
-y = scaled_data["Balance Index"]
-
-# Split Data into Training and Testing
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Non-Linear Analysis (Polynomial Features)
+# Preprocessing: Polynomial terms for feature expansion
+X = df[['Frame', 'Avg Intensity']]
 poly = PolynomialFeatures(degree=3, include_bias=False)
-X_poly_train = poly.fit_transform(X_train)
-X_poly_test = poly.transform(X_test)
+X_poly = poly.fit_transform(X)
+poly_feature_names = poly.get_feature_names_out(X.columns)
 
-# Gradient Boosting Model
-gbr = GradientBoostingRegressor(n_estimators=200, learning_rate=0.1, max_depth=3, random_state=42)
-gbr.fit(X_poly_train, y_train)
+y = df['Balance Index']
 
-# Prediction and Evaluation - Gradient Boosting
-y_pred_gbr = gbr.predict(X_poly_test)
-mse_gbr = mean_squared_error(y_test, y_pred_gbr)
-r2_gbr = r2_score(y_test, y_pred_gbr)
+# JSON Report Data
+json_report_data = {
+    "phase": "4.1",
+    "name": "Gradient Boosting Equation Extraction",
+}
 
-print("Gradient Boosting - MSE:", mse_gbr)
-print("Gradient Boosting - R^2:", r2_gbr)
+# 1. Gradient Boosting Regressor
+gb_model = GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)
+gb_model.fit(X_poly, y)
+gb_preds = gb_model.predict(X_poly)
 
-# Neural Network Model
-nn = MLPRegressor(hidden_layer_sizes=(100, 50), max_iter=500, random_state=42)
-nn.fit(X_train, y_train)
+gb_mse = mean_squared_error(y, gb_preds)
+gb_r2 = r2_score(y, gb_preds)
+print(f"GBR Mean Squared Error: {gb_mse:.5f}")
+print(f"GBR R-squared: {gb_r2:.5f}")
 
-# Prediction and Evaluation - Neural Network
-y_pred_nn = nn.predict(X_test)
-mse_nn = mean_squared_error(y_test, y_pred_nn)
-r2_nn = r2_score(y_test, y_pred_nn)
+json_report_data["gbr_results"] = {
+    "mse": gb_mse,
+    "r2": gb_r2,
+    "predictions": gb_preds.tolist()
+}
 
-print("Neural Network - MSE:", mse_nn)
-print("Neural Network - R^2:", r2_nn)
+# 2. Neural Network (MLP)
+mlp_model = MLPRegressor(hidden_layer_sizes=(100, 50), max_iter=1000, random_state=42)
+mlp_model.fit(X_poly, y)
+mlp_preds = mlp_model.predict(X_poly)
 
-# Extract Coefficients - Gradient Boosting
-feature_importances = gbr.feature_importances_
-poly_features = poly.get_feature_names_out(X.columns)
+mlp_mse = mean_squared_error(y, mlp_preds)
+mlp_r2 = r2_score(y, mlp_preds)
+print(f"MLP Mean Squared Error: {mlp_mse:.5f}")
+print(f"MLP R-squared: {mlp_r2:.5f}")
 
-# Visualize Feature Importance
-plt.figure(figsize=(10, 6))
-plt.barh(poly_features, feature_importances)
-plt.title("Feature Importance (Gradient Boosting)")
-plt.xlabel("Importance")
-plt.ylabel("Features")
+json_report_data["mlp_results"] = {
+    "mse": mlp_mse,
+    "r2": mlp_r2,
+    "predictions": mlp_preds.tolist()
+}
+
+# 3. Feature Importance (from GBR)
+feature_importances = gb_model.feature_importances_
+importance_df = pd.DataFrame({'Feature': poly_feature_names, 'Importance': feature_importances})
+importance_df = importance_df.sort_values(by='Importance', ascending=False)
+json_report_data["feature_importances"] = importance_df.to_dict(orient="records")
+
+# Visualization: Feature Importance
+plt.figure(figsize=(12, 8))
+sns.barplot(x='Importance', y='Feature', data=importance_df.head(10))
+plt.title('Top 10 Feature Importances (Gradient Boosting)')
 plt.savefig("plot_reports/p4.1_feature_importances.png", dpi=150, bbox_inches="tight")
 plt.show()
 
-# Extract Final Equation
-final_coefficients = feature_importances * scaler.scale_[-1]
-print("Final Equation (Gradient Boosting):")
-for i, coeff in enumerate(final_coefficients):
-    print(f"{coeff:.6f} * {poly_features[i]}")
-
-# Visualize Results
-plt.figure(figsize=(10, 6))
-plt.plot(y_test.reset_index(drop=True), label="Actual Balance Index", color="blue")
-plt.plot(y_pred_gbr, label="Gradient Boosting Predictions", color="orange", linestyle="--")
-plt.plot(y_pred_nn, label="Neural Network Predictions", color="green", linestyle=":")
+# Visualization: Model Comparison (Actual vs Predicted)
+plt.figure(figsize=(12, 6))
+plt.plot(df['Frame'], y, label='Actual Balance Index', color='blue', alpha=0.5)
+plt.plot(df['Frame'], gb_preds, label='GBR Predictions', color='red', linestyle='--')
+plt.plot(df['Frame'], mlp_preds, label='MLP Predictions', color='green', linestyle=':')
+plt.title('Model Comparison: Actual vs Predicted Balance Index')
+plt.xlabel('Frame')
+plt.ylabel('Balance Index')
 plt.legend()
-plt.title("Actual vs Predicted Results")
-plt.xlabel("Samples")
-plt.ylabel("Balance Index")
 plt.savefig("plot_reports/p4.1_model_comparison.png", dpi=150, bbox_inches="tight")
 plt.show()
+
+json_report_data["actual_vs_predicted"] = {
+    "frame": df["Frame"].tolist(),
+    "actual": y.tolist(),
+    "gbr": gb_preds.tolist(),
+    "mlp": mlp_preds.tolist()
+}
+
+# Save JSON Report
+json_report_file = "json_reports/p4.1_gradient_boosting_equation_extraction.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
+# Save results
+df['GBR_Predictions'] = gb_preds
+df['MLP_Predictions'] = mlp_preds
+df.to_csv('csv/gradient_boosting_results.csv', index=False)
+print("Analysis completed. Data saved to gradient_boosting_results.csv.")
+print(f"JSON report saved to {json_report_file}")

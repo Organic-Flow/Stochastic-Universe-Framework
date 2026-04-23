@@ -320,6 +320,15 @@ async function renderContent() {
   }
 }
 
+// ─── Utilities ──────────────────────────────────────────────────────────────
+function toggleBenchCollapse(btn) {
+  const body = btn.nextElementSibling;
+  const icon = btn.querySelector('.bench-collapse-icon');
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  icon.textContent   = open ? '▶' : '▼';
+}
+
 // ─── Navigation ──────────────────────────────────────────────────────────────
 function selectTopic(topicId) {
   currentTopic = topicId;

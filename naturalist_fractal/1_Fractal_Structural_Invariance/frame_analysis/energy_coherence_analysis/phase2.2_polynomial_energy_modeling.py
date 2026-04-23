@@ -6,6 +6,12 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.metrics import mean_squared_error, r2_score
 import seaborn as sns
+from mpl_toolkits.mplot3d import Axes3D
+import json
+
+os.makedirs("csv", exist_ok=True)
+os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 # Load the CSV file
 file_path = "csv/final_analysis_with_predictions.csv"
@@ -23,6 +29,18 @@ print(f"Number of ideal frames: {len(ideal_frames)}")
 correlation_matrix = df[["Frame", "Avg Intensity", "Max Intensity"]].corr()
 print("Variable correlations:")
 print(correlation_matrix)
+
+# JSON Report Data
+json_report_data = {
+    "phase": "2.2",
+    "name": "Polynomial Energy Modeling",
+    "correlation_matrix": correlation_matrix.to_dict(),
+    "intensity_distribution": {
+        "avg": df["Avg Intensity"].tolist(),
+        "max": df["Max Intensity"].tolist()
+    },
+    "3d_visualization": df[["Frame", "Avg Intensity", "Max Intensity"]].to_dict(orient="records")
+}
 
 # Visualize correlations
 plt.figure(figsize=(8, 6))
@@ -52,6 +70,15 @@ r2 = r2_score(y, y_pred)
 print(f"Mean Squared Error (MSE): {mse:.5f}")
 print(f"R-squared (R2): {r2:.5f}")
 
+# Add polynomial fit to JSON
+json_report_data["polynomial_fit"] = {
+    "frame": df["Frame"].tolist(),
+    "actual": y.tolist(),
+    "predicted": y_pred.tolist(),
+    "mse": mse,
+    "r2": r2
+}
+
 # Model Equation
 print("Model Coefficients:", model.coef_)
 print("Intercept:", model.intercept_)
@@ -68,12 +95,6 @@ plt.savefig("plot_reports/p2.2_polynomial_fit.png", dpi=150, bbox_inches="tight"
 plt.show()
 
 # 3D Visualization: Frame, Avg Intensity, Max Intensity
-from mpl_toolkits.mplot3d import Axes3D
-
-os.makedirs("csv", exist_ok=True)
-os.makedirs("plot_reports", exist_ok=True)
-
-
 fig = plt.figure(figsize=(10, 8))
 ax = fig.add_subplot(111, projection='3d')
 scatter = ax.scatter(df["Frame"], df["Avg Intensity"], df["Max Intensity"], c=df["Avg Intensity"], cmap="viridis", s=50)
@@ -96,7 +117,13 @@ plt.legend()
 plt.savefig("plot_reports/p2.2_intensity_distribution.png", dpi=150, bbox_inches="tight")
 plt.show()
 
+# Save JSON Report
+json_report_file = "json_reports/p2.2_polynomial_energy_modeling.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
 # Save results
 df["Predicted Max Intensity"] = y_pred
 df.to_csv("csv/enhanced_analysis_with_predictions.csv", index=False)
 print("Analysis completed. Data saved to enhanced_analysis_with_predictions.csv.")
+print(f"JSON report saved to {json_report_file}")

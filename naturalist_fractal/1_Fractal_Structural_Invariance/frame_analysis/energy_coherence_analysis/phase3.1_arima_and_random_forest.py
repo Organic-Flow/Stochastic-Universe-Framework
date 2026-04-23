@@ -6,9 +6,11 @@ import seaborn as sns
 from statsmodels.tsa.arima.model import ARIMA
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 
 # Load data
@@ -35,6 +37,13 @@ data = data.dropna()
 # Select only numeric columns to calculate correlation matrix
 numeric_data = data.select_dtypes(include=[np.number])
 
+# JSON Report Data
+json_report_data = {
+    "phase": "3.1",
+    "name": "ARIMA and Random Forest Analysis",
+    "correlation_matrix": numeric_data.corr().to_dict()
+}
+
 # 1. Calculate correlation matrix
 correlation_matrix = numeric_data.corr()
 
@@ -57,6 +66,14 @@ predicted_balance = arima_result.predict(start=1, end=len(balance_index), dynami
 mse = mean_squared_error(balance_index[1:], predicted_balance[1:])
 r2 = r2_score(balance_index[1:], predicted_balance[1:])
 
+json_report_data["arima_fit"] = {
+    "frame": data["Frame"].tolist(),
+    "actual": balance_index.tolist(),
+    "predicted": predicted_balance.tolist(),
+    "mse": mse,
+    "r2": r2
+}
+
 # 3. Random Forest for feature importance
 features = numeric_data[["Frame", "Avg Intensity", "Rate_of_Change", "Intensity_Ratio"]]
 target = numeric_data["Balance Index"]
@@ -65,6 +82,7 @@ rf_model.fit(features, target)
 
 # Feature importance
 feature_importances = rf_model.feature_importances_
+json_report_data["feature_importances"] = dict(zip(features.columns, feature_importances.tolist()))
 
 # Visualizations
 # Time analysis with ARIMA
@@ -101,8 +119,20 @@ plt.legend()
 plt.savefig("plot_reports/p3.1_optimal_balance.png", dpi=150, bbox_inches="tight")
 plt.show()
 
+json_report_data["optimal_balance"] = {
+    "optimal_frame": float(optimal_frame),
+    "optimal_balance": float(optimal_balance),
+    "data": data[["Frame", "Balance Index"]].to_dict(orient="records")
+}
+
 # Print results
 print(f"Mean Squared Error (MSE): {mse}")
 print(f"R-squared: {r2}")
 print(f"Optimal Frame: {optimal_frame}")
 print(f"Optimal Balance Index: {optimal_balance}")
+
+# Save JSON Report
+json_report_file = "json_reports/p3.1_arima_and_random_forest.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+print(f"JSON report saved to {json_report_file}")

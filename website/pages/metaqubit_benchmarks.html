@@ -1,16 +1,1106 @@
 <article class="wp-article">
-  <div class="wp-header">
+  <header class="wp-header">
     <div class="wp-eyebrow">
-      <span class="wp-tag">Research Page</span>
+      <span class="wp-tag">MetaQubit Homeostasis</span>
+      <span class="wp-tag">Analysis Report</span>
     </div>
-    <h1 class="wp-title">Placeholder Page</h1>
-    <p class="wp-subtitle">This content will be populated with technical documentation soon.</p>
-  </div>
+    <h1 class="wp-title">MetaQubit Quantum Benchmarking<br><em>Results & Discoveries</em></h1>
+    <p class="wp-subtitle">Results & Discoveries</p>
+  </header>
+
+  <div class="wp-divider"></div>
+
+  <section class="wp-section">
+    <div class="wp-prose">
+      <p>A comprehensive analysis of 13 benchmark experiments comparing the MetaQubit framework against PennyLane's standard <code>default.qubit</code> simulator.</p>
+
+    </div>
+  </section>
+
   <div class="wp-divider"></div>
   <section class="wp-section">
-    <div class="wp-section-label">Preview</div>
+    <div class="wp-section-label">Overview</div>
+    <h2 class="wp-section-title">Overview</h2>
     <div class="wp-prose">
-      <p>Content for this section is currently being processed from the research manuscript.</p>
+      <p>The MetaQubit is an experimental quantum unit built on top of PennyLane, designed to maintain coherence, resist noise, and produce stable outputs through a self-stabilizing architecture. It combines:</p>
+<ul class="wp-list">
+<li><strong>Superposition</strong> via Hadamard gates across all qubits</li>
+<li><strong>Entanglement</strong> via CNOT-based chains</li>
+<li><strong>Coherence operations</strong> via RX, RY, RZ rotations</li>
+<li><strong>Quantum tunneling</strong> via stochastic CY gates</li>
+</ul>
+<p>These experiments evaluate MetaQubit's real-world viability by systematically stress-testing it against a standard quantum simulator across 13 dimensions of performance. Each experiment uses 4 qubits, 100 repetitions, and random inputs unless stated otherwise.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Summary Table</div>
+    <h2 class="wp-section-title">Summary Table</h2>
+    <div class="wp-prose">
+      <table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>#</th>
+  <th>Test</th>
+  <th>MetaQubit (Mean ± Std)</th>
+  <th>Default Qubit (Mean ± Std)</th>
+  <th>Winner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>01</td>
+  <td>Circuit Depth (100 layers)</td>
+  <td>0.992 ± 0.042</td>
+  <td>0.001 ± 0.229</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>02a</td>
+  <td>Decoherence Resistance</td>
+  <td>~0.993 ± 0.035</td>
+  <td>~0.003 ± 0.031</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>02b</td>
+  <td>Noise Resilience</td>
+  <td>~0.9996 ± 0.001</td>
+  <td>~−0.001 ± 0.031</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>02c</td>
+  <td>Information Capacity</td>
+  <td>~0.998 ± 0.001</td>
+  <td>−0.75 ± 0.02</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>02d</td>
+  <td>Measurement Stability</td>
+  <td>0.9999 ± 0.0002</td>
+  <td>−0.002 ± 1.000</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>Error Tolerance</td>
+  <td>0.994 ± 0.025</td>
+  <td>0.009 ± 0.117</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>Quantum Fourier Transform</td>
+  <td>Stochastic approx.</td>
+  <td>Ideal QFT</td>
+  <td>Contextual</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>Gate Robustness</td>
+  <td>0.990 ± 0.070</td>
+  <td>−0.067 ± 0.215</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>Phase Estimation</td>
+  <td>~0.99 ± 0.06</td>
+  <td>~0.43 ± near-zero</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>Quantum Error Correction</td>
+  <td>0.39–0.74 recovery</td>
+  <td>~0.0 recovery</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>Repeated Operations (50 layers)</td>
+  <td>0.805 ± 0.117</td>
+  <td>0.015 ± 0.244</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>Search Space Preservation</td>
+  <td>~0.9 ± 0.01</td>
+  <td>scattered ± 0.4</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>Execution Speed</td>
+  <td>0.070 sec</td>
+  <td>0.001 sec</td>
+  <td>Default Qubit</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>Output Stability</td>
+  <td>0.996 ± 0.020</td>
+  <td>−0.023 ± 0.257</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>Quantum Volume</td>
+  <td>4 high-confidence states</td>
+  <td>16 noisy states</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>13a</td>
+  <td>VQE Energy</td>
+  <td>0.350</td>
+  <td>0.052</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>13b</td>
+  <td>QAOA MaxCut</td>
+  <td>1.437</td>
+  <td>0.703</td>
+  <td>MetaQubit</td>
+</tr>
+<tr>
+  <td>13c</td>
+  <td>HHL Linear Systems</td>
+  <td>0.0625 (instant)</td>
+  <td>0.0625 (0.014s)</td>
+  <td>MetaQubit</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 01 — Circuit Depth Test</div>
+    <h2 class="wp-section-title">Experiment 01 — Circuit Depth Test</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test stability when circuits reach 100 sequential gate layers — a regime where standard qubits typically lose coherence due to accumulated noise.</p>
+<p><strong>Method:</strong> 100 repetitions of a 100-layer circuit with random RX/RY/RZ gates and CNOT entanglement applied to <code>default.qubit</code>; MetaQubit run with equivalent random inputs.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+  <th>Avg Time (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.992081</td>
+  <td>0.041848</td>
+  <td>3.691</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>0.001360</td>
+  <td>0.228872</td>
+  <td>0.049</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit's internal self-stabilizing architecture prevents the exponential degradation seen in deep circuits. Where the standard qubit collapses to near-zero output with high variance, MetaQubit holds at ~0.99 — a 730× improvement in mean output. This makes MetaQubit uniquely suited for deep-circuit quantum tasks where coherence retention is essential.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 02 — Decoherence, Noise, Information Capacity & Measurement Stability</div>
+    <h2 class="wp-section-title">Experiment 02 — Decoherence, Noise, Information Capacity & Measurement Stability</h2>
+    <div class="wp-prose">
+      <p>Four sub-tests evaluating MetaQubit's robustness under realistic noise conditions using a mixed-state <code>default.mixed</code> backend.</p>
+
+    </div>
+
+    <h3 class="wp-subsection-title">02a — Decoherence Resistance</h3>
+    <div class="wp-prose">
+      <p>BitFlip (0.1) on qubit 0 and PhaseFlip (0.1) on qubit 1, measured across 100 repetitions.</p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean (all qubits)</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>[0.992, 0.992, 0.994, 0.994]</td>
+  <td>[0.027, 0.049, 0.030, 0.036]</td>
+</tr>
+<tr>
+  <td>Default Qubit (mixed)</td>
+  <td>[0.006, 0.002, −0.001, 0.002]</td>
+  <td>[0.033, 0.032, 0.028, 0.030]</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">02b — Noise Resilience</h3>
+    <div class="wp-prose">
+      <p>DepolarizingChannel (0.05) on qubits 0 and 1.</p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>[0.9994, 0.9996, 0.9998, 0.9997]</td>
+  <td>[0.002, 0.001, 0.0003, 0.001]</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>[0.002, −0.004, −0.006, 0.000]</td>
+  <td>[0.028, 0.033, 0.028, 0.032]</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">02c — Information Capacity</h3>
+    <div class="wp-prose">
+      <p>Parametric encoding via RY rotations with random angles.</p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>[0.999, 0.997, 0.999, 0.996]</td>
+  <td>[0.0002, 0.001, 0.0003, 0.0002]</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>[−0.507, −0.995, −0.786, −0.724]</td>
+  <td>[0.028, 0.003, 0.019, 0.020]</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">02d — Measurement Stability</h3>
+    <div class="wp-prose">
+      <p>30 sequential measurement runs.</p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.999854</td>
+  <td>0.000222</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>−0.001800</td>
+  <td>0.999998</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit does not simply suppress noise — it appears to <strong>absorb</strong> it. The near-zero standard deviation in measurement stability (0.0002 vs 1.0 for the standard qubit) reveals a fundamental qualitative difference: MetaQubit behaves as a coherent, deterministic system even when the underlying quantum substrate is stochastic.</p>
+<hr />
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 03 — Error Tolerance</div>
+    <h2 class="wp-section-title">Experiment 03 — Error Tolerance</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test performance under full randomness — random qubit inputs, random circuit parameters, injected noise.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.994</td>
+  <td>0.025</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>0.009</td>
+  <td>0.117</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit achieves near-ideal output (0.994) under conditions specifically designed to break quantum systems. The standard qubit's signal effectively collapses (0.009). MetaQubit's error tolerance emerges from its architecture rather than being engineered for specific error types — a general-purpose resilience property.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 04 — Quantum Fourier Transform (QFT)</div>
+    <h2 class="wp-section-title">Experiment 04 — Quantum Fourier Transform (QFT)</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Evaluate whether MetaQubit can replicate or approximate the QFT structure — one of the foundational algorithms in quantum computing.</p>
+<p><strong>Results:</strong></p>
+<ul class="wp-list">
+<li>Default Qubit produces the ideal QFT probability distribution</li>
+<li>MetaQubit produces a stochastic approximation that preserves the dominant frequency components</li>
+</ul>
+<p><strong>Discovery:</strong> MetaQubit does not reproduce the exact QFT output but maintains structural Fourier recognition — high amplitude on the correct frequency bins. This is not a failure but a different computational regime: MetaQubit is better characterized as a <strong>probabilistic Fourier approximator</strong> suited for quantum machine learning and signal processing tasks, rather than exact quantum computation.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 05 — Gate Robustness</div>
+    <h2 class="wp-section-title">Experiment 05 — Gate Robustness</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test stability under heavy randomized gate sequences applied sequentially.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.990</td>
+  <td>0.070</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>−0.067</td>
+  <td>0.215</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> Even when circuit gates are applied in a random, unstructured order, MetaQubit retains a high and stable output. The default qubit drifts negative (−0.067) with high variance — indicating gate-order sensitivity. MetaQubit's resistance to this effect suggests its internal optimization landscape has a dominant attractor state.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 06 — Phase Estimation</div>
+    <h2 class="wp-section-title">Experiment 06 — Phase Estimation</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test phase coherence and the ability to maintain phase-sensitive quantum information.</p>
+<p><strong>Results (mean per qubit):</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Q0</th>
+  <th>Q1</th>
+  <th>Q2</th>
+  <th>Q3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>~0.99</td>
+  <td>~0.99</td>
+  <td>~0.99</td>
+  <td>~0.98</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>~0.36</td>
+  <td>~−0.42</td>
+  <td>~0.45</td>
+  <td>~0.46</td>
+</tr>
+</tbody>
+</table>
+<p>Default Qubit variance: near-zero (rigid)
+MetaQubit variance: 0.04–0.08 (controlled flexibility)</p>
+<p><strong>Discovery:</strong> MetaQubit produces consistently high phase-coherent output across all qubits, while the standard qubit produces scattered values. The small but non-zero variance of MetaQubit (0.04–0.08) is evidence of adaptive behavior — not noise, but controlled exploration around a stable phase manifold.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 07 — Quantum Error Correction</div>
+    <h2 class="wp-section-title">Experiment 07 — Quantum Error Correction</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Evaluate inherent error recovery capability by introducing bit-flip and phase errors, then measuring recovery.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Recovery Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.39 – 0.74</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>~0.00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> The standard qubit has no inherent error correction and collapses completely after error injection. MetaQubit recovers partial coherence (up to 74%) <strong>without any explicit error correction code</strong>. This suggests the MetaQubit architecture implements a form of implicit, structural error correction through its entanglement and tunneling layers — a key property for NISQ-era deployment.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 08 — Repeated Operations (Information Retention)</div>
+    <h2 class="wp-section-title">Experiment 08 — Repeated Operations (Information Retention)</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test whether quantum information survives 50 sequential gate layers — equivalent to sustained coherent computation.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.805</td>
+  <td>0.117</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>0.015</td>
+  <td>0.244</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit retains 80.5% signal fidelity through 50 gate operations. The standard qubit degrades to near-random noise (1.5% signal retention). This 53× improvement in information retention makes MetaQubit viable for long quantum computation sequences where standard simulators would require intermediate error correction.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 09 — Search Space Preservation</div>
+    <h2 class="wp-section-title">Experiment 09 — Search Space Preservation</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test whether MetaQubit can explore and preserve high-amplitude states across the full Hilbert space.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean (all qubits)</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>~0.9</td>
+  <td>0.004–0.016</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>~0.0</td>
+  <td>0.360–0.420</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit achieves near-uniform high amplitude (~0.9) across all qubits simultaneously, with extremely low variance. The standard qubit scatters across the search space with no consistent preference. This combination — high amplitude + low variance — means MetaQubit can reliably identify dominant search directions, making it a strong candidate for quantum optimization and search problems.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 10 — Execution Speed</div>
+    <h2 class="wp-section-title">Experiment 10 — Execution Speed</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Measure raw computational cost of MetaQubit vs. standard simulation.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Execution Time</th>
+  <th>Output Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.070 sec</td>
+  <td>Rich, distinct preference distributions</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>0.001 sec</td>
+  <td>Lightweight, near-uniform</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit is ~70× slower than the standard qubit. This is the expected cost of its internal stabilizing mechanisms (optimization steps, multi-layer coherence operations). However, the output richness justifies this cost: MetaQubit's output carries significantly more information content per evaluation. In application contexts where quality outweighs raw speed, this trade-off is favorable.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 11 — Output Stability</div>
+    <h2 class="wp-section-title">Experiment 11 — Output Stability</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test consistency of MetaQubit output across repeated identical executions.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Mean</th>
+  <th>Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.996</td>
+  <td>0.020</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>−0.023</td>
+  <td>0.257</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit produces near-identical outputs across repeated runs (std 0.020). The standard qubit fluctuates wildly (std 0.257) — 13× higher variance. This stability is critical for any application requiring reproducible quantum computation, including quantum-classical hybrid algorithms and learned quantum policies.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 12 — Quantum Volume</div>
+    <h2 class="wp-section-title">Experiment 12 — Quantum Volume</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Evaluate expressiveness and robustness in deep, wide circuits — the metric of quantum volume.</p>
+<p><strong>Results:</strong></p>
+<table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Output Characteristic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>4 high-confidence probability states with strong separation</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>16 noisy states with diffuse, overlapping distribution</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> Despite having more possible states, MetaQubit concentrates probability into fewer, higher-confidence outcomes. This compression is a feature: it indicates that MetaQubit's internal dynamics actively select dominant computational paths rather than spreading probability uniformly. High quantum volume combined with compressed output makes MetaQubit suitable for expressive, decision-making quantum circuits.</p>
+<hr />
+
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Experiment 13 — VQE, QAOA & HHL Algorithm Benchmarks</div>
+    <h2 class="wp-section-title">Experiment 13 — VQE, QAOA & HHL Algorithm Benchmarks</h2>
+    <div class="wp-prose">
+      <p><strong>Goal:</strong> Test MetaQubit on three foundational hybrid quantum-classical algorithms.</p>
+
+    </div>
+
+    <h3 class="wp-subsection-title">13a — VQE (Variational Quantum Eigensolver)</h3>
+    <div class="wp-prose">
+      <table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Ground State Energy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.35003</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>0.05207</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">13b — QAOA (Quantum Approximate Optimization — MaxCut)</h3>
+    <div class="wp-prose">
+      <table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>MaxCut Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>1.43661</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>0.70250</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">13c — HHL (Linear Systems Solver)</h3>
+    <div class="wp-prose">
+      <table class="bench-results-table" style="width:100%; margin: 1.5rem 0;">
+<thead class="bench-table-header">
+<tr>
+  <th>Model</th>
+  <th>Solution Accuracy</th>
+  <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MetaQubit</td>
+  <td>0.06250</td>
+  <td>~0.000 s</td>
+</tr>
+<tr>
+  <td>Default Qubit</td>
+  <td>0.06250</td>
+  <td>0.014 s</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery:</strong> MetaQubit achieves 2× higher MaxCut score in QAOA and 6.7× higher energy estimate in VQE. For HHL, both models reach identical accuracy but MetaQubit completes instantaneously — its internal state is already configured for QFT-based computations. These results confirm MetaQubit as a strong foundation for hybrid quantum-classical optimization.</p>
+<hr />
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Cross-Cutting Discoveries</div>
+    <h2 class="wp-section-title">Cross-Cutting Discoveries</h2>
+    <div class="wp-prose">
+      
+    </div>
+
+    <h3 class="wp-subsection-title">1. Structural Noise Immunity</h3>
+    <div class="wp-prose">
+      <p>MetaQubit does not implement explicit noise correction algorithms. Yet across every noisy test (02, 03, 07), it outperforms dedicated noise-reduction pipelines. This immunity appears to arise from the architecture itself: the combination of entanglement chains, coherence rotations, and quantum tunneling creates a dynamical basin of attraction around high-coherence states.</p>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">2. The Stability-Speed Trade-off</h3>
+    <div class="wp-prose">
+      <p>MetaQubit is consistently ~50–100× slower than <code>default.qubit</code>. This is not a bug but an architectural consequence of running internal optimization steps (Gradient Descent over 100 steps per initialization) and multi-layer coherence operations. The speed cost is justified whenever output quality, not throughput, is the bottleneck.</p>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">3. Stochastic Approximation vs. Exact Computation</h3>
+    <div class="wp-prose">
+      <p>Experiment 04 (QFT) reveals that MetaQubit does not aim for exact quantum simulation. Instead, it operates as an <strong>intelligent approximator</strong> — preserving structural properties (dominant frequencies, phase relationships) while abstracting over specific computational paths. This is an asset in machine learning and optimization contexts.</p>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">4. Implicit Error Correction (Experiment 07)</h3>
+    <div class="wp-prose">
+      <p>Recovery rates of 39–74% without any error correction code are extraordinary. Standard error correction requires 3–7 physical qubits per logical qubit; MetaQubit achieves partial error recovery in a single 4-qubit unit. This is the most surprising discovery of the benchmark suite.</p>
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+
+    <h3 class="wp-subsection-title">5. Scalability to Real Algorithms (Experiment 13)</h3>
+    <div class="wp-prose">
+      <p>The benchmark algorithms (VQE, QAOA, HHL) are not toy tests — they represent the core of near-term quantum computing. MetaQubit's consistent outperformance on these algorithms, particularly the 2× QAOA improvement, validates its potential as a practical building block for quantum-enhanced computation.</p>
+<hr />
+
+    </div>
+    
+    <div class="wp-section-label" style="margin-top: 2rem;">Experiment Assets</div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">Python</span>
+        <span>script.py</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code># Placeholder for script.py</code></pre>
+      </div>
+    </div>
+    
+    <div class="bench-collapse" style="margin-top: 0.75rem;">
+      <button class="bench-collapse-btn" onclick="toggleBenchCollapse(this)">
+        <span class="bench-collapse-icon">▶</span>
+        <span class="bench-collapse-lang">JSON</span>
+        <span>script.json</span>
+      </button>
+      <div class="bench-collapse-body" style="display:none;">
+        <pre class="bench-pre"><code>{ "status": "placeholder", "file": "script.json" }</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Conclusions</div>
+    <h2 class="wp-section-title">Conclusions</h2>
+    <div class="wp-prose">
+      <p>MetaQubit demonstrates a qualitatively different behavior from standard quantum simulation across all 13 benchmarks. It is not a faster or more accurate version of <code>default.qubit</code> — it is a different computational paradigm, trading exact simulation for robust, noise-immune, self-stabilizing behavior.</p>
+<p><strong>Where MetaQubit excels:</strong></p>
+<ul class="wp-list">
+<li>Deep circuits and long computations</li>
+<li>Noisy or adversarial environments</li>
+<li>Hybrid quantum-classical optimization (VQE, QAOA)</li>
+<li>Applications requiring stable, reproducible outputs</li>
+<li>Implicit error tolerance without dedicated correction overhead</li>
+</ul>
+<p><strong>Where MetaQubit makes trade-offs:</strong></p>
+<ul class="wp-list">
+<li>Raw execution speed (~70× overhead)</li>
+<li>Exact algorithmic simulation (QFT produces approximations)</li>
+<li>Classical simulation contexts where noise is not a concern</li>
+</ul>
+<p>MetaQubit's architecture positions it as a uniquely viable component for NISQ-era quantum systems, where noise and decoherence are unavoidable constraints — not edge cases to handle, but the dominant reality to work within.</p>
+
     </div>
   </section>
 </article>

@@ -5,9 +5,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.linear_model import LinearRegression
 from mpl_toolkits.mplot3d import Axes3D
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 
 # Read the CSV file
@@ -24,6 +26,18 @@ print(df.describe())
 # Extract Ideal Frames (Based on Avg Intensity and Max Intensity)
 ideal_frames = df[(df["Avg Intensity"] > 0.7) & (df["Max Intensity"] == 1.0)]
 print(f"Number of ideal frames: {len(ideal_frames)}")
+
+# JSON Report Data
+json_report_data = {
+    "phase": "2.1",
+    "name": "Linear Energy Modeling",
+    "intensity_distribution": {
+        "avg": df["Avg Intensity"].tolist(),
+        "max": df["Max Intensity"].tolist()
+    },
+    "correlation_matrix": numeric_df.corr().to_dict(),
+    "3d_visualization": df[["Frame", "Avg Intensity", "Max Intensity"]].to_dict(orient="records")
+}
 
 # Distribution of Average and Maximum Intensity
 plt.figure(figsize=(8, 6))
@@ -78,6 +92,15 @@ plt.legend()
 plt.savefig("plot_reports/p2.1_linear_regression_fit.png", dpi=150, bbox_inches="tight")
 plt.show()
 
+# Add predictions to JSON
+json_report_data["regression_fit"] = df[["Frame", "Max Intensity", "Predicted Max Intensity"]].to_dict(orient="records")
+
+# Save JSON Report
+json_report_file = "json_reports/p2.1_linear_energy_modeling.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
 # Save the updated CSV
 df.to_csv("csv/final_analysis_with_predictions.csv", index=False)
 print("Analysis completed. Data saved to final_analysis_with_predictions.csv.")
+print(f"JSON report saved to {json_report_file}")

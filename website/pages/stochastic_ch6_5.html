@@ -1,196 +1,128 @@
-<article class="wp-article">
-
-  <!-- ── Header ── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stochastic Universe - 6.5</title>
+    <link rel="stylesheet" href="shared.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style="background: #fcf9f0; padding: 4rem 6rem;">
+    <article class="wp-article">
   <header class="wp-header">
     <div class="wp-eyebrow">
       <span class="wp-tag">Stochastic Universe</span>
-      <span class="wp-tag">Section 6.5</span>
-      <span class="wp-tag">Formal Proofs</span>
+      <span class="wp-tag">Chapter 6.5</span>
     </div>
-    <h1 class="wp-title">The Grand Unified Equations<br><em>The Universal Calculus</em></h1>
-    <p class="wp-subtitle">Formalizing the mathematical patterns of self-organization, adaptation, and emergent complexity across all domains of science.</p>
+    <h1 class="wp-title">The Mathematical Structure of the Unified Framework</h1>
+    <p class="wp-subtitle">Exploring the foundations of stochastic determinism.</p>
   </header>
 
   <div class="wp-divider"></div>
-
-  <!-- ── Section 1: Core Architecture ── -->
   <section class="wp-section">
-    <div class="wp-section-label">Generalized Dynamics</div>
-    <h2 class="wp-section-title">The Core Stochastic Architecture</h2>
-
     <div class="wp-prose">
       <p>The unification of stochastic principles across disciplines requires a rigorous mathematical formulation that bridges physics, biology, and social sciences. Stochastic equations provide a universal language for describing systems governed by both deterministic laws and inherent randomness. In this section, we present the core mathematical structures of the unified framework — not as formal proofs in the strict mathematical sense, but as a formalization of the patterns observed across all preceding chapters, demonstrating how a common stochastic architecture underlies self-organization, adaptation, and emergent complexity in diverse systems.</p>
-      <p>A fundamental equation in stochastic modeling is the generalized stochastic differential equation (SDE):</p>
-    </div>
+<p>A fundamental equation in stochastic modeling is the generalized stochastic differential equation (SDE):</p>
+<p>$$\begin{equation}
+dX_t = f(X_t, t)dt + g(X_t, t)dW_t
+\end{equation}$$</p>
+<p>where $X_t$ represents the system state at time $t$, $f(X_t, t)$ is a deterministic drift function, $g(X_t, t)$ is the stochastic diffusion term, and $W_t$ denotes a Wiener process modeling random fluctuations. This equation forms the foundation for various applications, from quantum dynamics to population genetics and economic modeling.</p>
+<p>In physics, stochastic field equations extend the SDE approach to continuous systems. The Langevin equation describes the effect of noise on physical observables, and the Fokker-Planck equation governs the probability density evolution of stochastic processes:</p>
+<p>$$\begin{equation}
+\frac{\partial P(x,t)}{\partial t} = - \frac{\partial}{\partial x} [A(x)P(x,t)] + \frac{\partial^2}{\partial x^2} [B(x) P(x,t)]
+\end{equation}$$</p>
+<p>This formulation allows for the characterization of diffusion, reaction dynamics, and thermodynamic entropy production, linking stochasticity to fundamental laws of nature.</p>
+<p>In biological systems, stochasticity plays a critical role in genetic evolution and neural activity. The Wright-Fisher model in population genetics and the stochastic Hodgkin-Huxley model for neural dynamics both rely on probabilistic descriptions to capture the variability inherent in living organisms. The master equation in chemical kinetics further describes how molecular interactions drive self-organization within cells.</p>
+<p>In social and economic sciences, stochastic differential models, such as the Black-Scholes equation for financial markets and epidemic modeling equations for social interactions, demonstrate how randomness shapes decision-making processes and large-scale societal trends.</p>
 
-    <div class="wp-highlight-box">
-      <div class="wp-highlight-label">The Fundamental SDE</div>
-      <div class="math-block">
-        $$dX_t = f(X_t, t)dt + g(X_t, t)dW_t$$
-      </div>
-      <p class="wp-highlight-body">where $X_t$ represents the system state at time $t$, $f(X_t, t)$ is a deterministic drift function, $g(X_t, t)$ is the stochastic diffusion term, and $W_t$ denotes a Wiener process modeling random fluctuations. This equation forms the foundation for various applications, from quantum dynamics to population genetics and economic modeling.</p>
-    </div>
-    
-    <div class="wp-prose" style="margin-top: 2rem;">
-      <p>In physics, stochastic field equations extend the SDE approach to continuous systems. The Langevin equation describes the effect of noise on physical observables, and the Fokker-Planck equation governs the probability density evolution of stochastic processes, allowing for the characterization of diffusion, reaction dynamics, and thermodynamic entropy production, linking stochasticity to fundamental laws of nature.</p>
-      <p>In biological systems, stochasticity plays a critical role in genetic evolution and neural activity. The Wright-Fisher model in population genetics and the stochastic Hodgkin-Huxley model for neural dynamics both rely on probabilistic descriptions to capture the variability inherent in living organisms. The master equation in chemical kinetics further describes how molecular interactions drive self-organization within cells.</p>
-      <p>In social and economic sciences, stochastic differential models, such as the Black-Scholes equation for financial markets and epidemic modeling equations for social interactions, demonstrate how randomness shapes decision-making processes and large-scale societal trends.</p>
     </div>
   </section>
 
   <div class="wp-divider"></div>
-
-  <!-- ── Section 2: Itô Calculus ── -->
   <section class="wp-section">
-    <div class="wp-section-label">Calculus of Randomness</div>
-    <h2 class="wp-section-title">Itô's Lemma and System Differentials</h2>
-
+    <div class="wp-section-label">Itô Calculus and Fundamental Equations</div>
+    <h2 class="wp-section-title">Itô Calculus and Fundamental Equations</h2>
     <div class="wp-prose">
       <p>To further establish the role of stochasticity as a unifying principle, we explore the derivation of key stochastic equations across different scientific domains. The foundation of these equations rests on Itô calculus, which provides a formal framework for modeling differential systems influenced by randomness.</p>
-      <p>One of the central results in stochastic processes is Itô's lemma, which allows us to compute the differential of a function of a stochastic variable:</p>
-    </div>
+<p>One of the central results in stochastic processes is Itô's lemma, which allows us to compute the differential of a function of a stochastic variable:</p>
+<p>$$\begin{equation}
+dF(X_t) = \left( \frac{\partial F}{\partial X} f(X_t, t) + \frac{1}{2} \frac{\partial^2 F}{\partial X^2} g^2(X_t, t) \right) dt + \frac{\partial F}{\partial X} g(X_t, t) dW_t
+\end{equation}$$</p>
+<p>This result is crucial in physics for deriving stochastic versions of Hamiltonian mechanics and in finance for modeling asset prices.</p>
+<p>In biology, the stochastic master equation provides a probabilistic description of biochemical reaction networks. For a system with reaction rates $W_i(X)$, the probability distribution $P(X,t)$ evolves as:</p>
+<p>$$\begin{equation}
+\frac{\partial P(X,t)}{\partial t} = \sum_i \left[ W_i(X-\nu_i)P(X-\nu_i,t) - W_i(X)P(X,t) \right]
+\end{equation}$$</p>
+<p>This equation governs gene expression, molecular interactions, and evolutionary dynamics, demonstrating that biological variability is inherently stochastic rather than purely deterministic. The stochastic nature of evolution is further captured by population genetics models such as the Wright-Fisher model, which describes how genetic frequencies change randomly over time.</p>
+<p>In socio-economic systems, the stochastic Lotka-Volterra model extends classical predator-prey dynamics by incorporating noise to account for external fluctuations in population growth and resource availability. The model is given by:</p>
+<p>$$\begin{equation}
+dX_t = \alpha X_t dt + \sigma X_t dW_t
+\end{equation}$$</p>
+<p>where $\alpha$ represents the growth rate and $\sigma$ the stochastic influence. This equation finds applications in financial modeling, ecological networks, and market stability analysis. The role of increasing returns and path dependence in economic systems further illustrates how stochastic choices can lead to locked-in outcomes and emergent economic structures.</p>
 
-    <div class="wp-highlight-box" style="background: #173318; color: #c9ecc4;">
-      <div class="math-block">
-        $$dF(X_t) = \left( \frac{\partial F}{\partial X} f(X_t, t) + \frac{1}{2} \frac{\partial^2 F}{\partial X^2} g^2(X_t, t) \right) dt + \frac{\partial F}{\partial X} g(X_t, t) dW_t$$
-      </div>
-      <p class="wp-highlight-body" style="color: rgba(174,207,169,0.85); text-align: center;">This result is crucial in physics for deriving stochastic versions of Hamiltonian mechanics and in finance for modeling asset prices.</p>
-    </div>
-  </section>
-
-  <div class="wp-divider"></div>
-
-  <!-- ── Section 3: Master Equations ── -->
-  <section class="wp-section">
-    <div class="wp-section-label">Probabilistic Evolution</div>
-    <h2 class="wp-section-title">Biological and Social Formalisms</h2>
-
-    <div class="wp-prose">
-      <p>In biology, the stochastic master equation provides a probabilistic description of biochemical reaction networks. This equation governs gene expression, molecular interactions, and evolutionary dynamics, demonstrating that biological variability is inherently stochastic rather than purely deterministic. The stochastic nature of evolution is further captured by population genetics models such as the Wright-Fisher model, which describes how genetic frequencies change randomly over time.</p>
-      <p>In socio-economic systems, the stochastic Lotka-Volterra model extends classical predator-prey dynamics by incorporating noise to account for external fluctuations in population growth and resource availability. This equation finds applications in financial modeling, ecological networks, and market stability analysis. The role of increasing returns and path dependence in economic systems further illustrates how stochastic choices can lead to locked-in outcomes and emergent economic structures.</p>
-    </div>
-
-    <div class="wp-two-col" style="margin-top: 2rem;">
-      <div class="wp-abstract-card">
-        <h3 class="wp-abstract-title">Stochastic Master Equation</h3>
-        <div class="math-block" style="font-size: 0.8rem; margin: 0.5rem 0;">
-          $$\frac{\partial P}{\partial t} = \sum \left[ W_i(X-\nu_i)P(X-\nu_i,t) - W_i(X)P(X,t) \right]$$
-        </div>
-        <p class="wp-abstract-body">Governs gene expression and molecular interactions—proving that biological variability is inherently stochastic.</p>
-      </div>
-      <div class="wp-abstract-card">
-        <h3 class="wp-abstract-title">Stochastic Lotka-Volterra</h3>
-        <div class="math-block" style="font-size: 0.8rem; margin: 0.5rem 0;">
-          $$dX_t = \alpha X_t dt + \sigma X_t dW_t$$
-        </div>
-        <p class="wp-abstract-body">Extends predator-prey dynamics to financial modeling and market stability analysis.</p>
-      </div>
     </div>
   </section>
 
   <div class="wp-divider"></div>
-
-  <!-- ── Section 4: Potential Landscapes ── -->
   <section class="wp-section">
-    <div class="wp-section-label">Topological Stability</div>
-    <h2 class="wp-section-title">Potential Landscapes and Higher-Dimensional Dynamics</h2>
-
+    <div class="wp-section-label">Formalizing the Emergence of Order: Mathematical Case Studies</div>
+    <h2 class="wp-section-title">Formalizing the Emergence of Order: Mathematical Case Studies</h2>
     <div class="wp-prose">
-      <p>To ground the book's central thesis in rigorous mathematics, this section demonstrates how established formalisms describe the emergence of order from stochastic processes. The Fokker-Planck equation describes the time-dependent behavior of a probability distribution under the influence of drift and diffusion, instrumental in studying noise-induced transitions in physics, including diffusion processes, phase separation, and critical phenomena.</p>
-      <p>A fundamental illustration of stochastic order emergence is the self-organization of dissipative systems. The interplay between deterministic drift and stochastic noise allows a system to stabilize into a preferred state. This is exemplified by the Langevin equation:</p>
-    </div>
+      <p>To ground the book's central thesis in rigorous mathematics, this section demonstrates how established formalisms describe the emergence of order from stochastic processes. We are not proving new mathematical theorems here, but rather illustrating how powerful frameworks — such as the Fokker-Planck equation for probability distributions and the Langevin equation for system dynamics — provide the precise language for validating stochastic determinism. These cases serve as concrete mathematical illustrations, showing that the stabilization of complex structures through noise is not merely a concept but a quantifiable and predictable outcome of stochastic dynamics.</p>
+<p>Consider first the Fokker-Planck equation (FPE), which characterizes the probability density evolution of complex systems. The FPE describes the time-dependent behavior of a probability distribution $P(x,t)$ for a stochastic variable $x$ under the influence of drift $A(x)$ and diffusion $B(x)$, given by:</p>
+<p>$$\begin{equation}
+\frac{\partial P(x,t)}{\partial t} = -\frac{\partial}{\partial x} [A(x) P(x,t)] + \frac{\partial^2}{\partial x^2} [B(x) P(x,t)]
+\end{equation}$$</p>
+<p>This equation is instrumental in studying noise-induced transitions in physics, including diffusion processes, phase separation, and critical phenomena.</p>
+<p>A fundamental illustration of stochastic order emergence is the self-organization of dissipative systems. The interplay between deterministic drift and stochastic noise allows a system to stabilize into a preferred state. This is exemplified by the Langevin equation:</p>
+<p>$$\begin{equation}
+dx_t = -\nabla U(x_t), dt + \sigma, dW_t
+\end{equation}$$</p>
+<p>where $U(x_t)$ represents a potential landscape, $\sigma$ is the noise intensity, and $dW_t$ is a Wiener increment. Systems subjected to such dynamics exhibit noise-driven transitions, where entropy production stabilizes complex structures, a principle observed in thermodynamic equilibrium states and ecological systems alike.</p>
+<p>In neural dynamics, the stochastic Hodgkin-Huxley model demonstrates how noise enhances signal propagation in neural circuits. The introduction of controlled randomness in synaptic activity enables robust information transfer, suggesting that biological intelligence inherently depends on stochastic optimization processes.</p>
 
-    <div class="wp-highlight-box">
-      <div class="wp-highlight-label">Langevin Equation</div>
-      <div class="math-block">
-        $$dx_t = -\nabla U(x_t)\, dt + \sigma\, dW_t$$
-      </div>
-      <p class="wp-highlight-body">where $U(x_t)$ represents a potential landscape. Systems subjected to such dynamics exhibit noise-driven transitions, where entropy production stabilizes complex structures, a principle observed in thermodynamic equilibrium states and ecological systems alike. In neural dynamics, the stochastic Hodgkin-Huxley model demonstrates how noise enhances signal propagation in neural circuits.</p>
-    </div>
-
-    <div class="wp-prose" style="margin-top: 2rem;">
-      <p>Extending our analysis to higher-dimensional stochastic systems, we explore the role of coupled stochastic differential equations (SDEs) in modeling synchronized order in interacting components. Many real-world systems, from climate models to financial markets, involve multiple stochastic variables evolving concurrently.</p>
-      <p>One application of this framework is in synchronized oscillatory systems, such as those found in biological rhythms and climate variability. The Kuramoto model, a paradigm for coupled oscillators, can be extended into a stochastic regime, allowing for the modeling of robust synchronization in noisy environments, a feature observed in circadian rhythms and neural networks.</p>
-      <p>Another key proof of order emergence in stochastic systems comes from renormalization group theory. By coarse-graining interactions at different scales, stochastic fluctuations at microscopic levels translate into macroscopic stability. This principle underlies self-organized criticality, explaining how stochastic-driven systems achieve structural robustness across multiple scales, such as in earthquake dynamics and internet traffic models.</p>
     </div>
   </section>
 
   <div class="wp-divider"></div>
-
-  <!-- ── Section 5: Validation ── -->
   <section class="wp-section">
-    <div class="wp-section-label">Empirical Proof</div>
-    <h2 class="wp-section-title">Validation Across Scales</h2>
-
+    <div class="wp-section-label">Higher-Dimensional Stochastic Systems</div>
+    <h2 class="wp-section-title">Higher-Dimensional Stochastic Systems</h2>
     <div class="wp-prose">
-      <p>Empirical validation of stochastic unification is crucial to demonstrating its applicability across diverse domains.</p>
-    </div>
+      <p>Extending our analysis to higher-dimensional stochastic systems, we explore the role of coupled stochastic differential equations (SDEs) in modeling synchronized order in interacting components. Many real-world systems, from climate models to financial markets, involve multiple stochastic variables evolving concurrently. A general formulation for such systems is given by:</p>
+<p>$$\begin{equation}
+d\mathbf{X}_t = \mathbf{A} (\mathbf{X}_t, t) dt + \mathbf{B} (\mathbf{X}_t, t) d\mathbf{W}_t
+\end{equation}$$</p>
+<p>where $\mathbf{X}_t$ is a vector of state variables, $\mathbf{A}$ represents deterministic forces, $\mathbf{B}$ encodes stochastic influences, and $\mathbf{W}_t$ is a vector of Wiener processes modeling independent noise sources.</p>
+<p>One application of this framework is in synchronized oscillatory systems, such as those found in biological rhythms and climate variability. The Kuramoto model, a paradigm for coupled oscillators, can be extended into a stochastic regime:</p>
+<p>$$\begin{equation}
+\frac{d\theta_i}{dt} = \omega_i + \sum_{j} K_{ij} \sin(\theta_j - \theta_i) + \sigma \xi_i(t)
+\end{equation}$$</p>
+<p>where $\theta_i$ represents the phase of the $i$-th oscillator, $K_{ij}$ defines the coupling strength, and $\sigma \xi_i(t)$ is a stochastic perturbation. This stochastic extension allows for the modeling of robust synchronization in noisy environments, a feature observed in circadian rhythms and neural networks.</p>
+<p>Another key proof of order emergence in stochastic systems comes from renormalization group theory. By coarse-graining interactions at different scales, stochastic fluctuations at microscopic levels translate into macroscopic stability. This principle underlies self-organized criticality, explaining how stochastic-driven systems achieve structural robustness across multiple scales, such as in earthquake dynamics and internet traffic models.</p>
 
-    <div class="wp-problems-grid">
-      <div class="wp-problem-item">
-        <div class="wp-problem-number">01</div>
-        <div>
-          <h4 class="wp-problem-title">Turbulence (Navier-Stokes)</h4>
-          <p class="wp-problem-body">A key example is found in turbulence modeling, where the Navier-Stokes equations, when extended to stochastic formulations, accurately capture the chaotic yet structured nature of fluid flows. This equation has been successfully used to predict turbulence cascades and energy dissipation rates in real-world fluid systems.</p>
-        </div>
-      </div>
-      <div class="wp-problem-item">
-        <div class="wp-problem-number">02</div>
-        <div>
-          <h4 class="wp-problem-title">Cellular Function (Gillespie)</h4>
-          <p class="wp-problem-body">In biological applications, stochastic gene regulatory networks validate the role of randomness in cellular function. The Gillespie algorithm, which simulates chemical reactions as stochastic events, has been used to model gene expression variability. Experimental results confirm that noise-driven fluctuations contribute to cellular differentiation.</p>
-        </div>
-      </div>
-      <div class="wp-problem-item">
-        <div class="wp-problem-number">03</div>
-        <div>
-          <h4 class="wp-problem-title">Finance (Black-Scholes)</h4>
-          <p class="wp-problem-body">Economics provides another compelling case. The Black-Scholes equation for option pricing, which incorporates stochastic volatility, has become a cornerstone of financial mathematics. This has been validated through historical market behavior, reinforcing the notion that financial systems inherently follow stochastic laws.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="wp-vision-box" style="margin-top: 3rem;">
-      <div class="wp-vision-label">Vision</div>
-      <p class="wp-vision-text">Stabilization through noise is not merely a concept—it is a quantifiable and predictable outcome of universal dynamics. Next: <strong>Applications of the Unified Theory</strong>.</p>
     </div>
   </section>
 
+  <div class="wp-divider"></div>
+  <section class="wp-section">
+    <div class="wp-section-label">Empirical Validation</div>
+    <h2 class="wp-section-title">Empirical Validation</h2>
+    <div class="wp-prose">
+      <p>Empirical validation of stochastic unification is crucial to demonstrating its applicability across diverse domains. A key example is found in turbulence modeling, where the Navier-Stokes equations, when extended to stochastic formulations, accurately capture the chaotic yet structured nature of fluid flows. The stochastic Navier-Stokes equation is written as:</p>
+<p>$$\begin{equation}
+\frac{\partial u}{\partial t} + (u \cdot \nabla) u = -\nabla p + \nu \nabla^2 u + \eta(x,t)
+\end{equation}$$</p>
+<p>where $u$ is the velocity field, $p$ is pressure, $\nu$ is viscosity, and $\eta(x,t)$ represents a stochastic forcing term modeling external fluctuations. This equation has been successfully used to predict turbulence cascades and energy dissipation rates in real-world fluid systems.</p>
+<p>In biological applications, stochastic gene regulatory networks validate the role of randomness in cellular function. The Gillespie algorithm, which simulates chemical reactions as stochastic events, has been used to model gene expression variability. Experimental results confirm that noise-driven fluctuations in gene expression contribute to cellular differentiation, supporting the theoretical predictions of stochastic models.</p>
+<p>Economics provides another compelling case for stochastic unification. The Black-Scholes equation for option pricing, which incorporates stochastic volatility, has become a cornerstone of financial mathematics. The generalized form:</p>
+<p>$$\begin{equation}
+dS_t = \mu S_t dt + \sigma S_t dW_t
+\end{equation}$$</p>
+<p>where $S_t$ is the asset price, $\mu$ is the drift term, and $\sigma$ represents volatility, has been validated through historical market behavior. This reinforces the notion that financial systems inherently follow stochastic laws.</p>
+
+    </div>
+  </section>
 </article>
-
-<style>
-/* ── Premium Article Styles ── */
-.wp-article { font-family: 'Inter', sans-serif; color: #434841; }
-.wp-header { margin-bottom: 3.5rem; }
-.wp-eyebrow { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
-.wp-tag { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: #456647; border: 1px solid rgba(69,102,71,0.35); padding: 0.25em 0.75em; }
-.wp-title { font-family: 'Newsreader', serif; font-size: 3.2rem; font-weight: 400; color: #173318; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 1.25rem; }
-.wp-subtitle { font-family: 'Inter', sans-serif; font-size: 1.05rem; color: #737970; line-height: 1.75; max-width: 580px; margin: 0; }
-.wp-divider { height: 1px; background: rgba(195,200,190,0.35); margin: 3rem 0; }
-.wp-section { margin-bottom: 0.5rem; }
-.wp-section-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
-.wp-section-title { font-family: 'Newsreader', serif; font-size: 2rem; font-weight: 400; font-style: italic; color: #173318; margin-bottom: 1.75rem; line-height: 1.15; }
-.wp-prose p { font-size: 0.92rem; line-height: 1.8; color: #434841; margin-bottom: 1.25rem; max-width: 680px; }
-
-.wp-highlight-box { background: #ebe8df; padding: 2.5rem; margin-top: 1.5rem; }
-.wp-highlight-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
-.wp-highlight-body { font-size: 0.9rem; line-height: 1.8; color: #434841; max-width: 680px; }
-
-.wp-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(195,200,190,0.3); margin-top: 1.5rem; }
-.wp-abstract-card { background: #f6f3ea; padding: 2rem; }
-.wp-abstract-title { font-family: 'Newsreader', serif; font-size: 1.1rem; font-weight: 400; color: #173318; margin-bottom: 0.85rem; line-height: 1.2; }
-.wp-abstract-body { font-size: 0.84rem; line-height: 1.75; color: #434841; }
-
-.wp-problems-grid { display: flex; flex-direction: column; gap: 0; margin: 1.5rem 0; border: 1px solid rgba(195,200,190,0.3); }
-.wp-problem-item { display: flex; gap: 1.5rem; padding: 1.5rem; border-bottom: 1px solid rgba(195,200,190,0.2); align-items: flex-start; }
-.wp-problem-item:last-child { border-bottom: none; }
-.wp-problem-number { font-family: 'Newsreader', serif; font-size: 2.4rem; color: rgba(23,51,24,0.1); font-weight: 400; line-height: 1; flex-shrink: 0; width: 3rem; text-align: right; }
-.wp-problem-title { font-family: 'Inter', sans-serif; font-size: 0.92rem; font-weight: 700; color: #173318; margin-bottom: 0.5rem; }
-.wp-problem-body { font-size: 0.86rem; line-height: 1.75; color: #434841; margin: 0; }
-
-.wp-vision-box { background: #173318; padding: 2.5rem; margin-top: 2.5rem; }
-.wp-vision-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(174,207,169,0.45); margin-bottom: 1rem; }
-.wp-vision-text { font-family: 'Newsreader', serif; font-size: 1.15rem; font-style: italic; line-height: 1.85; color: rgba(174,207,169,0.85); margin: 0; }
-
-.math-block { margin: 1.5rem 0; text-align: center; font-size: 1.2rem; }
-</style>
+</body>
+</html>

@@ -5,13 +5,22 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 
 # 1. Load data
 df = pd.read_csv('csv/enhanced_balance_analysis.csv')
+
+# JSON Report Data
+json_report_data = {
+    "phase": "2.5",
+    "name": "Dynamic Homeostasis Visualization",
+    "correlation_matrix": df[['Frame', 'Avg Intensity', 'Balance Index']].corr().to_dict()
+}
 
 # 2. Heatmap for Variable Correlations
 def plot_correlation_heatmap(df):
@@ -37,6 +46,7 @@ def plot_3d_visualization(df):
     fig.colorbar(scatter, label='Balance Index')
     plt.savefig("plot_reports/p2.5_3d_balance_index.png", dpi=150, bbox_inches="tight")
     plt.show()
+    json_report_data["3d_visualization"] = df[["Frame", "Avg Intensity", "Balance Index"]].to_dict(orient="records")
 
 plot_3d_visualization(df)
 
@@ -57,6 +67,7 @@ def create_time_lapse(df):
 
     ani = FuncAnimation(fig, update, frames=df['Frame'], blit=True, interval=100)
     plt.show()
+    json_report_data["time_lapse"] = df[["Frame", "Balance Index"]].to_dict(orient="records")
 
 create_time_lapse(df)
 
@@ -76,6 +87,7 @@ def balance_optimization(df):
     plt.legend()
     plt.savefig("plot_reports/p2.5_balance_optimization.png", dpi=150, bbox_inches="tight")
     plt.show()
+    json_report_data["balance_optimization"] = df[["Frame", "Balance Index", "Optimized Balance"]].to_dict(orient="records")
 
 balance_optimization(df)
 
@@ -89,5 +101,12 @@ def balance_index_heatmap(df):
     plt.ylabel('Balance Index')
     plt.savefig("plot_reports/p2.5_balance_index_heatmap.png", dpi=150, bbox_inches="tight")
     plt.show()
+    json_report_data["balance_index_heatmap"] = heatmap_data.reset_index().to_dict(orient="records")
 
 balance_index_heatmap(df)
+
+# Save JSON Report
+json_report_file = "json_reports/p2.5_dynamic_homeostasis_visualization.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+print(f"JSON report saved to {json_report_file}")

@@ -1,137 +1,92 @@
-<article class="wp-article">
-
-  <!-- ── Header ── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stochastic Universe - 5.5</title>
+    <link rel="stylesheet" href="shared.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style="background: #fcf9f0; padding: 4rem 6rem;">
+    <article class="wp-article">
   <header class="wp-header">
     <div class="wp-eyebrow">
       <span class="wp-tag">Stochastic Universe</span>
-      <span class="wp-tag">Section 5.5</span>
-      <span class="wp-tag">Software Architecture</span>
+      <span class="wp-tag">Chapter 5.5</span>
     </div>
-    <h1 class="wp-title">Computational Implementation of SPL<br><em>The Logic Engine</em></h1>
-    <p class="wp-subtitle">Translating the principles of Stochastic Paradoxical Logic into a formal, algorithmic framework for processing contradictions.</p>
+    <h1 class="wp-title">Computational Implementation</h1>
+    <p class="wp-subtitle">Exploring the foundations of stochastic determinism.</p>
   </header>
 
   <div class="wp-divider"></div>
-
-  <!-- ── Section 1: Algorithm ── -->
   <section class="wp-section">
-    <div class="wp-section-label">Core Algorithm</div>
-    <h2 class="wp-section-title">The Stochastic Proposition Class</h2>
-
+    <div class="wp-section-label">Algorithm Design</div>
+    <h2 class="wp-section-title">Algorithm Design</h2>
     <div class="wp-prose">
-      <p>To implement SPL, we define a class where truth value is not a static property but an outcome of a stochastic evaluation influenced by a <strong>paradox factor</strong>.</p>
-    </div>
+      <p>To translate the principles of Stochastic Paradoxical Logic into computational form, we outline a <strong>conceptual algorithm</strong>. The following Python-like structure is not intended as a complete, production-ready implementation, but rather as a formal illustration of how an SPL system could be designed to evaluate propositions based on both their base probabilities and the paradoxical tension they generate. The simplicity is deliberate: the goal is clarity of concept, not optimization of execution.</p>
+<pre><code class="language-python"> class StochasticProposition:
+ def __init__(self, name, base_probability):
+ self.name = name
+ self.base_probability = base_probability
+ self.current_state = None
+ self.paradox_history = []
+ 
+ def evaluate(self, paradox_factor=0.0):
+ random_value = random.random
+ adjusted_probability = (
+ self.base_probability + 
+ paradox_factor * self.calculate_paradox_influence
+ )
+ self.current_state = random_value &lt; adjusted_probability
+ return self.current_state
+ 
+ def calculate_paradox_influence(self):
+ # CONCEPTUAL: In a full implementation, this function would model the
+ # 'tension' between a proposition and its negation. This could be based
+ # on the history of their co-occurrence, their semantic distance in a
+ # knowledge graph, or a predefined paradox matrix. For this illustration,
+ # we use a simple average of historical paradox states as a proxy.
+ return sum(self.paradox_history) / len(self.paradox_history) \
+ if self.paradox_history else 0
 
-    <div class="wp-highlight-box" style="background: #1e1e1e; padding: 2rem;">
-<pre style="margin: 0; color: #d4d4d4; font-family: 'Space Grotesk', monospace; font-size: 0.85rem; line-height: 1.6;">
-<span style="color: #569cd6;">class</span> <span style="color: #4ec9b0;">StochasticProposition</span>:
-    <span style="color: #569cd6;">def</span> <span style="color: #dcdcaa;">__init__</span>(<span style="color: #9cdcfe;">self</span>, <span style="color: #9cdcfe;">name</span>, <span style="color: #9cdcfe;">base_probability</span>):
-        <span style="color: #9cdcfe;">self</span>.name = name
-        <span style="color: #9cdcfe;">self</span>.base_probability = base_probability
-        <span style="color: #9cdcfe;">self</span>.current_state = <span style="color: #569cd6;">None</span>
-        <span style="color: #9cdcfe;">self</span>.paradox_history = []
-    
-    <span style="color: #569cd6;">def</span> <span style="color: #dcdcaa;">evaluate</span>(<span style="color: #9cdcfe;">self</span>, <span style="color: #9cdcfe;">paradox_factor</span>=<span style="color: #b5cea8;">0.0</span>):
-        <span style="color: #9cdcfe;">adjusted_prob</span> = (
-            <span style="color: #9cdcfe;">self</span>.base_probability + 
-            paradox_factor * <span style="color: #9cdcfe;">self</span>.calculate_paradox_influence()
-        )
-        <span style="color: #9cdcfe;">self</span>.current_state = random.random() < <span style="color: #9cdcfe;">adjusted_prob</span>
-        <span style="color: #569cd6;">return</span> <span style="color: #9cdcfe;">self</span>.current_state
-</pre>
+</code></pre>
+
     </div>
   </section>
 
   <div class="wp-divider"></div>
-
-  <!-- ── Section 2: Detection ── -->
   <section class="wp-section">
-    <div class="wp-section-label">System Management</div>
-    <h2 class="wp-section-title">Contradiction Detection</h2>
-
-    <div class="wp-prose">
-      <p>Contradictions in an SPL system are not errors to be suppressed, but indicators of internal tension that drive the evolution of the knowledge state.</p>
-    </div>
-
-    <div class="wp-concepts-grid">
-      <div class="wp-concept-card">
-        <h3 class="wp-concept-name">Logical</h3>
-        <p class="wp-concept-body">Formal negation detection ($P$ and $\neg P$). Standard deductive contradiction identification.</p>
-      </div>
-      <div class="wp-concept-card">
-        <h3 class="wp-concept-name">Semantic</h3>
-        <p class="wp-concept-body">Using NLP to detect opposing meanings and conceptual friction within natural language inputs.</p>
-      </div>
-      <div class="wp-concept-card">
-        <h3 class="wp-concept-name">Empirical</h3>
-        <p class="wp-concept-body">Identifying events that are statistically mutually exclusive based on historical datasets.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="wp-divider"></div>
-
-  <!-- ── Section 3: Resolution ── -->
-  <section class="wp-section">
-    <div class="wp-section-label">Stochastic Balance</div>
+    <div class="wp-section-label">Paradox Resolution Mechanisms</div>
     <h2 class="wp-section-title">Paradox Resolution Mechanisms</h2>
-
     <div class="wp-prose">
-      <p>Resolution in SPL is not about elimination, but about finding a <strong>stochastic equilibrium</strong> where contradictory states are balanced.</p>
-    </div>
+      <p>The computational implementation includes mechanisms for detecting and managing contradictions:</p>
+<pre><code class="language-python"> class ParadoxManager:
+ def __init__(self, propositions):
+ self.propositions = propositions
+ self.paradox_matrix = self.build_paradox_matrix
+ 
+ def detect_contradictions(self):
+ contradictions = []
+ for i, prop1 in enumerate(self.propositions):
+ for j, prop2 in enumerate(self.propositions[i+1:], i+1):
+ # CONCEPTUAL: 'are_contradictory' could be defined in multiple ways:
+ # 1. Logically: prop2 is the formal negation of prop1 (P and ¬P).
+ # 2. Semantically: NLP detects opposing meanings in natural language.
+ # 3. Empirically: data shows the two events are mutually exclusive.
+ if self.are_contradictory(prop1, prop2):
+ contradictions.append((prop1, prop2))
+ return contradictions
+ 
+ def resolve_paradox(self, prop1, prop2):
+ paradox_probability = (
+ prop1.base_probability + prop2.base_probability
+ ) / 2
+ return self.apply_stochastic_resolution(paradox_probability)
 
-    <div class="wp-highlight-box">
-<pre style="margin: 0; color: #434841; font-family: 'Space Grotesk', monospace; font-size: 0.85rem; line-height: 1.6;">
-<span style="color: #173318; font-weight: 700;">def</span> <span style="color: #173318; font-style: italic;">resolve_paradox</span>(prop1, prop2):
-    paradox_probability = (
-        prop1.base_probability + prop2.base_probability
-    ) / 2
-    <span style="color: #173318; font-weight: 700;">return</span> apply_stochastic_resolution(paradox_probability)
-</pre>
-    </div>
+</code></pre>
 
-    <blockquote class="wp-blockquote">
-      The simplicity is deliberate: the goal is the clarity of the concept of "truth-as-distribution" in a computational medium.
-    </blockquote>
-
-    <div class="wp-vision-box">
-      <div class="wp-vision-label">Vision</div>
-      <p class="wp-vision-text">Truth is a dynamic process. In the final sections, we look at <strong>Experimental Validation and Limitations</strong>.</p>
     </div>
   </section>
-
 </article>
-
-<style>
-/* ── Premium Article Styles ── */
-.wp-article { font-family: 'Inter', sans-serif; color: #434841; }
-.wp-header { margin-bottom: 3.5rem; }
-.wp-eyebrow { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
-.wp-tag { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: #456647; border: 1px solid rgba(69,102,71,0.35); padding: 0.25em 0.75em; }
-.wp-title { font-family: 'Newsreader', serif; font-size: 3.2rem; font-weight: 400; color: #173318; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 1.25rem; }
-.wp-subtitle { font-family: 'Inter', sans-serif; font-size: 1.05rem; color: #737970; line-height: 1.75; max-width: 580px; margin: 0; }
-.wp-divider { height: 1px; background: rgba(195,200,190,0.35); margin: 3rem 0; }
-.wp-section { margin-bottom: 0.5rem; }
-.wp-section-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
-.wp-section-title { font-family: 'Newsreader', serif; font-size: 2rem; font-weight: 400; font-style: italic; color: #173318; margin-bottom: 1.75rem; line-height: 1.15; }
-.wp-prose p { font-size: 0.92rem; line-height: 1.8; color: #434841; margin-bottom: 1.25rem; max-width: 680px; }
-.wp-prose strong { color: #173318; }
-
-.wp-highlight-box { background: #ebe8df; padding: 2.5rem; margin-top: 1.5rem; border-radius: 4px; overflow: hidden; }
-
-.wp-concepts-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1.5rem 0 2rem; }
-.wp-concept-card { background: #f6f3ea; padding: 1.75rem; border-top: 2px solid rgba(23,51,24,0.2); }
-.wp-concept-name { font-family: 'Newsreader', serif; font-size: 1.3rem; font-weight: 400; color: #173318; margin-bottom: 0.25rem; }
-.wp-concept-body { font-size: 0.82rem; line-height: 1.7; color: #434841; margin: 0; }
-
-.wp-problems-grid { display: flex; flex-direction: column; gap: 0; margin: 1.5rem 0; border: 1px solid rgba(195,200,190,0.3); }
-.wp-problem-item { display: flex; gap: 1.5rem; padding: 1.5rem; border-bottom: 1px solid rgba(195,200,190,0.2); align-items: flex-start; }
-.wp-problem-number { font-family: 'Newsreader', serif; font-size: 2.4rem; color: rgba(23,51,24,0.1); font-weight: 400; line-height: 1; flex-shrink: 0; width: 3rem; text-align: right; }
-.wp-problem-body { font-size: 0.86rem; line-height: 1.75; color: #434841; margin: 0; }
-
-.wp-blockquote { border-left: 2px solid #173318; padding: 1.25rem 1.75rem; margin: 2.5rem 0; font-family: 'Newsreader', serif; font-size: 1.2rem; font-style: italic; color: #173318; line-height: 1.7; background: rgba(23,51,24,0.03); }
-.wp-vision-box { background: #173318; padding: 2.5rem; margin-top: 2.5rem; }
-.wp-vision-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(174,207,169,0.45); margin-bottom: 1rem; }
-.wp-vision-text { font-family: 'Newsreader', serif; font-size: 1.15rem; font-style: italic; line-height: 1.85; color: rgba(174,207,169,0.85); margin: 0; }
-.wp-vision-text strong { color: #c9ecc4; font-style: normal; }
-</style>
+</body>
+</html>
