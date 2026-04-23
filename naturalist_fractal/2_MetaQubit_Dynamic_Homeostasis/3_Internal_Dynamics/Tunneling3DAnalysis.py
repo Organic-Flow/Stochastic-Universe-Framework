@@ -4,9 +4,21 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import os
-from meta_qubit import MetaQubit
+import json
+import sys
+
+# Add the parent directory to sys.path to import meta_qubit
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+try:
+    from naturalist_fractal.meta_qubit import MetaQubit
+except ImportError:
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+    from meta_qubit import MetaQubit
 
 PLOTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analysis_plots")
+JSON_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "json_reports")
+os.makedirs(PLOTS_DIR, exist_ok=True)
+os.makedirs(JSON_DIR, exist_ok=True)
 
 class Tunneling3DAnalysis:
     def __init__(self, num_metaqubits=6, qubits_per_meta=4, noise_level=0.05):
@@ -19,20 +31,20 @@ class Tunneling3DAnalysis:
         """Tunneling measurements."""
         tunneling_scores = []
         for param_set in params:
-            tunneling_scores.append(np.mean(np.sin(param_set)))  # Example tunneling measurement
+            tunneling_scores.append(float(np.mean(np.sin(param_set))))
         return tunneling_scores
 
     def noise_analysis(self, params):
         """Add noise to the data."""
-        return np.random.normal(0, self.noise_level, len(params))
+        return [float(v) for v in np.random.normal(0, self.noise_level, len(params))]
 
     def coherence_analysis(self, params):
         """Coherence analysis."""
-        return [np.sum(np.cos(param_set)) for param_set in params]
+        return [float(np.sum(np.cos(param_set))) for param_set in params]
 
     def entanglement_analysis(self, params):
         """Entanglement analysis."""
-        return [np.prod(np.sin(param_set) ** 2) for param_set in params]
+        return [float(np.prod(np.sin(param_set) ** 2)) for param_set in params]
 
     def generate_3d_plot(self, tunneling, coherence, entanglement, noise):
         """Create 3D scatter plot for correlation."""
@@ -52,7 +64,20 @@ class Tunneling3DAnalysis:
 
         plt.savefig(os.path.join(PLOTS_DIR, "tunneling_3d_analysis.png"), dpi=150, bbox_inches='tight')
         plt.close()
-        print(f"Saved: tunneling_3d_analysis.png")
+        
+        # Save to JSON
+        json_report_data = {
+            "name": "MetaQubit Tunneling and Correlation Analysis",
+            "tunneling": tunneling,
+            "coherence": coherence,
+            "entanglement": entanglement,
+            "noise": noise
+        }
+        json_report_file = os.path.join(JSON_DIR, "tunneling_3d_analysis.json")
+        with open(json_report_file, "w", encoding="utf-8") as f:
+            json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"Saved: tunneling_3d_analysis.png and {json_report_file}")
 
     def run_analysis(self):
         """Run analysis."""

@@ -5,19 +5,22 @@ import matplotlib.pyplot as plt
 from scipy.fft import fft, fftfreq
 from sklearn.cluster import KMeans
 import seaborn as sns
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 # Load the CSV file
 file_path = 'csv/frame_analysis_results.csv'
 data = pd.read_csv(file_path)
 
-# Basic analysis
-print("First lines of the file:")
-print(data.head())
-print("\nStatistics:")
-print(data.describe())
+# JSON Report Data
+json_report_data = {
+    "phase": "Spectral and Cluster Analysis",
+    "name": "Advanced Pattern Analysis",
+    "correlation_matrix": data.corr().to_dict()
+}
 
 # 1. Fourier Transform for Quantum Coherence
 def analyze_fourier(data, column, sample_rate=1):
@@ -25,15 +28,23 @@ def analyze_fourier(data, column, sample_rate=1):
     n = len(signal)
     yf = fft(signal)
     xf = fftfreq(n, 1 / sample_rate)[:n // 2]
+    
+    amplitude = 2.0 / n * np.abs(yf[:n // 2])
 
     plt.figure(figsize=(10, 6))
-    plt.plot(xf, 2.0 / n * np.abs(yf[:n // 2]))
+    plt.plot(xf, amplitude)
     plt.title(f"Fourier Transform of {column}")
     plt.xlabel("Frequency")
     plt.ylabel("Amplitude")
     plt.grid()
     plt.savefig(f"plot_reports/fourier_transform_{column.lower().replace(' ', '_')}.png", dpi=150, bbox_inches="tight")
-    plt.show()
+    plt.close()
+    
+    json_report_data["fourier_analysis"] = {
+        "column": column,
+        "frequency": xf.tolist(),
+        "amplitude": amplitude.tolist()
+    }
 
 analyze_fourier(data, "Quantum Coherence")
 
@@ -57,7 +68,12 @@ def clustering_analysis(data, features, n_clusters=3):
     plt.ylabel(features[1])
     plt.grid()
     plt.savefig("plot_reports/kmeans_clustering.png", dpi=150, bbox_inches="tight")
-    plt.show()
+    plt.close()
+    
+    json_report_data["clustering_analysis"] = {
+        "features": features,
+        "data": data[features + ['Cluster']].to_dict(orient="records")
+    }
 
 clustering_analysis(data, ["Avg Intensity", "Quantum Coherence"])
 
@@ -70,32 +86,11 @@ def correlation_heatmap(data):
     )
     plt.title("Heatmap of Correlations")
     plt.savefig("plot_reports/correlation_heatmap.png", dpi=150, bbox_inches="tight")
-    plt.show()
+    plt.close()
 
 correlation_heatmap(data)
 
-# 4. Animated Graph for Avg Intensity and Quantum Coherence
-import matplotlib.animation as animation
-
-def animate_analysis(data, x_column, y_column):
-    fig, ax = plt.subplots(figsize=(10, 6))
-    ax.set_xlim(0, len(data))
-    ax.set_ylim(data[y_column].min(), data[y_column].max())
-    line, = ax.plot([], [], lw=2)
-
-    def update(frame):
-        line.set_data(data[x_column][:frame], data[y_column][:frame])
-        return line,
-
-    ani = animation.FuncAnimation(fig, update, frames=len(data), interval=50, blit=True)
-    plt.title(f"Animation of {y_column} Over Frames")
-    plt.xlabel(x_column)
-    plt.ylabel(y_column)
-    plt.show()
-
-animate_analysis(data, "Frame", "Avg Intensity")
-
-# 5. Combined Analysis of Avg Intensity and Quantum Coherence
+# 4. Combined Analysis of Avg Intensity and Quantum Coherence
 plt.figure(figsize=(10, 6))
 plt.plot(data["Frame"], data["Avg Intensity"], label="Avg Intensity", color="blue")
 plt.plot(data["Frame"], data["Quantum Coherence"], label="Quantum Coherence", color="green")
@@ -105,4 +100,17 @@ plt.ylabel("Values")
 plt.legend()
 plt.grid()
 plt.savefig("plot_reports/combined_intensity_coherence.png", dpi=150, bbox_inches="tight")
-plt.show()
+plt.close()
+
+json_report_data["combined_analysis"] = {
+    "frame": data["Frame"].tolist(),
+    "avg_intensity": data["Avg Intensity"].tolist(),
+    "quantum_coherence": data["Quantum Coherence"].tolist()
+}
+
+# Save JSON Report
+json_report_file = "json_reports/spectral_and_cluster_analysis.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
+print(f"JSON report saved to {json_report_file}")

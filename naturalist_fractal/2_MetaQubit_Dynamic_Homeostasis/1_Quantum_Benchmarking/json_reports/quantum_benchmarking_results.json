@@ -1,0 +1,95 @@
+{
+  "name": "MetaQubit Quantum Benchmarking",
+  "summary": "Comprehensive analysis of 13 benchmark experiments comparing MetaQubit against PennyLane's standard default.qubit simulator.",
+  "experiments": [
+    {
+      "id": "01",
+      "name": "Circuit Depth Test",
+      "goal": "Test stability when circuits reach 100 sequential gate layers.",
+      "results": {
+        "metaqubit": { "mean": 0.992081, "std": 0.041848, "time": 3.691 },
+        "default_qubit": { "mean": 0.00136, "std": 0.228872, "time": 0.049 }
+      },
+      "discovery": "MetaQubit's internal self-stabilizing architecture prevents exponential degradation seen in deep circuits, offering a 730x improvement in mean output."
+    },
+    {
+      "id": "02a",
+      "name": "Decoherence Resistance",
+      "results": {
+        "metaqubit": { "mean": [0.992, 0.992, 0.994, 0.994], "std": [0.027, 0.049, 0.03, 0.036] },
+        "default_qubit": { "mean": [0.006, 0.002, -0.001, 0.002], "std": [0.033, 0.032, 0.028, 0.03] }
+      }
+    },
+    {
+      "id": "02b",
+      "name": "Noise Resilience",
+      "results": {
+        "metaqubit": { "mean": [0.9994, 0.9996, 0.9998, 0.9997], "std": [0.002, 0.001, 0.0003, 0.001] },
+        "default_qubit": { "mean": [0.002, -0.004, -0.006, 0.0], "std": [0.028, 0.033, 0.028, 0.032] }
+      }
+    },
+    {
+      "id": "03",
+      "name": "Error Tolerance",
+      "results": {
+        "metaqubit": { "mean": 0.994, "std": 0.025 },
+        "default_qubit": { "mean": 0.009, "std": 0.117 }
+      }
+    },
+    {
+      "id": "05",
+      "name": "Gate Robustness",
+      "results": {
+        "metaqubit": { "mean": 0.99, "std": 0.07 },
+        "default_qubit": { "mean": -0.067, "std": 0.215 }
+      }
+    },
+    {
+      "id": "07",
+      "name": "Quantum Error Correction",
+      "results": {
+        "metaqubit": { "recovery_score": "0.39 – 0.74" },
+        "default_qubit": { "recovery_score": "~0.00" }
+      },
+      "discovery": "MetaQubit recovers partial coherence up to 74% without explicit error correction codes, suggesting implicit structural resilience."
+    },
+    {
+      "id": "08",
+      "name": "Repeated Operations",
+      "results": {
+        "metaqubit": { "mean": 0.805, "std": 0.117 },
+        "default_qubit": { "mean": 0.015, "std": 0.244 }
+      }
+    },
+    {
+      "id": "11",
+      "name": "Output Stability",
+      "results": {
+        "metaqubit": { "mean": 0.996, "std": 0.02 },
+        "default_qubit": { "mean": -0.023, "std": 0.257 }
+      },
+      "discovery": "MetaQubit produces near-identical outputs across repeated runs, critical for reproducible quantum computation."
+    },
+    {
+      "id": "13a",
+      "name": "VQE Energy",
+      "results": {
+        "metaqubit": { "energy": 0.35003 },
+        "default_qubit": { "energy": 0.05207 }
+      }
+    },
+    {
+      "id": "13b",
+      "name": "QAOA MaxCut",
+      "results": {
+        "metaqubit": { "score": 1.43661 },
+        "default_qubit": { "score": 0.7025 }
+      }
+    }
+  ],
+  "cross_cutting_discoveries": [
+    "Structural Noise Immunity: MetaQubit outperforms dedicated noise-reduction pipelines without explicit algorithms.",
+    "Stability-Speed Trade-off: MetaQubit is 50-100x slower due to internal optimization but produces higher quality output.",
+    "Implicit Error Correction: Extraordinary recovery rates of 39-74% in a single 4-qubit unit."
+  ]
+}

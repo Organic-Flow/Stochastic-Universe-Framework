@@ -1,9 +1,11 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 # Load the data
 file_path = "csv/frame_analysis_results.csv"
@@ -25,6 +27,23 @@ low_variance_frames = data[data["Quantum Coherence Variance"] <= low_variance_th
 selected_frames = pd.merge(high_energy_frames, low_variance_frames, on="Frame", suffixes=('', '_drop'))
 selected_frames = selected_frames[[c for c in selected_frames.columns if not c.endswith('_drop')]]
 
+# JSON Report Data
+json_report_data = {
+    "phase": "Attractor State Identification",
+    "name": "Attractor State Analysis",
+    "thresholds": {
+        "high_energy": float(high_energy_threshold),
+        "low_variance": float(low_variance_threshold)
+    },
+    "metrics": {
+        "frame": data["Frame"].tolist(),
+        "avg_intensity": data["Avg Intensity"].tolist()
+    },
+    "selected_frames": selected_frames[["Frame", "Avg Intensity"]].to_dict(orient="records"),
+    "high_energy_frames": high_energy_frames[["Frame", "Avg Intensity"]].to_dict(orient="records"),
+    "low_variance_frames": low_variance_frames[["Frame", "Avg Intensity"]].to_dict(orient="records")
+}
+
 # Verification
 if selected_frames.empty:
     print("No frames matched the criteria. Adjust the thresholds and retry.")
@@ -45,6 +64,12 @@ plt.grid()
 plt.savefig("plot_reports/attractor_state_identification.png", dpi=150, bbox_inches="tight")
 plt.show()
 
+# Save JSON Report
+json_report_file = "json_reports/attractor_state_identification.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+
 # Save results
 selected_frames.to_csv("csv/selected_frames_analysis.csv", index=False)
 print("Analysis results saved in 'csv/selected_frames_analysis.csv'.")
+print(f"JSON report saved to {json_report_file}")

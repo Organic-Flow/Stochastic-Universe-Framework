@@ -3,9 +3,21 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import os
-from meta_qubit import MetaQubit
+import json
+import sys
+
+# Add the parent directory to sys.path to import meta_qubit
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+try:
+    from naturalist_fractal.meta_qubit import MetaQubit
+except ImportError:
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+    from meta_qubit import MetaQubit
 
 PLOTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analysis_plots")
+JSON_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "json_reports")
+os.makedirs(PLOTS_DIR, exist_ok=True)
+os.makedirs(JSON_DIR, exist_ok=True)
 
 class MetaQubitHeatmapAnalysis:
     def __init__(self, num_metaqubits, qubits_per_meta=4, noise_level=0.05):
@@ -22,9 +34,9 @@ class MetaQubitHeatmapAnalysis:
         coherence = np.abs(np.sum(np.sin(params)))
         entanglement = np.sum(params ** 2)
         noise = np.mean(np.random.normal(0, self.noise_level, len(params)))
-        self.coherence_data.append(coherence)
-        self.entanglement_data.append(entanglement)
-        self.noise_data.append(noise)
+        self.coherence_data.append(float(coherence))
+        self.entanglement_data.append(float(entanglement))
+        self.noise_data.append(float(noise))
 
     def run_analysis(self):
         """Run analysis for different numbers of meta-qubits."""
@@ -41,6 +53,7 @@ class MetaQubitHeatmapAnalysis:
         coherence_matrix = np.tile(self.coherence_data, (len(x), 1)).T
         entanglement_matrix = np.tile(self.entanglement_data, (len(x), 1)).T
         noise_matrix = np.tile(self.noise_data, (len(x), 1)).T
+        combined_matrix = coherence_matrix + entanglement_matrix - noise_matrix
 
         fig, axes = plt.subplots(2, 2, figsize=(12, 10))
         ax1, ax2, ax3, ax4 = axes.flatten()
@@ -67,7 +80,6 @@ class MetaQubitHeatmapAnalysis:
         ax3.set_ylabel("MetaQubits")
 
         # Combined Map
-        combined_matrix = coherence_matrix + entanglement_matrix - noise_matrix
         c4 = ax4.pcolormesh(mesh_x, mesh_y, combined_matrix, cmap='Purples', shading='auto')
         fig.colorbar(c4, ax=ax4)
         ax4.set_title("Combined Map")
@@ -77,7 +89,23 @@ class MetaQubitHeatmapAnalysis:
         plt.tight_layout()
         plt.savefig(os.path.join(PLOTS_DIR, "heatmap_analysis.png"), dpi=150, bbox_inches='tight')
         plt.close()
-        print(f"Saved: heatmap_analysis.png")
+        
+        # Save to JSON
+        json_report_data = {
+            "name": "MetaQubit Heatmap Analysis",
+            "meta_qubit_count": self.num_metaqubits,
+            "coherence_matrix": coherence_matrix.tolist(),
+            "entanglement_matrix": entanglement_matrix.tolist(),
+            "noise_matrix": noise_matrix.tolist(),
+            "combined_matrix": combined_matrix.tolist(),
+            "x_axis": x.tolist(),
+            "y_axis": y.tolist()
+        }
+        json_report_file = os.path.join(JSON_DIR, "heatmap_analysis.json")
+        with open(json_report_file, "w", encoding="utf-8") as f:
+            json.dump(json_report_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"Saved: heatmap_analysis.png and {json_report_file}")
 
 
 # Run analysis

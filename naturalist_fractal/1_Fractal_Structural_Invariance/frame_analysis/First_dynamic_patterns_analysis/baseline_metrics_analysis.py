@@ -1,21 +1,28 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import json
 
 os.makedirs("csv", exist_ok=True)
 os.makedirs("plot_reports", exist_ok=True)
+os.makedirs("json_reports", exist_ok=True)
 
 # Load CSV file
 file_name = 'csv/frame_analysis_results.csv'
 data = pd.read_csv(file_name)
 
-# Display basic information
-print("First lines of file:")
-print(data.head())
-
-# Calculate basic statistics
-print("\nStatistical data:")
-print(data.describe())
+# JSON Report Data
+json_report_data = {
+    "phase": "Baseline Metrics",
+    "name": "Baseline Metrics Analysis",
+    "metrics": {
+        "frame": data["Frame"].tolist(),
+        "avg_intensity": data["Avg Intensity"].tolist(),
+        "max_intensity": data["Max Intensity"].tolist(),
+        "quantum_coherence": data["Quantum Coherence"].tolist()
+    },
+    "correlation_matrix": data.corr().to_dict()
+}
 
 # Create graphs for each column
 plt.figure(figsize=(10, 6))
@@ -30,17 +37,14 @@ plt.grid(True)
 plt.savefig("plot_reports/frame_data_analysis.png", dpi=150, bbox_inches="tight")
 plt.show()
 
-# Correlation between columns
-print("\nCorrelation between values:")
-print(data.corr())
-
-# Analysis of exceptionally high or low values
-high_intensity = data[data['Max Intensity'] > 0.99]
-print("\nFrames with maximum intensity > 0.99:")
-print(high_intensity)
+# Save JSON Report
+json_report_file = "json_reports/baseline_metrics_analysis.json"
+with open(json_report_file, "w", encoding="utf-8") as f:
+    json.dump(json_report_data, f, indent=2, ensure_ascii=False)
 
 # Save analysis results
 analysis_results = data.describe()
 output_file = "csv/analysis_summary.csv"
 analysis_results.to_csv(output_file)
-print(f"\nAnalysis results were saved to {output_file}.")
+print(f"Analysis results saved to {output_file}.")
+print(f"JSON report saved to {json_report_file}")

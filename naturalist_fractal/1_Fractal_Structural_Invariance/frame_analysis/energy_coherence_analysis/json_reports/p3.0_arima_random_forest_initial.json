@@ -1,0 +1,1033 @@
+{
+  "phase": "3.0",
+  "name": "ARIMA and Random Forest Initial",
+  "correlation_matrix": {
+    "Frame": {
+      "Frame": 1.0,
+      "Avg Intensity": 0.13876920917382507,
+      "Balance Index": 0.1387692091738222
+    },
+    "Avg Intensity": {
+      "Frame": 0.13876920917382507,
+      "Avg Intensity": 1.0,
+      "Balance Index": 0.9999999999999996
+    },
+    "Balance Index": {
+      "Frame": 0.1387692091738222,
+      "Avg Intensity": 0.9999999999999996,
+      "Balance Index": 1.0
+    }
+  },
+  "arima_fit": [
+    {
+      "Frame": 65,
+      "Balance Index": 0.6903911959703096,
+      "ARIMA_Fit": 0.0
+    },
+    {
+      "Frame": 71,
+      "Balance Index": 0.7157488743590557,
+      "ARIMA_Fit": 0.6903911945568623
+    },
+    {
+      "Frame": 75,
+      "Balance Index": 0.6964999926628167,
+      "ARIMA_Fit": 0.705321950697807
+    },
+    {
+      "Frame": 76,
+      "Balance Index": 0.6903288541289254,
+      "ARIMA_Fit": 0.6996815333311366
+    },
+    {
+      "Frame": 79,
+      "Balance Index": 0.6802013775675019,
+      "ARIMA_Fit": 0.696145416588868
+    },
+    {
+      "Frame": 83,
+      "Balance Index": 0.6922696331585015,
+      "ARIMA_Fit": 0.6906121584045083
+    },
+    {
+      "Frame": 84,
+      "Balance Index": 0.7103894827517,
+      "ARIMA_Fit": 0.6926728817613127
+    },
+    {
+      "Frame": 88,
+      "Balance Index": 0.6820248129586359,
+      "ARIMA_Fit": 0.6993308963469989
+    },
+    {
+      "Frame": 89,
+      "Balance Index": 0.7006883522542886,
+      "ARIMA_Fit": 0.6914551292642473
+    },
+    {
+      "Frame": 92,
+      "Balance Index": 0.7577248615981556,
+      "ARIMA_Fit": 0.6961124612125849
+    },
+    {
+      "Frame": 94,
+      "Balance Index": 0.6859003526294597,
+      "ARIMA_Fit": 0.7178145312157698
+    },
+    {
+      "Frame": 96,
+      "Balance Index": 0.6817453387174897,
+      "ARIMA_Fit": 0.7008089241152796
+    },
+    {
+      "Frame": 97,
+      "Balance Index": 0.6912476085226329,
+      "ARIMA_Fit": 0.695979451435646
+    },
+    {
+      "Frame": 98,
+      "Balance Index": 0.688920095774061,
+      "ARIMA_Fit": 0.6962276948989673
+    },
+    {
+      "Frame": 99,
+      "Balance Index": 0.707377328611344,
+      "ARIMA_Fit": 0.6942804221520519
+    },
+    {
+      "Frame": 100,
+      "Balance Index": 0.6803316241526337,
+      "ARIMA_Fit": 0.6997282189331838
+    },
+    {
+      "Frame": 326,
+      "Balance Index": 0.7078428569861152,
+      "ARIMA_Fit": 0.6917014750184322
+    },
+    {
+      "Frame": 332,
+      "Balance Index": 0.6842407745808573,
+      "ARIMA_Fit": 0.6990667909881166
+    },
+    {
+      "Frame": 347,
+      "Balance Index": 0.7548738829941831,
+      "ARIMA_Fit": 0.6925308870603586
+    },
+    {
+      "Frame": 355,
+      "Balance Index": 0.8871668398015319,
+      "ARIMA_Fit": 0.716087678879455
+    },
+    {
+      "Frame": 356,
+      "Balance Index": 0.8872579358545197,
+      "ARIMA_Fit": 0.7722874886277856
+    },
+    {
+      "Frame": 359,
+      "Balance Index": 0.698913256244597,
+      "ARIMA_Fit": 0.7978707600577616
+    },
+    {
+      "Frame": 362,
+      "Balance Index": 0.8842183274049643,
+      "ARIMA_Fit": 0.7500239040753187
+    },
+    {
+      "Frame": 364,
+      "Balance Index": 0.8850604259228421,
+      "ARIMA_Fit": 0.8052903633032192
+    },
+    {
+      "Frame": 366,
+      "Balance Index": 0.691549679721198,
+      "ARIMA_Fit": 0.8231469897877272
+    },
+    {
+      "Frame": 368,
+      "Balance Index": 0.8872631282579206,
+      "ARIMA_Fit": 0.7673327889887487
+    },
+    {
+      "Frame": 372,
+      "Balance Index": 0.8819651730021398,
+      "ARIMA_Fit": 0.8208543376067509
+    },
+    {
+      "Frame": 376,
+      "Balance Index": 0.8651843797269612,
+      "ARIMA_Fit": 0.8337186574364082
+    },
+    {
+      "Frame": 378,
+      "Balance Index": 0.879504288538319,
+      "ARIMA_Fit": 0.8384145962564422
+    },
+    {
+      "Frame": 380,
+      "Balance Index": 0.8807596137850755,
+      "ARIMA_Fit": 0.8495174457158834
+    },
+    {
+      "Frame": 381,
+      "Balance Index": 0.6853421564457082,
+      "ARIMA_Fit": 0.856637936525547
+    },
+    {
+      "Frame": 382,
+      "Balance Index": 0.7090824769746944,
+      "ARIMA_Fit": 0.7917333897395077
+    },
+    {
+      "Frame": 383,
+      "Balance Index": 0.7078142243257766,
+      "ARIMA_Fit": 0.7766085744361758
+    },
+    {
+      "Frame": 384,
+      "Balance Index": 0.8527668083264062,
+      "ARIMA_Fit": 0.7611346792073701
+    },
+    {
+      "Frame": 386,
+      "Balance Index": 0.881330014847609,
+      "ARIMA_Fit": 0.8013989854532833
+    },
+    {
+      "Frame": 387,
+      "Balance Index": 0.8841381495345179,
+      "ARIMA_Fit": 0.8230941323089326
+    },
+    {
+      "Frame": 388,
+      "Balance Index": 0.71201015968542,
+      "ARIMA_Fit": 0.8370555962580102
+    },
+    {
+      "Frame": 391,
+      "Balance Index": 0.8806883506398874,
+      "ARIMA_Fit": 0.7856321011830925
+    },
+    {
+      "Frame": 392,
+      "Balance Index": 0.8783843087990139,
+      "ARIMA_Fit": 0.8299127213439543
+    },
+    {
+      "Frame": 395,
+      "Balance Index": 0.872098027145041,
+      "ARIMA_Fit": 0.8403767565667821
+    },
+    {
+      "Frame": 396,
+      "Balance Index": 0.8827506130695497,
+      "ARIMA_Fit": 0.8465692079957665
+    },
+    {
+      "Frame": 397,
+      "Balance Index": 0.8636896205870608,
+      "ARIMA_Fit": 0.8560773476682748
+    },
+    {
+      "Frame": 398,
+      "Balance Index": 0.8522635701055632,
+      "ARIMA_Fit": 0.8551554482992578
+    },
+    {
+      "Frame": 399,
+      "Balance Index": 0.8685073661677305,
+      "ARIMA_Fit": 0.8529448147780992
+    },
+    {
+      "Frame": 400,
+      "Balance Index": 0.842394501834138,
+      "ARIMA_Fit": 0.8586343350474005
+    },
+    {
+      "Frame": 401,
+      "Balance Index": 0.8508390874758514,
+      "ARIMA_Fit": 0.851440302941233
+    },
+    {
+      "Frame": 403,
+      "Balance Index": 0.7963693754530103,
+      "ARIMA_Fit": 0.852465059067983
+    },
+    {
+      "Frame": 404,
+      "Balance Index": 0.7234184899556926,
+      "ARIMA_Fit": 0.832516936581219
+    },
+    {
+      "Frame": 405,
+      "Balance Index": 0.8037585424365434,
+      "ARIMA_Fit": 0.7982456314839849
+    },
+    {
+      "Frame": 406,
+      "Balance Index": 0.7123238203554915,
+      "ARIMA_Fit": 0.8104931222765922
+    },
+    {
+      "Frame": 407,
+      "Balance Index": 0.8217423797859257,
+      "ARIMA_Fit": 0.7761167692491655
+    },
+    {
+      "Frame": 408,
+      "Balance Index": 0.8089015911082164,
+      "ARIMA_Fit": 0.8012744743722482
+    },
+    {
+      "Frame": 409,
+      "Balance Index": 0.8752966550690603,
+      "ARIMA_Fit": 0.801209192268134
+    },
+    {
+      "Frame": 410,
+      "Balance Index": 0.788610085592407,
+      "ARIMA_Fit": 0.8267946730440849
+    },
+    {
+      "Frame": 411,
+      "Balance Index": 0.7781673120373539,
+      "ARIMA_Fit": 0.8064103348335236
+    },
+    {
+      "Frame": 412,
+      "Balance Index": 0.8326701043824529,
+      "ARIMA_Fit": 0.7986964798308385
+    },
+    {
+      "Frame": 413,
+      "Balance Index": 0.704327021551972,
+      "ARIMA_Fit": 0.8137291793558972
+    },
+    {
+      "Frame": 414,
+      "Balance Index": 0.8124573146007524,
+      "ARIMA_Fit": 0.7717913738629988
+    },
+    {
+      "Frame": 415,
+      "Balance Index": 0.7596827988391653,
+      "ARIMA_Fit": 0.7956693147586366
+    },
+    {
+      "Frame": 418,
+      "Balance Index": 0.7708636284108635,
+      "ARIMA_Fit": 0.7804260396976418
+    },
+    {
+      "Frame": 419,
+      "Balance Index": 0.7851565376827789,
+      "ARIMA_Fit": 0.7798331901918819
+    },
+    {
+      "Frame": 420,
+      "Balance Index": 0.7800932922537607,
+      "ARIMA_Fit": 0.7829778729413053
+    },
+    {
+      "Frame": 421,
+      "Balance Index": 0.8096735323800299,
+      "ARIMA_Fit": 0.7816417410712869
+    },
+    {
+      "Frame": 422,
+      "Balance Index": 0.704413128751311,
+      "ARIMA_Fit": 0.7919339831861338
+    },
+    {
+      "Frame": 423,
+      "Balance Index": 0.7062531054279747,
+      "ARIMA_Fit": 0.7580291819749073
+    },
+    {
+      "Frame": 424,
+      "Balance Index": 0.8069776233412187,
+      "ARIMA_Fit": 0.7467665635367111
+    },
+    {
+      "Frame": 425,
+      "Balance Index": 0.802644047232228,
+      "ARIMA_Fit": 0.773975394201416
+    },
+    {
+      "Frame": 426,
+      "Balance Index": 0.854578801528648,
+      "ARIMA_Fit": 0.7797568224715214
+    },
+    {
+      "Frame": 427,
+      "Balance Index": 0.7961961433055712,
+      "ARIMA_Fit": 0.8035219287891574
+    },
+    {
+      "Frame": 428,
+      "Balance Index": 0.6935287524312082,
+      "ARIMA_Fit": 0.7938834691695976
+    },
+    {
+      "Frame": 429,
+      "Balance Index": 0.6870246329632663,
+      "ARIMA_Fit": 0.7574801295431963
+    },
+    {
+      "Frame": 430,
+      "Balance Index": 0.7096428533762673,
+      "ARIMA_Fit": 0.7409185140602133
+    },
+    {
+      "Frame": 432,
+      "Balance Index": 0.6864415364272994,
+      "ARIMA_Fit": 0.7370656565870636
+    },
+    {
+      "Frame": 436,
+      "Balance Index": 0.6953981590095436,
+      "ARIMA_Fit": 0.7226239549169813
+    },
+    {
+      "Frame": 438,
+      "Balance Index": 0.7141160212667066,
+      "ARIMA_Fit": 0.7177976297049483
+    },
+    {
+      "Frame": 442,
+      "Balance Index": 0.7436930800108851,
+      "ARIMA_Fit": 0.7195466393710633
+    },
+    {
+      "Frame": 443,
+      "Balance Index": 0.6887428640226517,
+      "ARIMA_Fit": 0.7289743404022632
+    },
+    {
+      "Frame": 444,
+      "Balance Index": 0.6816711896680927,
+      "ARIMA_Fit": 0.7124885107285703
+    },
+    {
+      "Frame": 445,
+      "Balance Index": 0.6977261688337385,
+      "ARIMA_Fit": 0.7046645928278246
+    },
+    {
+      "Frame": 447,
+      "Balance Index": 0.6892911688775777,
+      "ARIMA_Fit": 0.7053239780117797
+    },
+    {
+      "Frame": 451,
+      "Balance Index": 0.68104729648457,
+      "ARIMA_Fit": 0.7006011184413055
+    },
+    {
+      "Frame": 453,
+      "Balance Index": 0.7046795521580872,
+      "ARIMA_Fit": 0.6951214029627726
+    },
+    {
+      "Frame": 454,
+      "Balance Index": 0.705722100666091,
+      "ARIMA_Fit": 0.7004891227371881
+    },
+    {
+      "Frame": 457,
+      "Balance Index": 0.6896643830023903,
+      "ARIMA_Fit": 0.7017959621786618
+    },
+    {
+      "Frame": 458,
+      "Balance Index": 0.7824980554122931,
+      "ARIMA_Fit": 0.6968950195623154
+    },
+    {
+      "Frame": 459,
+      "Balance Index": 0.6919760579589712,
+      "ARIMA_Fit": 0.7286685408182926
+    },
+    {
+      "Frame": 465,
+      "Balance Index": 0.7152397666764273,
+      "ARIMA_Fit": 0.7080898861488059
+    },
+    {
+      "Frame": 470,
+      "Balance Index": 0.6902524759308856,
+      "ARIMA_Fit": 0.7128714463677782
+    },
+    {
+      "Frame": 471,
+      "Balance Index": 0.7015341681742372,
+      "ARIMA_Fit": 0.7044131011081756
+    },
+    {
+      "Frame": 475,
+      "Balance Index": 0.6845904270012012,
+      "ARIMA_Fit": 0.7053204985632272
+    },
+    {
+      "Frame": 517,
+      "Balance Index": 0.7602701831129677,
+      "ARIMA_Fit": 0.698385696602307
+    },
+    {
+      "Frame": 610,
+      "Balance Index": 0.7702821866589934,
+      "ARIMA_Fit": 0.7225309436106407
+    },
+    {
+      "Frame": 614,
+      "Balance Index": 0.6909485934667596,
+      "ARIMA_Fit": 0.7345243451460205
+    },
+    {
+      "Frame": 615,
+      "Balance Index": 0.8200736808021359,
+      "ARIMA_Fit": 0.7139497232189714
+    },
+    {
+      "Frame": 618,
+      "Balance Index": 0.688872591428824,
+      "ARIMA_Fit": 0.7552657336922786
+    },
+    {
+      "Frame": 620,
+      "Balance Index": 0.7214958909268363,
+      "ARIMA_Fit": 0.7225010882810065
+    },
+    {
+      "Frame": 621,
+      "Balance Index": 0.702150839110997,
+      "ARIMA_Fit": 0.7267529450443295
+    },
+    {
+      "Frame": 640,
+      "Balance Index": 0.6969153887069,
+      "ARIMA_Fit": 0.7186275772198936
+    },
+    {
+      "Frame": 643,
+      "Balance Index": 0.6936494951286594,
+      "ARIMA_Fit": 0.7130805486221068
+    },
+    {
+      "Frame": 644,
+      "Balance Index": 0.6829180054043755,
+      "ARIMA_Fit": 0.708311038821409
+    }
+  ],
+  "rf_predictions": {
+    "data": [
+      {
+        "Frame": 65,
+        "Balance Index": 0.6903911959703096,
+        "RF_Predictions": 0.6903957867070436
+      },
+      {
+        "Frame": 71,
+        "Balance Index": 0.7157488743590557,
+        "RF_Predictions": 0.715114518171701
+      },
+      {
+        "Frame": 75,
+        "Balance Index": 0.6964999926628167,
+        "RF_Predictions": 0.6965516017366311
+      },
+      {
+        "Frame": 76,
+        "Balance Index": 0.6903288541289254,
+        "RF_Predictions": 0.6903750501671173
+      },
+      {
+        "Frame": 79,
+        "Balance Index": 0.6802013775675019,
+        "RF_Predictions": 0.6804169058512686
+      },
+      {
+        "Frame": 83,
+        "Balance Index": 0.6922696331585015,
+        "RF_Predictions": 0.6920977844590667
+      },
+      {
+        "Frame": 84,
+        "Balance Index": 0.7103894827517,
+        "RF_Predictions": 0.709910527130681
+      },
+      {
+        "Frame": 88,
+        "Balance Index": 0.6820248129586359,
+        "RF_Predictions": 0.6818937441564249
+      },
+      {
+        "Frame": 89,
+        "Balance Index": 0.7006883522542886,
+        "RF_Predictions": 0.7011087580128134
+      },
+      {
+        "Frame": 92,
+        "Balance Index": 0.7577248615981556,
+        "RF_Predictions": 0.7574908654423365
+      },
+      {
+        "Frame": 94,
+        "Balance Index": 0.6859003526294597,
+        "RF_Predictions": 0.68607232068488
+      },
+      {
+        "Frame": 96,
+        "Balance Index": 0.6817453387174897,
+        "RF_Predictions": 0.6817849584430341
+      },
+      {
+        "Frame": 97,
+        "Balance Index": 0.6912476085226329,
+        "RF_Predictions": 0.691229419448321
+      },
+      {
+        "Frame": 98,
+        "Balance Index": 0.688920095774061,
+        "RF_Predictions": 0.6889507127947252
+      },
+      {
+        "Frame": 99,
+        "Balance Index": 0.707377328611344,
+        "RF_Predictions": 0.7074789991776449
+      },
+      {
+        "Frame": 100,
+        "Balance Index": 0.6803316241526337,
+        "RF_Predictions": 0.6804944934977872
+      },
+      {
+        "Frame": 326,
+        "Balance Index": 0.7078428569861152,
+        "RF_Predictions": 0.7076712477170326
+      },
+      {
+        "Frame": 332,
+        "Balance Index": 0.6842407745808573,
+        "RF_Predictions": 0.6842864998185013
+      },
+      {
+        "Frame": 347,
+        "Balance Index": 0.7548738829941831,
+        "RF_Predictions": 0.756088691593211
+      },
+      {
+        "Frame": 355,
+        "Balance Index": 0.8871668398015319,
+        "RF_Predictions": 0.8871326660221083
+      },
+      {
+        "Frame": 356,
+        "Balance Index": 0.8872579358545197,
+        "RF_Predictions": 0.8871721488690973
+      },
+      {
+        "Frame": 359,
+        "Balance Index": 0.698913256244597,
+        "RF_Predictions": 0.6989406583786145
+      },
+      {
+        "Frame": 362,
+        "Balance Index": 0.8842183274049643,
+        "RF_Predictions": 0.884306635109056
+      },
+      {
+        "Frame": 364,
+        "Balance Index": 0.8850604259228421,
+        "RF_Predictions": 0.8850255004040286
+      },
+      {
+        "Frame": 366,
+        "Balance Index": 0.691549679721198,
+        "RF_Predictions": 0.6915048764288158
+      },
+      {
+        "Frame": 368,
+        "Balance Index": 0.8872631282579206,
+        "RF_Predictions": 0.8867590175824354
+      },
+      {
+        "Frame": 372,
+        "Balance Index": 0.8819651730021398,
+        "RF_Predictions": 0.8819749713217958
+      },
+      {
+        "Frame": 376,
+        "Balance Index": 0.8651843797269612,
+        "RF_Predictions": 0.8655730132013824
+      },
+      {
+        "Frame": 378,
+        "Balance Index": 0.879504288538319,
+        "RF_Predictions": 0.8796590362573715
+      },
+      {
+        "Frame": 380,
+        "Balance Index": 0.8807596137850755,
+        "RF_Predictions": 0.8809098677664039
+      },
+      {
+        "Frame": 381,
+        "Balance Index": 0.6853421564457082,
+        "RF_Predictions": 0.6854265905089703
+      },
+      {
+        "Frame": 382,
+        "Balance Index": 0.7090824769746944,
+        "RF_Predictions": 0.709105225858198
+      },
+      {
+        "Frame": 383,
+        "Balance Index": 0.7078142243257766,
+        "RF_Predictions": 0.70762894212242
+      },
+      {
+        "Frame": 384,
+        "Balance Index": 0.8527668083264062,
+        "RF_Predictions": 0.8536455069407787
+      },
+      {
+        "Frame": 386,
+        "Balance Index": 0.881330014847609,
+        "RF_Predictions": 0.881263598768588
+      },
+      {
+        "Frame": 387,
+        "Balance Index": 0.8841381495345179,
+        "RF_Predictions": 0.8837788960390843
+      },
+      {
+        "Frame": 388,
+        "Balance Index": 0.71201015968542,
+        "RF_Predictions": 0.7121120957582758
+      },
+      {
+        "Frame": 391,
+        "Balance Index": 0.8806883506398874,
+        "RF_Predictions": 0.8807081579343425
+      },
+      {
+        "Frame": 392,
+        "Balance Index": 0.8783843087990139,
+        "RF_Predictions": 0.878844406024665
+      },
+      {
+        "Frame": 395,
+        "Balance Index": 0.872098027145041,
+        "RF_Predictions": 0.8735368931091182
+      },
+      {
+        "Frame": 396,
+        "Balance Index": 0.8827506130695497,
+        "RF_Predictions": 0.8817276907146683
+      },
+      {
+        "Frame": 397,
+        "Balance Index": 0.8636896205870608,
+        "RF_Predictions": 0.8639867934370078
+      },
+      {
+        "Frame": 398,
+        "Balance Index": 0.8522635701055632,
+        "RF_Predictions": 0.8525454228882349
+      },
+      {
+        "Frame": 399,
+        "Balance Index": 0.8685073661677305,
+        "RF_Predictions": 0.8663233685881339
+      },
+      {
+        "Frame": 400,
+        "Balance Index": 0.842394501834138,
+        "RF_Predictions": 0.8442120353451418
+      },
+      {
+        "Frame": 401,
+        "Balance Index": 0.8508390874758514,
+        "RF_Predictions": 0.8506056028688789
+      },
+      {
+        "Frame": 403,
+        "Balance Index": 0.7963693754530103,
+        "RF_Predictions": 0.7972342579332066
+      },
+      {
+        "Frame": 404,
+        "Balance Index": 0.7234184899556926,
+        "RF_Predictions": 0.7206600543888889
+      },
+      {
+        "Frame": 405,
+        "Balance Index": 0.8037585424365434,
+        "RF_Predictions": 0.8043738688631563
+      },
+      {
+        "Frame": 406,
+        "Balance Index": 0.7123238203554915,
+        "RF_Predictions": 0.7122432810858911
+      },
+      {
+        "Frame": 407,
+        "Balance Index": 0.8217423797859257,
+        "RF_Predictions": 0.820003382709112
+      },
+      {
+        "Frame": 408,
+        "Balance Index": 0.8089015911082164,
+        "RF_Predictions": 0.8095152362139953
+      },
+      {
+        "Frame": 409,
+        "Balance Index": 0.8752966550690603,
+        "RF_Predictions": 0.8743856214874381
+      },
+      {
+        "Frame": 410,
+        "Balance Index": 0.788610085592407,
+        "RF_Predictions": 0.7870649214339359
+      },
+      {
+        "Frame": 411,
+        "Balance Index": 0.7781673120373539,
+        "RF_Predictions": 0.7798754780329911
+      },
+      {
+        "Frame": 412,
+        "Balance Index": 0.8326701043824529,
+        "RF_Predictions": 0.8335062557949557
+      },
+      {
+        "Frame": 413,
+        "Balance Index": 0.704327021551972,
+        "RF_Predictions": 0.7045140461473421
+      },
+      {
+        "Frame": 414,
+        "Balance Index": 0.8124573146007524,
+        "RF_Predictions": 0.8113931469473274
+      },
+      {
+        "Frame": 415,
+        "Balance Index": 0.7596827988391653,
+        "RF_Predictions": 0.7588882727531856
+      },
+      {
+        "Frame": 418,
+        "Balance Index": 0.7708636284108635,
+        "RF_Predictions": 0.7706868816359322
+      },
+      {
+        "Frame": 419,
+        "Balance Index": 0.7851565376827789,
+        "RF_Predictions": 0.7842495779294224
+      },
+      {
+        "Frame": 420,
+        "Balance Index": 0.7800932922537607,
+        "RF_Predictions": 0.7798448060728278
+      },
+      {
+        "Frame": 421,
+        "Balance Index": 0.8096735323800299,
+        "RF_Predictions": 0.8094362724297938
+      },
+      {
+        "Frame": 422,
+        "Balance Index": 0.704413128751311,
+        "RF_Predictions": 0.7045327978196185
+      },
+      {
+        "Frame": 423,
+        "Balance Index": 0.7062531054279747,
+        "RF_Predictions": 0.706221796970792
+      },
+      {
+        "Frame": 424,
+        "Balance Index": 0.8069776233412187,
+        "RF_Predictions": 0.8072090198388726
+      },
+      {
+        "Frame": 425,
+        "Balance Index": 0.802644047232228,
+        "RF_Predictions": 0.8035181917823541
+      },
+      {
+        "Frame": 426,
+        "Balance Index": 0.854578801528648,
+        "RF_Predictions": 0.8525795495212175
+      },
+      {
+        "Frame": 427,
+        "Balance Index": 0.7961961433055712,
+        "RF_Predictions": 0.7963053516205122
+      },
+      {
+        "Frame": 428,
+        "Balance Index": 0.6935287524312082,
+        "RF_Predictions": 0.6933970242117894
+      },
+      {
+        "Frame": 429,
+        "Balance Index": 0.6870246329632663,
+        "RF_Predictions": 0.6867562898274083
+      },
+      {
+        "Frame": 430,
+        "Balance Index": 0.7096428533762673,
+        "RF_Predictions": 0.7096133794263246
+      },
+      {
+        "Frame": 432,
+        "Balance Index": 0.6864415364272994,
+        "RF_Predictions": 0.6863123149205334
+      },
+      {
+        "Frame": 436,
+        "Balance Index": 0.6953981590095436,
+        "RF_Predictions": 0.6957320329414844
+      },
+      {
+        "Frame": 438,
+        "Balance Index": 0.7141160212667066,
+        "RF_Predictions": 0.7144819710955239
+      },
+      {
+        "Frame": 442,
+        "Balance Index": 0.7436930800108851,
+        "RF_Predictions": 0.7491596106895507
+      },
+      {
+        "Frame": 443,
+        "Balance Index": 0.6887428640226517,
+        "RF_Predictions": 0.6888374031359633
+      },
+      {
+        "Frame": 444,
+        "Balance Index": 0.6816711896680927,
+        "RF_Predictions": 0.6818233647946189
+      },
+      {
+        "Frame": 445,
+        "Balance Index": 0.6977261688337385,
+        "RF_Predictions": 0.6974644394525644
+      },
+      {
+        "Frame": 447,
+        "Balance Index": 0.6892911688775777,
+        "RF_Predictions": 0.6892298404016021
+      },
+      {
+        "Frame": 451,
+        "Balance Index": 0.68104729648457,
+        "RF_Predictions": 0.6812138875551212
+      },
+      {
+        "Frame": 453,
+        "Balance Index": 0.7046795521580872,
+        "RF_Predictions": 0.704683624613843
+      },
+      {
+        "Frame": 454,
+        "Balance Index": 0.705722100666091,
+        "RF_Predictions": 0.7057155562295214
+      },
+      {
+        "Frame": 457,
+        "Balance Index": 0.6896643830023903,
+        "RF_Predictions": 0.6896386590901166
+      },
+      {
+        "Frame": 458,
+        "Balance Index": 0.7824980554122931,
+        "RF_Predictions": 0.7826333087442333
+      },
+      {
+        "Frame": 459,
+        "Balance Index": 0.6919760579589712,
+        "RF_Predictions": 0.6919869423413705
+      },
+      {
+        "Frame": 465,
+        "Balance Index": 0.7152397666764273,
+        "RF_Predictions": 0.7150998456454737
+      },
+      {
+        "Frame": 470,
+        "Balance Index": 0.6902524759308856,
+        "RF_Predictions": 0.690277492079009
+      },
+      {
+        "Frame": 471,
+        "Balance Index": 0.7015341681742372,
+        "RF_Predictions": 0.7016321677942922
+      },
+      {
+        "Frame": 475,
+        "Balance Index": 0.6845904270012012,
+        "RF_Predictions": 0.6847486583382572
+      },
+      {
+        "Frame": 517,
+        "Balance Index": 0.7602701831129677,
+        "RF_Predictions": 0.7592327394832453
+      },
+      {
+        "Frame": 610,
+        "Balance Index": 0.7702821866589934,
+        "RF_Predictions": 0.7711492659521401
+      },
+      {
+        "Frame": 614,
+        "Balance Index": 0.6909485934667596,
+        "RF_Predictions": 0.6909759313945826
+      },
+      {
+        "Frame": 615,
+        "Balance Index": 0.8200736808021359,
+        "RF_Predictions": 0.8188961564896233
+      },
+      {
+        "Frame": 618,
+        "Balance Index": 0.688872591428824,
+        "RF_Predictions": 0.6889529653662652
+      },
+      {
+        "Frame": 620,
+        "Balance Index": 0.7214958909268363,
+        "RF_Predictions": 0.7211961886240951
+      },
+      {
+        "Frame": 621,
+        "Balance Index": 0.702150839110997,
+        "RF_Predictions": 0.7020624501852321
+      },
+      {
+        "Frame": 640,
+        "Balance Index": 0.6969153887069,
+        "RF_Predictions": 0.6966886292350608
+      },
+      {
+        "Frame": 643,
+        "Balance Index": 0.6936494951286594,
+        "RF_Predictions": 0.693569240117756
+      },
+      {
+        "Frame": 644,
+        "Balance Index": 0.6829180054043755,
+        "RF_Predictions": 0.6826144242763265
+      }
+    ],
+    "mse": 7.609286549041437e-07,
+    "r2": 0.9998622435863115,
+    "feature_importances": {
+      "Frame": 0.0027506212610348287,
+      "Avg Intensity": 0.9972493787389652
+    }
+  }
+}

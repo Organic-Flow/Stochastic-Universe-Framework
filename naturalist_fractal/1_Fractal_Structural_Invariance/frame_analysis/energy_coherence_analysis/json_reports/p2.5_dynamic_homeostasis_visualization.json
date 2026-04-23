@@ -1,0 +1,1829 @@
+{
+  "phase": "2.5",
+  "name": "Dynamic Homeostasis Visualization",
+  "correlation_matrix": {
+    "Frame": {
+      "Frame": 1.0,
+      "Avg Intensity": 0.13876920917382507,
+      "Balance Index": 0.1387692091738222
+    },
+    "Avg Intensity": {
+      "Frame": 0.13876920917382507,
+      "Avg Intensity": 1.0,
+      "Balance Index": 0.9999999999999996
+    },
+    "Balance Index": {
+      "Frame": 0.1387692091738222,
+      "Avg Intensity": 0.9999999999999996,
+      "Balance Index": 1.0
+    }
+  },
+  "3d_visualization": [
+    {
+      "Frame": 65,
+      "Avg Intensity": 0.6942868424768656,
+      "Balance Index": 0.6903911959703096
+    },
+    {
+      "Frame": 71,
+      "Avg Intensity": 0.7197876057598079,
+      "Balance Index": 0.7157488743590557
+    },
+    {
+      "Frame": 75,
+      "Avg Intensity": 0.7004301090650396,
+      "Balance Index": 0.6964999926628167
+    },
+    {
+      "Frame": 76,
+      "Avg Intensity": 0.6942241488613307,
+      "Balance Index": 0.6903288541289254
+    },
+    {
+      "Frame": 79,
+      "Avg Intensity": 0.6840395263384335,
+      "Balance Index": 0.6802013775675019
+    },
+    {
+      "Frame": 83,
+      "Avg Intensity": 0.6961758790575653,
+      "Balance Index": 0.6922696331585015
+    },
+    {
+      "Frame": 84,
+      "Avg Intensity": 0.7143979728989219,
+      "Balance Index": 0.7103894827517
+    },
+    {
+      "Frame": 88,
+      "Avg Intensity": 0.6858732507653386,
+      "Balance Index": 0.6820248129586359
+    },
+    {
+      "Frame": 89,
+      "Avg Intensity": 0.7046421021682161,
+      "Balance Index": 0.7006883522542886
+    },
+    {
+      "Frame": 92,
+      "Avg Intensity": 0.7620004494492822,
+      "Balance Index": 0.7577248615981556
+    },
+    {
+      "Frame": 94,
+      "Avg Intensity": 0.6897706588097277,
+      "Balance Index": 0.6859003526294597
+    },
+    {
+      "Frame": 96,
+      "Avg Intensity": 0.6855921995445646,
+      "Balance Index": 0.6817453387174897
+    },
+    {
+      "Frame": 97,
+      "Avg Intensity": 0.6951480874786568,
+      "Balance Index": 0.6912476085226329
+    },
+    {
+      "Frame": 98,
+      "Avg Intensity": 0.6928074413544555,
+      "Balance Index": 0.688920095774061
+    },
+    {
+      "Frame": 99,
+      "Avg Intensity": 0.711368822180651,
+      "Balance Index": 0.707377328611344
+    },
+    {
+      "Frame": 100,
+      "Avg Intensity": 0.6841705078614633,
+      "Balance Index": 0.6803316241526337
+    },
+    {
+      "Frame": 326,
+      "Avg Intensity": 0.7118369773762703,
+      "Balance Index": 0.7078428569861152
+    },
+    {
+      "Frame": 332,
+      "Avg Intensity": 0.6881017163175096,
+      "Balance Index": 0.6842407745808573
+    },
+    {
+      "Frame": 347,
+      "Avg Intensity": 0.7591333837270157,
+      "Balance Index": 0.7548738829941831
+    },
+    {
+      "Frame": 355,
+      "Avg Intensity": 0.8921728254229849,
+      "Balance Index": 0.8871668398015319
+    },
+    {
+      "Frame": 356,
+      "Avg Intensity": 0.892264435500518,
+      "Balance Index": 0.8872579358545197
+    },
+    {
+      "Frame": 359,
+      "Avg Intensity": 0.7028569898857079,
+      "Balance Index": 0.698913256244597
+    },
+    {
+      "Frame": 362,
+      "Avg Intensity": 0.8892076755575674,
+      "Balance Index": 0.8842183274049643
+    },
+    {
+      "Frame": 364,
+      "Avg Intensity": 0.8900545257556064,
+      "Balance Index": 0.8850604259228421
+    },
+    {
+      "Frame": 366,
+      "Avg Intensity": 0.695451863163919,
+      "Balance Index": 0.691549679721198
+    },
+    {
+      "Frame": 368,
+      "Avg Intensity": 0.892269657202914,
+      "Balance Index": 0.8872631282579206
+    },
+    {
+      "Frame": 372,
+      "Avg Intensity": 0.8869418073583775,
+      "Balance Index": 0.8819651730021398
+    },
+    {
+      "Frame": 376,
+      "Avg Intensity": 0.8700663256817804,
+      "Balance Index": 0.8651843797269612
+    },
+    {
+      "Frame": 378,
+      "Avg Intensity": 0.8844670369469656,
+      "Balance Index": 0.879504288538319
+    },
+    {
+      "Frame": 380,
+      "Avg Intensity": 0.8857294455740443,
+      "Balance Index": 0.8807596137850755
+    },
+    {
+      "Frame": 381,
+      "Avg Intensity": 0.6892093129116896,
+      "Balance Index": 0.6853421564457082
+    },
+    {
+      "Frame": 382,
+      "Avg Intensity": 0.7130835921256549,
+      "Balance Index": 0.7090824769746944
+    },
+    {
+      "Frame": 383,
+      "Avg Intensity": 0.7118081831514101,
+      "Balance Index": 0.7078142243257766
+    },
+    {
+      "Frame": 384,
+      "Avg Intensity": 0.8575786860808648,
+      "Balance Index": 0.8527668083264062
+    },
+    {
+      "Frame": 386,
+      "Avg Intensity": 0.8863030652189113,
+      "Balance Index": 0.881330014847609
+    },
+    {
+      "Frame": 387,
+      "Avg Intensity": 0.8891270452702265,
+      "Balance Index": 0.8841381495345179
+    },
+    {
+      "Frame": 388,
+      "Avg Intensity": 0.7160277947702831,
+      "Balance Index": 0.71201015968542
+    },
+    {
+      "Frame": 391,
+      "Avg Intensity": 0.8856577803147733,
+      "Balance Index": 0.8806883506398874
+    },
+    {
+      "Frame": 392,
+      "Avg Intensity": 0.8833407375367488,
+      "Balance Index": 0.8783843087990139
+    },
+    {
+      "Frame": 395,
+      "Avg Intensity": 0.87701898449886,
+      "Balance Index": 0.872098027145041
+    },
+    {
+      "Frame": 396,
+      "Avg Intensity": 0.8877316794012711,
+      "Balance Index": 0.8827506130695497
+    },
+    {
+      "Frame": 397,
+      "Avg Intensity": 0.868563132116216,
+      "Balance Index": 0.8636896205870608
+    },
+    {
+      "Frame": 398,
+      "Avg Intensity": 0.8570726082551305,
+      "Balance Index": 0.8522635701055632
+    },
+    {
+      "Frame": 399,
+      "Avg Intensity": 0.8734080626231282,
+      "Balance Index": 0.8685073661677305
+    },
+    {
+      "Frame": 400,
+      "Avg Intensity": 0.8471478521337459,
+      "Balance Index": 0.842394501834138
+    },
+    {
+      "Frame": 401,
+      "Avg Intensity": 0.8556400877465864,
+      "Balance Index": 0.8508390874758514
+    },
+    {
+      "Frame": 403,
+      "Avg Intensity": 0.8008630213649508,
+      "Balance Index": 0.7963693754530103
+    },
+    {
+      "Frame": 404,
+      "Avg Intensity": 0.727500498430921,
+      "Balance Index": 0.7234184899556926
+    },
+    {
+      "Frame": 405,
+      "Avg Intensity": 0.8082938829452774,
+      "Balance Index": 0.8037585424365434
+    },
+    {
+      "Frame": 406,
+      "Avg Intensity": 0.7163432253225614,
+      "Balance Index": 0.7123238203554915
+    },
+    {
+      "Frame": 407,
+      "Avg Intensity": 0.8263791970712372,
+      "Balance Index": 0.8217423797859257
+    },
+    {
+      "Frame": 408,
+      "Avg Intensity": 0.8134659521196853,
+      "Balance Index": 0.8089015911082164
+    },
+    {
+      "Frame": 409,
+      "Avg Intensity": 0.8802356612099592,
+      "Balance Index": 0.8752966550690603
+    },
+    {
+      "Frame": 410,
+      "Avg Intensity": 0.7930599484280058,
+      "Balance Index": 0.788610085592407
+    },
+    {
+      "Frame": 411,
+      "Avg Intensity": 0.7825582497960456,
+      "Balance Index": 0.7781673120373539
+    },
+    {
+      "Frame": 412,
+      "Avg Intensity": 0.8373685831611287,
+      "Balance Index": 0.8326701043824529
+    },
+    {
+      "Frame": 413,
+      "Avg Intensity": 0.7083013032592085,
+      "Balance Index": 0.704327021551972
+    },
+    {
+      "Frame": 414,
+      "Avg Intensity": 0.8170417393701065,
+      "Balance Index": 0.8124573146007524
+    },
+    {
+      "Frame": 415,
+      "Avg Intensity": 0.7639694346749962,
+      "Balance Index": 0.7596827988391653
+    },
+    {
+      "Frame": 418,
+      "Avg Intensity": 0.775213353926742,
+      "Balance Index": 0.7708636284108635
+    },
+    {
+      "Frame": 419,
+      "Avg Intensity": 0.7895869133031179,
+      "Balance Index": 0.7851565376827789
+    },
+    {
+      "Frame": 420,
+      "Avg Intensity": 0.7844950976743599,
+      "Balance Index": 0.7800932922537607
+    },
+    {
+      "Frame": 421,
+      "Avg Intensity": 0.8142422491977959,
+      "Balance Index": 0.8096735323800299
+    },
+    {
+      "Frame": 422,
+      "Avg Intensity": 0.708387896332661,
+      "Balance Index": 0.704413128751311
+    },
+    {
+      "Frame": 423,
+      "Avg Intensity": 0.7102382553820351,
+      "Balance Index": 0.7062531054279747
+    },
+    {
+      "Frame": 424,
+      "Avg Intensity": 0.8115311280463587,
+      "Balance Index": 0.8069776233412187
+    },
+    {
+      "Frame": 425,
+      "Avg Intensity": 0.8071730990174462,
+      "Balance Index": 0.802644047232228
+    },
+    {
+      "Frame": 426,
+      "Avg Intensity": 0.8594009037544345,
+      "Balance Index": 0.854578801528648
+    },
+    {
+      "Frame": 427,
+      "Avg Intensity": 0.800688811726469,
+      "Balance Index": 0.7961961433055712
+    },
+    {
+      "Frame": 428,
+      "Avg Intensity": 0.6974421031190129,
+      "Balance Index": 0.6935287524312082
+    },
+    {
+      "Frame": 429,
+      "Avg Intensity": 0.6909012830812616,
+      "Balance Index": 0.6870246329632663
+    },
+    {
+      "Frame": 430,
+      "Avg Intensity": 0.713647130543754,
+      "Balance Index": 0.7096428533762673
+    },
+    {
+      "Frame": 432,
+      "Avg Intensity": 0.6903148963266527,
+      "Balance Index": 0.6864415364272994
+    },
+    {
+      "Frame": 436,
+      "Avg Intensity": 0.6993220581331464,
+      "Balance Index": 0.6953981590095436
+    },
+    {
+      "Frame": 438,
+      "Avg Intensity": 0.7181455390238289,
+      "Balance Index": 0.7141160212667066
+    },
+    {
+      "Frame": 442,
+      "Avg Intensity": 0.7478894912136995,
+      "Balance Index": 0.7436930800108851
+    },
+    {
+      "Frame": 443,
+      "Avg Intensity": 0.6926292095435767,
+      "Balance Index": 0.6887428640226517
+    },
+    {
+      "Frame": 444,
+      "Avg Intensity": 0.685517632096893,
+      "Balance Index": 0.6816711896680927
+    },
+    {
+      "Frame": 445,
+      "Avg Intensity": 0.7016632041378021,
+      "Balance Index": 0.6977261688337385
+    },
+    {
+      "Frame": 447,
+      "Avg Intensity": 0.6931806082993303,
+      "Balance Index": 0.6892911688775777
+    },
+    {
+      "Frame": 451,
+      "Avg Intensity": 0.684890218492897,
+      "Balance Index": 0.68104729648457
+    },
+    {
+      "Frame": 453,
+      "Avg Intensity": 0.7086558230775735,
+      "Balance Index": 0.7046795521580872
+    },
+    {
+      "Frame": 454,
+      "Avg Intensity": 0.70970425433796,
+      "Balance Index": 0.705722100666091
+    },
+    {
+      "Frame": 457,
+      "Avg Intensity": 0.6935559283465678,
+      "Balance Index": 0.6896643830023903
+    },
+    {
+      "Frame": 458,
+      "Avg Intensity": 0.7869134301067364,
+      "Balance Index": 0.7824980554122931
+    },
+    {
+      "Frame": 459,
+      "Avg Intensity": 0.6958806473114174,
+      "Balance Index": 0.6919760579589712
+    },
+    {
+      "Frame": 465,
+      "Avg Intensity": 0.7192756253528795,
+      "Balance Index": 0.7152397666764273
+    },
+    {
+      "Frame": 470,
+      "Avg Intensity": 0.6941473396866763,
+      "Balance Index": 0.6902524759308856
+    },
+    {
+      "Frame": 471,
+      "Avg Intensity": 0.7054926907443818,
+      "Balance Index": 0.7015341681742372
+    },
+    {
+      "Frame": 475,
+      "Avg Intensity": 0.688453341709464,
+      "Balance Index": 0.6845904270012012
+    },
+    {
+      "Frame": 517,
+      "Avg Intensity": 0.7645601333617106,
+      "Balance Index": 0.7602701831129677
+    },
+    {
+      "Frame": 610,
+      "Avg Intensity": 0.7746286312936226,
+      "Balance Index": 0.7702821866589934
+    },
+    {
+      "Frame": 614,
+      "Avg Intensity": 0.6948473851808769,
+      "Balance Index": 0.6909485934667596
+    },
+    {
+      "Frame": 615,
+      "Avg Intensity": 0.8247010821774465,
+      "Balance Index": 0.8200736808021359
+    },
+    {
+      "Frame": 618,
+      "Avg Intensity": 0.6927596689580937,
+      "Balance Index": 0.688872591428824
+    },
+    {
+      "Frame": 620,
+      "Avg Intensity": 0.7255670508190671,
+      "Balance Index": 0.7214958909268363
+    },
+    {
+      "Frame": 621,
+      "Avg Intensity": 0.706112841348893,
+      "Balance Index": 0.702150839110997
+    },
+    {
+      "Frame": 640,
+      "Avg Intensity": 0.7008478490500036,
+      "Balance Index": 0.6969153887069
+    },
+    {
+      "Frame": 643,
+      "Avg Intensity": 0.697563527127104,
+      "Balance Index": 0.6936494951286594
+    },
+    {
+      "Frame": 644,
+      "Avg Intensity": 0.6867714831971777,
+      "Balance Index": 0.6829180054043755
+    }
+  ],
+  "time_lapse": [
+    {
+      "Frame": 65,
+      "Balance Index": 0.6903911959703096
+    },
+    {
+      "Frame": 71,
+      "Balance Index": 0.7157488743590557
+    },
+    {
+      "Frame": 75,
+      "Balance Index": 0.6964999926628167
+    },
+    {
+      "Frame": 76,
+      "Balance Index": 0.6903288541289254
+    },
+    {
+      "Frame": 79,
+      "Balance Index": 0.6802013775675019
+    },
+    {
+      "Frame": 83,
+      "Balance Index": 0.6922696331585015
+    },
+    {
+      "Frame": 84,
+      "Balance Index": 0.7103894827517
+    },
+    {
+      "Frame": 88,
+      "Balance Index": 0.6820248129586359
+    },
+    {
+      "Frame": 89,
+      "Balance Index": 0.7006883522542886
+    },
+    {
+      "Frame": 92,
+      "Balance Index": 0.7577248615981556
+    },
+    {
+      "Frame": 94,
+      "Balance Index": 0.6859003526294597
+    },
+    {
+      "Frame": 96,
+      "Balance Index": 0.6817453387174897
+    },
+    {
+      "Frame": 97,
+      "Balance Index": 0.6912476085226329
+    },
+    {
+      "Frame": 98,
+      "Balance Index": 0.688920095774061
+    },
+    {
+      "Frame": 99,
+      "Balance Index": 0.707377328611344
+    },
+    {
+      "Frame": 100,
+      "Balance Index": 0.6803316241526337
+    },
+    {
+      "Frame": 326,
+      "Balance Index": 0.7078428569861152
+    },
+    {
+      "Frame": 332,
+      "Balance Index": 0.6842407745808573
+    },
+    {
+      "Frame": 347,
+      "Balance Index": 0.7548738829941831
+    },
+    {
+      "Frame": 355,
+      "Balance Index": 0.8871668398015319
+    },
+    {
+      "Frame": 356,
+      "Balance Index": 0.8872579358545197
+    },
+    {
+      "Frame": 359,
+      "Balance Index": 0.698913256244597
+    },
+    {
+      "Frame": 362,
+      "Balance Index": 0.8842183274049643
+    },
+    {
+      "Frame": 364,
+      "Balance Index": 0.8850604259228421
+    },
+    {
+      "Frame": 366,
+      "Balance Index": 0.691549679721198
+    },
+    {
+      "Frame": 368,
+      "Balance Index": 0.8872631282579206
+    },
+    {
+      "Frame": 372,
+      "Balance Index": 0.8819651730021398
+    },
+    {
+      "Frame": 376,
+      "Balance Index": 0.8651843797269612
+    },
+    {
+      "Frame": 378,
+      "Balance Index": 0.879504288538319
+    },
+    {
+      "Frame": 380,
+      "Balance Index": 0.8807596137850755
+    },
+    {
+      "Frame": 381,
+      "Balance Index": 0.6853421564457082
+    },
+    {
+      "Frame": 382,
+      "Balance Index": 0.7090824769746944
+    },
+    {
+      "Frame": 383,
+      "Balance Index": 0.7078142243257766
+    },
+    {
+      "Frame": 384,
+      "Balance Index": 0.8527668083264062
+    },
+    {
+      "Frame": 386,
+      "Balance Index": 0.881330014847609
+    },
+    {
+      "Frame": 387,
+      "Balance Index": 0.8841381495345179
+    },
+    {
+      "Frame": 388,
+      "Balance Index": 0.71201015968542
+    },
+    {
+      "Frame": 391,
+      "Balance Index": 0.8806883506398874
+    },
+    {
+      "Frame": 392,
+      "Balance Index": 0.8783843087990139
+    },
+    {
+      "Frame": 395,
+      "Balance Index": 0.872098027145041
+    },
+    {
+      "Frame": 396,
+      "Balance Index": 0.8827506130695497
+    },
+    {
+      "Frame": 397,
+      "Balance Index": 0.8636896205870608
+    },
+    {
+      "Frame": 398,
+      "Balance Index": 0.8522635701055632
+    },
+    {
+      "Frame": 399,
+      "Balance Index": 0.8685073661677305
+    },
+    {
+      "Frame": 400,
+      "Balance Index": 0.842394501834138
+    },
+    {
+      "Frame": 401,
+      "Balance Index": 0.8508390874758514
+    },
+    {
+      "Frame": 403,
+      "Balance Index": 0.7963693754530103
+    },
+    {
+      "Frame": 404,
+      "Balance Index": 0.7234184899556926
+    },
+    {
+      "Frame": 405,
+      "Balance Index": 0.8037585424365434
+    },
+    {
+      "Frame": 406,
+      "Balance Index": 0.7123238203554915
+    },
+    {
+      "Frame": 407,
+      "Balance Index": 0.8217423797859257
+    },
+    {
+      "Frame": 408,
+      "Balance Index": 0.8089015911082164
+    },
+    {
+      "Frame": 409,
+      "Balance Index": 0.8752966550690603
+    },
+    {
+      "Frame": 410,
+      "Balance Index": 0.788610085592407
+    },
+    {
+      "Frame": 411,
+      "Balance Index": 0.7781673120373539
+    },
+    {
+      "Frame": 412,
+      "Balance Index": 0.8326701043824529
+    },
+    {
+      "Frame": 413,
+      "Balance Index": 0.704327021551972
+    },
+    {
+      "Frame": 414,
+      "Balance Index": 0.8124573146007524
+    },
+    {
+      "Frame": 415,
+      "Balance Index": 0.7596827988391653
+    },
+    {
+      "Frame": 418,
+      "Balance Index": 0.7708636284108635
+    },
+    {
+      "Frame": 419,
+      "Balance Index": 0.7851565376827789
+    },
+    {
+      "Frame": 420,
+      "Balance Index": 0.7800932922537607
+    },
+    {
+      "Frame": 421,
+      "Balance Index": 0.8096735323800299
+    },
+    {
+      "Frame": 422,
+      "Balance Index": 0.704413128751311
+    },
+    {
+      "Frame": 423,
+      "Balance Index": 0.7062531054279747
+    },
+    {
+      "Frame": 424,
+      "Balance Index": 0.8069776233412187
+    },
+    {
+      "Frame": 425,
+      "Balance Index": 0.802644047232228
+    },
+    {
+      "Frame": 426,
+      "Balance Index": 0.854578801528648
+    },
+    {
+      "Frame": 427,
+      "Balance Index": 0.7961961433055712
+    },
+    {
+      "Frame": 428,
+      "Balance Index": 0.6935287524312082
+    },
+    {
+      "Frame": 429,
+      "Balance Index": 0.6870246329632663
+    },
+    {
+      "Frame": 430,
+      "Balance Index": 0.7096428533762673
+    },
+    {
+      "Frame": 432,
+      "Balance Index": 0.6864415364272994
+    },
+    {
+      "Frame": 436,
+      "Balance Index": 0.6953981590095436
+    },
+    {
+      "Frame": 438,
+      "Balance Index": 0.7141160212667066
+    },
+    {
+      "Frame": 442,
+      "Balance Index": 0.7436930800108851
+    },
+    {
+      "Frame": 443,
+      "Balance Index": 0.6887428640226517
+    },
+    {
+      "Frame": 444,
+      "Balance Index": 0.6816711896680927
+    },
+    {
+      "Frame": 445,
+      "Balance Index": 0.6977261688337385
+    },
+    {
+      "Frame": 447,
+      "Balance Index": 0.6892911688775777
+    },
+    {
+      "Frame": 451,
+      "Balance Index": 0.68104729648457
+    },
+    {
+      "Frame": 453,
+      "Balance Index": 0.7046795521580872
+    },
+    {
+      "Frame": 454,
+      "Balance Index": 0.705722100666091
+    },
+    {
+      "Frame": 457,
+      "Balance Index": 0.6896643830023903
+    },
+    {
+      "Frame": 458,
+      "Balance Index": 0.7824980554122931
+    },
+    {
+      "Frame": 459,
+      "Balance Index": 0.6919760579589712
+    },
+    {
+      "Frame": 465,
+      "Balance Index": 0.7152397666764273
+    },
+    {
+      "Frame": 470,
+      "Balance Index": 0.6902524759308856
+    },
+    {
+      "Frame": 471,
+      "Balance Index": 0.7015341681742372
+    },
+    {
+      "Frame": 475,
+      "Balance Index": 0.6845904270012012
+    },
+    {
+      "Frame": 517,
+      "Balance Index": 0.7602701831129677
+    },
+    {
+      "Frame": 610,
+      "Balance Index": 0.7702821866589934
+    },
+    {
+      "Frame": 614,
+      "Balance Index": 0.6909485934667596
+    },
+    {
+      "Frame": 615,
+      "Balance Index": 0.8200736808021359
+    },
+    {
+      "Frame": 618,
+      "Balance Index": 0.688872591428824
+    },
+    {
+      "Frame": 620,
+      "Balance Index": 0.7214958909268363
+    },
+    {
+      "Frame": 621,
+      "Balance Index": 0.702150839110997
+    },
+    {
+      "Frame": 640,
+      "Balance Index": 0.6969153887069
+    },
+    {
+      "Frame": 643,
+      "Balance Index": 0.6936494951286594
+    },
+    {
+      "Frame": 644,
+      "Balance Index": 0.6829180054043755
+    }
+  ],
+  "balance_optimization": [
+    {
+      "Frame": 65,
+      "Balance Index": 0.6903911959703096,
+      "Optimized Balance": 0.65163
+    },
+    {
+      "Frame": 71,
+      "Balance Index": 0.7157488743590557,
+      "Optimized Balance": 0.6690300000000001
+    },
+    {
+      "Frame": 75,
+      "Balance Index": 0.6964999926628167,
+      "Optimized Balance": 0.68023
+    },
+    {
+      "Frame": 76,
+      "Balance Index": 0.6903288541289254,
+      "Optimized Balance": 0.6829799999999999
+    },
+    {
+      "Frame": 79,
+      "Balance Index": 0.6802013775675019,
+      "Optimized Balance": 0.69111
+    },
+    {
+      "Frame": 83,
+      "Balance Index": 0.6922696331585015,
+      "Optimized Balance": 0.70167
+    },
+    {
+      "Frame": 84,
+      "Balance Index": 0.7103894827517,
+      "Optimized Balance": 0.7042600000000001
+    },
+    {
+      "Frame": 88,
+      "Balance Index": 0.6820248129586359,
+      "Optimized Balance": 0.71442
+    },
+    {
+      "Frame": 89,
+      "Balance Index": 0.7006883522542886,
+      "Optimized Balance": 0.7169099999999999
+    },
+    {
+      "Frame": 92,
+      "Balance Index": 0.7577248615981556,
+      "Optimized Balance": 0.7242599999999999
+    },
+    {
+      "Frame": 94,
+      "Balance Index": 0.6859003526294597,
+      "Optimized Balance": 0.72906
+    },
+    {
+      "Frame": 96,
+      "Balance Index": 0.6817453387174897,
+      "Optimized Balance": 0.73378
+    },
+    {
+      "Frame": 97,
+      "Balance Index": 0.6912476085226329,
+      "Optimized Balance": 0.73611
+    },
+    {
+      "Frame": 98,
+      "Balance Index": 0.688920095774061,
+      "Optimized Balance": 0.73842
+    },
+    {
+      "Frame": 99,
+      "Balance Index": 0.707377328611344,
+      "Optimized Balance": 0.74071
+    },
+    {
+      "Frame": 100,
+      "Balance Index": 0.6803316241526337,
+      "Optimized Balance": 0.7429800000000001
+    },
+    {
+      "Frame": 326,
+      "Balance Index": 0.7078428569861152,
+      "Optimized Balance": 0.74298
+    },
+    {
+      "Frame": 332,
+      "Balance Index": 0.6842407745808573,
+      "Optimized Balance": 0.72906
+    },
+    {
+      "Frame": 347,
+      "Balance Index": 0.7548738829941831,
+      "Optimized Balance": 0.6911099999999999
+    },
+    {
+      "Frame": 355,
+      "Balance Index": 0.8871668398015319,
+      "Optimized Balance": 0.6690299999999998
+    },
+    {
+      "Frame": 356,
+      "Balance Index": 0.8872579358545197,
+      "Optimized Balance": 0.6661799999999998
+    },
+    {
+      "Frame": 359,
+      "Balance Index": 0.698913256244597,
+      "Optimized Balance": 0.65751
+    },
+    {
+      "Frame": 362,
+      "Balance Index": 0.8842183274049643,
+      "Optimized Balance": 0.6486599999999998
+    },
+    {
+      "Frame": 364,
+      "Balance Index": 0.8850604259228421,
+      "Optimized Balance": 0.64266
+    },
+    {
+      "Frame": 366,
+      "Balance Index": 0.691549679721198,
+      "Optimized Balance": 0.6365799999999999
+    },
+    {
+      "Frame": 368,
+      "Balance Index": 0.8872631282579206,
+      "Optimized Balance": 0.6304199999999998
+    },
+    {
+      "Frame": 372,
+      "Balance Index": 0.8819651730021398,
+      "Optimized Balance": 0.6178599999999999
+    },
+    {
+      "Frame": 376,
+      "Balance Index": 0.8651843797269612,
+      "Optimized Balance": 0.6049800000000001
+    },
+    {
+      "Frame": 378,
+      "Balance Index": 0.879504288538319,
+      "Optimized Balance": 0.59842
+    },
+    {
+      "Frame": 380,
+      "Balance Index": 0.8807596137850755,
+      "Optimized Balance": 0.5917799999999998
+    },
+    {
+      "Frame": 381,
+      "Balance Index": 0.6853421564457082,
+      "Optimized Balance": 0.5884299999999998
+    },
+    {
+      "Frame": 382,
+      "Balance Index": 0.7090824769746944,
+      "Optimized Balance": 0.5850599999999997
+    },
+    {
+      "Frame": 383,
+      "Balance Index": 0.7078142243257766,
+      "Optimized Balance": 0.5816700000000001
+    },
+    {
+      "Frame": 384,
+      "Balance Index": 0.8527668083264062,
+      "Optimized Balance": 0.57826
+    },
+    {
+      "Frame": 386,
+      "Balance Index": 0.881330014847609,
+      "Optimized Balance": 0.5713799999999998
+    },
+    {
+      "Frame": 387,
+      "Balance Index": 0.8841381495345179,
+      "Optimized Balance": 0.5679099999999997
+    },
+    {
+      "Frame": 388,
+      "Balance Index": 0.71201015968542,
+      "Optimized Balance": 0.5644199999999997
+    },
+    {
+      "Frame": 391,
+      "Balance Index": 0.8806883506398874,
+      "Optimized Balance": 0.5538299999999998
+    },
+    {
+      "Frame": 392,
+      "Balance Index": 0.8783843087990139,
+      "Optimized Balance": 0.5502599999999997
+    },
+    {
+      "Frame": 395,
+      "Balance Index": 0.872098027145041,
+      "Optimized Balance": 0.5394299999999996
+    },
+    {
+      "Frame": 396,
+      "Balance Index": 0.8827506130695497,
+      "Optimized Balance": 0.5357799999999999
+    },
+    {
+      "Frame": 397,
+      "Balance Index": 0.8636896205870608,
+      "Optimized Balance": 0.5321099999999999
+    },
+    {
+      "Frame": 398,
+      "Balance Index": 0.8522635701055632,
+      "Optimized Balance": 0.5284199999999999
+    },
+    {
+      "Frame": 399,
+      "Balance Index": 0.8685073661677305,
+      "Optimized Balance": 0.5247099999999998
+    },
+    {
+      "Frame": 400,
+      "Balance Index": 0.842394501834138,
+      "Optimized Balance": 0.5209799999999998
+    },
+    {
+      "Frame": 401,
+      "Balance Index": 0.8508390874758514,
+      "Optimized Balance": 0.5172299999999996
+    },
+    {
+      "Frame": 403,
+      "Balance Index": 0.7963693754530103,
+      "Optimized Balance": 0.5096700000000001
+    },
+    {
+      "Frame": 404,
+      "Balance Index": 0.7234184899556926,
+      "Optimized Balance": 0.50586
+    },
+    {
+      "Frame": 405,
+      "Balance Index": 0.8037585424365434,
+      "Optimized Balance": 0.5020299999999998
+    },
+    {
+      "Frame": 406,
+      "Balance Index": 0.7123238203554915,
+      "Optimized Balance": 0.49817999999999985
+    },
+    {
+      "Frame": 407,
+      "Balance Index": 0.8217423797859257,
+      "Optimized Balance": 0.4943099999999996
+    },
+    {
+      "Frame": 408,
+      "Balance Index": 0.8089015911082164,
+      "Optimized Balance": 0.4904200000000001
+    },
+    {
+      "Frame": 409,
+      "Balance Index": 0.8752966550690603,
+      "Optimized Balance": 0.48651
+    },
+    {
+      "Frame": 410,
+      "Balance Index": 0.788610085592407,
+      "Optimized Balance": 0.48258
+    },
+    {
+      "Frame": 411,
+      "Balance Index": 0.7781673120373539,
+      "Optimized Balance": 0.4786299999999999
+    },
+    {
+      "Frame": 412,
+      "Balance Index": 0.8326701043824529,
+      "Optimized Balance": 0.47465999999999986
+    },
+    {
+      "Frame": 413,
+      "Balance Index": 0.704327021551972,
+      "Optimized Balance": 0.4706699999999997
+    },
+    {
+      "Frame": 414,
+      "Balance Index": 0.8124573146007524,
+      "Optimized Balance": 0.46665999999999963
+    },
+    {
+      "Frame": 415,
+      "Balance Index": 0.7596827988391653,
+      "Optimized Balance": 0.4626300000000001
+    },
+    {
+      "Frame": 418,
+      "Balance Index": 0.7708636284108635,
+      "Optimized Balance": 0.4504199999999998
+    },
+    {
+      "Frame": 419,
+      "Balance Index": 0.7851565376827789,
+      "Optimized Balance": 0.44630999999999976
+    },
+    {
+      "Frame": 420,
+      "Balance Index": 0.7800932922537607,
+      "Optimized Balance": 0.4421799999999996
+    },
+    {
+      "Frame": 421,
+      "Balance Index": 0.8096735323800299,
+      "Optimized Balance": 0.43803000000000014
+    },
+    {
+      "Frame": 422,
+      "Balance Index": 0.704413128751311,
+      "Optimized Balance": 0.4338599999999999
+    },
+    {
+      "Frame": 423,
+      "Balance Index": 0.7062531054279747,
+      "Optimized Balance": 0.42967
+    },
+    {
+      "Frame": 424,
+      "Balance Index": 0.8069776233412187,
+      "Optimized Balance": 0.4254599999999997
+    },
+    {
+      "Frame": 425,
+      "Balance Index": 0.802644047232228,
+      "Optimized Balance": 0.42122999999999977
+    },
+    {
+      "Frame": 426,
+      "Balance Index": 0.854578801528648,
+      "Optimized Balance": 0.4169799999999997
+    },
+    {
+      "Frame": 427,
+      "Balance Index": 0.7961961433055712,
+      "Optimized Balance": 0.4127099999999997
+    },
+    {
+      "Frame": 428,
+      "Balance Index": 0.6935287524312082,
+      "Optimized Balance": 0.40842
+    },
+    {
+      "Frame": 429,
+      "Balance Index": 0.6870246329632663,
+      "Optimized Balance": 0.40410999999999997
+    },
+    {
+      "Frame": 430,
+      "Balance Index": 0.7096428533762673,
+      "Optimized Balance": 0.3997799999999998
+    },
+    {
+      "Frame": 432,
+      "Balance Index": 0.6864415364272994,
+      "Optimized Balance": 0.39105999999999974
+    },
+    {
+      "Frame": 436,
+      "Balance Index": 0.6953981590095436,
+      "Optimized Balance": 0.3733799999999998
+    },
+    {
+      "Frame": 438,
+      "Balance Index": 0.7141160212667066,
+      "Optimized Balance": 0.36441999999999974
+    },
+    {
+      "Frame": 442,
+      "Balance Index": 0.7436930800108851,
+      "Optimized Balance": 0.3462599999999998
+    },
+    {
+      "Frame": 443,
+      "Balance Index": 0.6887428640226517,
+      "Optimized Balance": 0.3416699999999999
+    },
+    {
+      "Frame": 444,
+      "Balance Index": 0.6816711896680927,
+      "Optimized Balance": 0.3370599999999997
+    },
+    {
+      "Frame": 445,
+      "Balance Index": 0.6977261688337385,
+      "Optimized Balance": 0.3324299999999998
+    },
+    {
+      "Frame": 447,
+      "Balance Index": 0.6892911688775777,
+      "Optimized Balance": 0.32311
+    },
+    {
+      "Frame": 451,
+      "Balance Index": 0.68104729648457,
+      "Optimized Balance": 0.30422999999999956
+    },
+    {
+      "Frame": 453,
+      "Balance Index": 0.7046795521580872,
+      "Optimized Balance": 0.29467
+    },
+    {
+      "Frame": 454,
+      "Balance Index": 0.705722100666091,
+      "Optimized Balance": 0.28986
+    },
+    {
+      "Frame": 457,
+      "Balance Index": 0.6896643830023903,
+      "Optimized Balance": 0.2753099999999997
+    },
+    {
+      "Frame": 458,
+      "Balance Index": 0.7824980554122931,
+      "Optimized Balance": 0.27041999999999966
+    },
+    {
+      "Frame": 459,
+      "Balance Index": 0.6919760579589712,
+      "Optimized Balance": 0.26550999999999947
+    },
+    {
+      "Frame": 465,
+      "Balance Index": 0.7152397666764273,
+      "Optimized Balance": 0.23562999999999956
+    },
+    {
+      "Frame": 470,
+      "Balance Index": 0.6902524759308856,
+      "Optimized Balance": 0.2101799999999998
+    },
+    {
+      "Frame": 471,
+      "Balance Index": 0.7015341681742372,
+      "Optimized Balance": 0.20503000000000027
+    },
+    {
+      "Frame": 475,
+      "Balance Index": 0.6845904270012012,
+      "Optimized Balance": 0.1842299999999999
+    },
+    {
+      "Frame": 517,
+      "Balance Index": 0.7602701831129677,
+      "Optimized Balance": -0.05349000000000004
+    },
+    {
+      "Frame": 610,
+      "Balance Index": 0.7702821866589934,
+      "Optimized Balance": -0.7054200000000002
+    },
+    {
+      "Frame": 614,
+      "Balance Index": 0.6909485934667596,
+      "Optimized Balance": -0.7373400000000001
+    },
+    {
+      "Frame": 615,
+      "Balance Index": 0.8200736808021359,
+      "Optimized Balance": -0.7453700000000003
+    },
+    {
+      "Frame": 618,
+      "Balance Index": 0.688872591428824,
+      "Optimized Balance": -0.7695799999999999
+    },
+    {
+      "Frame": 620,
+      "Balance Index": 0.7214958909268363,
+      "Optimized Balance": -0.7858200000000002
+    },
+    {
+      "Frame": 621,
+      "Balance Index": 0.702150839110997,
+      "Optimized Balance": -0.7939700000000003
+    },
+    {
+      "Frame": 640,
+      "Balance Index": 0.6969153887069,
+      "Optimized Balance": -0.95262
+    },
+    {
+      "Frame": 643,
+      "Balance Index": 0.6936494951286594,
+      "Optimized Balance": -0.9783300000000006
+    },
+    {
+      "Frame": 644,
+      "Balance Index": 0.6829180054043755,
+      "Optimized Balance": -0.9869399999999997
+    }
+  ],
+  "balance_index_heatmap": [
+    {
+      "Frame": 65,
+      "Balance Index": 0.6903911959703096
+    },
+    {
+      "Frame": 71,
+      "Balance Index": 0.7157488743590557
+    },
+    {
+      "Frame": 75,
+      "Balance Index": 0.6964999926628167
+    },
+    {
+      "Frame": 76,
+      "Balance Index": 0.6903288541289254
+    },
+    {
+      "Frame": 79,
+      "Balance Index": 0.6802013775675019
+    },
+    {
+      "Frame": 83,
+      "Balance Index": 0.6922696331585015
+    },
+    {
+      "Frame": 84,
+      "Balance Index": 0.7103894827517
+    },
+    {
+      "Frame": 88,
+      "Balance Index": 0.6820248129586359
+    },
+    {
+      "Frame": 89,
+      "Balance Index": 0.7006883522542886
+    },
+    {
+      "Frame": 92,
+      "Balance Index": 0.7577248615981556
+    },
+    {
+      "Frame": 94,
+      "Balance Index": 0.6859003526294597
+    },
+    {
+      "Frame": 96,
+      "Balance Index": 0.6817453387174897
+    },
+    {
+      "Frame": 97,
+      "Balance Index": 0.6912476085226329
+    },
+    {
+      "Frame": 98,
+      "Balance Index": 0.688920095774061
+    },
+    {
+      "Frame": 99,
+      "Balance Index": 0.707377328611344
+    },
+    {
+      "Frame": 100,
+      "Balance Index": 0.6803316241526337
+    },
+    {
+      "Frame": 326,
+      "Balance Index": 0.7078428569861152
+    },
+    {
+      "Frame": 332,
+      "Balance Index": 0.6842407745808573
+    },
+    {
+      "Frame": 347,
+      "Balance Index": 0.7548738829941831
+    },
+    {
+      "Frame": 355,
+      "Balance Index": 0.8871668398015319
+    },
+    {
+      "Frame": 356,
+      "Balance Index": 0.8872579358545197
+    },
+    {
+      "Frame": 359,
+      "Balance Index": 0.698913256244597
+    },
+    {
+      "Frame": 362,
+      "Balance Index": 0.8842183274049643
+    },
+    {
+      "Frame": 364,
+      "Balance Index": 0.8850604259228421
+    },
+    {
+      "Frame": 366,
+      "Balance Index": 0.691549679721198
+    },
+    {
+      "Frame": 368,
+      "Balance Index": 0.8872631282579206
+    },
+    {
+      "Frame": 372,
+      "Balance Index": 0.8819651730021398
+    },
+    {
+      "Frame": 376,
+      "Balance Index": 0.8651843797269612
+    },
+    {
+      "Frame": 378,
+      "Balance Index": 0.879504288538319
+    },
+    {
+      "Frame": 380,
+      "Balance Index": 0.8807596137850755
+    },
+    {
+      "Frame": 381,
+      "Balance Index": 0.6853421564457082
+    },
+    {
+      "Frame": 382,
+      "Balance Index": 0.7090824769746944
+    },
+    {
+      "Frame": 383,
+      "Balance Index": 0.7078142243257766
+    },
+    {
+      "Frame": 384,
+      "Balance Index": 0.8527668083264062
+    },
+    {
+      "Frame": 386,
+      "Balance Index": 0.881330014847609
+    },
+    {
+      "Frame": 387,
+      "Balance Index": 0.8841381495345179
+    },
+    {
+      "Frame": 388,
+      "Balance Index": 0.71201015968542
+    },
+    {
+      "Frame": 391,
+      "Balance Index": 0.8806883506398874
+    },
+    {
+      "Frame": 392,
+      "Balance Index": 0.8783843087990139
+    },
+    {
+      "Frame": 395,
+      "Balance Index": 0.872098027145041
+    },
+    {
+      "Frame": 396,
+      "Balance Index": 0.8827506130695497
+    },
+    {
+      "Frame": 397,
+      "Balance Index": 0.8636896205870608
+    },
+    {
+      "Frame": 398,
+      "Balance Index": 0.8522635701055632
+    },
+    {
+      "Frame": 399,
+      "Balance Index": 0.8685073661677305
+    },
+    {
+      "Frame": 400,
+      "Balance Index": 0.842394501834138
+    },
+    {
+      "Frame": 401,
+      "Balance Index": 0.8508390874758514
+    },
+    {
+      "Frame": 403,
+      "Balance Index": 0.7963693754530103
+    },
+    {
+      "Frame": 404,
+      "Balance Index": 0.7234184899556926
+    },
+    {
+      "Frame": 405,
+      "Balance Index": 0.8037585424365434
+    },
+    {
+      "Frame": 406,
+      "Balance Index": 0.7123238203554915
+    },
+    {
+      "Frame": 407,
+      "Balance Index": 0.8217423797859257
+    },
+    {
+      "Frame": 408,
+      "Balance Index": 0.8089015911082164
+    },
+    {
+      "Frame": 409,
+      "Balance Index": 0.8752966550690603
+    },
+    {
+      "Frame": 410,
+      "Balance Index": 0.788610085592407
+    },
+    {
+      "Frame": 411,
+      "Balance Index": 0.7781673120373539
+    },
+    {
+      "Frame": 412,
+      "Balance Index": 0.8326701043824529
+    },
+    {
+      "Frame": 413,
+      "Balance Index": 0.704327021551972
+    },
+    {
+      "Frame": 414,
+      "Balance Index": 0.8124573146007524
+    },
+    {
+      "Frame": 415,
+      "Balance Index": 0.7596827988391653
+    },
+    {
+      "Frame": 418,
+      "Balance Index": 0.7708636284108635
+    },
+    {
+      "Frame": 419,
+      "Balance Index": 0.7851565376827789
+    },
+    {
+      "Frame": 420,
+      "Balance Index": 0.7800932922537607
+    },
+    {
+      "Frame": 421,
+      "Balance Index": 0.8096735323800299
+    },
+    {
+      "Frame": 422,
+      "Balance Index": 0.704413128751311
+    },
+    {
+      "Frame": 423,
+      "Balance Index": 0.7062531054279747
+    },
+    {
+      "Frame": 424,
+      "Balance Index": 0.8069776233412187
+    },
+    {
+      "Frame": 425,
+      "Balance Index": 0.802644047232228
+    },
+    {
+      "Frame": 426,
+      "Balance Index": 0.854578801528648
+    },
+    {
+      "Frame": 427,
+      "Balance Index": 0.7961961433055712
+    },
+    {
+      "Frame": 428,
+      "Balance Index": 0.6935287524312082
+    },
+    {
+      "Frame": 429,
+      "Balance Index": 0.6870246329632663
+    },
+    {
+      "Frame": 430,
+      "Balance Index": 0.7096428533762673
+    },
+    {
+      "Frame": 432,
+      "Balance Index": 0.6864415364272994
+    },
+    {
+      "Frame": 436,
+      "Balance Index": 0.6953981590095436
+    },
+    {
+      "Frame": 438,
+      "Balance Index": 0.7141160212667066
+    },
+    {
+      "Frame": 442,
+      "Balance Index": 0.7436930800108851
+    },
+    {
+      "Frame": 443,
+      "Balance Index": 0.6887428640226517
+    },
+    {
+      "Frame": 444,
+      "Balance Index": 0.6816711896680927
+    },
+    {
+      "Frame": 445,
+      "Balance Index": 0.6977261688337385
+    },
+    {
+      "Frame": 447,
+      "Balance Index": 0.6892911688775777
+    },
+    {
+      "Frame": 451,
+      "Balance Index": 0.68104729648457
+    },
+    {
+      "Frame": 453,
+      "Balance Index": 0.7046795521580872
+    },
+    {
+      "Frame": 454,
+      "Balance Index": 0.705722100666091
+    },
+    {
+      "Frame": 457,
+      "Balance Index": 0.6896643830023903
+    },
+    {
+      "Frame": 458,
+      "Balance Index": 0.7824980554122931
+    },
+    {
+      "Frame": 459,
+      "Balance Index": 0.6919760579589712
+    },
+    {
+      "Frame": 465,
+      "Balance Index": 0.7152397666764273
+    },
+    {
+      "Frame": 470,
+      "Balance Index": 0.6902524759308856
+    },
+    {
+      "Frame": 471,
+      "Balance Index": 0.7015341681742372
+    },
+    {
+      "Frame": 475,
+      "Balance Index": 0.6845904270012012
+    },
+    {
+      "Frame": 517,
+      "Balance Index": 0.7602701831129677
+    },
+    {
+      "Frame": 610,
+      "Balance Index": 0.7702821866589934
+    },
+    {
+      "Frame": 614,
+      "Balance Index": 0.6909485934667596
+    },
+    {
+      "Frame": 615,
+      "Balance Index": 0.8200736808021359
+    },
+    {
+      "Frame": 618,
+      "Balance Index": 0.688872591428824
+    },
+    {
+      "Frame": 620,
+      "Balance Index": 0.7214958909268363
+    },
+    {
+      "Frame": 621,
+      "Balance Index": 0.702150839110997
+    },
+    {
+      "Frame": 640,
+      "Balance Index": 0.6969153887069
+    },
+    {
+      "Frame": 643,
+      "Balance Index": 0.6936494951286594
+    },
+    {
+      "Frame": 644,
+      "Balance Index": 0.6829180054043755
+    }
+  ]
+}

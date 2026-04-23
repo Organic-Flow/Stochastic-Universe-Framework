@@ -1,0 +1,6006 @@
+{
+  "phase": "Quantum Feature Extraction",
+  "name": "Quantum Analysis Pipeline",
+  "results": [
+    {
+      "Frame": 1,
+      "Avg Intensity": 0.6487740872858624,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 2,
+      "Avg Intensity": 0.6353862961313776,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 3,
+      "Avg Intensity": 0.6430052627258462,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 4,
+      "Avg Intensity": 0.6414214924509223,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 5,
+      "Avg Intensity": 0.6481258420065021,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 6,
+      "Avg Intensity": 0.6497851179914651,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 7,
+      "Avg Intensity": 0.6368244457258538,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 8,
+      "Avg Intensity": 0.64518612988624,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 9,
+      "Avg Intensity": 0.6401004039677369,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 10,
+      "Avg Intensity": 0.6464998529366335,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 11,
+      "Avg Intensity": 0.6516996883893842,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 12,
+      "Avg Intensity": 0.6561658445323529,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 13,
+      "Avg Intensity": 0.648791003825034,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 14,
+      "Avg Intensity": 0.6424667804974279,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 15,
+      "Avg Intensity": 0.6524769522853391,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 16,
+      "Avg Intensity": 0.6396739344983081,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 17,
+      "Avg Intensity": 0.6336706955700002,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 18,
+      "Avg Intensity": 0.6451196496246259,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 19,
+      "Avg Intensity": 0.648532784233376,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 20,
+      "Avg Intensity": 0.6551211296124632,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 21,
+      "Avg Intensity": 0.648205130724366,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 22,
+      "Avg Intensity": 0.6443519204714622,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 23,
+      "Avg Intensity": 0.6392935924174531,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 24,
+      "Avg Intensity": 0.6460561738701658,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 25,
+      "Avg Intensity": 0.6400309123655631,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 26,
+      "Avg Intensity": 0.6520279373546185,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 27,
+      "Avg Intensity": 0.6390463422459266,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 28,
+      "Avg Intensity": 0.6565326818724028,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 29,
+      "Avg Intensity": 0.6649263387563048,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 30,
+      "Avg Intensity": 0.6627153788324983,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 31,
+      "Avg Intensity": 0.6595987424632404,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 32,
+      "Avg Intensity": 0.6383337393135262,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 33,
+      "Avg Intensity": 0.6426331398016868,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 34,
+      "Avg Intensity": 0.6414160813881233,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 35,
+      "Avg Intensity": 0.6440957645077815,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 36,
+      "Avg Intensity": 0.6356120633588125,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 37,
+      "Avg Intensity": 0.6534015301903795,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 38,
+      "Avg Intensity": 0.6610553778210202,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 39,
+      "Avg Intensity": 0.6475672742953187,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 40,
+      "Avg Intensity": 0.6257071514841472,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 41,
+      "Avg Intensity": 0.6500006508150451,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 42,
+      "Avg Intensity": 0.6423334439038599,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 43,
+      "Avg Intensity": 0.6414880901643332,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 44,
+      "Avg Intensity": 0.6231014517939156,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 45,
+      "Avg Intensity": 0.6324443292856916,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 46,
+      "Avg Intensity": 0.663528099922014,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 47,
+      "Avg Intensity": 0.6177547349864854,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 48,
+      "Avg Intensity": 0.6528004338791777,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 49,
+      "Avg Intensity": 0.6370624309706905,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 50,
+      "Avg Intensity": 0.63957044053197,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 51,
+      "Avg Intensity": 0.6580254135542786,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 52,
+      "Avg Intensity": 0.616951431113283,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 53,
+      "Avg Intensity": 0.643487184056161,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 54,
+      "Avg Intensity": 0.6459359214856729,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 55,
+      "Avg Intensity": 0.6400965099678546,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 56,
+      "Avg Intensity": 0.6611357009653458,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 57,
+      "Avg Intensity": 0.6367266401802155,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 58,
+      "Avg Intensity": 0.6584965956105232,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 59,
+      "Avg Intensity": 0.6743669073075758,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 60,
+      "Avg Intensity": 0.6597464693165664,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 61,
+      "Avg Intensity": 0.6260366732370609,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 62,
+      "Avg Intensity": 0.6327827549699591,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 63,
+      "Avg Intensity": 0.655281826349348,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 64,
+      "Avg Intensity": 0.6540948978142501,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 65,
+      "Avg Intensity": 0.6955859159156892,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 66,
+      "Avg Intensity": 0.6590609658053221,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 67,
+      "Avg Intensity": 0.6508214797770087,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 68,
+      "Avg Intensity": 0.658431598573433,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 69,
+      "Avg Intensity": 0.6658206463990349,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 70,
+      "Avg Intensity": 0.6324158015835573,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 71,
+      "Avg Intensity": 0.7211032480646847,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 72,
+      "Avg Intensity": 0.6675002649779564,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 73,
+      "Avg Intensity": 0.6535077299410749,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 74,
+      "Avg Intensity": 0.6592325641407162,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 75,
+      "Avg Intensity": 0.7017302694485089,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 76,
+      "Avg Intensity": 0.6955044363673881,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 77,
+      "Avg Intensity": 0.6428703974734495,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 78,
+      "Avg Intensity": 0.6479864678958415,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 79,
+      "Avg Intensity": 0.6852911609323484,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 80,
+      "Avg Intensity": 0.6733159125579876,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 81,
+      "Avg Intensity": 0.6602050980069264,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 82,
+      "Avg Intensity": 0.6586118492885732,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 83,
+      "Avg Intensity": 0.6974444354460196,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 84,
+      "Avg Intensity": 0.7157000199479685,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 85,
+      "Avg Intensity": 0.6851464790258542,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 86,
+      "Avg Intensity": 0.6702336172567913,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 87,
+      "Avg Intensity": 0.646118439983218,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 88,
+      "Avg Intensity": 0.6871318463104573,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 89,
+      "Avg Intensity": 0.7059496684180555,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 90,
+      "Avg Intensity": 0.6714239718263947,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 91,
+      "Avg Intensity": 0.659765829696762,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 92,
+      "Avg Intensity": 0.7632822603687117,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 93,
+      "Avg Intensity": 0.6418346032321197,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 94,
+      "Avg Intensity": 0.6910288319670307,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 95,
+      "Avg Intensity": 0.6311518748036913,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 96,
+      "Avg Intensity": 0.6868400908437923,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 97,
+      "Avg Intensity": 0.6964153091216131,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 98,
+      "Avg Intensity": 0.6940660763224371,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 99,
+      "Avg Intensity": 0.7126638865755712,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 100,
+      "Avg Intensity": 0.6853979443267328,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 101,
+      "Avg Intensity": 0.605221248598573,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 102,
+      "Avg Intensity": 0.6149865520398549,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 103,
+      "Avg Intensity": 0.6168596470509523,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 104,
+      "Avg Intensity": 0.6001938135577993,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 105,
+      "Avg Intensity": 0.6030540224030915,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 106,
+      "Avg Intensity": 0.6191709364366947,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 107,
+      "Avg Intensity": 0.6288069142292666,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 108,
+      "Avg Intensity": 0.608902773935612,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 109,
+      "Avg Intensity": 0.5981741265282883,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 110,
+      "Avg Intensity": 0.6244040383357322,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 111,
+      "Avg Intensity": 0.6132803336356112,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 112,
+      "Avg Intensity": 0.6068265520592072,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 113,
+      "Avg Intensity": 0.5935573739237977,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 114,
+      "Avg Intensity": 0.6009344606175627,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 115,
+      "Avg Intensity": 0.6316952193043409,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 116,
+      "Avg Intensity": 0.6300815831781682,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 117,
+      "Avg Intensity": 0.5988567110237825,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 118,
+      "Avg Intensity": 0.6282281512480767,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 119,
+      "Avg Intensity": 0.608768457619422,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 120,
+      "Avg Intensity": 0.6059447427974755,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 121,
+      "Avg Intensity": 0.6090096750750761,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 122,
+      "Avg Intensity": 0.6130779138745701,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 123,
+      "Avg Intensity": 0.6334430696878696,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 124,
+      "Avg Intensity": 0.6164268136431266,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 125,
+      "Avg Intensity": 0.613549165373666,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 126,
+      "Avg Intensity": 0.6134286785282849,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 127,
+      "Avg Intensity": 0.6187347331187997,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 128,
+      "Avg Intensity": 0.6019991437897735,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 129,
+      "Avg Intensity": 0.6162336197319604,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 130,
+      "Avg Intensity": 0.6224587982206613,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 131,
+      "Avg Intensity": 0.6148268841749163,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 132,
+      "Avg Intensity": 0.6157916590966968,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 133,
+      "Avg Intensity": 0.6206166111092054,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 134,
+      "Avg Intensity": 0.6106035011169875,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 135,
+      "Avg Intensity": 0.6101755020693824,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 136,
+      "Avg Intensity": 0.5971606097929494,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 137,
+      "Avg Intensity": 0.6282974305567209,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 138,
+      "Avg Intensity": 0.6305565182868956,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 139,
+      "Avg Intensity": 0.6067976352163158,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 140,
+      "Avg Intensity": 0.6221044645512024,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 141,
+      "Avg Intensity": 0.5926159743804215,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 142,
+      "Avg Intensity": 0.595431825819267,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 143,
+      "Avg Intensity": 0.6241125829105044,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 144,
+      "Avg Intensity": 0.614525801039114,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 145,
+      "Avg Intensity": 0.6187883600881285,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 146,
+      "Avg Intensity": 0.6306625526468866,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 147,
+      "Avg Intensity": 0.650138090779289,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 148,
+      "Avg Intensity": 0.6043504217825776,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 149,
+      "Avg Intensity": 0.650060010983585,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 150,
+      "Avg Intensity": 0.5970048291406749,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 151,
+      "Avg Intensity": 0.6013169928608427,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 152,
+      "Avg Intensity": 0.6099999921154274,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 153,
+      "Avg Intensity": 0.6148022205659615,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 154,
+      "Avg Intensity": 0.5979797527884599,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 155,
+      "Avg Intensity": 0.5992051422334184,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 156,
+      "Avg Intensity": 0.6378694706008883,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 157,
+      "Avg Intensity": 0.5971571226524359,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 158,
+      "Avg Intensity": 0.5975342176360681,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 159,
+      "Avg Intensity": 0.6324291662203435,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 160,
+      "Avg Intensity": 0.6205195005941776,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 161,
+      "Avg Intensity": 0.6133431503770834,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 162,
+      "Avg Intensity": 0.6153445683986858,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 163,
+      "Avg Intensity": 0.5938042352995242,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 164,
+      "Avg Intensity": 0.5927981244394279,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 165,
+      "Avg Intensity": 0.6232488636547524,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 166,
+      "Avg Intensity": 0.6037787800856699,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 167,
+      "Avg Intensity": 0.5939955441080338,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 168,
+      "Avg Intensity": 0.6087338686807919,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 169,
+      "Avg Intensity": 0.6241508831603588,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 170,
+      "Avg Intensity": 0.6106793681874242,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 171,
+      "Avg Intensity": 0.6176629969237777,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 172,
+      "Avg Intensity": 0.6047029185045698,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 173,
+      "Avg Intensity": 0.6350669612342974,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 174,
+      "Avg Intensity": 0.5980787699586222,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 175,
+      "Avg Intensity": 0.6108487306833135,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 176,
+      "Avg Intensity": 0.5884677820032828,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 177,
+      "Avg Intensity": 0.5899962758865173,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 178,
+      "Avg Intensity": 0.6263937831121542,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 179,
+      "Avg Intensity": 0.5950965724395338,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 180,
+      "Avg Intensity": 0.6109923951044914,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 181,
+      "Avg Intensity": 0.6018352637958339,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 182,
+      "Avg Intensity": 0.6088037335027989,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 183,
+      "Avg Intensity": 0.5979299730561628,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 184,
+      "Avg Intensity": 0.6241213047495802,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 185,
+      "Avg Intensity": 0.5927235232204979,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 186,
+      "Avg Intensity": 0.5929900274048969,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 187,
+      "Avg Intensity": 0.5917730849302503,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 188,
+      "Avg Intensity": 0.6137772622505667,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 189,
+      "Avg Intensity": 0.6091966855810054,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 190,
+      "Avg Intensity": 0.6101437259959349,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 191,
+      "Avg Intensity": 0.6218418372766146,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 192,
+      "Avg Intensity": 0.6216562100338996,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 193,
+      "Avg Intensity": 0.6567494475448962,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 194,
+      "Avg Intensity": 0.5924258224106661,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 195,
+      "Avg Intensity": 0.5970341410627376,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 196,
+      "Avg Intensity": 0.6318699622978512,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 197,
+      "Avg Intensity": 0.5865145856520078,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 198,
+      "Avg Intensity": 0.5759308592070275,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 199,
+      "Avg Intensity": 0.6187437446711084,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 200,
+      "Avg Intensity": 0.5986648396234764,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 201,
+      "Avg Intensity": 0.5938284646739035,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 202,
+      "Avg Intensity": 0.6016316792146251,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 203,
+      "Avg Intensity": 0.6090534454249222,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 204,
+      "Avg Intensity": 0.5923874245422939,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 205,
+      "Avg Intensity": 0.643382044598071,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 206,
+      "Avg Intensity": 0.5893146357828709,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 207,
+      "Avg Intensity": 0.605626442243197,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 208,
+      "Avg Intensity": 0.6013701997924404,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 209,
+      "Avg Intensity": 0.6315254534089156,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 210,
+      "Avg Intensity": 0.5726742622884161,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 211,
+      "Avg Intensity": 0.6038442153387902,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 212,
+      "Avg Intensity": 0.5902755417818331,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 213,
+      "Avg Intensity": 0.5800583757370271,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 214,
+      "Avg Intensity": 0.6048762871142318,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 215,
+      "Avg Intensity": 0.5821523675029435,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 216,
+      "Avg Intensity": 0.5899016609828286,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 217,
+      "Avg Intensity": 0.6111867723454699,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 218,
+      "Avg Intensity": 0.6124133002076158,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 219,
+      "Avg Intensity": 0.5865379941355963,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 220,
+      "Avg Intensity": 0.6140818353302514,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 221,
+      "Avg Intensity": 0.5891804422351622,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 222,
+      "Avg Intensity": 0.5925791717151396,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 223,
+      "Avg Intensity": 0.6243766034545467,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 224,
+      "Avg Intensity": 0.6124881811195949,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 225,
+      "Avg Intensity": 0.5997963734044958,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 226,
+      "Avg Intensity": 0.6216455433335921,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 227,
+      "Avg Intensity": 0.5896205102662578,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 228,
+      "Avg Intensity": 0.599979537656925,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 229,
+      "Avg Intensity": 0.6263854874154525,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 230,
+      "Avg Intensity": 0.5822554812575002,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 231,
+      "Avg Intensity": 0.5946341072116392,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 232,
+      "Avg Intensity": 0.6020286442015671,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 233,
+      "Avg Intensity": 0.5963501956932137,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 234,
+      "Avg Intensity": 0.5905323348010277,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 235,
+      "Avg Intensity": 0.6075495608274311,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 236,
+      "Avg Intensity": 0.6215260251771341,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 237,
+      "Avg Intensity": 0.598080913811447,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 238,
+      "Avg Intensity": 0.6060771244107832,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 239,
+      "Avg Intensity": 0.6069355910393861,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 240,
+      "Avg Intensity": 0.5818025792389218,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 241,
+      "Avg Intensity": 0.5999395196966196,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 242,
+      "Avg Intensity": 0.6021067408927836,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 243,
+      "Avg Intensity": 0.5818532301085094,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 244,
+      "Avg Intensity": 0.6034876787221405,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 245,
+      "Avg Intensity": 0.6255124455912867,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 246,
+      "Avg Intensity": 0.6096759155330997,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 247,
+      "Avg Intensity": 0.5882125546349253,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 248,
+      "Avg Intensity": 0.6076393548452257,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 249,
+      "Avg Intensity": 0.5811037001135115,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 250,
+      "Avg Intensity": 0.6223312777501755,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 251,
+      "Avg Intensity": 0.6612412322145163,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 252,
+      "Avg Intensity": 0.58421274664304,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 253,
+      "Avg Intensity": 0.5895787201544055,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 254,
+      "Avg Intensity": 0.5879943134209955,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 255,
+      "Avg Intensity": 0.5804428659279873,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 256,
+      "Avg Intensity": 0.608887967019659,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 257,
+      "Avg Intensity": 0.5825781977827005,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 258,
+      "Avg Intensity": 0.5853131570125144,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 259,
+      "Avg Intensity": 0.6051136409075053,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 260,
+      "Avg Intensity": 0.5812854620383925,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 261,
+      "Avg Intensity": 0.5809130980809664,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 262,
+      "Avg Intensity": 0.5792782732605873,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 263,
+      "Avg Intensity": 0.5792816317130425,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 264,
+      "Avg Intensity": 0.6038161406286354,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 265,
+      "Avg Intensity": 0.5924141832797426,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 266,
+      "Avg Intensity": 0.6073469122943802,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 267,
+      "Avg Intensity": 0.6022858915223237,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 268,
+      "Avg Intensity": 0.6171072922496792,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 269,
+      "Avg Intensity": 0.5931998753036075,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 270,
+      "Avg Intensity": 0.5839057739513321,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 271,
+      "Avg Intensity": 0.5772894987142703,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 272,
+      "Avg Intensity": 0.5807319687991694,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 273,
+      "Avg Intensity": 0.6005682711809375,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 274,
+      "Avg Intensity": 0.6138017734356059,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 275,
+      "Avg Intensity": 0.6008605673040067,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 276,
+      "Avg Intensity": 0.581428146519838,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 277,
+      "Avg Intensity": 0.6030819768065496,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 278,
+      "Avg Intensity": 0.6043164693214472,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 279,
+      "Avg Intensity": 0.634129423606583,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 280,
+      "Avg Intensity": 0.5745575863085675,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 281,
+      "Avg Intensity": 0.6156182381577193,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 282,
+      "Avg Intensity": 0.6122558734527606,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 283,
+      "Avg Intensity": 0.5864403824378128,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 284,
+      "Avg Intensity": 0.591619418365595,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 285,
+      "Avg Intensity": 0.6361351158313113,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 286,
+      "Avg Intensity": 0.6054726217416487,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 287,
+      "Avg Intensity": 0.6273964116409181,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 288,
+      "Avg Intensity": 0.5882551374979647,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 289,
+      "Avg Intensity": 0.591771890980691,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 290,
+      "Avg Intensity": 0.6401926843106129,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 291,
+      "Avg Intensity": 0.6038922868267828,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 292,
+      "Avg Intensity": 0.6251935747041286,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 293,
+      "Avg Intensity": 0.607576653720574,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 294,
+      "Avg Intensity": 0.6361748300339588,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 295,
+      "Avg Intensity": 0.6064739155249148,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 296,
+      "Avg Intensity": 0.6092612808803508,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 297,
+      "Avg Intensity": 0.6038793805324122,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 298,
+      "Avg Intensity": 0.6166366621135138,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 299,
+      "Avg Intensity": 0.605897267924271,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 300,
+      "Avg Intensity": 0.5813384782797484,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 301,
+      "Avg Intensity": 0.6331981560913335,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 302,
+      "Avg Intensity": 0.5947783986440638,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 303,
+      "Avg Intensity": 0.5727936046805225,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 304,
+      "Avg Intensity": 0.5983276840370934,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 305,
+      "Avg Intensity": 0.6195146381031881,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 306,
+      "Avg Intensity": 0.5914567014380071,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 307,
+      "Avg Intensity": 0.6361290901267093,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 308,
+      "Avg Intensity": 0.614474220470145,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 309,
+      "Avg Intensity": 0.6192615564649347,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 310,
+      "Avg Intensity": 0.5933717533535997,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 311,
+      "Avg Intensity": 0.6238293859596262,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 312,
+      "Avg Intensity": 0.5669612568248953,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 313,
+      "Avg Intensity": 0.6388816976581055,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 314,
+      "Avg Intensity": 0.6152825674991687,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 315,
+      "Avg Intensity": 0.5847684100169965,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 316,
+      "Avg Intensity": 0.5974080913210718,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 317,
+      "Avg Intensity": 0.6148390415198213,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 318,
+      "Avg Intensity": 0.6045194613965883,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 319,
+      "Avg Intensity": 0.5853325525635485,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 320,
+      "Avg Intensity": 0.576828082264326,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 321,
+      "Avg Intensity": 0.5815146924504732,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 322,
+      "Avg Intensity": 0.5768634877496833,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 323,
+      "Avg Intensity": 0.6690427539445296,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 324,
+      "Avg Intensity": 0.5780842448556262,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 325,
+      "Avg Intensity": 0.663824019193903,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 326,
+      "Avg Intensity": 0.7130686771425603,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 327,
+      "Avg Intensity": 0.655847773458659,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 328,
+      "Avg Intensity": 0.6060223679316261,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 329,
+      "Avg Intensity": 0.6092624987343693,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 330,
+      "Avg Intensity": 0.5880257184244175,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 331,
+      "Avg Intensity": 0.5872826631653157,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 332,
+      "Avg Intensity": 0.6893034303034384,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 333,
+      "Avg Intensity": 0.5825250858001062,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 334,
+      "Avg Intensity": 0.569245905588401,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 335,
+      "Avg Intensity": 0.6028211150805554,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 336,
+      "Avg Intensity": 0.6740597956972085,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 337,
+      "Avg Intensity": 0.6116520240767814,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 338,
+      "Avg Intensity": 0.6310163446813735,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 339,
+      "Avg Intensity": 0.6031469337779631,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 340,
+      "Avg Intensity": 0.67438760055599,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 341,
+      "Avg Intensity": 0.6159077504497804,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 342,
+      "Avg Intensity": 0.6666579110365656,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 343,
+      "Avg Intensity": 0.6389581348345259,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 344,
+      "Avg Intensity": 0.5798863070918613,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 345,
+      "Avg Intensity": 0.6366799833342662,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 346,
+      "Avg Intensity": 0.6623348580970299,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 347,
+      "Avg Intensity": 0.7605121439125223,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 348,
+      "Avg Intensity": 0.6097512164480646,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 349,
+      "Avg Intensity": 0.616008293594149,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 350,
+      "Avg Intensity": 0.6481950467538258,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 351,
+      "Avg Intensity": 0.5812011008665483,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 352,
+      "Avg Intensity": 0.6126895380845692,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 353,
+      "Avg Intensity": 0.6532783658479964,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 354,
+      "Avg Intensity": 0.6028230020030785,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 355,
+      "Avg Intensity": 0.8938258988895326,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 356,
+      "Avg Intensity": 0.8938931498675404,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 357,
+      "Avg Intensity": 0.6363346277924198,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 358,
+      "Avg Intensity": 0.6795030474060676,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 359,
+      "Avg Intensity": 0.7040754548337704,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 360,
+      "Avg Intensity": 0.5871833888876562,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 361,
+      "Avg Intensity": 0.6271326445295652,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 362,
+      "Avg Intensity": 0.8908812795070017,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 363,
+      "Avg Intensity": 0.6144163251801972,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 364,
+      "Avg Intensity": 0.8917223318147942,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 365,
+      "Avg Intensity": 0.6079454902704187,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 366,
+      "Avg Intensity": 0.6966732209991998,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 367,
+      "Avg Intensity": 0.6158426912884597,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 368,
+      "Avg Intensity": 0.8939332934816041,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 369,
+      "Avg Intensity": 0.6039369158633052,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 370,
+      "Avg Intensity": 0.6333186961875577,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 371,
+      "Avg Intensity": 0.6732010512312867,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 372,
+      "Avg Intensity": 0.8885752961240698,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 373,
+      "Avg Intensity": 0.6006925939947115,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 374,
+      "Avg Intensity": 0.6472757356296813,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 375,
+      "Avg Intensity": 0.6418310233976192,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 376,
+      "Avg Intensity": 0.8716942315309197,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 377,
+      "Avg Intensity": 0.6039767381080278,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 378,
+      "Avg Intensity": 0.8860680942971602,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 379,
+      "Avg Intensity": 0.6765739737543605,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 380,
+      "Avg Intensity": 0.887325853618984,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 381,
+      "Avg Intensity": 0.6904256846934652,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 382,
+      "Avg Intensity": 0.7143188080358512,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 383,
+      "Avg Intensity": 0.7130405224806146,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 384,
+      "Avg Intensity": 0.8591085383197374,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 385,
+      "Avg Intensity": 0.5953141306943873,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 386,
+      "Avg Intensity": 0.8879090959800265,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 387,
+      "Avg Intensity": 0.8907473442620628,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 388,
+      "Avg Intensity": 0.7172608236502334,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 389,
+      "Avg Intensity": 0.6185432437454409,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 390,
+      "Avg Intensity": 0.6221357891599216,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 391,
+      "Avg Intensity": 0.8872794780784311,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 392,
+      "Avg Intensity": 0.8849381804453937,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 393,
+      "Avg Intensity": 0.6715874021200715,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 394,
+      "Avg Intensity": 0.5967852701616875,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 395,
+      "Avg Intensity": 0.8785954970047615,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 396,
+      "Avg Intensity": 0.8893667621603263,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 397,
+      "Avg Intensity": 0.8701112067191238,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 398,
+      "Avg Intensity": 0.8586591926762887,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 399,
+      "Avg Intensity": 0.8750027781162566,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 400,
+      "Avg Intensity": 0.848655341504928,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 401,
+      "Avg Intensity": 0.8572427997414964,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 402,
+      "Avg Intensity": 0.6642881594287523,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 403,
+      "Avg Intensity": 0.8023370861547349,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 404,
+      "Avg Intensity": 0.7289284113320154,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 405,
+      "Avg Intensity": 0.8097777770449074,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 406,
+      "Avg Intensity": 0.7177641955391273,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 407,
+      "Avg Intensity": 0.8278976112673232,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 408,
+      "Avg Intensity": 0.8149471677223198,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 409,
+      "Avg Intensity": 0.8818302572957372,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 410,
+      "Avg Intensity": 0.7945171175049314,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 411,
+      "Avg Intensity": 0.7840361488885328,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 412,
+      "Avg Intensity": 0.8388178674171246,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 413,
+      "Avg Intensity": 0.7096938981194878,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 414,
+      "Avg Intensity": 0.8185526119495561,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 415,
+      "Avg Intensity": 0.7653950068129477,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 416,
+      "Avg Intensity": 0.6696969939919719,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 417,
+      "Avg Intensity": 0.6813343168708316,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 418,
+      "Avg Intensity": 0.7766635694674343,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 419,
+      "Avg Intensity": 0.7910527124507429,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 420,
+      "Avg Intensity": 0.7859384330772312,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 421,
+      "Avg Intensity": 0.8157459156384037,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 422,
+      "Avg Intensity": 0.7097728169014699,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 423,
+      "Avg Intensity": 0.7116400976782454,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 424,
+      "Avg Intensity": 0.8130145141909099,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 425,
+      "Avg Intensity": 0.8086601299292231,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 426,
+      "Avg Intensity": 0.8609715198116413,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 427,
+      "Avg Intensity": 0.802163035726054,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 428,
+      "Avg Intensity": 0.6988365421594851,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 429,
+      "Avg Intensity": 0.6922955515398044,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 430,
+      "Avg Intensity": 0.7150498788195451,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 431,
+      "Avg Intensity": 0.6503237066937734,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 432,
+      "Avg Intensity": 0.6916779369199777,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 433,
+      "Avg Intensity": 0.673368131288799,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 434,
+      "Avg Intensity": 0.6450177955807188,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 435,
+      "Avg Intensity": 0.6832405813045503,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 436,
+      "Avg Intensity": 0.70069270478517,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 437,
+      "Avg Intensity": 0.6254093193949701,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 438,
+      "Avg Intensity": 0.7195828471985264,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 439,
+      "Avg Intensity": 0.6773291782607888,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 440,
+      "Avg Intensity": 0.6655268950747331,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 441,
+      "Avg Intensity": 0.6793740386168301,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 442,
+      "Avg Intensity": 0.7492770094607246,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 443,
+      "Avg Intensity": 0.6939901754714528,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 444,
+      "Avg Intensity": 0.6868536809429149,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 445,
+      "Avg Intensity": 0.7030492145356048,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 446,
+      "Avg Intensity": 0.6358985159580627,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 447,
+      "Avg Intensity": 0.6945372786052677,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 448,
+      "Avg Intensity": 0.6798187608697412,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 449,
+      "Avg Intensity": 0.6345959599262109,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 450,
+      "Avg Intensity": 0.682881603006154,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 451,
+      "Avg Intensity": 0.6862323362648975,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 452,
+      "Avg Intensity": 0.6831811846767164,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 453,
+      "Avg Intensity": 0.7100436538385195,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 454,
+      "Avg Intensity": 0.7110749843855936,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 455,
+      "Avg Intensity": 0.5899566041466837,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 456,
+      "Avg Intensity": 0.599426829554214,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 457,
+      "Avg Intensity": 0.6949020206775246,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 458,
+      "Avg Intensity": 0.7883428232799073,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 459,
+      "Avg Intensity": 0.6972762292508169,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 460,
+      "Avg Intensity": 0.5944733312306267,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 461,
+      "Avg Intensity": 0.665429051175356,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 462,
+      "Avg Intensity": 0.6533590680813519,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 463,
+      "Avg Intensity": 0.6414950588764476,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 464,
+      "Avg Intensity": 0.6526474362834324,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 465,
+      "Avg Intensity": 0.7206603090023421,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 466,
+      "Avg Intensity": 0.6308370468545537,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 467,
+      "Avg Intensity": 0.6139123702812086,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 468,
+      "Avg Intensity": 0.6486499719648599,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 469,
+      "Avg Intensity": 0.6833769482896612,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 470,
+      "Avg Intensity": 0.695531879289176,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 471,
+      "Avg Intensity": 0.7068583412412274,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 472,
+      "Avg Intensity": 0.6754432566698341,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 473,
+      "Avg Intensity": 0.6380214402910841,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 474,
+      "Avg Intensity": 0.6131152030177991,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 475,
+      "Avg Intensity": 0.6898165236451442,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 476,
+      "Avg Intensity": 0.5558344701263965,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 477,
+      "Avg Intensity": 0.6367059029744012,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 478,
+      "Avg Intensity": 0.6079548760001101,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 479,
+      "Avg Intensity": 0.6462364442568296,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 480,
+      "Avg Intensity": 0.6184306951492243,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 481,
+      "Avg Intensity": 0.5896435180733733,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 482,
+      "Avg Intensity": 0.5962403534260462,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 483,
+      "Avg Intensity": 0.6637918096072161,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 484,
+      "Avg Intensity": 0.6580149009380509,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 485,
+      "Avg Intensity": 0.5730670598693862,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 486,
+      "Avg Intensity": 0.5909346128949211,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 487,
+      "Avg Intensity": 0.5817077434586523,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 488,
+      "Avg Intensity": 0.5354301567357943,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 489,
+      "Avg Intensity": 0.5713737707652936,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 490,
+      "Avg Intensity": 0.5895725279277593,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 491,
+      "Avg Intensity": 0.5799790415460061,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 492,
+      "Avg Intensity": 0.6193909178882845,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 493,
+      "Avg Intensity": 0.6174276108573579,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 494,
+      "Avg Intensity": 0.5621184766935142,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 495,
+      "Avg Intensity": 0.5587184319896766,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 496,
+      "Avg Intensity": 0.5866480880201239,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 497,
+      "Avg Intensity": 0.6179252324619459,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 498,
+      "Avg Intensity": 0.5921229358946855,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 499,
+      "Avg Intensity": 0.6055178838000067,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 500,
+      "Avg Intensity": 0.55565873424683,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 501,
+      "Avg Intensity": 0.5981699667351971,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 502,
+      "Avg Intensity": 0.6083429688431539,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 503,
+      "Avg Intensity": 0.6472556106339336,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 504,
+      "Avg Intensity": 0.6134399531043742,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 505,
+      "Avg Intensity": 0.6601759598090781,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 506,
+      "Avg Intensity": 0.6228924607354989,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 507,
+      "Avg Intensity": 0.5153733874487446,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 508,
+      "Avg Intensity": 0.5831147695501628,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 509,
+      "Avg Intensity": 0.5159546605361796,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 510,
+      "Avg Intensity": 0.5582398435377055,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 511,
+      "Avg Intensity": 0.5075696887359312,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 512,
+      "Avg Intensity": 0.5987323336587848,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 513,
+      "Avg Intensity": 0.6509768118316992,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 514,
+      "Avg Intensity": 0.5312373950615509,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 515,
+      "Avg Intensity": 0.536599186919338,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 516,
+      "Avg Intensity": 0.555567006657301,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 517,
+      "Avg Intensity": 0.7660131237017886,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 518,
+      "Avg Intensity": 0.5095222661634955,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 519,
+      "Avg Intensity": 0.5517243094279628,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 520,
+      "Avg Intensity": 0.5350604355665523,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 521,
+      "Avg Intensity": 0.5963943510012429,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 522,
+      "Avg Intensity": 0.6463776898851228,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 523,
+      "Avg Intensity": 0.6479425800755645,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 524,
+      "Avg Intensity": 0.5502457848684011,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 525,
+      "Avg Intensity": 0.5483252313550587,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 526,
+      "Avg Intensity": 0.678877338154661,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 527,
+      "Avg Intensity": 0.5415648742694616,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 528,
+      "Avg Intensity": 0.5348465883737308,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 529,
+      "Avg Intensity": 0.5753586139164415,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 530,
+      "Avg Intensity": 0.6312250335577302,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 531,
+      "Avg Intensity": 0.569868252563074,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 532,
+      "Avg Intensity": 0.6463485229493556,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 533,
+      "Avg Intensity": 0.5371487090236381,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 534,
+      "Avg Intensity": 0.5442556374152964,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 535,
+      "Avg Intensity": 0.5925977810209827,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 536,
+      "Avg Intensity": 0.6251086251511571,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 537,
+      "Avg Intensity": 0.5292690065844815,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 538,
+      "Avg Intensity": 0.5172708195292276,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 539,
+      "Avg Intensity": 0.5161259892354084,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 540,
+      "Avg Intensity": 0.5202674265977902,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 541,
+      "Avg Intensity": 0.5307870246514201,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 542,
+      "Avg Intensity": 0.5202378230516118,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 543,
+      "Avg Intensity": 0.518684255710576,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 544,
+      "Avg Intensity": 0.5376777442382116,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 545,
+      "Avg Intensity": 0.5487012811138833,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 546,
+      "Avg Intensity": 0.5244998561520495,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 547,
+      "Avg Intensity": 0.5570226163776734,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 548,
+      "Avg Intensity": 0.5685029849278925,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 549,
+      "Avg Intensity": 0.5893472456922424,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 550,
+      "Avg Intensity": 0.5051416445057049,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 551,
+      "Avg Intensity": 0.5185291095503876,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 552,
+      "Avg Intensity": 0.5499694231891463,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 553,
+      "Avg Intensity": 0.5804728496967935,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 554,
+      "Avg Intensity": 0.5552098327366471,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 555,
+      "Avg Intensity": 0.5090085833225726,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 556,
+      "Avg Intensity": 0.5012881589170064,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 557,
+      "Avg Intensity": 0.49690912556651445,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 558,
+      "Avg Intensity": 0.5174255373392377,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 559,
+      "Avg Intensity": 0.5668732603367769,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 560,
+      "Avg Intensity": 0.5684469317058757,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 561,
+      "Avg Intensity": 0.4878825401643208,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 562,
+      "Avg Intensity": 0.49304251085531275,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 563,
+      "Avg Intensity": 0.49731799227117085,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 564,
+      "Avg Intensity": 0.516956033322687,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 565,
+      "Avg Intensity": 0.4949457976866853,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 566,
+      "Avg Intensity": 0.493882594636817,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 567,
+      "Avg Intensity": 0.505458309008824,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 568,
+      "Avg Intensity": 0.4821810173358435,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 569,
+      "Avg Intensity": 0.5336389611856172,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 570,
+      "Avg Intensity": 0.5411160030849552,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 571,
+      "Avg Intensity": 0.4727264551401462,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 572,
+      "Avg Intensity": 0.49483377933804934,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 573,
+      "Avg Intensity": 0.49866193449650115,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 574,
+      "Avg Intensity": 0.49786045909169563,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 575,
+      "Avg Intensity": 0.494933316775514,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 576,
+      "Avg Intensity": 0.5401899062085587,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 577,
+      "Avg Intensity": 0.5484553645183258,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 578,
+      "Avg Intensity": 0.4839520993811837,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 579,
+      "Avg Intensity": 0.47083301657216714,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 580,
+      "Avg Intensity": 0.51838217406707,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 581,
+      "Avg Intensity": 0.4827432445475602,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 582,
+      "Avg Intensity": 0.498071558020098,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 583,
+      "Avg Intensity": 0.5511643780352568,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 584,
+      "Avg Intensity": 0.4447120710653416,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 585,
+      "Avg Intensity": 0.522407437554078,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 586,
+      "Avg Intensity": 0.46157046897767656,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 587,
+      "Avg Intensity": 0.5292198676166715,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 588,
+      "Avg Intensity": 0.4762061938260676,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 589,
+      "Avg Intensity": 0.5041303950254822,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 590,
+      "Avg Intensity": 0.5025635308603141,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 591,
+      "Avg Intensity": 0.48284237484844506,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 592,
+      "Avg Intensity": 0.4750198780070064,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 593,
+      "Avg Intensity": 0.4526294360991658,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 594,
+      "Avg Intensity": 0.4775723901850873,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 595,
+      "Avg Intensity": 0.5060085949410972,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 596,
+      "Avg Intensity": 0.5031007214563801,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 597,
+      "Avg Intensity": 0.500564863105822,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 598,
+      "Avg Intensity": 0.4900451570169701,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 599,
+      "Avg Intensity": 0.46939277249292854,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 600,
+      "Avg Intensity": 0.44155526482076923,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 601,
+      "Avg Intensity": 0.6641000928515349,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 602,
+      "Avg Intensity": 0.6529629351433669,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 603,
+      "Avg Intensity": 0.6263993350612892,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 604,
+      "Avg Intensity": 0.6279896800207109,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 605,
+      "Avg Intensity": 0.5821523614670508,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 606,
+      "Avg Intensity": 0.6623214428036643,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 607,
+      "Avg Intensity": 0.6199642153228402,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 608,
+      "Avg Intensity": 0.6704440442845094,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 609,
+      "Avg Intensity": 0.595888113113863,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 610,
+      "Avg Intensity": 0.7760602477179408,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 611,
+      "Avg Intensity": 0.6187141170250035,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 612,
+      "Avg Intensity": 0.668201305099598,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 613,
+      "Avg Intensity": 0.6223705368920287,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 614,
+      "Avg Intensity": 0.6961684720963311,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 615,
+      "Avg Intensity": 0.8261638677109845,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 616,
+      "Avg Intensity": 0.6212829899054733,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 617,
+      "Avg Intensity": 0.6127439807275777,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 618,
+      "Avg Intensity": 0.6940805454891685,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 619,
+      "Avg Intensity": 0.64577979832705,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 620,
+      "Avg Intensity": 0.7268736610147756,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 621,
+      "Avg Intensity": 0.7074365495399965,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 622,
+      "Avg Intensity": 0.608812865198142,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 623,
+      "Avg Intensity": 0.6119940779261089,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 624,
+      "Avg Intensity": 0.6764520440842083,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 625,
+      "Avg Intensity": 0.6036438176531487,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 626,
+      "Avg Intensity": 0.6379822993196946,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 627,
+      "Avg Intensity": 0.5999354101000917,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 628,
+      "Avg Intensity": 0.6077796011722466,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 629,
+      "Avg Intensity": 0.6224269710803547,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 630,
+      "Avg Intensity": 0.6405721386146485,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 631,
+      "Avg Intensity": 0.5934562747946651,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 632,
+      "Avg Intensity": 0.6349738557605831,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 633,
+      "Avg Intensity": 0.6452766801936242,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 634,
+      "Avg Intensity": 0.5414181055773638,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 635,
+      "Avg Intensity": 0.5777195794782374,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 636,
+      "Avg Intensity": 0.6380374332946473,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 637,
+      "Avg Intensity": 0.6036197902407083,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 638,
+      "Avg Intensity": 0.6325211472787131,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 639,
+      "Avg Intensity": 0.6121621541965496,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 640,
+      "Avg Intensity": 0.7021648704294728,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 641,
+      "Avg Intensity": 0.5566622702587055,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 642,
+      "Avg Intensity": 0.6180808752050846,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 643,
+      "Avg Intensity": 0.6988849893228033,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 644,
+      "Avg Intensity": 0.6880755536174921,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 645,
+      "Avg Intensity": 0.5274738611149602,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 646,
+      "Avg Intensity": 0.6565455081977789,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 647,
+      "Avg Intensity": 0.5630993512181663,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 648,
+      "Avg Intensity": 0.540983691167455,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 649,
+      "Avg Intensity": 0.5565488553943058,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 650,
+      "Avg Intensity": 0.5866187687771612,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 651,
+      "Avg Intensity": 0.6577557130683821,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 652,
+      "Avg Intensity": 0.5553168577345382,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 653,
+      "Avg Intensity": 0.6108432867415328,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 654,
+      "Avg Intensity": 0.5847945296118953,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 655,
+      "Avg Intensity": 0.5540219361917065,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 656,
+      "Avg Intensity": 0.6275738789862604,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 657,
+      "Avg Intensity": 0.5833303092947951,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 658,
+      "Avg Intensity": 0.50836889729643,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 659,
+      "Avg Intensity": 0.5931249284622034,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 660,
+      "Avg Intensity": 0.5432924162249875,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 661,
+      "Avg Intensity": 0.5795110651854014,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 662,
+      "Avg Intensity": 0.6094794197735275,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 663,
+      "Avg Intensity": 0.5800871810125027,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 664,
+      "Avg Intensity": 0.6036860290992682,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 665,
+      "Avg Intensity": 0.5632070680205489,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 666,
+      "Avg Intensity": 0.5566553894953109,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 667,
+      "Avg Intensity": 0.5682156245048978,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 668,
+      "Avg Intensity": 0.5550751393497997,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 669,
+      "Avg Intensity": 0.6356295272088697,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 670,
+      "Avg Intensity": 0.5474302410411744,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 671,
+      "Avg Intensity": 0.53101515902851,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 672,
+      "Avg Intensity": 0.5531511135465157,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 673,
+      "Avg Intensity": 0.6020677524509733,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 674,
+      "Avg Intensity": 0.5504691619050142,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 675,
+      "Avg Intensity": 0.5628261073296297,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 676,
+      "Avg Intensity": 0.5841357118746876,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 677,
+      "Avg Intensity": 0.5371227900471357,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 678,
+      "Avg Intensity": 0.5994273071836164,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 679,
+      "Avg Intensity": 0.5446009905592764,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 680,
+      "Avg Intensity": 0.5008994936768216,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 681,
+      "Avg Intensity": 0.5573206779737089,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 682,
+      "Avg Intensity": 0.573968428052077,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 683,
+      "Avg Intensity": 0.5668028858141054,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 684,
+      "Avg Intensity": 0.5262860498609843,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 685,
+      "Avg Intensity": 0.5302974166068066,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 686,
+      "Avg Intensity": 0.6048407512496405,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 687,
+      "Avg Intensity": 0.5008730856987882,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 688,
+      "Avg Intensity": 0.6354199388782203,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 689,
+      "Avg Intensity": 0.5793326478593267,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 690,
+      "Avg Intensity": 0.49391057575931085,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 691,
+      "Avg Intensity": 0.5404567058229904,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 692,
+      "Avg Intensity": 0.5410066714403072,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 693,
+      "Avg Intensity": 0.532799466859447,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 694,
+      "Avg Intensity": 0.593173661824092,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 695,
+      "Avg Intensity": 0.546927509560122,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 696,
+      "Avg Intensity": 0.4973102868807087,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 697,
+      "Avg Intensity": 0.5155749527426458,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 698,
+      "Avg Intensity": 0.4937396340079392,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 699,
+      "Avg Intensity": 0.5195069363445669,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 700,
+      "Avg Intensity": 0.5117630929354423,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 701,
+      "Avg Intensity": 0.546137078387571,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 702,
+      "Avg Intensity": 0.5175243762998699,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 703,
+      "Avg Intensity": 0.6671539908087804,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 704,
+      "Avg Intensity": 0.546722109963518,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 705,
+      "Avg Intensity": 0.5026859148283289,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 706,
+      "Avg Intensity": 0.5111309523166456,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 707,
+      "Avg Intensity": 0.5253148207967652,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 708,
+      "Avg Intensity": 0.49111524778607873,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 709,
+      "Avg Intensity": 0.4953474991769896,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 710,
+      "Avg Intensity": 0.492450529013418,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 711,
+      "Avg Intensity": 0.5297622480241923,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 712,
+      "Avg Intensity": 0.5063892466213075,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 713,
+      "Avg Intensity": 0.5044260608930863,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 714,
+      "Avg Intensity": 0.551049000208887,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 715,
+      "Avg Intensity": 0.5089571244405221,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 716,
+      "Avg Intensity": 0.49810006415586366,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 717,
+      "Avg Intensity": 0.5133520920385793,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 718,
+      "Avg Intensity": 0.5342092431107313,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 719,
+      "Avg Intensity": 0.5257772399771793,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 720,
+      "Avg Intensity": 0.5201335766438161,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 721,
+      "Avg Intensity": 0.5223494832912252,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 722,
+      "Avg Intensity": 0.46598607130313274,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 723,
+      "Avg Intensity": 0.5237819772648026,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 724,
+      "Avg Intensity": 0.4646801263769492,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 725,
+      "Avg Intensity": 0.4767774594403082,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 726,
+      "Avg Intensity": 0.5222196704429146,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 727,
+      "Avg Intensity": 0.5341469503808061,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 728,
+      "Avg Intensity": 0.5184494686382375,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 729,
+      "Avg Intensity": 0.47444068980982035,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 730,
+      "Avg Intensity": 0.5135475372319226,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 731,
+      "Avg Intensity": 0.46722111479801837,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 732,
+      "Avg Intensity": 0.4982173468137788,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 733,
+      "Avg Intensity": 0.5182468912248884,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 734,
+      "Avg Intensity": 0.5053402833718385,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 735,
+      "Avg Intensity": 0.5153919221230566,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 736,
+      "Avg Intensity": 0.5116331985868766,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 737,
+      "Avg Intensity": 0.47163530129346026,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 738,
+      "Avg Intensity": 0.5295097147451266,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 739,
+      "Avg Intensity": 0.46029891905453413,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 740,
+      "Avg Intensity": 0.4857675839027595,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 741,
+      "Avg Intensity": 0.47539195510222965,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 742,
+      "Avg Intensity": 0.4794823676188038,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 743,
+      "Avg Intensity": 0.49178035241506385,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 744,
+      "Avg Intensity": 0.49003896110222156,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 745,
+      "Avg Intensity": 0.546381215244998,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 746,
+      "Avg Intensity": 0.49148234388896206,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 747,
+      "Avg Intensity": 0.4781619251239718,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 748,
+      "Avg Intensity": 0.5172132102209432,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 749,
+      "Avg Intensity": 0.4830167664409849,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 750,
+      "Avg Intensity": 0.532715866551179,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 751,
+      "Avg Intensity": 0.4931137041712456,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 752,
+      "Avg Intensity": 0.45909294461578143,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 753,
+      "Avg Intensity": 0.5132570058803951,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 754,
+      "Avg Intensity": 0.49159047198333017,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 755,
+      "Avg Intensity": 0.4965697547132309,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 756,
+      "Avg Intensity": 0.5954863320186585,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 757,
+      "Avg Intensity": 0.48863327881724405,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 758,
+      "Avg Intensity": 0.4530628355026711,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 759,
+      "Avg Intensity": 0.4874695745806087,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 760,
+      "Avg Intensity": 0.45065454465987487,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 761,
+      "Avg Intensity": 0.49077054340446774,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 762,
+      "Avg Intensity": 0.44648812083553835,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 763,
+      "Avg Intensity": 0.49391645704516735,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 764,
+      "Avg Intensity": 0.45541451778450237,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 765,
+      "Avg Intensity": 0.47654983491365177,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 766,
+      "Avg Intensity": 0.46389682926784925,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 767,
+      "Avg Intensity": 0.4621432376082511,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 768,
+      "Avg Intensity": 0.48786003282640744,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 769,
+      "Avg Intensity": 0.47349915337345383,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 770,
+      "Avg Intensity": 0.48010523616205747,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 771,
+      "Avg Intensity": 0.5073210704385923,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 772,
+      "Avg Intensity": 0.4584908813818562,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 773,
+      "Avg Intensity": 0.45464243364614076,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 774,
+      "Avg Intensity": 0.5198129071961691,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 775,
+      "Avg Intensity": 0.4827353688041018,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 776,
+      "Avg Intensity": 0.4319548323311361,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 777,
+      "Avg Intensity": 0.47103386542196446,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 778,
+      "Avg Intensity": 0.4730658013538178,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 779,
+      "Avg Intensity": 0.46451909134948516,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 780,
+      "Avg Intensity": 0.43967659675252563,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 781,
+      "Avg Intensity": 0.46872935662504484,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 782,
+      "Avg Intensity": 0.4645773356016181,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 783,
+      "Avg Intensity": 0.4626011477396634,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 784,
+      "Avg Intensity": 0.45857824207399117,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 785,
+      "Avg Intensity": 0.45090504801398,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 786,
+      "Avg Intensity": 0.44684507489503855,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 787,
+      "Avg Intensity": 0.4572707107358637,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 788,
+      "Avg Intensity": 0.44502301349240514,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 789,
+      "Avg Intensity": 0.4508531892120728,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 790,
+      "Avg Intensity": 0.4271114598058463,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 791,
+      "Avg Intensity": 0.4547605426787364,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 792,
+      "Avg Intensity": 0.4527956946112448,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 793,
+      "Avg Intensity": 0.4527380556800561,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 794,
+      "Avg Intensity": 0.45255393085112744,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 795,
+      "Avg Intensity": 0.4446006962282497,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 796,
+      "Avg Intensity": 0.45073457222439844,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 797,
+      "Avg Intensity": 0.4452013777485463,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 798,
+      "Avg Intensity": 0.4463977844364118,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 799,
+      "Avg Intensity": 0.4411225193146602,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 800,
+      "Avg Intensity": 0.45577472048208123,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 801,
+      "Avg Intensity": 0.3900663395018982,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 802,
+      "Avg Intensity": 0.4189323936619261,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 803,
+      "Avg Intensity": 0.41312617901728166,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 804,
+      "Avg Intensity": 0.4246282323214432,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 805,
+      "Avg Intensity": 0.4320829033484115,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 806,
+      "Avg Intensity": 0.4335651257451327,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 807,
+      "Avg Intensity": 0.41640590660021476,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 808,
+      "Avg Intensity": 0.41116572828599596,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 809,
+      "Avg Intensity": 0.39975223543353994,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 810,
+      "Avg Intensity": 0.4093019577062576,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 811,
+      "Avg Intensity": 0.4110543705070971,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 812,
+      "Avg Intensity": 0.407996145454908,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 813,
+      "Avg Intensity": 0.4157514519696915,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 814,
+      "Avg Intensity": 0.40601266805850145,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 815,
+      "Avg Intensity": 0.44565908128628856,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 816,
+      "Avg Intensity": 0.40812328585299046,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 817,
+      "Avg Intensity": 0.42108004100258883,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 818,
+      "Avg Intensity": 0.4205759732964224,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 819,
+      "Avg Intensity": 0.4279848696103004,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 820,
+      "Avg Intensity": 0.42919931628488256,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 821,
+      "Avg Intensity": 0.4057377658024208,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 822,
+      "Avg Intensity": 0.40205947922739504,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 823,
+      "Avg Intensity": 0.403185752102645,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 824,
+      "Avg Intensity": 0.40862965831055925,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 825,
+      "Avg Intensity": 0.4162810444185678,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 826,
+      "Avg Intensity": 0.4101930928685362,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 827,
+      "Avg Intensity": 0.4046600879281614,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 828,
+      "Avg Intensity": 0.39744248455916065,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 829,
+      "Avg Intensity": 0.41000870707028547,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 830,
+      "Avg Intensity": 0.4022964573298496,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 831,
+      "Avg Intensity": 0.40960437861826776,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 832,
+      "Avg Intensity": 0.39868245739796865,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 833,
+      "Avg Intensity": 0.4060901501615667,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 834,
+      "Avg Intensity": 0.4085080580344742,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 835,
+      "Avg Intensity": 0.3972711478046741,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 836,
+      "Avg Intensity": 0.40875376993171664,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 837,
+      "Avg Intensity": 0.4124350113648315,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 838,
+      "Avg Intensity": 0.4332273811062432,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 839,
+      "Avg Intensity": 0.42254552931203115,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 840,
+      "Avg Intensity": 0.39924199266152754,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 841,
+      "Avg Intensity": 0.4038003114105797,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 842,
+      "Avg Intensity": 0.410511885855064,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 843,
+      "Avg Intensity": 0.4040736462082641,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 844,
+      "Avg Intensity": 0.40328766153800727,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 845,
+      "Avg Intensity": 0.4039618183813818,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 846,
+      "Avg Intensity": 0.3929545379635865,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 847,
+      "Avg Intensity": 0.39436709470032083,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 848,
+      "Avg Intensity": 0.3998229985039396,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 849,
+      "Avg Intensity": 0.41108319127175474,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 850,
+      "Avg Intensity": 0.4126534434208454,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 851,
+      "Avg Intensity": 0.4052609400303875,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 852,
+      "Avg Intensity": 0.39038859340623894,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 853,
+      "Avg Intensity": 0.4010380251570818,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 854,
+      "Avg Intensity": 0.395016560757085,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 855,
+      "Avg Intensity": 0.41510791268729824,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 856,
+      "Avg Intensity": 0.40755952963435516,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 857,
+      "Avg Intensity": 0.39476622040349035,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 858,
+      "Avg Intensity": 0.39203495390552245,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 859,
+      "Avg Intensity": 0.39698479381506313,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 860,
+      "Avg Intensity": 0.40181454821631857,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 861,
+      "Avg Intensity": 0.413236039465911,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 862,
+      "Avg Intensity": 0.395112977454319,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 863,
+      "Avg Intensity": 0.39054563871190856,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 864,
+      "Avg Intensity": 0.3862345727835281,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 865,
+      "Avg Intensity": 0.39537355906460075,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 866,
+      "Avg Intensity": 0.3925601525427009,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 867,
+      "Avg Intensity": 0.40063509168617606,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 868,
+      "Avg Intensity": 0.3988831906311249,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 869,
+      "Avg Intensity": 0.39432394315823455,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 870,
+      "Avg Intensity": 0.39619173757615317,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 871,
+      "Avg Intensity": 0.3915146653738831,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 872,
+      "Avg Intensity": 0.3963431271431843,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 873,
+      "Avg Intensity": 0.39742589214965096,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 874,
+      "Avg Intensity": 0.3978487230549495,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 875,
+      "Avg Intensity": 0.41062583128703006,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 876,
+      "Avg Intensity": 0.3909695821904581,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 877,
+      "Avg Intensity": 0.38673956921353253,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 878,
+      "Avg Intensity": 0.40036597215750375,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 879,
+      "Avg Intensity": 0.3937164667910816,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 880,
+      "Avg Intensity": 0.39683524463751535,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 881,
+      "Avg Intensity": 0.41039655541256365,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 882,
+      "Avg Intensity": 0.4063405909689643,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 883,
+      "Avg Intensity": 0.38891431633672047,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 884,
+      "Avg Intensity": 0.41016052688284965,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 885,
+      "Avg Intensity": 0.40438876031118015,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 886,
+      "Avg Intensity": 0.3894488575569055,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 887,
+      "Avg Intensity": 0.3889328851274184,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 888,
+      "Avg Intensity": 0.39960019575982225,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 889,
+      "Avg Intensity": 0.3928695995348496,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 890,
+      "Avg Intensity": 0.3891246628092785,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 891,
+      "Avg Intensity": 0.39198123749754915,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 892,
+      "Avg Intensity": 0.3947446190451578,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 893,
+      "Avg Intensity": 0.39103299697040805,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 894,
+      "Avg Intensity": 0.39497914645389265,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 895,
+      "Avg Intensity": 0.3946504870823033,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 896,
+      "Avg Intensity": 0.39404858222629924,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 897,
+      "Avg Intensity": 0.3925314587668128,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 898,
+      "Avg Intensity": 0.3994774539956779,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 899,
+      "Avg Intensity": 0.39812759418392196,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 900,
+      "Avg Intensity": 0.3995335929931464,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 901,
+      "Avg Intensity": 0.390472242993731,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 902,
+      "Avg Intensity": 0.3942175682670303,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 903,
+      "Avg Intensity": 0.39944149201872736,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 904,
+      "Avg Intensity": 0.38463339792133794,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 905,
+      "Avg Intensity": 0.39097676937575215,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 906,
+      "Avg Intensity": 0.3884919308397932,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 907,
+      "Avg Intensity": 0.39171948120121747,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 908,
+      "Avg Intensity": 0.40150932786531063,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 909,
+      "Avg Intensity": 0.39815456697767737,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 910,
+      "Avg Intensity": 0.38708421822123595,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 911,
+      "Avg Intensity": 0.38801275861855244,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 912,
+      "Avg Intensity": 0.39832050149722603,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 913,
+      "Avg Intensity": 0.4000000170581929,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 914,
+      "Avg Intensity": 0.3923582347128124,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 915,
+      "Avg Intensity": 0.385392603124026,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 916,
+      "Avg Intensity": 0.3885433120122979,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 917,
+      "Avg Intensity": 0.3873523222483699,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 918,
+      "Avg Intensity": 0.39209232591512316,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 919,
+      "Avg Intensity": 0.39579768384235264,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 920,
+      "Avg Intensity": 0.4032253725987916,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 921,
+      "Avg Intensity": 0.3881131788294812,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 922,
+      "Avg Intensity": 0.4009224350296816,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 923,
+      "Avg Intensity": 0.39681339119699827,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 924,
+      "Avg Intensity": 0.38954813434448987,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 925,
+      "Avg Intensity": 0.39669130147615667,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 926,
+      "Avg Intensity": 0.3926184043762529,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 927,
+      "Avg Intensity": 0.3852378985814994,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 928,
+      "Avg Intensity": 0.38534142096377233,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 929,
+      "Avg Intensity": 0.3879765706098973,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 930,
+      "Avg Intensity": 0.3921612182703633,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 931,
+      "Avg Intensity": 0.383893919571113,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 932,
+      "Avg Intensity": 0.39007089403941436,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 933,
+      "Avg Intensity": 0.386293563805441,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 934,
+      "Avg Intensity": 0.3889252790687197,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 935,
+      "Avg Intensity": 0.38779992733588875,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 936,
+      "Avg Intensity": 0.3836139434503087,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 937,
+      "Avg Intensity": 0.3874836437990787,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 938,
+      "Avg Intensity": 0.39339323488367856,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 939,
+      "Avg Intensity": 0.393189673781203,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 940,
+      "Avg Intensity": 0.38196589835997036,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 941,
+      "Avg Intensity": 0.3922381962090592,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 942,
+      "Avg Intensity": 0.38570833132188803,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 943,
+      "Avg Intensity": 0.3871987189069656,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 944,
+      "Avg Intensity": 0.3862340629330945,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 945,
+      "Avg Intensity": 0.38239761847914805,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 946,
+      "Avg Intensity": 0.38164902726318106,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 947,
+      "Avg Intensity": 0.3888158431795592,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 948,
+      "Avg Intensity": 0.388301182335574,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 949,
+      "Avg Intensity": 0.3854601042888638,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 950,
+      "Avg Intensity": 0.38852302223946744,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 951,
+      "Avg Intensity": 0.386558875566377,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 952,
+      "Avg Intensity": 0.38563555159401136,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 953,
+      "Avg Intensity": 0.3799468887476597,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 954,
+      "Avg Intensity": 0.3845992568958361,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 955,
+      "Avg Intensity": 0.3883721349414509,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 956,
+      "Avg Intensity": 0.3858682954739061,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 957,
+      "Avg Intensity": 0.39034957184220004,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 958,
+      "Avg Intensity": 0.3901383440296732,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.026927785475091948
+    },
+    {
+      "Frame": 959,
+      "Avg Intensity": 0.38687724020272635,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 960,
+      "Avg Intensity": 0.3895496184072762,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 961,
+      "Avg Intensity": 0.389255032724185,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 962,
+      "Avg Intensity": 0.38699093874476825,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 963,
+      "Avg Intensity": 0.3842015204877142,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.3257069160117999
+    },
+    {
+      "Frame": 964,
+      "Avg Intensity": 0.3851548365539864,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 965,
+      "Avg Intensity": 0.38600157113538436,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 966,
+      "Avg Intensity": 0.39572133895215045,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 967,
+      "Avg Intensity": 0.37915327527444687,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 968,
+      "Avg Intensity": 0.38675216574134497,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 969,
+      "Avg Intensity": 0.3877445905579756,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 970,
+      "Avg Intensity": 0.3946634125699663,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 971,
+      "Avg Intensity": 0.3836288977994571,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 972,
+      "Avg Intensity": 0.38460845884325245,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 973,
+      "Avg Intensity": 0.3805875868932503,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 974,
+      "Avg Intensity": 0.38273447609200434,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 975,
+      "Avg Intensity": 0.3904280888089707,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 976,
+      "Avg Intensity": 0.38113088844318993,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 977,
+      "Avg Intensity": 0.3846022553470848,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 978,
+      "Avg Intensity": 0.3829290077243478,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 979,
+      "Avg Intensity": 0.39157894822631845,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 980,
+      "Avg Intensity": 0.3808720038302845,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.02692778547509192
+    },
+    {
+      "Frame": 981,
+      "Avg Intensity": 0.38003935363019475,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 982,
+      "Avg Intensity": 0.38239128568757463,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.04338719671388952
+    },
+    {
+      "Frame": 983,
+      "Avg Intensity": 0.38975658735763113,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 984,
+      "Avg Intensity": 0.38779135654161134,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.15313143683358985
+    },
+    {
+      "Frame": 985,
+      "Avg Intensity": 0.3799426772693571,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 986,
+      "Avg Intensity": 0.38135198915872237,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 987,
+      "Avg Intensity": 0.3841068550982892,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.1995032646533021
+    },
+    {
+      "Frame": 988,
+      "Avg Intensity": 0.38024481387815157,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 989,
+      "Avg Intensity": 0.3860083546101122,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 990,
+      "Avg Intensity": 0.3857154824954415,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1499554938721147
+    },
+    {
+      "Frame": 991,
+      "Avg Intensity": 0.3814827989636428,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.20267920761477717
+    },
+    {
+      "Frame": 992,
+      "Avg Intensity": 0.38497084688488303,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": -0.19950326465330206
+    },
+    {
+      "Frame": 993,
+      "Avg Intensity": 0.38225558438326984,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 994,
+      "Avg Intensity": 0.38293795000816044,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 995,
+      "Avg Intensity": 0.3802100018970606,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 996,
+      "Avg Intensity": 0.38640784990746213,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.1531314368335898
+    },
+    {
+      "Frame": 997,
+      "Avg Intensity": 0.3897121117971013,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 998,
+      "Avg Intensity": 0.38012432238460797,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    },
+    {
+      "Frame": 999,
+      "Avg Intensity": 0.38127481220777537,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.08281645464460835
+    },
+    {
+      "Frame": 1000,
+      "Avg Intensity": 0.3802154055535146,
+      "Max Intensity": 1.0,
+      "Quantum Coherence": 0.07964051168313324
+    }
+  ]
+}

@@ -65,12 +65,13 @@ class MetaQubit:
         print("Final parameters:", self.params)
 
 
-# MetaQubit usage
-meta_qubit = MetaQubit(num_qubits=4)
+if __name__ == "__main__":
+    # MetaQubit usage
+    meta_qubit = MetaQubit(num_qubits=4)
 
-# Circuit execution
-output = meta_qubit.run_circuit()
-print("Circuit output:", output)
+    # Circuit execution
+    output = meta_qubit.run_circuit()
+    print("Circuit output:", output)
 
-# Optimization
-meta_qubit.optimize(steps=50)
+    # Optimization
+    meta_qubit.optimize(steps=50)
