@@ -1,154 +1,250 @@
 <article class="wp-article">
-<!-- ── Header ── -->
-<header class="wp-header">
-<div class="wp-eyebrow">
-<span class="wp-tag">Stochastic Universe</span>
-<span class="wp-tag">Section 1.4</span>
-<span class="wp-tag">Computational Theory</span>
-</div>
-<h1 class="wp-title">Stochastic Equations in Self-Organization<br/><em>The Calculus of Emergence</em></h1>
-<p class="wp-subtitle">Modeling the transition from chaos to structure through SDEs, Fokker-Planck dynamics, and evolutionary neural architectures.</p>
-</header>
-<div class="wp-divider"></div>
-<!-- ── Section 1: The Mathematics ── -->
-<section class="wp-section">
-<div class="wp-section-label">Theoretical Foundations</div>
-<div class="wp-highlight-box">
-<div class="wp-highlight-label">General Equation</div>
-<h3 class="wp-highlight-title">The Self-Organization SDE</h3>
-<div class="math-block">
+
+  <!-- ── Header ── -->
+  <header class="wp-header">
+    <div class="wp-eyebrow">
+      <span class="wp-tag">Stochastic Universe</span>
+      <span class="wp-tag">Section 1.4</span>
+      <span class="wp-tag">Computational Theory</span>
+    </div>
+    <h1 class="wp-title">Stochastic Equations in Self-Organization<br><em>The Calculus of Emergence</em></h1>
+    <p class="wp-subtitle">Modeling the transition from chaos to structure through SDEs, Fokker-Planck dynamics, and evolutionary neural architectures.</p>
+  </header>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 1: The Mathematics ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Theoretical Foundations</div>
+    <h2 class="wp-section-title">Stochastic Equations in Self-Organization</h2>
+
+    <div class="wp-prose">
+      <p>The emergence of order from randomness can be mathematically described through <strong>stochastic differential equations (SDEs)</strong>, which model the interplay between deterministic forces and stochastic fluctuations. These equations are crucial for understanding how systems transition from chaotic behavior to structured organization across various scientific disciplines.</p>
+
+      <p>A general form of an SDE used to describe self-organizing processes is:</p>
+    </div>
+
+    <div class="wp-highlight-box">
+      <div class="wp-highlight-label">General Equation</div>
+      <div class="math-block">
         $$dx_t = f(x_t)\, dt + \sigma\, dW_t$$
       </div>
-<p class="wp-highlight-body">Where $f(x_t)$ represents the deterministic component guiding the system, $\sigma\, dW_t$ encodes stochastic influences via a Wiener process $W_t$, and $\sigma$ is the noise intensity.</p>
-</div>
-<h3 class="wp-subsection-title">Entropy and Stochasticity</h3>
-<div class="wp-concepts-grid">
-<div class="wp-concept-card">
-<h3 class="wp-concept-name">Physical Systems</h3>
-<p class="wp-concept-body">In condensed matter physics, stochasticity governs phase transitions, such as in superfluidity and critical phenomena, where fluctuations dictate emergent macroscopic stability.</p>
-</div>
-<div class="wp-concept-card">
-<h3 class="wp-concept-name">Biological Systems</h3>
-<p class="wp-concept-body">Gene expression and cellular differentiation rely on stochastic gene regulation, wherein noise in molecular interactions results in robust biological pathways.</p>
-</div>
-<div class="wp-concept-card">
-<h3 class="wp-concept-name">Social Networks</h3>
-<p class="wp-concept-body">Financial markets exhibit stochastic dynamics, where stock prices, modeled by Brownian motion, self-organize into trends and cycles influenced by external fluctuations.</p>
-</div>
-</div>
-<div class="wp-divider" style="margin: 2.5rem 0; border-top: 1px dashed rgba(195, 200, 190, 0.5);"></div><div class="wp-prose"><p>The emergence of order from randomness can be mathematically described through <strong>stochastic differential equations (SDEs)</strong>, which model the interplay between deterministic forces and stochastic fluctuations. These equations are crucial for understanding how systems transition from chaotic behavior to structured organization across various scientific disciplines.</p><p>A general form of an SDE used to describe self-organizing processes is:</p><div class="math-block">
-$$dx_t = f(x_t)\, dt + \sigma\, dW_t$$
-</div><p>where $f(x_t)$ represents the deterministic component guiding the system, $\sigma\, dW_t$ encodes stochastic influences via a Wiener process $W_t$, and $\sigma$ is the noise intensity. </p><h3>Entropy and Stochasticity in Self-Organization</h3><p>Entropy plays a crucial role in the emergence of order. In stochastic models, entropy production quantifies the system's deviation from equilibrium, demonstrating how randomness can drive self-organization rather than mere disorder. Systems subjected to controlled stochastic perturbations can stabilize into predictable macrostates through entropy-minimizing pathways.</p><p>For instance, in thermodynamic equilibrium models, small perturbations governed by stochastic forces result in <strong>fluctuation-dissipation dynamics</strong>, where randomness paradoxically maintains stability over time. This principle extends to broader contexts such as biological systems, neural networks, and even socio-economic structures.</p><h3>Applications of SDEs in Self-Organizing Systems</h3><p><strong>Physical Systems</strong>: In condensed matter physics, stochasticity governs phase transitions, such as in superfluidity and critical phenomena, where fluctuations dictate emergent macroscopic stability.</p><p><strong>Biological Systems:</strong> Gene expression and cellular differentiation rely on stochastic gene regulation, wherein noise in molecular interactions results in robust biological pathways.</p><p><strong>Social and Economic Networks:</strong> Financial markets exhibit stochastic dynamics, where stock prices, modeled by Brownian motion, self-organize into trends and cycles influenced by external fluctuations.</p><p>A crucial extension of stochastic differential equations (SDEs) in self-organizing systems involves their long-term stability analysis. One commonly used method is the Fokker-Planck equation, which describes the time evolution of probability distributions associated with stochastic processes:</p><div class="math-block">
-$$\frac{\partial P(x,t)}{\partial t} = -\frac{\partial}{\partial x} [f(x) P(x,t)] + \frac{\sigma^2}{2} \frac{\partial^2 P(x,t)}{\partial x^2}$$
-</div><p>where $P(x,t)$ is the probability density function of state $x$ at time $t$. This equation highlights how randomness influences the steady-state distributions of self-organizing systems, allowing us to quantify their equilibrium conditions and stability thresholds.</p><h3>Case Study: Noise-Induced Order</h3><p>One fascinating example of stochastic self-organization is <strong>stochastic resonance</strong>, where the presence of noise enhances the detectability of weak signals. This counterintuitive phenomenon is observed in:</p><p>Climate Models: Periodic climate oscillations (e.g., ice ages) are influenced by stochastic perturbations in solar radiation.</p><p>Neuroscience: Neuronal activity in sensory processing benefits from noise-induced synchronization, enhancing perception.</p><p>Biological Systems: Stochastic gene regulation improves adaptability in fluctuating environments. </p><h3>Future Directions in Stochastic Modeling</h3><p>With advancements in computational power, <strong>agent-based modeling</strong> and <strong>machine learning algorithms</strong> are increasingly used to simulate and analyze self-organizing stochastic systems. Integrating SDEs with artificial intelligence allows for more precise predictions in fields ranging from economic forecasting to network science and ecological stability.</p><p>These theoretical and computational advancements reaffirm the indispensable role of stochasticity in driving order, shaping our understanding of complex adaptive systems across multiple scientific domains.</p></div></section>
-<div class="wp-divider"></div>
-<!-- ── Section 2: Fokker-Planck & Resonance ── -->
-<section class="wp-section">
-<div class="wp-section-label">Stability Analysis</div>
-<h2 class="wp-section-title">The Evolution of Probability</h2>
-<div class="wp-vision-box">
-<div class="wp-vision-label">Vision</div>
-<p class="wp-vision-text">Integrating SDEs with <strong>Artificial Intelligence</strong> allows for precise predictions in fields ranging from economic forecasting to network science and ecological stability. The future of modeling lies in this synthesis.</p>
-</div>
-<div class="wp-divider" style="margin: 2.5rem 0; border-top: 1px dashed rgba(195, 200, 190, 0.5);"></div><div class="wp-prose"><h2><strong>Computational Simulations and Results</strong></h2><p>Computational simulations provide a powerful approach to validating theoretical models of self-organization driven by stochastic dynamics. By numerically solving stochastic differential equations (SDEs) and analyzing the resulting behaviors, we can better understand how order emerges from randomness across different domains.</p><h3>Simulation Framework</h3><p>To explore self-organization through stochasticity, we employ numerical methods such as the <strong>Euler-Maruyama scheme</strong>, which discretizes SDEs for computational integration. Given a general form:</p><div class="math-block">
-$$dx = f(x) dt + \sigma dW_t$$
-</div><p>where $f(x)$ represents the deterministic component, $\sigma$ the noise intensity, and $dW_t$ a Wiener process, we approximate solutions iteratively as:</p><div class="math-block">
-$$x_{t+\Delta t} = x_t + f(x_t) \Delta t + \sigma \sqrt{\Delta t} \xi$$
-</div><p>where $\xi$ is a normally distributed random variable.</p><p>This approach allows us to model stochastic systems across physics, biology, and social sciences. For instance, in <strong>biological networks</strong>, stochastic gene regulation can be simulated to examine how randomness influences cell differentiation. In <strong>economic modeling</strong>, stock market fluctuations driven by random shocks can be studied to identify patterns of stability and instability.</p><h3>Example: Stochastic Synchronization</h3><p>One application of computational modeling is the study of <strong>stochastic synchronization</strong>, where weakly coupled oscillators subjected to noise exhibit coordinated behavior.</p><ul>
-<li>
-<p><strong>Neural networks</strong>, where stochastic inputs enhance signal transmission efficiency.</p>
-</li>
-<li>
-<p><strong>Climate systems</strong>, where random perturbations lead to periodic oscillatory modes.</p>
-</li>
-<li>
-<p><strong>Market dynamics</strong>, where financial trends emerge despite underlying randomness.</p>
-</li>
-</ul><h3>Analysis of Simulation Results</h3><p>Through computational experiments, we analyze the statistical properties and emergent behaviors arising from stochastic models. One key observation is that <strong>phase transitions</strong> occur as a function of noise intensity $\sigma$. By varying $\sigma$ in our simulations, we identify critical thresholds where systems shift from disorder to structured states.</p><p><strong>Key Findings</strong></p><ol>
-<li>
-<p><strong>Stochastic Resonance:</strong> In nonlinear systems, noise enhances signal processing efficiency, demonstrating improved synchronization in neuronal models and climate oscillations.</p>
-</li>
-<li>
-<p><strong>Stability vs. Chaos:</strong> At intermediate noise levels, systems self-organize into stable attractors, while excessive noise disrupts coherence, pushing the system toward chaotic behavior.</p>
-</li>
-<li>
-<p><strong>Pattern Formation:</strong> Simulations of reaction-diffusion systems exhibit emergent spatial structures, akin to Turing patterns observed in biological morphogenesis.</p>
-</li>
-</ol><h3>Case Study: Financial Markets</h3><p>Applying Monte Carlo simulations to financial models, we observe how <strong>stochastic volatility</strong> influences asset price dynamics. Findings suggest that while short-term fluctuations appear random, long-term trends follow predictable statistical laws, reinforcing the role of stochasticity in economic equilibrium modeling.</p><h3>Future Directions in Stochastic Simulations</h3><p>Advancements in machine learning and computational power enable more precise modeling of stochastic phenomena. Hybrid methods integrating <strong>deep learning with stochastic differential equations</strong> (SDEs) present new opportunities for predicting self-organizing behaviors across disciplines.</p><p>These results highlight the predictive power of stochastic simulations, emphasizing their role in understanding the emergence of order in complex adaptive systems.</p></div></section>
-<div class="wp-divider"></div>
-<!-- ── Section 3: Simulations ── -->
-<section class="wp-section">
-<div class="wp-section-label">Computational Validation</div>
-<h2 class="wp-section-title">Euler-Maruyama Simulations</h2>
-<div class="wp-problems-grid">
-<div class="wp-problem-item">
-<div class="wp-problem-number">01</div>
-<div>
-<h4 class="wp-problem-title">Stochastic Synchronization</h4>
-<p class="wp-problem-body">One application is the study of stochastic synchronization, where weakly coupled oscillators subjected to noise exhibit coordinated behavior. Examples include neural networks, climate systems, and market dynamics.</p>
-</div>
-</div>
-<div class="wp-problem-item">
-<div class="wp-problem-number">02</div>
-<div>
-<h4 class="wp-problem-title">Phase Transitions</h4>
-<p class="wp-problem-body">Through computational experiments, we observe phase transitions occurring as a function of noise intensity $\sigma$. By varying $\sigma$, systems shift from disorder to structured states.</p>
-</div>
-</div>
-<div class="wp-problem-item">
-<div class="wp-problem-number">03</div>
-<div>
-<h4 class="wp-problem-title">Stability vs. Chaos</h4>
-<p class="wp-problem-body">At intermediate noise levels, systems self-organize into stable attractors, while excessive noise disrupts coherence, pushing the system toward chaotic behavior. Reaction-diffusion simulations exhibit emergent spatial structures (Turing patterns).</p>
-</div>
-</div>
-</div>
-<div class="wp-divider" style="margin: 2.5rem 0; border-top: 1px dashed rgba(195, 200, 190, 0.5);"></div><div class="wp-prose"><h2>Implementation of Stochastic Models</h2><p>To demonstrate the role of stochasticity in self-organization, we implement computational models using Python. These simulations rely on stochastic differential equations (SDEs) and numerical integration techniques to explore the emergence of order in complex systems.</p><p>Python Implementation: Stochastic Logistic Growth:</p><p>A fundamental model in population dynamics is the <strong>logistic growth equation</strong>, which describes how populations grow under limited resources. We introduce a stochastic term to account for environmental fluctuations:</p><div class="math-block">
-$$dx_t = r x_t \left(1 - \frac{x_t}{K}\right)dt + \sigma\, dW_t$$
-</div><p>where $r$ is the intrinsic growth rate, $K$ is the carrying capacity, $\sigma$ controls the noise intensity, and $dW_t$ is the Wiener increment.</p><p>The Python implementation uses the Euler-Maruyama method, a numerical scheme for integrating SDEs:</p><p>import numpy as np
- import matplotlib.pyplot as plt</p><p># Parameters
- r = 0.5 # Growth rate
- K = 100 # Carrying capacity
- sigma = 2.0 # Noise strength
- dt = 0.01 # Time step
- T = 50 # Total simulation time
- N = int(T/dt) # Number of steps</p><p># Initialization
- x = np.zeros(N)
- x[0] = 10 # Initial population</p><p># Stochastic Simulation
- for i in range(1, N):
- dW = np.sqrt(dt) * np.random.randn
- x[i] = x[i-1] + r * x[i-1] * (1 - x[i-1] / K) * dt + sigma * dW
- x[i] = max(x[i], 0) # Ensure population remains non-negative</p><p># Plot Results
- plt.plot(np.linspace(0, T, N), x, label='Stochastic Logistic Growth')
- plt.xlabel('Time')
- plt.ylabel('Population Size')
- plt.legend
- plt.show</p><p>This simulation showcases how randomness influences population dynamics. Under moderate noise levels, the population stabilizes near its equilibrium, but high noise levels can lead to fluctuations or extinction. The next section will analyze numerical results and discuss their implications for stochastic self-organization.</p></div></section>
-<div class="wp-divider"></div>
-<!-- ── Section 4: Python Logistic ── -->
-<section class="wp-section">
-<div class="wp-section-label">Implementation</div>
-<h2 class="wp-section-title">Stochastic Logistic Growth</h2>
-<pre class="wp-code-block"><code>import numpy as np
+      <p class="wp-highlight-body" style="margin-top: 1.5rem; margin-bottom: 0;">where $f(x_t)$ represents the deterministic component guiding the system, $\sigma\, dW_t$ encodes stochastic influences via a Wiener process $W_t$, and $\sigma$ is the noise intensity.</p>
+    </div>
+
+    <div class="wp-prose">
+      <h3 class="wp-subsection-title">Entropy and Stochasticity in Self-Organization</h3>
+      <p>Entropy plays a crucial role in the emergence of order. In stochastic models, entropy production quantifies the system's deviation from equilibrium, demonstrating how randomness can drive self-organization rather than mere disorder. Systems subjected to controlled stochastic perturbations can stabilize into predictable macrostates through entropy-minimizing pathways.</p>
+      <p>For instance, in thermodynamic equilibrium models, small perturbations governed by stochastic forces result in <strong>fluctuation-dissipation dynamics</strong>, where randomness paradoxically maintains stability over time. This principle extends to broader contexts such as biological systems, neural networks, and even socio-economic structures.</p>
+
+      <h3 class="wp-subsection-title">Applications of SDEs in Self-Organizing Systems</h3>
+    </div>
+
+    <div class="wp-concepts-grid">
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">Physical Systems</h3>
+        <p class="wp-concept-body">In <strong>condensed matter physics</strong>, stochasticity governs phase transitions, such as in superfluidity and critical phenomena, where fluctuations dictate emergent macroscopic stability.</p>
+      </div>
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">Biological Systems</h3>
+        <p class="wp-concept-body">Gene expression and cellular differentiation rely on stochastic gene regulation, wherein noise in molecular interactions results in robust biological pathways.</p>
+      </div>
+      <div class="wp-concept-card">
+        <h3 class="wp-concept-name">Social & Economic Networks</h3>
+        <p class="wp-concept-body">Financial markets exhibit stochastic dynamics, where stock prices, modeled by Brownian motion, self-organize into trends and cycles influenced by external fluctuations.</p>
+      </div>
+    </div>
+
+    <div class="wp-prose">
+      <p>A crucial extension of stochastic differential equations (SDEs) in self-organizing systems involves their long-term stability analysis. One commonly used method is the Fokker-Planck equation, which describes the time evolution of probability distributions associated with stochastic processes:</p>
+    </div>
+
+    <div class="wp-highlight-box">
+      <div class="wp-highlight-label">Stability Analysis</div>
+      <div class="math-block">
+        $$\frac{\partial P(x,t)}{\partial t} = -\frac{\partial}{\partial x} [f(x) P(x,t)] + \frac{\sigma^2}{2} \frac{\partial^2 P(x,t)}{\partial x^2}$$
+      </div>
+      <p class="wp-highlight-body" style="margin-top: 1.5rem; margin-bottom: 0;">where $P(x,t)$ is the probability density function of state $x$ at time $t$. This equation highlights how randomness influences the steady-state distributions of self-organizing systems, allowing us to quantify their equilibrium conditions and stability thresholds.</p>
+    </div>
+
+    <div class="wp-prose">
+      <h3 class="wp-subsection-title">Case Study: Noise-Induced Order</h3>
+      <p>One fascinating example of stochastic self-organization is <strong>stochastic resonance</strong>, where the presence of noise enhances the detectability of weak signals. This counterintuitive phenomenon is observed in:</p>
+      
+      <ul class="wp-list">
+        <li><strong>Climate Models:</strong> Periodic climate oscillations (e.g., ice ages) are influenced by stochastic perturbations in solar radiation.</li>
+        <li><strong>Neuroscience:</strong> Neuronal activity in sensory processing benefits from noise-induced synchronization, enhancing perception.</li>
+        <li><strong>Biological Systems:</strong> Stochastic gene regulation improves adaptability in fluctuating environments.</li>
+      </ul>
+
+      <h3 class="wp-subsection-title">Future Directions in Stochastic Modeling</h3>
+      <p>With advancements in computational power, <strong>agent-based modeling</strong> and <strong>machine learning algorithms</strong> are increasingly used to simulate and analyze self-organizing stochastic systems. Integrating SDEs with artificial intelligence allows for more precise predictions in fields ranging from economic forecasting to network science and ecological stability.</p>
+
+      <p>These theoretical and computational advancements reaffirm the indispensable role of stochasticity in driving order, shaping our understanding of complex adaptive systems across multiple scientific domains.</p>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 2: Simulations ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Simulations</div>
+    <h2 class="wp-section-title">Computational Simulations and Results</h2>
+
+    <div class="wp-prose">
+      <p>Computational simulations provide a powerful approach to validating theoretical models of self-organization driven by stochastic dynamics. By numerically solving stochastic differential equations (SDEs) and analyzing the resulting behaviors, we can better understand how order emerges from randomness across different domains.</p>
+
+      <h3 class="wp-subsection-title">Simulation Framework</h3>
+      <p>To explore self-organization through stochasticity, we employ numerical methods such as the <strong>Euler-Maruyama scheme</strong>, which discretizes SDEs for computational integration. Given a general form:</p>
+
+      <div class="math-block">
+        $$dx = f(x) dt + \sigma dW_t$$
+      </div>
+
+      <p>where $f(x)$ represents the deterministic component, $\sigma$ the noise intensity, and $dW_t$ a Wiener process, we approximate solutions iteratively as:</p>
+
+      <div class="math-block">
+        $$x_{t+\Delta t} = x_t + f(x_t) \Delta t + \sigma \sqrt{\Delta t} \xi$$
+      </div>
+
+      <p>where $\xi$ is a normally distributed random variable.</p>
+
+      <p>This approach allows us to model stochastic systems across physics, biology, and social sciences. For instance, in <strong>biological networks</strong>, stochastic gene regulation can be simulated to examine how randomness influences cell differentiation. In <strong>economic modeling</strong>, stock market fluctuations driven by random shocks can be studied to identify patterns of stability and instability.</p>
+
+      <h3 class="wp-subsection-title">Example: Stochastic Synchronization</h3>
+      <p>One application of computational modeling is the study of <strong>stochastic synchronization</strong>, where weakly coupled oscillators subjected to noise exhibit coordinated behavior.</p>
+
+      <ul class="wp-list">
+        <li><strong>Neural networks</strong>, where stochastic inputs enhance signal transmission efficiency.</li>
+        <li><strong>Climate systems</strong>, where random perturbations lead to periodic oscillatory modes.</li>
+        <li><strong>Market dynamics</strong>, where financial trends emerge despite underlying randomness.</li>
+      </ul>
+
+      <h3 class="wp-subsection-title">Analysis of Simulation Results</h3>
+      <p>Through computational experiments, we analyze the statistical properties and emergent behaviors arising from stochastic models. One key observation is that <strong>phase transitions</strong> occur as a function of noise intensity $\sigma$. By varying $\sigma$ in our simulations, we identify critical thresholds where systems shift from disorder to structured states.</p>
+      
+      <p><strong>Key Findings</strong></p>
+    </div>
+
+    <div class="wp-problems-grid">
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">01</div>
+        <div>
+          <h4 class="wp-problem-title">Stochastic Resonance</h4>
+          <p class="wp-problem-body">In nonlinear systems, noise enhances signal processing efficiency, demonstrating improved synchronization in neuronal models and climate oscillations.</p>
+        </div>
+      </div>
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">02</div>
+        <div>
+          <h4 class="wp-problem-title">Stability vs. Chaos</h4>
+          <p class="wp-problem-body">At intermediate noise levels, systems self-organize into stable attractors, while excessive noise disrupts coherence, pushing the system toward chaotic behavior.</p>
+        </div>
+      </div>
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">03</div>
+        <div>
+          <h4 class="wp-problem-title">Pattern Formation</h4>
+          <p class="wp-problem-body">Simulations of reaction-diffusion systems exhibit emergent spatial structures, akin to Turing patterns observed in biological morphogenesis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wp-prose">
+      <h3 class="wp-subsection-title">Case Study: Financial Markets</h3>
+      <p>Applying Monte Carlo simulations to financial models, we observe how <strong>stochastic volatility</strong> influences asset price dynamics. Findings suggest that while short-term fluctuations appear random, long-term trends follow predictable statistical laws, reinforcing the role of stochasticity in economic equilibrium modeling.</p>
+
+      <h3 class="wp-subsection-title">Future Directions in Stochastic Simulations</h3>
+      <p>Advancements in machine learning and computational power enable more precise modeling of stochastic phenomena. Hybrid methods integrating <strong>deep learning with stochastic differential equations</strong> (SDEs) present new opportunities for predicting self-organizing behaviors across disciplines.</p>
+
+      <p>These results highlight the predictive power of stochastic simulations, emphasizing their role in understanding the emergence of order in complex adaptive systems.</p>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 3: Implementation ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Code Models</div>
+    <h2 class="wp-section-title">Implementation of Stochastic Models</h2>
+
+    <div class="wp-prose">
+      <p>To demonstrate the role of stochasticity in self-organization, we implement computational models using Python. These simulations rely on stochastic differential equations (SDEs) and numerical integration techniques to explore the emergence of order in complex systems.</p>
+
+      <p>Python Implementation: Stochastic Logistic Growth:</p>
+      
+      <p>A fundamental model in population dynamics is the <strong>logistic growth equation</strong>, which describes how populations grow under limited resources. We introduce a stochastic term to account for environmental fluctuations:</p>
+
+      <div class="math-block">
+        $$dx_t = r x_t \left(1 - \frac{x_t}{K}\right)dt + \sigma\, dW_t$$
+      </div>
+
+      <p>where $r$ is the intrinsic growth rate, $K$ is the carrying capacity, $\sigma$ controls the noise intensity, and $dW_t$ is the Wiener increment.</p>
+
+      <p>The Python implementation uses the Euler-Maruyama method, a numerical scheme for integrating SDEs:</p>
+    </div>
+
+    <pre class="wp-code-block"><code>import numpy as np
 import matplotlib.pyplot as plt
 
 # Parameters
-r = 0.5 # Growth rate
-K = 100 # Carrying capacity
-sigma_values = [0.5, 2.0, 5.0] # Noise strengths
-dt = 0.01 # Time step
-T = 50 # Total simulation time
-N = int(T/dt)
+r = 0.5        # Growth rate
+K = 100        # Carrying capacity
+sigma = 2.0    # Noise strength
+dt = 0.01      # Time step
+T = 50         # Total simulation time
+N = int(T/dt)  # Number of steps
+
+# Initialization
+x = np.zeros(N)
+x[0] = 10      # Initial population
+
+# Stochastic Simulation
+for i in range(1, N):
+    dW = np.sqrt(dt) * np.random.randn()
+    x[i] = x[i-1] + r * x[i-1] * (1 - x[i-1] / K) * dt + sigma * dW
+    x[i] = max(x[i], 0)  # Ensure population remains non-negative
+
+# Plot Results
+plt.plot(np.linspace(0, T, N), x, label='Stochastic Logistic Growth')
+plt.xlabel('Time')
+plt.ylabel('Population Size')
+plt.legend()
+plt.show()</code></pre>
+
+    <div class="wp-prose">
+      <p>This simulation showcases how randomness influences population dynamics. Under moderate noise levels, the population stabilizes near its equilibrium, but high noise levels can lead to fluctuations or extinction. The next section will analyze numerical results and discuss their implications for stochastic self-organization.</p>
+
+      <h3 class="wp-subsection-title">Simulation Results and Analysis</h3>
+      <p>The numerical results of the stochastic logistic growth model provide insights into the effects of randomness on self-organizing systems. By running multiple simulations with varying levels of noise intensity $\sigma$, we observe the following key trends:</p>
+      
+      <ol class="wp-list">
+        <li><strong>Stabilization Under Low Noise:</strong> When $\sigma$ is small, the system stabilizes around its deterministic equilibrium at $K$, demonstrating that mild stochastic perturbations do not significantly disrupt population dynamics.</li>
+        <li><strong>Fluctuations and Instability:</strong> As $\sigma$ increases, population trajectories exhibit greater variability, occasionally deviating far from equilibrium.</li>
+        <li><strong>Extinction Probability:</strong> Under extreme noise conditions, stochastic fluctuations push the population below critical thresholds, increasing the probability of extinction.</li>
+      </ol>
+
+      <h3 class="wp-subsection-title">Visualization of Results</h3>
+      <p>The following graph shows multiple simulation runs with different noise levels:</p>
+    </div>
+
+    <pre class="wp-code-block"><code>import numpy as np
+import matplotlib.pyplot as plt
+
+# Parameters
+r, K, sigma_values = 0.5, 100, [0.5, 2.0, 5.0]
+dt, T, N = 0.01, 50, int(50/0.01)
 time = np.linspace(0, T, N)
 
+# Run simulations for different noise levels
 plt.figure(figsize=(10, 5))
 for sigma in sigma_values:
     x = np.zeros(N)
-    x[0] = 10 # Initial population
+    x[0] = 10  # Initial population
     for i in range(1, N):
         dW = np.sqrt(dt) * np.random.randn()
         x[i] = x[i-1] + r * x[i-1] * (1 - x[i-1] / K) * dt + sigma * dW
-        x[i] = max(x[i], 0) # Ensure non-negative population
+        x[i] = max(x[i], 0)  # Ensure non-negative population
     plt.plot(time, x, label=f'σ = {sigma}')
 
 plt.xlabel('Time')
@@ -156,66 +252,109 @@ plt.ylabel('Population Size')
 plt.legend()
 plt.title('Stochastic Logistic Growth Simulations')
 plt.show()</code></pre>
-<h3 class="wp-subsection-title">Results and Analysis</h3>
-<div class="wp-divider" style="margin: 2.5rem 0; border-top: 1px dashed rgba(195, 200, 190, 0.5);"></div><div class="wp-prose"><h2>Simulation Results and Analysis</h2><h3>Analysis of Stochastic Logistic Growth Simulation</h3><p>The numerical results of the stochastic logistic growth model provide insights into the effects of randomness on self-organizing systems. By running multiple simulations with varying levels of noise intensity $\sigma$, we observe the following key trends:</p><ol>
-<li>
-<p><strong>Stabilization Under Low Noise:</strong> When $\sigma$ is small, the system stabilizes around its deterministic equilibrium at $K$, demonstrating that mild stochastic perturbations do not significantly disrupt population dynamics.</p>
-</li>
-<li>
-<p><strong>Fluctuations and Instability:</strong> As $\sigma$ increases, population trajectories exhibit greater variability, occasionally deviating far from equilibrium.</p>
-</li>
-<li>
-<p><strong>Extinction Probability:</strong> Under extreme noise conditions, stochastic fluctuations push the population below critical thresholds, increasing the probability of extinction.</p>
-</li>
-</ol><h3>Visualization of Results</h3><p>The following graph shows multiple simulation runs with different noise levels:</p><p>import numpy as np
- import matplotlib.pyplot as plt</p><p># Parameters
- r, K, sigma_values = 0.5, 100, [0.5, 2.0, 5.0]
- dt, T, N = 0.01, 50, int(50/0.01)
- time = np.linspace(0, T, N)</p><p># Run simulations for different noise levels
- plt.figure(figsize=(10, 5))
- for sigma in sigma_values:
- x = np.zeros(N)
- x[0] = 10 # Initial population
- for i in range(1, N):
- dW = np.sqrt(dt) * np.random.randn
- x[i] = x[i-1] + r * x[i-1] * (1 - x[i-1] / K) * dt + sigma * dW
- x[i] = max(x[i], 0) # Ensure non-negative population
- plt.plot(time, x, label=f'σ = {sigma}')</p><p>plt.xlabel('Time')
- plt.ylabel('Population Size')
- plt.legend
- plt.title('Stochastic Logistic Growth Simulations')
- plt.show</p><h3>Discussion of Findings</h3><p>The results illustrate how stochasticity can act as both a stabilizing and destabilizing force in dynamic systems:</p><ul>
-<li>
-<p><strong>Predictability Despite Noise:</strong> For small noise levels, the system maintains a predictable average behavior.</p>
-</li>
-<li>
-<p><strong>Emergent Variability:</strong> Higher noise leads to emergent patterns, reinforcing the role of stochasticity in driving complex behaviors.</p>
-</li>
-<li>
-<p><strong>Implications for Real Systems:</strong> These insights apply to ecological modeling, financial systems, and epidemiology, where randomness shapes population survival, economic stability, and disease spread.</p>
-</li>
-</ul><p>These findings reinforce the necessity of stochastic modeling for accurately predicting real-world systems. Future work can integrate machine learning techniques to refine predictions and adaptive control strategies. </p></div></section>
-<div class="wp-divider"></div>
-<!-- ── Section 5: Neural Networks ── -->
-<section class="wp-section">
-<div class="wp-section-label">Advanced Architectures</div>
-<h2 class="wp-section-title">Stochastic Self-Organizing Neural Networks (SSNN)</h2>
-<div class="wp-concepts-grid">
-<div class="wp-concept-card">
-<h3 class="wp-concept-name">Stochastic Layers</h3>
-<p class="wp-concept-body">Number of hidden layers and neuron counts are randomly selected within ranges.</p>
-</div>
-<div class="wp-concept-card">
-<h3 class="wp-concept-name">Random Activations</h3>
-<p class="wp-concept-body">Each neuron adopts a random choice of ReLU, Sigmoid, Tanh, or ELU.</p>
-</div>
-<div class="wp-concept-card">
-<h3 class="wp-concept-name">Evolutionary Selection</h3>
-<p class="wp-concept-body">Top-performing networks are selected for reproduction. Offspring inherit architectural traits and undergo random mutation.</p>
-</div>
-</div>
-<h3 class="wp-subsection-title">Full Implementation (SSNN)</h3>
-<pre class="wp-code-block"><code>import random
+
+    <div class="wp-prose">
+      <h3 class="wp-subsection-title">Discussion of Findings</h3>
+      <p>The results illustrate how stochasticity can act as both a stabilizing and destabilizing force in dynamic systems:</p>
+      
+      <ul class="wp-list">
+        <li><strong>Predictability Despite Noise:</strong> For small noise levels, the system maintains a predictable average behavior.</li>
+        <li><strong>Emergent Variability:</strong> Higher noise leads to emergent patterns, reinforcing the role of stochasticity in driving complex behaviors.</li>
+        <li><strong>Implications for Real Systems:</strong> These insights apply to ecological modeling, financial systems, and epidemiology, where randomness shapes population survival, economic stability, and disease spread.</li>
+      </ul>
+
+      <p>These findings reinforce the necessity of stochastic modeling for accurately predicting real-world systems. Future work can integrate machine learning techniques to refine predictions and adaptive control strategies.</p>
+    </div>
+  </section>
+
+  <div class="wp-divider"></div>
+
+  <!-- ── Section 4: SSNN ── -->
+  <section class="wp-section">
+    <div class="wp-section-label">Advanced Modeling</div>
+    <h2 class="wp-section-title">Stochastic Self-Organizing Neural Networks</h2>
+
+    <div class="wp-prose">
+      <h3 class="wp-subsection-title">Introduction to Stochastic Neural Network Architectures</h3>
+      <p>Neural networks have traditionally been designed with predefined architectures, where the number of layers, neurons, activation functions, and optimization parameters are chosen manually. However, biological neural systems do not follow static configurations but instead evolve dynamically through self-organization and adaptation. Inspired by this principle, we introduce a <strong>stochastic self-organizing neural network (SSNN)</strong> model, where the network architecture, activation functions, and training parameters evolve randomly. This method integrates principles of stochasticity, self-organization, and evolutionary optimization into deep learning.</p>
+
+      <h3 class="wp-subsection-title">Stochastic Architecture and Adaptive Learning</h3>
+      <p>The SSNN model builds a network with a randomly determined architecture using:</p>
+      
+      <ul class="wp-list">
+        <li><strong>Stochastic Layer Selection:</strong> The number of hidden layers is randomly selected within a predefined range.</li>
+        <li><strong>Randomized Neuron Counts:</strong> Each layer's neuron count is assigned randomly, allowing diverse network topologies.</li>
+        <li><strong>Stochastic Activation Functions:</strong> Instead of predefined activations, each neuron adopts a randomly chosen activation from a set including ReLU, Sigmoid, Tanh, and ELU.</li>
+        <li><strong>Dynamic Dropout:</strong> Dropout rates are randomly assigned, preventing overfitting and promoting generalization.</li>
+      </ul>
+
+      <p>Mathematically, given an input size $I$ and output size $O$, the network architecture is defined as: </p>
+      <div class="math-block">
+        $$A = \{ I, L_1, L_2,..., L_n, O \}$$
+      </div>
+      <p>where $L_i$ are hidden layers with stochastic neuron counts $N_i$, chosen from a predefined range $[N_{min}, N_{max}]$.</p>
+
+      <h3 class="wp-subsection-title">Evolutionary Learning and Genetic Optimization</h3>
+      <p>To further enhance self-organization, the SSNN model employs <strong>genetic algorithms (GA)</strong> to evolve network architectures over multiple generations:</p>
+    </div>
+
+    <div class="wp-problems-grid">
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">01</div>
+        <div>
+          <h4 class="wp-problem-title">Population Initialization</h4>
+          <p class="wp-problem-body">A set of random networks is generated.</p>
+        </div>
+      </div>
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">02</div>
+        <div>
+          <h4 class="wp-problem-title">Evaluation</h4>
+          <p class="wp-problem-body">Each model is trained and evaluated on a test dataset, with accuracy serving as the fitness criterion.</p>
+        </div>
+      </div>
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">03</div>
+        <div>
+          <h4 class="wp-problem-title">Selection & Crossover</h4>
+          <p class="wp-problem-body">The top-performing networks are selected for reproduction. New models inherit architectural traits from parent networks.</p>
+        </div>
+      </div>
+      <div class="wp-problem-item">
+        <div class="wp-problem-number">04</div>
+        <div>
+          <h4 class="wp-problem-title">Mutation</h4>
+          <p class="wp-problem-body">Random modifications (e.g., changing neuron counts, activations) introduce diversity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wp-prose">
+      <p>This process mimics natural selection, where only the best-performing networks survive and evolve.</p>
+
+      <h3 class="wp-subsection-title">Implementation and Training</h3>
+      <p>The SSNN model is implemented using TensorFlow and trained on the <strong>MNIST dataset</strong> (28x28 grayscale images of handwritten digits). The training process includes:</p>
+      <ul class="wp-list">
+        <li><strong>Stochastic Learning Rate Selection</strong> (randomly chosen between 0.001 and 0.01).</li>
+        <li><strong>Random Batch Size Assignment</strong> (selected from 16, 32, 64, or 128).</li>
+        <li><strong>Optimizer Randomization</strong> (choosing between Adam, SGD, and RMSprop).</li>
+      </ul>
+      <p>The network is trained over multiple generations, refining itself through evolutionary pressure.</p>
+
+      <h3 class="wp-subsection-title">Simulation Results and Analysis</h3>
+      <p>Results from the stochastic neural network training reveal:</p>
+      <ul class="wp-list">
+        <li><strong>Robustness to Architecture Variability:</strong> The model adapts dynamically, finding efficient configurations.</li>
+        <li><strong>Enhanced Generalization:</strong> Random dropout and activation choices prevent overfitting.</li>
+        <li><strong>Self-Optimization Through Evolution:</strong> Networks improve progressively, with final generations outperforming initial random structures.</li>
+      </ul>
+      
+      <p>This stochastic neural network model demonstrates how randomness, instead of being an obstacle, can drive <strong>adaptive learning and self-organizing intelligence</strong>, reinforcing the core principles of this research on <strong>stochastic determinism and emergent complexity</strong>.</p>
+
+      <h3 class="wp-subsection-title">Stochastic Neural Network Code Implementation</h3>
+    </div>
+
+    <pre class="wp-code-block"><code>import random
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
@@ -223,7 +362,7 @@ from tensorflow.keras.models import load_model
 def softmax_v2(x):
     return tf.nn.softmax(x)
 
-tf.keras.utils.get_custom_objects.update({'softmax_v2': softmax_v2})
+tf.keras.utils.get_custom_objects().update({'softmax_v2': softmax_v2})
 
 def create_stochastic_architecture(input_size, output_size, max_layers=5):
     layers = []
@@ -250,11 +389,11 @@ def build_stochastic_model(input_size, output_size):
     # Add hidden layers based on the stochastic architecture
     for i in range(1, len(architecture) - 1):
         model.add(tf.keras.layers.Dense(architecture[i], activation=stochastic_activation())) # Stochastic activation
-        if random.random() &gt; 0.5: # Random chance of adding dropout
+        if random.random() > 0.5: # Random chance of adding dropout
             model.add(tf.keras.layers.Dropout(stochastic_dropout())) # Apply stochastic dropout
             
     # Add the output layer with the softmax_v2 activation
-    model.add(tf.keras.layers.Dense(output_size, activation='softmax_v2'))
+    model.add(tf.keras.layers.Dense(output_size, activation=softmax_v2))
     return model
 
 def stochastic_learning_rate():
@@ -265,10 +404,10 @@ def stochastic_batch_size():
 
 def stochastic_optimizer(learning_rate):
     optimizers = [tf.keras.optimizers.Adam, tf.keras.optimizers.SGD, tf.keras.optimizers.RMSprop]
-    OptClass = random.choice(optimizers)
-    return OptClass(learning_rate=learning_rate) # Randomly choose an optimizer
+    optimizer_class = random.choice(optimizers) # Randomly choose an optimizer
+    return optimizer_class(learning_rate=learning_rate)
 
-def train_stochastic_model(model, x_train, y_train, x_test, y_test, epochs=3):
+def train_stochastic_model(model, x_train, y_train, x_test, y_test, epochs=10):
     lr = stochastic_learning_rate() # Set stochastic learning rate
     batch_size = stochastic_batch_size() # Set stochastic batch size
     optimizer = stochastic_optimizer(learning_rate=lr) # Set stochastic optimizer
@@ -298,14 +437,16 @@ class GeneticAlgorithm:
         all_models = [] # Store all models and their results
 
         for generation in range(self.generations):
-            print(f"\nGeneration {generation + 1}/{self.generations}")
+            print(f"Generation {generation + 1}/{self.generations}")
             # Evaluate each model's performance
             scores = [(individual, self.evaluate(individual, x_train, y_train, x_test, y_test)) for individual in population]
             scores.sort(key=lambda x: x[1], reverse=True) # Sort models by accuracy
+
+            # Save all models and their scores
             all_models.extend(scores)
 
             # Select the best model of this generation
-            if scores[0][1] &gt; best_score:
+            if scores[0][1] > best_score:
                 best_score = scores[0][1]
                 best_model = scores[0][0]
                 print(f"New best model found with accuracy: {best_score:.4f}")
@@ -321,7 +462,7 @@ class GeneticAlgorithm:
         return build_stochastic_model(input_size, output_size)
 
     def evaluate(self, model, x_train, y_train, x_test, y_test):
-        trained_model = train_stochastic_model(model, x_train, y_train, x_test, y_test, epochs=2)
+        trained_model = train_stochastic_model(model, x_train, y_train, x_test, y_test, epochs=3)
         if trained_model:
             _, accuracy = trained_model.evaluate(x_test, y_test, verbose=0)
             return accuracy
@@ -331,168 +472,48 @@ class GeneticAlgorithm:
         offspring = []
         for _ in range(len(population)):
             parent1, parent2 = random.sample(population, 2)
-            child = parent1 # Simple crossover placeholder
-            if random.random() &lt; self.mutation_rate:
-                child = build_stochastic_model(child.input_shape[1], child.output_shape[1])
+            child = self.crossover(parent1, parent2)
+            if random.random() < self.mutation_rate:
+                child = self.mutate(child)
             offspring.append(child)
         return offspring
+
+    def crossover(self, parent1, parent2):
+        # Simple crossover (can be enhanced for complex architectures)
+        return parent1
+
+    def mutate(self, model):
+        # Random mutation: Create a new stochastic model as a child
+        return build_stochastic_model(model.input_shape[1], model.output_shape[1])
+
+# Data preparation
+(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+x_train = x_train.reshape(-1, 28 * 28)
+x_test = x_test.reshape(-1, 28 * 28)
+
+# Evolution process
+ga = GeneticAlgorithm(population_size=10, generations=5)
+best_model = ga.evolve(x_train, y_train, x_test, y_test)
 </code></pre>
-<div class="wp-divider" style="margin: 2.5rem 0; border-top: 1px dashed rgba(195, 200, 190, 0.5);"></div><div class="wp-prose"><h2>Stochastic Self-Organizing Neural Networks</h2><h3>Introduction to Stochastic Neural Network Architectures</h3><p>Neural networks have traditionally been designed with predefined architectures, where the number of layers, neurons, activation functions, and optimization parameters are chosen manually. However, biological neural systems do not follow static configurations but instead evolve dynamically through self-organization and adaptation. Inspired by this principle, we introduce a <strong>stochastic self-organizing neural network (SSNN)</strong> model, where the network architecture, activation functions, and training parameters evolve randomly. This method integrates principles of stochasticity, self-organization, and evolutionary optimization into deep learning.</p><h3>Stochastic Architecture and Adaptive Learning</h3><p>The SSNN model builds a network with a randomly determined architecture using:</p><ul>
-<li>
-<p><strong>Stochastic Layer Selection:</strong> The number of hidden layers is randomly selected within a predefined range.</p>
-</li>
-<li>
-<p><strong>Randomized Neuron Counts:</strong> Each layer's neuron count is assigned randomly, allowing diverse network topologies.</p>
-</li>
-<li>
-<p><strong>Stochastic Activation Functions:</strong> Instead of predefined activations, each neuron adopts a randomly chosen activation from a set including ReLU, Sigmoid, Tanh, and ELU.</p>
-</li>
-<li>
-<p><strong>Dynamic Dropout:</strong> Dropout rates are randomly assigned, preventing overfitting and promoting generalization.</p>
-</li>
-</ul><p>Mathematically, given an input size $I$ and output size $O$, the network architecture is defined as: <div class="math-block">
-$$A = \{ I, L_1, L_2,..., L_n, O \}$$
-</div> where $L_i$ are hidden layers with stochastic neuron counts $N_i$, chosen from a predefined range $[N_{min}, N_{max}]$.</p><h3>Evolutionary Learning and Genetic Optimization</h3><p>To further enhance self-organization, the SSNN model employs <strong>genetic algorithms (GA)</strong> to evolve network architectures over multiple generations:</p><ol>
-<li>
-<p><strong>Population Initialization:</strong> A set of random networks is generated.</p>
-</li>
-<li>
-<p><strong>Evaluation:</strong> Each model is trained and evaluated on a test dataset, with accuracy serving as the fitness criterion.</p>
-</li>
-<li>
-<p><strong>Selection:</strong> The top-performing networks are selected for reproduction.</p>
-</li>
-<li>
-<p><strong>Crossover:</strong> New models inherit architectural traits from parent networks.</p>
-</li>
-<li>
-<p><strong>Mutation:</strong> Random modifications (e.g., changing neuron counts, activations) introduce diversity.</p>
-</li>
-</ol><p>This process mimics natural selection, where only the best-performing networks survive and evolve.</p><h3><strong>Implementation and Training</strong></h3><p>The SSNN model is implemented using TensorFlow and trained on the <strong>MNIST dataset</strong> (28x28 grayscale images of handwritten digits). The training process includes:</p><ul>
-<li>
-<p><strong>Stochastic Learning Rate Selection</strong> (randomly chosen between 0.001 and 0.01).</p>
-</li>
-<li>
-<p><strong>Random Batch Size Assignment</strong> (selected from 16, 32, 64, or 128).</p>
-</li>
-<li>
-<p><strong>Optimizer Randomization</strong> (choosing between Adam, SGD, and RMSprop).</p>
-</li>
-</ul><p>The network is trained over multiple generations, refining itself through evolutionary pressure.</p><h3><strong>Simulation Results and Analysis</strong></h3><p>Results from the stochastic neural network training reveal:</p><ul>
-<li>
-<p><strong>Robustness to Architecture Variability:</strong> The model adapts dynamically, finding efficient configurations.</p>
-</li>
-<li>
-<p><strong>Enhanced Generalization:</strong> Random dropout and activation choices prevent overfitting.</p>
-</li>
-<li>
-<p><strong>Self-Optimization Through Evolution:</strong> Networks improve progressively, with final generations outperforming initial random structures.</p>
-</li>
-</ul><p>This stochastic neural network model demonstrates how randomness, instead of being an obstacle, can drive <strong>adaptive learning and self-organizing intelligence</strong>, reinforcing the core principles of this research on <strong>stochastic determinism and emergent complexity</strong>.</p><h3>Stochastic Neural Network Code Implementation</h3><p>```python
-import random
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras.models import load_model</p><p>def softmax_v2(x):
- return tf.nn.softmax(x)</p><p>tf.keras.utils.get_custom_objects.update({'softmax_v2': softmax_v2})</p><p>def create_stochastic_architecture(input_size, output_size, max_layers=5):
- layers = []
- num_layers = random.randint(1, max_layers) # Randomly choose how many layers to create
- for _ in range(num_layers):
- num_neurons = random.randint(32, 128) # Randomly assign the number of neurons in each layer
- layers.append(num_neurons)
- return [input_size] + layers + [output_size] # The architecture starts with input size and ends with output size</p><p>def stochastic_activation:
- activations = [tf.nn.relu, tf.nn.sigmoid, tf.nn.tanh, tf.nn.elu] # Common activation functions
- return random.choice(activations) # Randomly select one activation function</p><p>def stochastic_dropout:
- return random.uniform(0.1, 0.5) # Randomly choose dropout rate between 10% and 50%</p><p>def build_stochastic_model(input_size, output_size):
- architecture = create_stochastic_architecture(input_size, output_size)
- model = tf.keras.Sequential</p><p># Add the input layer
- model.add(tf.keras.layers.InputLayer(input_shape=(input_size,)))</p><p># Add hidden layers based on the stochastic architecture
- for i in range(1, len(architecture) - 1):
- model.add(tf.keras.layers.Dense(architecture[i], activation=stochastic_activation)) # Stochastic activation
- if random.random &gt; 0.5: # Random chance of adding dropout
- model.add(tf.keras.layers.Dropout(stochastic_dropout)) # Apply stochastic dropout</p><p># Add the output layer with the softmax_v2 activation
- model.add(tf.keras.layers.Dense(output_size, activation=softmax_v2))</p><p>return model</p><p>def stochastic_learning_rate:
- return random.uniform(0.001, 0.01) # Random learning rate between 0.001 and 0.01</p><p>def stochastic_batch_size:
- return random.choice([16, 32, 64, 128]) # Randomly choose the batch size</p><p>def stochastic_optimizer:
- optimizers = [tf.keras.optimizers.Adam, tf.keras.optimizers.SGD, tf.keras.optimizers.RMSprop]
- return random.choice(optimizers) # Randomly choose an optimizer</p><p>def train_stochastic_model(model, x_train, y_train, x_test, y_test, epochs=10):
- lr = stochastic_learning_rate # Set stochastic learning rate
- batch_size = stochastic_batch_size # Set stochastic batch size
- optimizer = stochastic_optimizer(learning_rate=lr) # Set stochastic optimizer with chosen learning rate</p><p>try:
- # Compile and train the model
- model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
- print(f"Training with learning rate: {lr}, batch size: {batch_size}, optimizer: {optimizer.name}")
- model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(x_test, y_test))
- except Exception as error:
- print(f"Error during training: {error}")
- return None</p><p>return model</p><p>class GeneticAlgorithm:
- def <strong>init</strong>(self, population_size, generations, mutation_rate=0.1):
- self.population_size = population_size
- self.generations = generations
- self.mutation_rate = mutation_rate</p><p>def evolve(self, x_train, y_train, x_test, y_test):
- # Create an initial population of models
- population = [self.create_individual(x_train.shape[1], 10) for _ in range(self.population_size)]
- best_model = None
- best_score = -np.inf
- all_models = [] # Store all models and their results</p><p>for generation in range(self.generations):
- print(f"Generation {generation + 1}/{self.generations}")
- # Evaluate each model's performance
- scores = [(individual, self.evaluate(individual, x_train, y_train, x_test, y_test)) for individual in
- population]
- scores.sort(key=lambda x: x[1], reverse=True) # Sort models by accuracy</p><p># Save all models and their scores
- all_models.extend(scores)</p><p># Select the best model of this generation
- if scores[0][1] &gt; best_score:
- best_score = scores[0][1]
- best_model = scores[0][0]
- print(f"New best model found with accuracy: {best_score}")</p><p># Breed a new population
- population = [individual for individual, score in scores[:self.population_size // 2]]
- offspring = self.crossover_and_mutate(population)
- population.extend(offspring)</p><p># Save the full training process
- save_process(all_models)</p><p>return best_model</p><p>def create_individual(self, input_size, output_size):
- return build_stochastic_model(input_size, output_size)</p><p>def evaluate(self, model, x_train, y_train, x_test, y_test):
- trained_model = train_stochastic_model(model, x_train, y_train, x_test, y_test, epochs=3)
- if trained_model:
- _, accuracy = trained_model.evaluate(x_test, y_test, verbose=0)
- return accuracy
- return 0</p><p>def crossover_and_mutate(self, population):
- offspring = []
- for _ in range(len(population)):
- parent1, parent2 = random.sample(population, 2)
- child = self.crossover(parent1, parent2)
- if random.random &lt; self.mutation_rate:
- child = self.mutate(child)
- offspring.append(child)
- return offspring</p><p>def crossover(self, parent1, parent2):
- # Simple crossover (can be enhanced for complex architectures)
- return parent1</p><p>def mutate(self, model):
- # Random mutation: Create a new stochastic model as a child
- return build_stochastic_model(model.input_shape[1], model.output_shape[1])</p><p>def save_model(model):
- model.save("core_model.keras")
- print("Model saved successfully as 'core_model.keras'.")</p><p>def save_process(all_models):
- with open("process.keras", "a") as f:
- for model, score in all_models:
- f.write(f"Model: {model}, Score: {score}\n")
- print("Process saved as 'process.keras'.")</p><p>def load_and_evaluate_model(model_path, x_test, y_test):
- model = load_model(model_path)
- _, accuracy = model.evaluate(x_test, y_test)
- print(f"Model accuracy: {accuracy:.4f}")
- return accuracy</p><p>(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data
- x_train, x_test = x_train / 255.0, x_test / 255.0
- x_train = x_train.reshape(-1, 28 * 28)
- x_test = x_test.reshape(-1, 28 * 28)</p><p>ga = GeneticAlgorithm(population_size=10, generations=5)
- best_model = ga.evolve(x_train, y_train, x_test, y_test)</p><p>if best_model:
- save_model(best_model)
- else:
- print("No best model found.")</p><p>load_and_evaluate_model("core_model.keras", x_test, y_test)</p><p>`</p></div></section>
+
+    <div class="wp-vision-box">
+      <div class="wp-vision-label">Computational Horizon</div>
+      <p class="wp-vision-text">This stochastic neural network model demonstrates how randomness, instead of being an obstacle, can drive <strong>adaptive learning and self-organizing intelligence</strong>, reinforcing the core principles of stochastic determinism and emergent complexity.</p>
+    </div>
+  </section>
+
 </article>
+
 <style>
   /* ── Premium Article Styles ── */
-  .wp-article { font-family: 'Inter', sans-serif; color: #434841; }
+  .wp-article { font-family: 'Inter', sans-serif; color: #434841; padding-bottom: 5rem; }
   .wp-header { margin-bottom: 3.5rem; }
   .wp-eyebrow { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
   .wp-tag { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: #456647; border: 1px solid rgba(69, 102, 71, 0.35); padding: 0.25em 0.75em; }
   .wp-title { font-family: 'Newsreader', serif; font-size: 3.2rem; font-weight: 400; color: #173318; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 1.25rem; }
-  .wp-title em { font-style: italic; color: #456647; }
-  .wp-subtitle { font-family: 'Inter', sans-serif; font-size: 1.05rem; color: #737970; line-height: 1.75; max-width: 580px; margin: 0; }
+  .wp-title em { font-style: italic; color: #456647; display: block; font-size: 2.2rem; margin-top: 0.5rem; }
+  .wp-subtitle { font-family: 'Inter', sans-serif; font-size: 1.05rem; color: #737970; line-height: 1.75; max-width: 600px; margin: 0; }
   .wp-divider { height: 1px; background: rgba(195, 200, 190, 0.35); margin: 3rem 0; }
   .wp-section { margin-bottom: 0.5rem; }
   .wp-section-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
@@ -500,32 +521,35 @@ from tensorflow.keras.models import load_model</p><p>def softmax_v2(x):
   .wp-subsection-title { font-family: 'Space Grotesk', monospace; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: #456647; margin-bottom: 1.25rem; }
   .wp-prose p { font-size: 0.92rem; line-height: 1.8; color: #434841; margin-bottom: 1.25rem; max-width: 680px; }
   .wp-prose strong { color: #173318; }
+  .wp-list { font-size: 0.92rem; line-height: 1.85; color: #434841; margin: 0 0 1.5rem 1.5rem; max-width: 680px; }
+  .wp-list li { margin-bottom: 0.5rem; }
 
   /* Code Blocks */
-  .wp-code-block { background: #173318; color: #c9ecc4; padding: 1.5rem; font-family: 'Space Grotesk', monospace; font-size: 0.8rem; overflow-x: auto; margin: 1.5rem 0; border-radius: 4px; }
-  .wp-code-block code { line-height: 1.5; }
+  .wp-code-block { background: #173318; color: #c9ecc4; padding: 1.5rem; font-family: 'Space Grotesk', monospace; font-size: 0.8rem; overflow-x: auto; margin: 1.5rem 0; border-radius: 4px; max-width: 800px; }
+  .wp-code-block code { line-height: 1.6; }
 
-  /* Highlights & Grids */
-  .wp-highlight-box { background: #ebe8df; padding: 2.5rem; margin-top: 1.5rem; }
+  /* Highlight box */
+  .wp-highlight-box { background: #ebe8df; padding: 2.5rem; margin: 2rem 0; border-radius: 2px; }
   .wp-highlight-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
   .wp-highlight-title { font-family: 'Newsreader', serif; font-size: 1.6rem; font-weight: 400; color: #173318; margin-bottom: 1rem; line-height: 1.2; }
   .wp-highlight-body { font-size: 0.9rem; line-height: 1.8; color: #434841; max-width: 680px; }
 
-  .wp-concepts-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1.5rem 0 2rem; }
-  .wp-concept-card { background: #f6f3ea; padding: 1.75rem; border-top: 2px solid rgba(23, 51, 24, 0.2); }
-  .wp-concept-name { font-family: 'Newsreader', serif; font-size: 1.3rem; font-weight: 400; color: #173318; margin-bottom: 0.25rem; }
-  .wp-concept-role { font-family: 'Space Grotesk', monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
-  .wp-concept-body { font-size: 0.82rem; line-height: 1.7; color: #434841; margin: 0; }
+  /* Concepts grid */
+  .wp-concepts-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+  .wp-concept-card { background: #f6f3ea; padding: 1.75rem; border-top: 3px solid rgba(23, 51, 24, 0.2); }
+  .wp-concept-name { font-family: 'Newsreader', serif; font-size: 1.3rem; font-weight: 400; color: #173318; margin-bottom: 0.75rem; line-height: 1.2; }
+  .wp-concept-body { font-size: 0.86rem; line-height: 1.7; color: #434841; margin: 0; }
 
-  .wp-problems-grid { display: flex; flex-direction: column; gap: 0; margin: 1.5rem 0; border: 1px solid rgba(195, 200, 190, 0.3); }
+  /* Problems grid */
+  .wp-problems-grid { display: flex; flex-direction: column; gap: 0; margin: 2rem 0; border: 1px solid rgba(195, 200, 190, 0.3); }
   .wp-problem-item { display: flex; gap: 1.5rem; padding: 1.5rem; border-bottom: 1px solid rgba(195, 200, 190, 0.2); align-items: flex-start; }
   .wp-problem-item:last-child { border-bottom: none; }
   .wp-problem-number { font-family: 'Newsreader', serif; font-size: 2.4rem; color: rgba(23, 51, 24, 0.1); font-weight: 400; line-height: 1; flex-shrink: 0; width: 3rem; text-align: right; padding-top: 0.1rem; }
   .wp-problem-title { font-family: 'Inter', sans-serif; font-size: 0.92rem; font-weight: 700; color: #173318; margin-bottom: 0.5rem; }
   .wp-problem-body { font-size: 0.86rem; line-height: 1.75; color: #434841; margin: 0; }
 
-  .wp-blockquote { border-left: 2px solid #173318; padding: 1.25rem 1.75rem; margin: 2.5rem 0; font-family: 'Newsreader', serif; font-size: 1.2rem; font-style: italic; color: #173318; line-height: 1.7; background: rgba(23, 51, 24, 0.03); }
-  .wp-vision-box { background: #173318; padding: 2.5rem; margin-top: 2.5rem; }
+  /* Vision box */
+  .wp-vision-box { background: #173318; padding: 2.5rem; margin-top: 3rem; border-radius: 2px; }
   .wp-vision-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(174, 207, 169, 0.45); margin-bottom: 1rem; }
   .wp-vision-text { font-family: 'Newsreader', serif; font-size: 1.15rem; font-style: italic; line-height: 1.85; color: rgba(174, 207, 169, 0.85); margin: 0; }
   .wp-vision-text strong { color: #c9ecc4; font-style: normal; }

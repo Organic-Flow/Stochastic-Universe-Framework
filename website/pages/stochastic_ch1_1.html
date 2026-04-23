@@ -13,51 +13,49 @@
 
   <div class="wp-divider"></div>
 
-  <!-- ── Section 1: Overview ── -->
+  <!-- ── Section 1: Stochasticity ── -->
   <section class="wp-section">
-    <div class="wp-section-label">Overview & Emergent Order</div>
+    <div class="wp-section-label">Stochasticity & Determinism</div>
     
-    <!-- UI Summaries -->
+    <div class="wp-prose">
+      <p>Stochasticity, or randomness, is a fundamental property of many natural systems, spanning across physics, biology, and social sciences. Unlike deterministic systems, where outcomes are entirely defined by initial conditions and governing equations, stochastic systems incorporate randomness as an intrinsic element of their evolution. This randomness can arise from external perturbations, inherent quantum uncertainty, or the aggregate behavior of many interacting components.</p>
+      
+      <p>Mathematically, stochasticity is commonly modeled using probability theory and stochastic differential equations (SDEs). A general form of an SDE is given by:</p>
+    </div>
+
     <div class="wp-highlight-box">
-      <div class="wp-highlight-label">Technical Foundation</div>
-      <h3 class="wp-highlight-title">The Stochastic Differential Equation (SDE)</h3>
+      <div class="wp-highlight-label">The Stochastic Differential Equation (SDE)</div>
       <div class="math-block">
         $$dX_t = f(X_t, t)\, dt + g(X_t, t)\, dW_t$$
       </div>
-      <p class="wp-highlight-body">where $X_t$ is the state variable, $f(X_t, t)$ represents deterministic forces, $g(X_t, t)$ denotes the stochastic influence, and $W_t$ is a Wiener process representing Brownian motion. These equations are essential for describing systems with uncertainty, such as financial markets, thermodynamic fluctuations, and evolutionary dynamics.</p>
-
-      <div class="wp-highlight-stats">
-        <div class="wp-stat">
-          <span class="wp-stat-value">f(X, t)</span>
-          <span class="wp-stat-label">Drift (Order)</span>
-        </div>
-        <div class="wp-stat">
-          <span class="wp-stat-value">g(X, t)</span>
-          <span class="wp-stat-label">Diffusion (Noise)</span>
-        </div>
-        <div class="wp-stat">
-          <span class="wp-stat-value">dW_t</span>
-          <span class="wp-stat-label">Wiener Process</span>
-        </div>
-      </div>
+      <p class="wp-highlight-body" style="margin-top: 1.5rem; margin-bottom: 0;">where $X_t$ is the state variable, $f(X_t, t)$ represents deterministic forces, $g(X_t, t)$ denotes the stochastic influence, and $W_t$ is a Wiener process representing Brownian motion. These equations are essential for describing systems with uncertainty, such as financial markets, thermodynamic fluctuations, and evolutionary dynamics.</p>
+    </div>
+    
+    <div class="wp-prose">
+      <p>The interplay between stochastic and deterministic forces leads to the concept of <strong>stochastic determinism</strong>, an emerging theoretical framework suggesting that stochasticity does not necessarily equate to disorder but can, paradoxically, facilitate structured behavior. This perspective argues that randomness, under specific conditions, can drive the emergence of predictable macroscopic patterns. A notable example is statistical mechanics, where random molecular motions give rise to well-defined thermodynamic laws at a macroscopic scale.</p>
+      
+      <p>Stochastic determinism finds applications in diverse fields.</p>
     </div>
 
     <div class="wp-concepts-grid">
       <div class="wp-concept-card">
         <h3 class="wp-concept-name">Physics</h3>
-        <p class="wp-concept-role">Quantum Uncertainty</p>
-        <p class="wp-concept-body">From wave-function collapse to thermodynamic fluctuations, randomness is the bedrock of physical reality.</p>
+        <p class="wp-concept-body">In physics, quantum mechanics embraces probabilistic interpretations to describe particle behavior, reconciling wave-function collapse with statistical predictions.</p>
       </div>
       <div class="wp-concept-card">
         <h3 class="wp-concept-name">Biology</h3>
-        <p class="wp-concept-role">Evolutionary Drift</p>
-        <p class="wp-concept-body">Genetic mutation and random drift introduce the variability required for adaptive complexity.</p>
+        <p class="wp-concept-body">In biology, genetic drift and mutation introduce variability, yet evolutionary processes channel this randomness into adaptive complexity.</p>
       </div>
       <div class="wp-concept-card">
-        <h3 class="wp-concept-name">Economics</h3>
-        <p class="wp-concept-role">Aggregate Behavior</p>
-        <p class="wp-concept-body">Individual choices appear random at the micro-level but aggregate into stable social structures.</p>
+        <h3 class="wp-concept-name">Social Sciences</h3>
+        <p class="wp-concept-body">Similarly, in social sciences, individual choices appear random at the micro-level but aggregate into stable economic and social structures.</p>
       </div>
+    </div>
+    
+    <div class="wp-prose">
+      <p>Thus, stochastic determinism provides a unifying lens through which the emergence of order from randomness can be understood. By exploring its mathematical underpinnings and applications, we can better grasp the role of randomness as a constructive force in complex systems.</p>
+
+      <p>A crucial aspect of stochastic determinism is the concept of <strong>emergent order</strong> from random interactions. While classical determinism suggests that order is imposed externally or dictated by initial conditions, stochastic determinism illustrates that randomness can self-organize into structured behaviors. This process is evident in systems governed by feedback mechanisms, nonlinear interactions, and adaptive evolution, where randomness acts as a driver rather than a disruptor.</p>
     </div>
 
     <div class="wp-problems-grid">
@@ -65,74 +63,29 @@
         <div class="wp-problem-number">01</div>
         <div>
           <h4 class="wp-problem-title">Self-Organized Criticality (SOC)</h4>
-          <p class="wp-problem-body">One of the key examples supporting this concept is <strong>self-organized criticality (SOC)</strong>, where complex systems naturally evolve to a critical state where small perturbations can lead to significant outcomes.</p>
+          <p class="wp-problem-body">One of the key examples supporting this concept is <strong>self-organized criticality (SOC)</strong>, where complex systems naturally evolve to a critical state where small perturbations can lead to significant outcomes. SOC is observed in diverse phenomena such as earthquakes, neural activity, and market crashes, demonstrating that stochastic fluctuations contribute to large-scale organization.</p>
         </div>
       </div>
       <div class="wp-problem-item">
         <div class="wp-problem-number">02</div>
         <div>
           <h4 class="wp-problem-title">Stochastic Resonance</h4>
-          <p class="wp-problem-body">Moreover, stochastic resonance provides another compelling illustration: in certain nonlinear systems, weak signals are amplified by the presence of noise, leading to enhanced system performance.</p>
+          <p class="wp-problem-body">Moreover, stochastic resonance provides another compelling illustration: in certain nonlinear systems, weak signals are amplified by the presence of noise, leading to enhanced system performance. This paradoxical role of randomness—acting to enhance rather than disrupt signal processing—is prevalent in neuroscience, climate dynamics, and electronic circuits.</p>
         </div>
       </div>
     </div>
 
-    <!-- Full Authentic Text -->
-    <div class="wp-divider" style="margin: 2.5rem 0; border-top: 1px dashed rgba(195, 200, 190, 0.5);"></div>
-    
     <div class="wp-prose">
-      <p>Stochasticity, or randomness, is a fundamental property of many natural systems, spanning across physics, biology, and social sciences. Unlike deterministic systems, where outcomes are entirely defined by initial conditions and governing equations, stochastic systems incorporate randomness as an intrinsic element of their evolution. This randomness can arise from external perturbations, inherent quantum uncertainty, or the aggregate behavior of many interacting components.</p>
-      
-      <p>Mathematically, stochasticity is commonly modeled using probability theory and stochastic differential equations (SDEs). A general form of an SDE is given by:</p>
-      
-      <div class="math-block">
-        $$dX_t = f(X_t, t)\, dt + g(X_t, t)\, dW_t$$
-      </div>
-      
-      <p>where $X_t$ is the state variable, $f(X_t, t)$ represents deterministic forces, $g(X_t, t)$ denotes the stochastic influence, and $W_t$ is a Wiener process representing Brownian motion. These equations are essential for describing systems with uncertainty, such as financial markets, thermodynamic fluctuations, and evolutionary dynamics.</p>
-      
-      <p>The interplay between stochastic and deterministic forces leads to the concept of <strong>stochastic determinism</strong>, an emerging theoretical framework suggesting that stochasticity does not necessarily equate to disorder but can, paradoxically, facilitate structured behavior. This perspective argues that randomness, under specific conditions, can drive the emergence of predictable macroscopic patterns. A notable example is statistical mechanics, where random molecular motions give rise to well-defined thermodynamic laws at a macroscopic scale.</p>
-      
-      <p>Stochastic determinism finds applications in diverse fields. In physics, quantum mechanics embraces probabilistic interpretations to describe particle behavior, reconciling wave-function collapse with statistical predictions. In biology, genetic drift and mutation introduce variability, yet evolutionary processes channel this randomness into adaptive complexity. Similarly, in social sciences, individual choices appear random at the micro-level but aggregate into stable economic and social structures.</p>
-      
-      <p>Thus, stochastic determinism provides a unifying lens through which the emergence of order from randomness can be understood. By exploring its mathematical underpinnings and applications, we can better grasp the role of randomness as a constructive force in complex systems.</p>
-
-      <p>A crucial aspect of stochastic determinism is the concept of <strong>emergent order</strong> from random interactions. While classical determinism suggests that order is imposed externally or dictated by initial conditions, stochastic determinism illustrates that randomness can self-organize into structured behaviors. This process is evident in systems governed by feedback mechanisms, nonlinear interactions, and adaptive evolution, where randomness acts as a driver rather than a disruptor.</p>
-      
-      <p>One of the key examples supporting this concept is <strong>self-organized criticality (SOC)</strong>, where complex systems naturally evolve to a critical state where small perturbations can lead to significant outcomes. SOC is observed in diverse phenomena such as earthquakes, neural activity, and market crashes, demonstrating that stochastic fluctuations contribute to large-scale organization.</p>
-      
-      <p>Moreover, stochastic resonance provides another compelling illustration: in certain nonlinear systems, weak signals are amplified by the presence of noise, leading to enhanced system performance. This paradoxical role of randomness—acting to enhance rather than disrupt signal processing—is prevalent in neuroscience, climate dynamics, and electronic circuits.</p>
-      
       <p>In summary, stochastic determinism bridges the gap between chaos and order, showing that randomness is not merely a source of unpredictability but a fundamental mechanism for the emergence of complexity. Understanding this principle has broad implications for physics, biology, artificial intelligence, and economic modeling, where leveraging stochasticity can lead to more robust and adaptive systems. The next section will delve into entropy and self-organization, further elucidating the principles of order arising from seemingly chaotic interactions.</p>
     </div>
   </section>
 
   <div class="wp-divider"></div>
 
-  <!-- ── Section 3: Entropy ── -->
+  <!-- ── Section 2: Entropy ── -->
   <section class="wp-section">
     <div class="wp-section-label">Entropy & Self-Organization</div>
     <h2 class="wp-section-title">The Paradox of Dissipation</h2>
-
-    <!-- UI Summaries -->
-    <div class="wp-two-col">
-      <div>
-        <h3 class="wp-subsection-title">Classical View</h3>
-        <p class="wp-prose" style="font-size: 0.85rem;">The classical thermodynamic view of entropy dictates that in a closed system, disorder increases over time, leading to equilibrium. However, this perspective does not fully account for the behaviors observed in biological, social, and even astrophysical systems.</p>
-      </div>
-      <div>
-        <h3 class="wp-subsection-title">Modern View</h3>
-        <p class="wp-prose" style="font-size: 0.85rem;">This paradox is resolved by recognizing that in open systems, entropy production can facilitate organization rather than suppress it. Dissipative structures, as introduced by Ilya Prigogine, exemplify this concept.</p>
-      </div>
-    </div>
-
-    <div class="wp-vision-box">
-      <div class="wp-vision-label">The Balance of Order and Disorder</div>
-      <p class="wp-vision-text">The final consideration in understanding entropy's role in self-organization is the <strong>critical balance between disorder and order</strong>. Many naturally occurring systems operate at the edge of chaos, where they balance entropic forces with mechanisms that enforce structure.</p>
-    </div>
-
-    <!-- Full Authentic Text -->
-    <div class="wp-divider" style="margin: 2.5rem 0; border-top: 1px dashed rgba(195, 200, 190, 0.5);"></div>
 
     <div class="wp-prose">
       <p>Entropy, traditionally associated with disorder and the second law of thermodynamics, is often perceived as a measure of system degradation. However, modern interpretations reveal a more nuanced role—entropy is not merely a force of decay but a fundamental driver of complexity and self-organization. In open systems that exchange energy with their surroundings, entropy serves as a mechanism through which structure and order emerge.</p>
@@ -156,8 +109,11 @@
       <p>The final consideration in understanding entropy's role in self-organization is the <strong>critical balance between disorder and order</strong>. Many naturally occurring systems operate at the edge of chaos, where they balance entropic forces with mechanisms that enforce structure. This principle, often termed <strong>self-organized criticality</strong>, describes how systems dynamically adjust to maintain stability while remaining flexible enough to adapt to external influences.</p>
       
       <p>One example is the behavior of sandpile models, where adding grains gradually increases instability until a critical point is reached, triggering an avalanche that redistributes the system's structure. Similarly, biological ecosystems, financial markets, and even linguistic patterns exhibit this kind of <strong>dynamic equilibrium</strong>, where entropy acts as a driver of systemic evolution rather than mere disorder.</p>
-      
-      <p>Recognizing entropy as a crucial mechanism for self-organization re-frames its scientific and practical implications. In applied fields such as artificial intelligence, climate science, and economic modeling, leveraging entropic principles allows for the development of robust, adaptive systems. As research advances, the interplay between entropy and self-organization promises to unlock deeper insights into the mechanisms governing complexity and order.</p>
+    </div>
+
+    <div class="wp-vision-box">
+      <div class="wp-vision-label">The Future of Complexity</div>
+      <p class="wp-vision-text">Recognizing entropy as a crucial mechanism for self-organization re-frames its scientific and practical implications. In applied fields such as artificial intelligence, climate science, and economic modeling, leveraging entropic principles allows for the development of robust, adaptive systems. As research advances, the interplay between entropy and self-organization promises to unlock deeper insights into the mechanisms governing complexity and order.</p>
     </div>
   </section>
 
@@ -165,13 +121,13 @@
 
 <style>
   /* ── Premium Article Styles ── */
-  .wp-article { font-family: 'Inter', sans-serif; color: #434841; }
+  .wp-article { font-family: 'Inter', sans-serif; color: #434841; padding-bottom: 5rem; }
   .wp-header { margin-bottom: 3.5rem; }
   .wp-eyebrow { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
   .wp-tag { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: #456647; border: 1px solid rgba(69, 102, 71, 0.35); padding: 0.25em 0.75em; }
   .wp-title { font-family: 'Newsreader', serif; font-size: 3.2rem; font-weight: 400; color: #173318; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 1.25rem; }
-  .wp-title em { font-style: italic; color: #456647; }
-  .wp-subtitle { font-family: 'Inter', sans-serif; font-size: 1.05rem; color: #737970; line-height: 1.75; max-width: 580px; margin: 0; }
+  .wp-title em { font-style: italic; color: #456647; display: block; font-size: 2.2rem; margin-top: 0.5rem; }
+  .wp-subtitle { font-family: 'Inter', sans-serif; font-size: 1.05rem; color: #737970; line-height: 1.75; max-width: 600px; margin: 0; }
   .wp-divider { height: 1px; background: rgba(195, 200, 190, 0.35); margin: 3rem 0; }
   .wp-section { margin-bottom: 0.5rem; }
   .wp-section-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
@@ -180,39 +136,27 @@
   .wp-prose strong { color: #173318; }
   
   /* Concepts grid */
-  .wp-concepts-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1.5rem 0 2rem; }
-  .wp-concept-card { background: #f6f3ea; padding: 1.75rem; border-top: 2px solid rgba(23, 51, 24, 0.2); }
-  .wp-concept-name { font-family: 'Newsreader', serif; font-size: 1.3rem; font-weight: 400; color: #173318; margin-bottom: 0.25rem; line-height: 1.2; }
-  .wp-concept-role { font-family: 'Space Grotesk', monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
-  .wp-concept-body { font-size: 0.82rem; line-height: 1.7; color: #434841; margin: 0; }
+  .wp-concepts-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+  .wp-concept-card { background: #f6f3ea; padding: 1.75rem; border-top: 3px solid rgba(23, 51, 24, 0.2); }
+  .wp-concept-name { font-family: 'Newsreader', serif; font-size: 1.3rem; font-weight: 400; color: #173318; margin-bottom: 0.75rem; line-height: 1.2; }
+  .wp-concept-body { font-size: 0.86rem; line-height: 1.7; color: #434841; margin: 0; }
 
   /* Highlight box */
-  .wp-highlight-box { background: #ebe8df; padding: 2.5rem; margin-top: 1.5rem; }
+  .wp-highlight-box { background: #ebe8df; padding: 2.5rem; margin: 2rem 0; }
   .wp-highlight-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase; color: #456647; margin-bottom: 0.75rem; }
   .wp-highlight-title { font-family: 'Newsreader', serif; font-size: 1.6rem; font-weight: 400; color: #173318; margin-bottom: 1rem; line-height: 1.2; }
-  .wp-highlight-body { font-size: 0.9rem; line-height: 1.8; color: #434841; max-width: 680px; margin-bottom: 2rem; }
-  .wp-highlight-stats { display: flex; gap: 2.5rem; flex-wrap: wrap; }
-  .wp-stat { display: flex; flex-direction: column; gap: 0.25rem; }
-  .wp-stat-value { font-family: 'Newsreader', serif; font-size: 2.2rem; font-weight: 400; color: #173318; line-height: 1; letter-spacing: -0.02em; }
-  .wp-stat-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: #737970; }
+  .wp-highlight-body { font-size: 0.9rem; line-height: 1.8; color: #434841; max-width: 680px; }
 
   /* Problems grid */
-  .wp-problems-grid { display: flex; flex-direction: column; gap: 0; margin: 1.5rem 0; border: 1px solid rgba(195, 200, 190, 0.3); }
+  .wp-problems-grid { display: flex; flex-direction: column; gap: 0; margin: 2rem 0; border: 1px solid rgba(195, 200, 190, 0.3); }
   .wp-problem-item { display: flex; gap: 1.5rem; padding: 1.5rem; border-bottom: 1px solid rgba(195, 200, 190, 0.2); align-items: flex-start; }
   .wp-problem-item:last-child { border-bottom: none; }
   .wp-problem-number { font-family: 'Newsreader', serif; font-size: 2.4rem; color: rgba(23, 51, 24, 0.1); font-weight: 400; line-height: 1; flex-shrink: 0; width: 3rem; text-align: right; padding-top: 0.1rem; }
   .wp-problem-title { font-family: 'Inter', sans-serif; font-size: 0.92rem; font-weight: 700; color: #173318; margin-bottom: 0.5rem; }
   .wp-problem-body { font-size: 0.86rem; line-height: 1.75; color: #434841; margin: 0; }
 
-  /* Two col */
-  .wp-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 1rem; }
-  .wp-subsection-title { font-family: 'Space Grotesk', monospace; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: #456647; margin-bottom: 1.25rem; }
-
-  /* Blockquote */
-  .wp-blockquote { border-left: 2px solid #173318; padding: 1.25rem 1.75rem; margin: 2.5rem 0; font-family: 'Newsreader', serif; font-size: 1.2rem; font-style: italic; color: #173318; line-height: 1.7; background: rgba(23, 51, 24, 0.03); }
-
   /* Vision box */
-  .wp-vision-box { background: #173318; padding: 2.5rem; margin-top: 2.5rem; }
+  .wp-vision-box { background: #173318; padding: 2.5rem; margin-top: 3rem; }
   .wp-vision-label { font-family: 'Space Grotesk', monospace; font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(174, 207, 169, 0.45); margin-bottom: 1rem; }
   .wp-vision-text { font-family: 'Newsreader', serif; font-size: 1.15rem; font-style: italic; line-height: 1.85; color: rgba(174, 207, 169, 0.85); margin: 0; }
   .wp-vision-text strong { color: #c9ecc4; font-style: normal; }
